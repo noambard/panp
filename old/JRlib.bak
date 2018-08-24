@@ -1,0 +1,28 @@
+% Encoding: UTF-8
+
+@Article{Wolf1991,
+  author          = {Wolf, P A and D'Agostino, R B and Belanger, A J and Kannel, W B},
+  title           = {Probability of stroke: a risk profile from the Framingham Study.},
+  journal         = {Stroke},
+  year            = {1991},
+  volume          = {22},
+  pages           = {312--318},
+  month           = mar,
+  issn            = {0039-2499},
+  abstract        = {A health risk appraisal function has been developed for the prediction of stroke using the Framingham Study cohort. The stroke risk factors included in the profile are age, systolic blood pressure, the use of antihypertensive therapy, diabetes mellitus, cigarette smoking, prior cardiovascular disease (coronary heart disease, cardiac failure, or intermittent claudication), atrial fibrillation, and left ventricular hypertrophy by electrocardiogram. Based on 472 stroke events occurring during 10 years' follow-up from biennial examinations 9 and 14, stroke probabilities were computed using the Cox proportional hazards model for each sex based on a point system. On the basis of the risk factors in the profile, which can be readily determined on routine physical examination in a physician's office, stroke risk can be estimated. An individual's risk can be related to the average risk of stroke for persons of the same age and sex. The information that one's risk of stroke is several times higher than average may provide the impetus for risk factor modification. It may also help to identify persons at substantially increased stroke risk resulting from borderline levels of multiple risk factors such as those with mild or borderline hypertension and facilitate multifactorial risk factor modification.},
+  citation-subset = {IM},
+  completed       = {1991-04-15},
+  country         = {United States},
+  created         = {1991-04-15},
+  issn-linking    = {0039-2499},
+  issue           = {3},
+  keywords        = {Adult; Aged; Aged, 80 and over; Blood Pressure; Cerebrovascular Disorders, etiology; Female; Follow-Up Studies; Humans; Male; Massachusetts; Middle Aged; Probability; Risk Factors; Sex Characteristics},
+  nlm-id          = {0235266},
+  owner           = {NLM},
+  pmid            = {2003301},
+  pubmodel        = {Print},
+  pubstatus       = {ppublish},
+  revised         = {2016-11-22},
+}
+
+@Comment{jabref-meta: databaseType:bibtex;}

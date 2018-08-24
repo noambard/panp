@@ -1,0 +1,15 @@
+Variables|Categories|Population|censored|stroke|pval
+Individuals|n|705703|665415|40288|
+Sex|F|55.80\%|56.10\%|50.60\%|
+Sex|M|44.20\%|43.90\%|49.40\%|<0.01
+Age|Mean|66.4|66.2|69.7|
+Age|SD|8.4|8.4|8.3|<0.01
+Smoking|No|90.30\%|90.30\%|89.40\%|
+Smoking|Yes|9.70\%|9.70\%|10.60\%|<0.01
+Systolic BP|Mean|132.5|132.2|136.4|
+Systolic BP|SD|17.4|17.4|18.6|<0.01
+Diabetes Mellitus|Pos|17.10\%|16.40\%|28.30\%|<0.01
+Hypertension|Pos|47.90\%|46.90\%|63.40\%|<0.01
+CVD|Pos|24.20\%|23.40\%|36.70\%|<0.01
+AF|Pos|5.90\%|5.60\%|11.50\%|<0.01
+LVH|Pos|0.70\%|0.60\%|1.20\%|<0.01

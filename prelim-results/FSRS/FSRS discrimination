@@ -1,0 +1,15 @@
+Call:
+
+survConcordance(formula = Surv(time = data$time, event = data$status ==
+
+    "stroke") ~ data$pred)
+
+ 
+
+  n= 705703
+
+Concordance= 0.6821 se= 0.001445
+
+concordant  discordant   tied.risk   tied.time    std(c-d)
+
+16582744808  7727740396     6423264     6745778    70292952

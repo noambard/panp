@@ -1,0 +1,371 @@
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize 12
+\spacing single
+\use_hyperref false
+\papersize a4paper
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+PhD Proposal: Prediction and Prevention of Primary Stroke
+\end_layout
+
+\begin_layout Author
+Noam Barda, MD, BSc
+\end_layout
+
+\begin_layout Date
+13/11/2017
+\end_layout
+
+\begin_layout Part
+Abstract
+\end_layout
+
+\begin_layout Standard
+Despite a reduced
+\begin_inset CommandInset citation
+LatexCommand cite
+key "DAgostino1994"
+
+\end_inset
+
+ incidence
+\begin_inset CommandInset citation
+LatexCommand cite
+key "DAgostino1994,Wolf1991"
+
+\end_inset
+
+ rate...
+\end_layout
+
+\begin_layout Part
+Hebrew Abstract
+\end_layout
+
+\begin_layout Standard
+lamrot...
+\end_layout
+
+\begin_layout Part
+Aim of the Thesis
+\end_layout
+
+\begin_layout Standard
+The aim of this thesis is to detail an intervention in the Clalit Health
+ Services (CHS) population meant to reduce the incidence of primary stroke.
+ This intervention will take two approaches:
+\end_layout
+
+\begin_layout Enumerate
+A direct to patient intervention via a mobile app to encourage better risk
+ management.
+\end_layout
+
+\begin_layout Enumerate
+A family physician centered intervention to encourage better prevention
+ via careful adherence to existing guidelines.
+\end_layout
+
+\begin_layout Standard
+To achieve this overarching goal, several steps will be taken:
+\end_layout
+
+\begin_layout Enumerate
+The intervention requires a well-calibrated, discrimnative risk model for
+ stroke.
+ This model will be used both to identify high-risk patients for the family
+ physicians and to provide the patient with an accurate estimation of his
+ stroke risk.
+ To this end we will externally validate existing international cardiovascular
+ disease and stroke models on the Israeli population.
+ We will comprehensively test the performance of several leading existing
+ models and detail their predictive performance.
+ This will be done both in the models' original population composition and
+ on a shared common population between all models.
+\end_layout
+
+\begin_layout Enumerate
+As international models in general and CVD prediction models specifically
+ are notorious for being miscalibrated on different, newer and ethnically
+ diverse populations, we will develop a new predictive model for stroke
+ specifically tailored for the Israeli population.
+ This model will be developed using state of the art statistical and machine
+ learning tools, utilizing methods that are as of yet not common in the
+ medical field.
+ The development of such a model specifically for the Israeli population,
+ couped with the use of said methods and algorithms should enable this model
+ to outperform all existing models.
+\end_layout
+
+\begin_layout Enumerate
+We will use the leading model from the previous steps in two intervention
+ routes:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+A direct-to-patient intervention in which a stroke model will be embedded
+ in an existing application.
+ This model will calculate a patient's risk for stroke based on his known
+ clinical and demographic characteristics, display said risk compared to
+ a population standard, and will also allow the patient to examine how his
+ risk changes as clinical characteristics are varied.
+ We hope that such a presentation will encourage the users to better manage
+ their risk scores.
+\end_layout
+
+\begin_layout Enumerate
+An intervention through the patients' family physicians, in which the names
+ and IDs of high risk patients will be distributed to the treating physicians
+ together with existing prevention guidelines.
+ This should aid the treating physicians in identifying their highest-risk
+ patients and treating them accordingly.
+\end_layout
+
+\end_deeper
+\begin_layout Part
+The Importance of the Thesis
+\end_layout
+
+\begin_layout Standard
+bla bla scientific background bla bla
+\end_layout
+
+\begin_layout Part
+The Novelty of the Thesis
+\end_layout
+
+\begin_layout Standard
+All aforementioned steps have a measure of novelty to them:
+\end_layout
+
+\begin_layout Itemize
+An external validation of existing CVD and stroke risk models has yet to
+ be performed on the Israeli population.
+\end_layout
+
+\begin_layout Itemize
+This will be a the first time a model will be developed to predict stroke
+ in the CHS population, and this model will be developed and tested with
+ a design model that is not commonly used in the medical field, as will
+ be detailed later in this proposal.
+\end_layout
+
+\begin_layout Itemize
+The intervention through the family physicians, that uses the electronic
+ health record to generate a concise coupling of high-risk / seemingly undertrea
+ted patients and published guidelines, is a unique intervention model, that
+ can only be performed by a research institute that resides within a large
+ provider.
+\end_layout
+
+\begin_layout Itemize
+While there are examples of mobile applications that allow a patient to
+ examine his risk of cardiovascular outcomes, none have access to the patient's
+ electronic medical record and are thus capable of using clinical parameters
+ that most patients are not aware of.
+ Additionally, the application will be specifically geared towards empowering
+ a patient to better manage his stroke risk.
+ Lastly, combined with follow-up in the electronic health record, we will
+ be in a unique position to judge the effectivness of such an intervention,
+ which is to the best of our knowledge something that has yet to be done.
+\end_layout
+
+\begin_layout Part
+Published Work
+\end_layout
+
+\begin_layout Standard
+bla bla published work on each topic
+\end_layout
+
+\begin_layout Part
+Research Methodology
+\end_layout
+
+\begin_layout Itemize
+The population for all different parts of the study is the population of
+ patients insured by Clalit Health Services (CHS).
+ CHS is the largest sick fund in Israel, with an insured population of 4.4
+ active members.
+ Clalit is both an insurer and a provider, directly providing primary care,
+ specialist care, lab, imaging and pharamacy services.
+ Additionally, clalit directly operates several large hospitals.
+ The 
+\begin_inset Quotes eld
+\end_inset
+
+attrition rate
+\begin_inset Quotes erd
+\end_inset
+
+ (the percentage of patients leaving the sick fund each year) stands on
+ a low 1%, allowing long term follow-up of patients.
+\end_layout
+
+\begin_layout Itemize
+The data will be collected using the CHS's electronic health record (EHR).
+ CHS has maintained a comprehensive electronic health record since the year
+ 2000, and has continued to improve it with time.
+ This EHR contains, among others, demographic data, medical data (including
+ clinical covariates, lab results, imaging studies, etc.) and claims data
+ for both services rendered as part of the mandatory health insurance and
+ for services rendered as part of the additive insurance (
+\begin_inset Quotes eld
+\end_inset
+
+Mashlim
+\begin_inset Quotes erd
+\end_inset
+
+).
+ This comprehensive database, combining both medical and claims data, covers
+ large facets of a person's health.
+\end_layout
+
+\begin_layout Itemize
+something about the procedures (
+\begin_inset Quotes eld
+\end_inset
+
+the raw data is not always fitting...
+\begin_inset Quotes erd
+\end_inset
+
+) and our vast experience with the data, that allows dealing with a lot
+ of the weaknesses of EHR
+\end_layout
+
+\begin_layout Itemize
+something about the methodology of external validation.
+ 2 tests for every model, ex.
+ val and comparing.
+ discrimination, calibration, confusion matrix, decision curves, etc.
+\end_layout
+
+\begin_layout Itemize
+Something about the methodology of developing our own model, including the
+ follow-up time, the outcome definitions, the use of clinical counsel, the
+ different covariates (more than anyone uses), the use of ML technique (10-fold-
+CV, random search, etc.), the use of ML models (LASSO, xgboost, ANNs), the
+ careful testing, etc.
+ Something about the use of competing risks?
+\end_layout
+
+\begin_layout Itemize
+Something about the app
+\end_layout
+
+\begin_layout Itemize
+Something about the intervention and the opportunistic use for both stroke
+ and AF related populations
+\end_layout
+
+\begin_layout Itemize
+Something about the programs to be used
+\end_layout
+
+\begin_layout Part
+Preliminary Results
+\end_layout
+
+\begin_layout Standard
+Not too much.
+\end_layout
+
+\begin_layout Itemize
+A table 1 for the population
+\end_layout
+
+\begin_layout Itemize
+Number of apparent high risk patients
+\end_layout
+
+\begin_layout Itemize
+Number of untreated AF patients
+\end_layout
+
+\begin_layout Itemize
+something basic...
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+bibfiles "JRlib"
+options "plain"
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
