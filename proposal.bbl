@@ -953,56 +953,76 @@
     \field{year}{2015}
   \endentry
 
-  \entry{Champely2017}{manual}{}
-    \name{author}{1}{}{%
-      {{hash=CS}{%
-         family={Champely},
+  \entry{Charlson1987}{article}{}
+    \name{author}{4}{}{%
+      {{hash=CME}{%
+         family={Charlson},
          familyi={C\bibinitperiod},
-         given={Stephane},
-         giveni={S\bibinitperiod},
+         given={M\bibnamedelima E},
+         giveni={M\bibinitperiod\bibinitdelim E\bibinitperiod},
+      }}%
+      {{hash=PP}{%
+         family={Pompei},
+         familyi={P\bibinitperiod},
+         given={P},
+         giveni={P},
+      }}%
+      {{hash=AKL}{%
+         family={Ales},
+         familyi={A\bibinitperiod},
+         given={K\bibnamedelima L},
+         giveni={K\bibinitperiod\bibinitdelim L\bibinitperiod},
+      }}%
+      {{hash=MCR}{%
+         family={MacKenzie},
+         familyi={M\bibinitperiod},
+         given={C\bibnamedelima R},
+         giveni={C\bibinitperiod\bibinitdelim R\bibinitperiod},
       }}%
     }
-    \strng{namehash}{CS1}
-    \strng{fullhash}{CS1}
+    \keyw{Actuarial Analysis; Age Factors; Breast Neoplasms, epidemiology;
+  Epidemiologic Methods; Female; Follow-Up Studies; Humans; Longitudinal
+  Studies; Morbidity; New York City; Prognosis; Prospective Studies; Risk}
+    \strng{namehash}{CME+1}
+    \strng{fullhash}{CMEPPAKLMCR1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{sortinit}{C}
     \field{sortinithash}{C}
-    \field{note}{R package version 1.2-1}
-    \field{title}{pwr: Basic Functions for Power Analysis}
-    \verb{url}
-    \verb https://CRAN.R-project.org/package=pwr
-    \endverb
-    \field{year}{2017}
-  \endentry
-
-  \entry{Cohen1988}{book}{}
-    \name{author}{1}{}{%
-      {{hash=CJ}{%
-         family={Cohen},
-         familyi={C\bibinitperiod},
-         given={Jacob},
-         giveni={J\bibinitperiod},
-      }}%
+    \field{abstract}{%
+    The objective of this study was to develop a prospectively applicable
+  method for classifying comorbid conditions which might alter the risk of
+  mortality for use in longitudinal studies. A weighted index that takes into
+  account the number and the seriousness of comorbid disease was developed in a
+  cohort of 559 medical patients. The 1-yr mortality rates for the different
+  scores were: "0", 12% (181); "1-2", 26% (225); "3-4", 52% (71); and "greater
+  than or equal to 5", 85% (82). The index was tested for its ability to
+  predict risk of death from comorbid disease in the second cohort of 685
+  patients during a 10-yr follow-up. The percent of patients who died of
+  comorbid disease for the different scores were: "0", 8% (588); "1", 25% (54);
+  "2", 48% (25); "greater than or equal to 3", 59% (18). With each increased
+  level of the comorbidity index, there were stepwise increases in the
+  cumulative mortality attributable to comorbid disease (log rank chi 2 = 165;
+  p less than 0.0001). In this longer follow-up, age was also a predictor of
+  mortality (p less than 0.001). The new index performed similarly to a
+  previous system devised by Kaplan and Feinstein. The method of classifying
+  comorbidity provides a simple, readily applicable and valid method of
+  estimating risk of death from comorbid disease for use in longitudinal
+  studies. Further work in larger populations is still required to refine the
+  approach because the number of patients with any given condition in this
+  study was relatively small.%
     }
-    \list{publisher}{1}{%
-      {Routledge}%
-    }
-    \strng{namehash}{CJ1}
-    \strng{fullhash}{CJ1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{sortinit}{C}
-    \field{sortinithash}{C}
-    \field{isbn}{978-0805802832}
-    \field{title}{Statistical Power Analysis for the Behavioral Sciences (2nd
-  Edition)}
-    \verb{url}
-    \verb https://www.amazon.com/Statistical-Power-Analysis-Behavioral-Sciences
-    \verb /dp/0805802835?SubscriptionId=0JYN1NVW651KCA56C102&tag=techkie-20&lin
-    \verb kCode=xm2&camp=2025&creative=165953&creativeASIN=0805802835
+    \field{issn}{0021-9681}
+    \field{issue}{5}
+    \field{pages}{373\bibrangedash 383}
+    \field{title}{A new method of classifying prognostic comorbidity in
+  longitudinal studies: development and validation.}
+    \field{volume}{40}
+    \verb{file}
+    \verb :PDFs/charlson1987.pdf:PDF
     \endverb
-    \field{year}{1988}
+    \field{journaltitle}{Journal of chronic diseases}
+    \field{year}{1987}
   \endentry
 
   \entry{Collins2015}{article}{}
@@ -2677,6 +2697,93 @@
     \verb :PDFs/harrell2015.pdf:PDF
     \endverb
     \field{year}{2015}
+  \endentry
+
+  \entry{Hippisley-Cox2017}{article}{}
+    \name{author}{2}{}{%
+      {{hash=HCJ}{%
+         family={Hippisley-Cox},
+         familyi={H\bibinitperiod-C\bibinitperiod},
+         given={Julia},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=CC}{%
+         family={Coupland},
+         familyi={C\bibinitperiod},
+         given={Carol},
+         giveni={C\bibinitperiod},
+      }}%
+    }
+    \keyw{Aged; Algorithms; Decision Support Techniques; Female; Frail Elderly;
+  Humans; Life Style; Male; Mortality; Prospective Studies; Risk Assessment,
+  methods; Socioeconomic Factors}
+    \strng{namehash}{HCJCC1}
+    \strng{fullhash}{HCJCC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{H}
+    \field{sortinithash}{H}
+    \field{abstract}{%
+     To derive and validate a risk prediction equation to estimate the short
+  term risk of death, and to develop a classification method for frailty based
+  on risk of death and risk of unplanned hospital admission.  Prospective open
+  cohort study.  Routinely collected data from 1436 general practices
+  contributing data to QResearch in England between 2012 and 2016. 1079
+  practices were used to develop the scores and a separate set of 357 practices
+  to validate the scores. 1.47 million patients aged 65-100 years were in the
+  derivation cohort and 0.50 million patients in the validation cohort.  Cox
+  proportional hazards models in the derivation cohort were used to derive
+  separate risk equations in men and women for evaluation of the risk of death
+  at one year. Risk factors considered were age, sex, ethnicity, deprivation,
+  smoking status, alcohol intake, body mass index, medical conditions, specific
+  drugs, social factors, and results of recent investigations. Measures of
+  calibration and discrimination were determined in the validation cohort for
+  men and women separately and for each age and ethnic group. The new mortality
+  equation was used in conjunction with the existing QAdmissions equation
+  (which predicts risk of unplanned hospital admission) to classify patients
+  into frailty groups.  The primary outcome was all cause mortality.  During
+  follow-up 180 132 deaths were identified in the derivation cohort arising
+  from 4.39 million person years of observation. The final model included terms
+  for age, body mass index, Townsend score, ethnic group, smoking status,
+  alcohol intake, unplanned hospital admissions in the past 12 months, atrial
+  fibrillation, antipsychotics, cancer, asthma or chronic obstructive pulmonary
+  disease, living in a care home, congestive heart failure, corticosteroids,
+  cardiovascular disease, dementia, epilepsy, learning disability, leg ulcer,
+  chronic liver disease or pancreatitis, Parkinson's disease, poor mobility,
+  rheumatoid arthritis, chronic kidney disease, type 1 diabetes, type 2
+  diabetes, venous thromboembolism, anaemia, abnormal liver function test
+  result, high platelet count, visited doctor in the past year with either
+  appetite loss, unexpected weight loss, or breathlessness. The model had good
+  calibration and high levels of explained variation and discrimination. In
+  women, the equation explained 55.6% of the variation in time to death (R ),
+  and had very good discrimination-the D statistic was 2.29, and Harrell's C
+  statistic value was 0.85. The corresponding values for men were 53.1%, 2.18,
+  and 0.84. By combining predicted risks of mortality and unplanned hospital
+  admissions, 2.7% of patients (n=13 665) were classified as severely frail,
+  9.4% (n=46 770) as moderately frail, 43.1% (n=215 253) as mildly frail,
+  and 44.8% (n=223 790) as fit.  We have developed new equations to predict
+  the short term risk of death in men and women aged 65 or more, taking account
+  of demographic, social, and clinical variables. The equations had good
+  performance on a separate validation cohort. The QMortality equations can be
+  used in conjunction with the QAdmissions equations, to classify patients into
+  four frailty groups (known as QFrailty categories) to enable patients to be
+  identified for further assessment or interventions.%
+    }
+    \verb{doi}
+    \verb 10.1136/bmj.j4208
+    \endverb
+    \field{issn}{1756-1833}
+    \field{pages}{j4208}
+    \field{title}{Development and validation of QMortality risk prediction
+  algorithm to estimate short term risk of death and assess frailty: cohort
+  study.}
+    \field{volume}{358}
+    \verb{file}
+    \verb :PDFs/hippisley-cox2017.pdf:PDF
+    \endverb
+    \field{journaltitle}{BMJ (Clinical research ed.)}
+    \field{month}{09}
+    \field{year}{2017}
   \endentry
 
   \entry{Hippisley-Cox2013}{article}{}
@@ -7102,6 +7209,40 @@
     \verb :PDFs/shaishalev2014.pdf:PDF
     \endverb
     \field{year}{2014}
+  \endentry
+
+  \entry{Shannon1948}{article}{}
+    \name{author}{1}{}{%
+      {{hash=SCE}{%
+         family={Shannon},
+         familyi={S\bibinitperiod},
+         given={C.\bibnamedelima E.},
+         giveni={C\bibinitperiod\bibinitdelim E\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{2}{%
+      {Institute of Electrical}%
+      {Electronics Engineers ({IEEE})}%
+    }
+    \strng{namehash}{SCE1}
+    \strng{fullhash}{SCE1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \verb{doi}
+    \verb 10.1002/j.1538-7305.1948.tb01338.x
+    \endverb
+    \field{number}{3}
+    \field{pages}{379\bibrangedash 423}
+    \field{title}{A Mathematical Theory of Communication}
+    \field{volume}{27}
+    \verb{file}
+    \verb :PDFs/shannon1948.pdf:PDF
+    \endverb
+    \field{journaltitle}{Bell System Technical Journal}
+    \field{year}{1948}
+    \warn{\item Invalid format of field 'month'}
   \endentry
 
   \entry{Steyerberg2008}{book}{}

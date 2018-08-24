@@ -1746,6 +1746,73 @@ Today's health care providers have more research findings and more technology av
   groups        = {R packages},
 }
 
+@Article{Charlson1987,
+  author          = {Charlson, M E and Pompei, P and Ales, K L and MacKenzie, C R},
+  title           = {A new method of classifying prognostic comorbidity in longitudinal studies: development and validation.},
+  journal         = {Journal of chronic diseases},
+  year            = {1987},
+  volume          = {40},
+  issue           = {5},
+  pages           = {373--383},
+  issn            = {0021-9681},
+  abstract        = {The objective of this study was to develop a prospectively applicable method for classifying comorbid conditions which might alter the risk of mortality for use in longitudinal studies. A weighted index that takes into account the number and the seriousness of comorbid disease was developed in a cohort of 559 medical patients. The 1-yr mortality rates for the different scores were: "0", 12% (181); "1-2", 26% (225); "3-4", 52% (71); and "greater than or equal to 5", 85% (82). The index was tested for its ability to predict risk of death from comorbid disease in the second cohort of 685 patients during a 10-yr follow-up. The percent of patients who died of comorbid disease for the different scores were: "0", 8% (588); "1", 25% (54); "2", 48% (25); "greater than or equal to 3", 59% (18). With each increased level of the comorbidity index, there were stepwise increases in the cumulative mortality attributable to comorbid disease (log rank chi 2 = 165; p less than 0.0001). In this longer follow-up, age was also a predictor of mortality (p less than 0.001). The new index performed similarly to a previous system devised by Kaplan and Feinstein. The method of classifying comorbidity provides a simple, readily applicable and valid method of estimating risk of death from comorbid disease for use in longitudinal studies. Further work in larger populations is still required to refine the approach because the number of patients with any given condition in this study was relatively small.},
+  citation-subset = {IM},
+  completed       = {1987-05-18},
+  country         = {England},
+  file            = {:PDFs/charlson1987.pdf:PDF},
+  groups          = {Models-Mortality},
+  issn-linking    = {0021-9681},
+  keywords        = {Actuarial Analysis; Age Factors; Breast Neoplasms, epidemiology; Epidemiologic Methods; Female; Follow-Up Studies; Humans; Longitudinal Studies; Morbidity; New York City; Prognosis; Prospective Studies; Risk},
+  nlm-id          = {2985123R},
+  owner           = {NLM},
+  pmid            = {3558716},
+  pubmodel        = {Print},
+  pubstatus       = {ppublish},
+  revised         = {2006-11-15},
+}
+
+@Article{Hippisley-Cox2017,
+  author          = {Hippisley-Cox, Julia and Coupland, Carol},
+  title           = {Development and validation of QMortality risk prediction algorithm to estimate short term risk of death and assess frailty: cohort study.},
+  journal         = {BMJ (Clinical research ed.)},
+  year            = {2017},
+  volume          = {358},
+  month           = sep,
+  pages           = {j4208},
+  issn            = {1756-1833},
+  doi             = {10.1136/bmj.j4208},
+  abstract        = { To derive and validate a risk prediction equation to estimate the short term risk of death, and to develop a classification method for frailty based on risk of death and risk of unplanned hospital admission.  Prospective open cohort study.  Routinely collected data from 1436 general practices contributing data to QResearch in England between 2012 and 2016. 1079 practices were used to develop the scores and a separate set of 357 practices to validate the scores. 1.47 million patients aged 65-100 years were in the derivation cohort and 0.50 million patients in the validation cohort.  Cox proportional hazards models in the derivation cohort were used to derive separate risk equations in men and women for evaluation of the risk of death at one year. Risk factors considered were age, sex, ethnicity, deprivation, smoking status, alcohol intake, body mass index, medical conditions, specific drugs, social factors, and results of recent investigations. Measures of calibration and discrimination were determined in the validation cohort for men and women separately and for each age and ethnic group. The new mortality equation was used in conjunction with the existing QAdmissions equation (which predicts risk of unplanned hospital admission) to classify patients into frailty groups.  The primary outcome was all cause mortality.  During follow-up 180 132 deaths were identified in the derivation cohort arising from 4.39 million person years of observation. The final model included terms for age, body mass index, Townsend score, ethnic group, smoking status, alcohol intake, unplanned hospital admissions in the past 12 months, atrial fibrillation, antipsychotics, cancer, asthma or chronic obstructive pulmonary disease, living in a care home, congestive heart failure, corticosteroids, cardiovascular disease, dementia, epilepsy, learning disability, leg ulcer, chronic liver disease or pancreatitis, Parkinson's disease, poor mobility, rheumatoid arthritis, chronic kidney disease, type 1 diabetes, type 2 diabetes, venous thromboembolism, anaemia, abnormal liver function test result, high platelet count, visited doctor in the past year with either appetite loss, unexpected weight loss, or breathlessness. The model had good calibration and high levels of explained variation and discrimination. In women, the equation explained 55.6% of the variation in time to death (R ), and had very good discrimination-the D statistic was 2.29, and Harrell's C statistic value was 0.85. The corresponding values for men were 53.1%, 2.18, and 0.84. By combining predicted risks of mortality and unplanned hospital admissions, 2.7% of patients (n=13 665) were classified as severely frail, 9.4% (n=46 770) as moderately frail, 43.1% (n=215 253) as mildly frail, and 44.8% (n=223 790) as fit.  We have developed new equations to predict the short term risk of death in men and women aged 65 or more, taking account of demographic, social, and clinical variables. The equations had good performance on a separate validation cohort. The QMortality equations can be used in conjunction with the QAdmissions equations, to classify patients into four frailty groups (known as QFrailty categories) to enable patients to be identified for further assessment or interventions.},
+  citation-subset = {AIM, IM},
+  completed       = {2017-09-26},
+  country         = {England},
+  file            = {:PDFs/hippisley-cox2017.pdf:PDF},
+  groups          = {Models-Mortality},
+  issn-linking    = {0959-8138},
+  keywords        = {Aged; Algorithms; Decision Support Techniques; Female; Frail Elderly; Humans; Life Style; Male; Mortality; Prospective Studies; Risk Assessment, methods; Socioeconomic Factors},
+  nlm-id          = {8900488},
+  owner           = {NLM},
+  pmc             = {PMC5606253},
+  pmid            = {28931509},
+  pubmodel        = {Electronic},
+  pubstatus       = {epublish},
+  revised         = {2017-11-15},
+}
+
+@Article{Shannon1948,
+  author    = {C. E. Shannon},
+  title     = {A Mathematical Theory of Communication},
+  journal   = {Bell System Technical Journal},
+  year      = {1948},
+  volume    = {27},
+  number    = {3},
+  month     = {jul},
+  pages     = {379--423},
+  doi       = {10.1002/j.1538-7305.1948.tb01338.x},
+  file      = {:PDFs/shannon1948.pdf:PDF},
+  groups    = {Self Care},
+  publisher = {Institute of Electrical and Electronics Engineers ({IEEE})},
+}
+
 @Comment{jabref-meta: databaseType:biblatex;}
 
 @Comment{jabref-meta: grouping:
@@ -1771,4 +1838,5 @@ Today's health care providers have more research findings and more technology av
 1 StaticGroup:ATC\;0\;1\;\;\;\;;
 1 StaticGroup:Self Care\;0\;1\;\;\;\;;
 1 StaticGroup:R packages\;0\;1\;\;\;\;;
+1 StaticGroup:Models-Mortality\;0\;1\;\;\;\;;
 }

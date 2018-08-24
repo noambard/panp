@@ -18,106 +18,92 @@
 \defcounter {refsection}{0}\relax 
 \select@language {english}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3}Aim of the Thesis}{9}
+\contentsline {section}{\numberline {3}Aim of the Thesis}{8}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4}Importance and Background}{10}
+\contentsline {section}{\numberline {4}@@Importance and Background@@}{9}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1}Part I}{11}
+\contentsline {subsection}{\numberline {4.1}Part I}{9}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.1.1}Epidemiology of Cardiovascular Disease and Stroke}{11}
+\contentsline {subsubsection}{\numberline {4.1.1}Epidemiology of Cardiovascular Disease and Stroke}{9}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.1.2}History of Multivariate Risk Models}{12}
+\contentsline {subsubsection}{\numberline {4.1.2}History of Multivariate Risk Models}{11}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.1.3}Limitations of Risk Models}{13}
+\contentsline {subsubsection}{\numberline {4.1.3}Limitations of Risk Models}{11}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.1.4}The Gap and our Thesis}{13}
+\contentsline {subsubsection}{\numberline {4.1.4}The Gap and our Thesis}{12}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2}Part II}{14}
+\contentsline {subsection}{\numberline {4.2}Part II}{12}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.2.1}Methodology of Traditional Risk Models}{14}
+\contentsline {subsubsection}{\numberline {4.2.1}Methodology of Traditional Risk Models}{12}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.2.2}Generalized Linear Models}{14}
+\contentsline {subsubsection}{\numberline {4.2.2}Generalized Linear Models}{13}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.2.3}Cox Proportional Hazards}{15}
+\contentsline {subsubsection}{\numberline {4.2.3}Cox Proportional Hazards}{14}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.2.4}Parametric Vs. Non-Parametric Models}{16}
+\contentsline {subsubsection}{\numberline {4.2.4}Parametric Vs. Non-Parametric Models}{14}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.2.5}The Rise of AI and Machine Learning}{16}
+\contentsline {subsubsection}{\numberline {4.2.5}The Rise of AI and Machine Learning}{15}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.2.6}Black-Box Vs. White-Box Models}{17}
+\contentsline {subsubsection}{\numberline {4.2.6}Black-Box Vs. White-Box Models}{15}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.2.7}Electronic Health Record based Observational Studies}{17}
+\contentsline {subsubsection}{\numberline {4.2.7}Electronic Health Record based Observational Studies}{16}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.2.8}The Gap and our Thesis}{18}
+\contentsline {subsubsection}{\numberline {4.2.8}The Gap and our Thesis}{17}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3}Part III}{18}
+\contentsline {subsection}{\numberline {4.3}Part III}{17}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.3.1}Traditional Aim of Risk Models}{18}
+\contentsline {subsubsection}{\numberline {4.3.1}Traditional Aim of Risk Models}{17}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.3.2}The Way Risk Models are Used}{19}
+\contentsline {subsubsection}{\numberline {4.3.2}The Way Risk Models are Used}{18}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.3.3}Empowering Patients to Control Risk Factors}{20}
+\contentsline {subsubsection}{\numberline {4.3.3}Empowering Patients to Control Risk Factors}{18}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.3.4}Bridging Self-Care and Risk Modeling}{20}
+\contentsline {subsubsection}{\numberline {4.3.4}Bridging Self-Care and Risk Modeling}{19}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.3.5}The Gap and our Thesis}{21}
+\contentsline {subsubsection}{\numberline {4.3.5}The Gap and our Thesis}{20}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5}The Novelty of the Thesis}{21}
+\contentsline {section}{\numberline {5}The Novelty of the Thesis}{20}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6}Published Work}{22}
+\contentsline {section}{\numberline {6}@@Published Work@@}{21}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7}Research Methodology}{24}
+\contentsline {section}{\numberline {7}Research Methodology}{22}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.1}Planning}{24}
+\contentsline {subsection}{\numberline {7.1}Planning}{23}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {7.1.1}Part I}{24}
+\contentsline {subsubsection}{\numberline {7.1.1}Part I}{23}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {7.1.2}Part II}{25}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {7.1.3}Part III}{27}
+\contentsline {subsubsection}{\numberline {7.1.3}Part III}{26}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.2}Data Extraction}{29}
+\contentsline {subsection}{\numberline {7.2}Data Extraction}{26}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.3}Descriptive Statistics}{31}
+\contentsline {subsection}{\numberline {7.3}Descriptive Statistics}{29}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.4}Modeling and Inferential Statistics}{32}
+\contentsline {subsection}{\numberline {7.4}Modeling and Inferential Statistics}{30}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {7.4.1}Part I}{32}
+\contentsline {subsubsection}{\numberline {7.4.1}Part I}{30}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {7.4.2}Part II}{34}
+\contentsline {subsubsection}{\numberline {7.4.2}Part I}{32}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {7.4.3}Part III}{36}
+\contentsline {subsubsection}{\numberline {7.4.3}Part III}{34}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8}Preliminary Results}{37}
+\contentsline {section}{\numberline {8}Preliminary Results}{34}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {8.1}Part 1}{37}
+\contentsline {subsection}{\numberline {8.1}Part 1}{34}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {8.2}Part 2}{38}
+\contentsline {subsection}{\numberline {8.2}Part 2}{35}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {8.3}Part 3}{38}
+\contentsline {section}{\numberline {9}References}{35}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {9}References}{38}
+\contentsline {section}{Appendices}{46}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Appendices}{49}
+\contentsline {section}{\numberline {A}Model Variable Lists}{46}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A}Model Variable Lists}{49}
+\contentsline {section}{\numberline {B}Generic Predictor Variable List}{50}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {B}Extraction Protocol}{51}
+\contentsline {section}{\numberline {C}Preliminary Result Graphs and Drawings}{80}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {B.1}Outcome Diagnoses}{51}
+\contentsline {subsection}{\numberline {C.1}Framingham CVD Risk Score Result Graphs}{80}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {B.2}Causes of Death}{54}
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {B.3}Background Diagnoses}{54}
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {B.4}Drugs}{59}
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {C}Generic Predictor Variable List}{60}
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {D}Preliminary Result Graphs and Drawings}{90}
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {D.1}Framingham Stroke Risk Score (FSRS) Result Graphs}{90}
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {D.2}Clalit Model Population Flow Chart}{91}
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {D.3}Application Mock Drafts}{91}
+\contentsline {subsection}{\numberline {C.2}Clalit Model Population Flow Chart}{81}
