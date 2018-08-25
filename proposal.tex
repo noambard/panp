@@ -1,7 +1,3 @@
-% TODO:
-% Decide on CVD or Stroke
-% Prepare study design timeline for the mortality study
-
 % general
 \documentclass[a4paper,12pt]{article}
 
@@ -59,7 +55,7 @@
 	
 		\subsection{Background}
 		Since the early 1990s, and more so in the last few years,  multivariate risk models have been created to estimate patients' risk for different diseases over different time spans (e.g. \cite{Wilson1998,Conroy2003,DAgostino2008}). These models are used to identify patients at risk and are capable of exact risk quantification over time\cite{Goff2014}. Through their many variations, these risk models are included in different guidelines and occupy an important place in both primary prevention and diagnosis of different diseases\cite{Graham2007,Goff2014}.
-	
+		
 		Such multivariate risk models have several characteristics:
 		\begin{itemize}
 			\item Their development has traditionally required extensive input from domain experts (clinicians) for the choice of predictors.
@@ -67,78 +63,81 @@
 			\item They are traditionally based on classic biostatistical models, usually logistic and Cox regression.
 		\end{itemize}
 	
+		Such risk models have been particularly used for the diagnosis and prevention of cardiovascular disease (CVD), which despite reduced incidence in the developed world in recent years\cite{Koton2014,Vangen-Loenne2017}, remains a significant cause of morbidity and mortality\cite{ODonnell2016}.
+
 		\subsection{Goals}
 		We intend to pursue three goals in this thesis:
 		\begin{itemize}
 			\item Recent advances in machine learning allow for a new approach to medical risk modeling\cite{Obermeyer2016}. Contrary to the classic approach that emphasizes domain knowledge for the pre-specification of risk factors, novel methods rely instead on sophisticated algorithms being presented with thousands of candidate variables and selecting the relevant ones by themselves. These variables are then used for the actual model building\cite{Weng2017}. Such technologies allow a more standardized "one-size fits all" approach to risk modeling, utilizing a single comprehensive database with different outcomes\cite{Rajkomar2018}. We intend to establish a generic prediction framework allowing the standardized construction of validated predictive models for any outcome.
-			\item Two medical domains will be chosen: Cardiovascular Disease (CVD) and short-term mortality. In both domains, a predictive model will be developed using the above-mentioned algorithm and then compared to existing models from the literature. This will serve two purposes: One, it will illustrate that a model developed in such an automated process can outperform existing models. Two, it will serve to externally validate the performance of existing models on the Israeli population. No such external validation exists, to the best of our knowledge.
-			\item With a CVD model developed, we will simulate the likely effects of using such a model in the population in regard to CVD prevention, based on existing guideline recommendations\cite{Goff2014}.
+			\item Being ethnically distinct from the US and European populations used to develop existing models, CVD risk models are expected to perform sub-optimally in the Israeli population, but such external validation has yet to be performed on a population-wide scale\cite{Lovis2015}. We intend to perform external validation of CVD predictive models on a wide sample of the Israeli population.
+			\item Once the comparison has been performed, we will use the different models to simulate a wide-scale population-wide intervention on the Clalit's population using EHR data based on current guidelines\cite{Goff2014}.
 		\end{itemize}
 	
 		\subsection{Methods}
 		The generic prediction framework will make use of a sparsity inducing algorithm fed with the majority of the variables in the Clalit's electronic health record. The algorithm will then choose the appropriate variables and construct a model. The model will first be tuned on a validation set and then evaluated on a test set.
 		
-		To perform external validation and comparison, two leading CVD models and two leading one-year-mortality will be selected and recreated on the Clalit's database. The models will be compared in their original population composition and on a common sample corresponding to the population on which we intend to simulate our intervention.
+		To perform external validation and comparison, the three leading CVD models will be selected and recreated on the Clalit's database. The models will be compared in their original population composition and on a common sample corresponding to the population on which we intend to simulate our intervention.
 		
 		The simulated CVD intervention will examine a retrospective cohort of patients, and will utilize existing knowledge regarding the mortality reduction attributed to statin and aspirin use to simulate the 10-year-outcomes of this cohort had existing guidelines been adhered to.
-
+		
 		\subsection{Importance}
 		A generic prediction framework will allow easy construction of validated predictive models of high quality, with the variable selection portion affording possible biological insight.
-				
+		
 		External validation of CVD and mortality risk models, currently in wide use and integrated into guidelines, is of vital importance\cite{Moons2012}.
 		
 		Simulating  the intervention will allow us to gauge the potential effectiveness of interventions based on such risk models. Such interventions are becoming more and more possible with widespread electronic health record availability.
-	
-	
+		
 	\section{Hebrew Abstract}
 	
 	\begin{hebrew}
 		\subsection*{רקע}
-		מתחילת שנות ה-90 החלה, ובשנים האחרונות גברה, יצירתם של מודלים רב-משתניים לחישוב סיכון למחלות שונות(לדוגמה \cite{Wilson1998,Conroy2003,DAgostino2008}). מודלים אלו משמשים לזיהוי חולים בסיכון, ומאפשרים כימות מדויק של הסיכון לאורך שנים רבות\cite{Goff2014}. כיום, בצורותיהן השונות, מודלים אלו כלולים בקווים המנחים של ארגונים מקצועיים רבים, ולהם מקום חשוב הן במניעה הראשונית והן באבחנה של מחלות \cite{Graham2007,Goff2014}.
+				מתחילת שנות ה-90 החלה, ובשנים האחרונות גברה, יצירתם של מודלים רב-משתניים לחישוב סיכון למחלות שונות(לדוגמה \cite{Wilson1998,Conroy2003,DAgostino2008}). מודלים אלו משמשים לזיהוי חולים בסיכון, ומאפשרים כימות מדויק של הסיכון לאורך שנים רבות\cite{Goff2014}. כיום, בצורותיהן השונות, מודלים אלו כלולים בקווים המנחים של ארגונים מקצועיים רבים, ולהם מקום חשוב הן במניעה הראשונית והן באבחנה של מחלות \cite{Graham2007,Goff2014}.
 			
 			למודלים אלו מספר מאפיינים:
 			\begin{itemize}
 				\item פיתוחם דרש באופן מסורתי התייצעות נרחבת עם מומחי תוכן (קלינאים), על מנת שאלו יספקו את המידע הנדרש בנוגע למשתנים הנדרשים לחיזוי התוצא.
 				\item ביצועיהם של מודלים אלו מיטבי כאשר משתמשים בהם באוכלוסיות עליהם פותחו, ופוחת באוכלוסיות השונות מאוכלוסיות אלו מבחינה גנטית או אחרת\cite{DAgostino2001,Bastuji-Garin2002,DeFilippis2015}.
-				
 				\item המודלים מבוססים ככלל על שיטות ביוסטטיסטיות מסורתיות, בפרט על רגרסיה לוגיסטית ורגרסיית קוקס.
-				
 			\end{itemize}
+		
+		במודלים אלו נעשו שימוש בייחוד לחיזוי ומניעה של מחלה קרדיו-וסקולרית, אשר חרף הירידה בהיארעותה בעולם המפותח בשנים האחרונות\cite{Koton2014,Vangen-Loenne2017}, נותרה סיבה חשובה לתחלואה ולתמותה\cite{ODonnell2016}.
 				
 		\subsection*{מטרות}
 			כוונתנו להשיג שלוש מטרות בתזה זו:
 			\begin{itemize}
-				\item חידושים מודרניים בלמידה חישובית מאפשרים גישות חדשות למידול סיכון רפואי\cite{Obermeyer2016}. בניגוד לגישה הקיימת, המבוססת על שימוש בידע תחומי לפירוט-מראש של גורמי הסיכון, גישות מודרניות מתירות לאלגוריתם החישובי, המוזן עם מאות משתנים אפשריים, לברור מביניהם את המשתנים הרלוונטיים בכחות עצמו\cite{Weng2017}. לאחר מכן, משתנים אלו משמשים לבניית המודל עצמו. טכנולוגיות אלו מאפשרות גישה יותר אחידה למידול סיכון, המשתמשת בבסיס נתונים נרחב יחיד עם תוצאים שונים\cite{Rajkomar2018}. אנו מתכוונים ליצור בסיס נתונים שכזה על מנת לבנות מודל סיכון חדש  לשבץ, אשר ישמש בעבודה זו.
-				\item שני תחומים רפואיים יבחרו: חיזוי מחלה קרדיווסקולרית ותמותה קצרת-טווח. בשני התחומים ייבנה מודל חיזוי באמצעות האלגוריתם דלעיל ויושווה למודלים קיימים בספרות. השוואה זו תשרת שתי מטרות: האחת, להדגים שמודל שפותח באופן אוטומטי שכזה יכול שיהיו ביצועיו עדיפים על מודלים קיימים.  השניה, תיקוף חיצוני של המודלים הבינלאומיים על גבי האוכלוסיה הישראלית. למיטב ידיעתנו, תיקוף שכזה טרם בוצע.
+				\item חידושים מודרניים בלמידה חישובית מאפשרים גישות חדשות למידול סיכון רפואי\cite{Obermeyer2016}. בניגוד לגישה הקיימת, המבוססת על שימוש בידע תחומי לפירוט-מראש של גורמי הסיכון, גישות מודרניות מתירות לאלגוריתם החישובי, המוזן עם מאות משתנים אפשריים, לברור מביניהם את המשתנים הרלוונטיים בכחות עצמו\cite{Weng2017}. לאחר מכן, משתנים אלו משמשים לבניית המודל עצמו. טכנולוגיות אלו מאפשרות גישה יותר אחידה למידול סיכון, המשתמשת בבסיס נתונים נרחב יחיד עם תוצאים שונים\cite{Rajkomar2018}.
+				\item בהיותה מובחנת אתנית מהאוכלוסיות האמריקאיות והאירופאיות עליהן פותחו, ביצועיהם של מודלי חיזוי קרדיו-וסקולריים באוכלוסיה הישראלית צפויים להיות ירודים. השערה זו טרם נבדקה על אוכלוסיה גדולה, המייצגת את האוכלוסיה הישראלית כולה\cite{Lovis2015}. אנו מתכוונים לבדוק השערה זו על מדגם נרחב של האוכלוסיה הישראלית, בהקשר של חיזוי מחלה קרדיווסקולרית.
+				\item אנו נשתמש במודלים השונים (הן הקיימים והן המודל שיפותח כחלק מעבודה זו) על מנת לבצע סימולציה של התערבות אוכלוסייתית רחבה המבוססת על מידע מהתיק הרפואי הממוחשב, וזאת לפי הקווים המנחים הקיימים\cite{Goff2014}.
 			\end{itemize}
 		
 		\subsection*{שיטות}
-			השלד לחיזוי גנרי יעשה שימוש באלגוריתם המבצע בחירת משתנים כחלק מפעולתו. אלגוריתם זה יוזן עם מרבית המשתנים הזמינים בבסיס הנתונים של קופ"ח כללית, מהם יבחר המשתנים הרלוונטיים בהם יעשה שימוש לבניית מודל. המודל יכוונן על גבי אוכלוסיית פיתוח וייבדק מול אוכלוסיית בדיקה.
-			
-			על מנת לבצע תיקוף חיצוני והשוואה, שני מודלים מובילים לחיזוי CVD ושני מודלים מובילים לחיזוי תמותה בשנה הקרובה ייבחרו מהספרות וייבנו מחדש על גבי בסיס הנתונים של הכללית. המודלים יושוו הן בהרכב האוכלוסיה המקורי בו נבנו והן בהרכב האוכלוסיה בו אנו עתידים לדמות התערבות.
-			
-			סימולציית ההתערבות תבחן עקבה רטרוספקטיבית , ובאמצעות ידע קיים בנוגע להפחתת התמותה המיוחסת לשימוש בסטטינים ובאספירין, תדמה התוצאים ל-10 שנים  של עקבה זו  באם הקוים המנחים הקיימים היו מקויימים כלשונם, לפי המודלים הקיימים ולפי המודל החדש.
-			
+				השלד לחיזוי גנרי יעשה שימוש באלגוריתם המבצע בחירת משתנים כחלק מפעולתו. אלגוריתם זה יוזן עם מרבית המשתנים הזמינים בבסיס הנתונים של קופ"ח כללית, מהם יבחר המשתנים הרלוונטיים בהם יעשה שימוש לבניית מודל. המודל יכוונן על גבי אוכלוסיית פיתוח וייבדק מול אוכלוסיית בדיקה.
+		
+		על מנת לבצע תיקוף חיצוני והשוואה, שלושת המודלים המובילים לחיזוי CVD ייבחרו מהספרות וייבנו מחדש על גבי בסיס הנתונים של הכללית. המודלים יושוו הן בהרכב האוכלוסיה המקורי בו נבנו והן בהרכב האוכלוסיה בו אנו עתידים לדמות התערבות.
+		
+		סימולציית ההתערבות תבחן עקבה רטרוספקטיבית , ובאמצעות ידע קיים בנוגע להפחתת התמותה המיוחסת לשימוש בסטטינים ובאספירין, תדמה התוצאים ל-10 שנים  של עקבה זו  באם הקוים המנחים הקיימים היו מקויימים כלשונם, לפי המודלים הקיימים ולפי המודל החדש.
+		
+		
 		\subsection*{חשיבות}
-			מסגרת לחיזוי גנרי תאפשר בניית מודלים מתוקפים ובאיכות גבוהה לחיזוי מחלות שונות, ועצם תהליך בחירת המשתנים יכול שיאפשר תובנות ביולוגיות.
-
-			תיקוף חיצוני של מודלים לחיזוי מחלה קרדיווסקולרית, המצויים בשימוש רחב ומשולבים בקווים המנחים, הוא בעל חשיבות מכרעת\cite{Collins2015}.
-			
-			סימולציית ההתערבות תאפשר לנו לשפוט את האפקטיביות של התערבויות המבוססות על מודלים שכאלו. לדבר חשיבות מוגברת היות שהתערבויות אלה הופכות אפשריות יותר ויותר עם הופעתם של בסיסי נתונים גדולים המבוססים על תיקים ממוחשבים.
+		מסגרת לחיזוי גנרי תאפשר בניית מודלים מתוקפים ובאיכות גבוהה לחיזוי מחלות שונות, ועצם תהליך בחירת המשתנים יכול שיאפשר תובנות ביולוגיות.
+		
+		תיקוף חיצוני של מודלים לחיזוי מחלה קרדיווסקולרית, המצויים בשימוש רחב ומשולבים בקווים המנחים, הוא בעל חשיבות מכרעת\cite{Collins2015}.
+		
+			ביצוע והערכת ההתערבות המתוכננת יאפשר לנו לשפוט את היעילות של התערבויות שכאלה, להם חשיבות מיוחדות במניעת מחלות קרדיווסקולריות\cite{Riegel2017}, ואשר הופכות אפשריות יותר ויותר עם הזמינות הגוברת של תיקים רפואיים ממוחשבים.
 		
 	\end{hebrew}
 	
 	\section{Aim of the Thesis}
-	The main aim of this thesis is to design, implement and evaluate an algorithm to develop multivariate predictive models based on Clalit Health Services' (CHS) electronic health record based database.
+	The main aim of this thesis is to design, implement and evaluate an algorithm to develop multivariate predictive models based on Clalit Health Services' (CHS) electronic health record based database; to use it to generate a risk model for cardiovascular disease; to compare this model to existing risk models, externally validating them in the process; and to simulate an intervention on the Israeli population based on these risk models.
 	
 	The aforementioned goal will require three steps:
 	\begin{description}
 		
 		\item[Model Development] A modern and novel approach to develop risk models based on Electronic Health Record (EHR) data will be developed. The full details of this approach will be detailed below, under "Research Methodology", but briefly, it will require no preliminary domain expertise, instead utilizing modern methods to simultaneously choose variables and create the model based on them.
 		
-		\item[Model Evaluation] The above-mentioned approach will be used to construct two risk models: Cardiovascular Disease (CVD) 10-year prediction and 1-year mortality. The merits of these models will be tested by comparing them to leading existing models from the literature. This evaluation will comprise a comprehensive test of these models' performance in both their original population composition and in a shared population with the characteristics we intend to use in our intervention.
+		\item[Model Evaluation] The above-mentioned approach will be used to construct a risk model for 10-year prediction of Cardiovascular Disease (CVD). The merits of this model will be tested by comparing it to the leading existing models from the literature. This evaluation will comprise a comprehensive test of these models' performance in both their original population composition and in a shared population with the characteristics we intend to use in our intervention.
 		
-		\item[Simulated Intervention] The CVD model will be used to simulate an intervention based on a historic cohort of patients from the CHS' database. The true outcomes, the predicted outcomes based on existing models and the predicted outcomes based on our models will be compared.
+		\item[Simulated Intervention] The CVD models will be used to simulate an intervention based on a historic cohort of patients from the CHS' database. The true outcomes, the predicted outcomes based on existing models and the predicted outcomes based on our models will be compared.
 		
 		Based on these aims, we hypothesize that:
 		\begin{enumerate}
@@ -153,153 +152,150 @@
 		
 	\end{description}
 	
-	\section{@@Importance and Background@@}
+	\section{Importance and Background}
 	
 	We will survey the pertinent background for each step in turn, highlighting the gap in existing knowledge to which we seek to contribute.
 	
 		\subsection{Part I}
 		
-		\subsubsection{Methodology of Traditional Risk Models}
+			\subsubsection{Methodology of Traditional Risk Models}
 		
-		For traditional medical risk models, two design decisions are ubiquitous\cite{Weng2017}:
-		\begin{enumerate}
-			\item They are based on traditional biostatistical methodology such as generalized linear and cox models.
-			\item They rely heavily on the use of domain expertise to identify relevant risk factors.
-		\end{enumerate}
+			For traditional medical risk models, two design decisions are ubiquitous\cite{Weng2017}:
+			\begin{enumerate}
+				\item They are based on traditional biostatistical methodology such as generalized linear and cox models.
+				\item They rely heavily on the use of domain expertise to identify relevant risk factors.
+			\end{enumerate}
 		
-		Informally described, we could say that the model is tasked to estimate the relative weights of risk factors, themselves independently pre-identified by domain experts.
+			Informally described, we could say that the model is tasked to estimate the relative weights of risk factors, themselves independently pre-identified by domain experts.
 		
-		\subsubsection{Generalized Linear Models}
+			\subsubsection{Generalized Linear Models}
+			
+			Generalized linear models (GLMs) are parametric models that are generalizations of ordinary linear regression, allowing outcome variables to have non-normal error distributions\cite{Nelder1972}.
+			
+			While classic linear regression follows the form:
+			\begin{equation*}
+			E[Y] = x^t \beta
+			\end{equation*}
+			
+			GLMs have the form:
+			\begin{equation*}
+			E[Y] = g^{-1} (x^t \beta)
+			\end{equation*}
+			
+			With g being the link function connecting the linear predictor space with the outcome space.
+			
+			For example, logistic regression uses the logit function as the link, $ \mu = \frac{\exp (x^t \beta)}{1 + \exp (x^t \beta)} $, while linear regression uses the identity function.
+			
+			The model then uses a loss function, usually maximum likelihood, to estimate the coefficients of the model. Under certain assumptions, these coefficients can have epidemiological interpretations, such as the coefficients of logistic regression being interpreted as odds ratio of an exposure for a given outcome. The model can also be used for prediction, disregarding all such assumptions.
+			
+			\subsubsection{Cox Proportional Hazards}
+			
+			The cox model is a survival analysis model (that is, it uses a compound outcome of time-to-event data) that is semi-parametric. A baseline hazard ($ \lambda_0 $) is estimated non-parametrically from the data, while a parametric linear hazard model is estimated in parallel\cite{Cox1972}.
+			
+			The overall hazard model is thus $ \lambda(t) = \lambda_0(t) \cdot x^t \beta $. The hazard itself is a somewhat elusive term rooted in calculus, representing the probability of death at a certain infinitesimal time window assuming survival up to that point. Survival is then one minus the integral of the hazard over time.
+			
+			Similar to GLMs, the coefficients are estimated using a process of maximum likelihood (dubbed partial likelihood in the context of Cox regression), and under strict assumptions have the interpretation of hazard ratios, similar to odd ratios.
+			
+			The assumptions for cox regression warrant special mention. While the assumption of linearity is similar to GLMs, cox proportional hazards also assumes proportionality - that is, that the hazard ratio between risk factors remains constant over time. This is a very strong assumption that does not always hold. It should be mentioned that some models circumvent this assumption at the cost of complexity and loss of interpretability. Just as before, the model can also be used for prediction, disregarding all assumptions.
+			
+			\subsubsection{Parametric Vs. Non-Parametric Models}
+			Parametric models, such as those described above, summarize the data with a set of parameters of fixed size that is independent of the number of training examples. This has the advantage of simplicity, interpretability and speed, but also leads to biases in prediction if the "true" population model is different than the chosen model.
+			
+			Non-parametric models make no such assumptions about the structure of the target function they seek to learn. This requires far more data for accurate training, and does not allow interpretation of coefficients using terms such as odd ratios, but does afford more predictive accuracy when sufficient data exists\cite{Russell2002}.
+			
+			\subsubsection{The Rise of AI and Machine Learning}
 		
-		Generalized linear models (GLMs) are parametric models that are generalizations of ordinary linear regression, allowing outcome variables to have non-normal error distributions\cite{Nelder1972}.
+			In recent years the fields of machine and statistical learning have seen a tremendous rise\cite{Obermeyer2016}. this growth in machine learning, including predictive modeling, has occurred thanks to three main factors\cite{Shalev-Shwartz2014}:
+			\begin{itemize}
+				\item A large increase in the amount of accessible data.
+				\item The development of new algorithms and methods.
+				\item An increase in computation power.
+			\end{itemize} 
+			These new methods have several defining characteristics, including:
+			\begin{itemize}
+				\item The use of a wider range of algorithms, not limited to generalized linear models.
+				\item Less reliance on domain expertise, in essence allowing the algorithm to both find the main risk factors and to estimate their respective weights.
+				\item The need for larger sample sizes, to allow the more complex modeling to occur successfully.
+			\end{itemize}
+			To date, these methods have yet to gain wide-acceptance in medical practice\cite{Obermeyer2016,Deo2015}.
+			
+			\subsubsection{Black-Box Vs. White-Box Models}
+			While there are obstacles from many different domains to the integration of machine learning approaches in medicine: psychological, legal, regulatory and others, one overarching concern is the preeminence of black-box models in machine learning\cite{Price2015}.
+			
+			Broadly defined, black-box models are models whose results cannot be readily explained. For example, a logistic regression result can be fairly easily reasoned about: baseline risk was x\%, and a certain combination of variables increased the risk by y\% more. The same cannot be said for most models used in modern machine learning, including neural networks and tree-ensemble models. These models generate a result that is a complex non-linear function of their inputs, and one cannot easily explain why a specific patient got a risk of x\%, while another got y\%.
+			
+			Beyond the legal and psychological difficulty this creates (how does one explain, to oneself and others, a decision based on unclear reasoning?), it also introduces the possibility of discrimination. The algorithm could choose to optimize for one (majority) population, while neglecting other (minority) populations\cite{Hebert-Johnson2017}. This fascinating area of research falls under the more general notion of algorithmic fairness, more widely studied in other non-medical fields\cite{Corbett-Davies2017}, and is beyond the scope of this thesis.
+			
+			\subsubsection{Electronic Health Record based Observational Studies}
 		
-		While classic linear regression follows the form:
-		\begin{equation*}
-		E[Y] = x^t \beta
-		\end{equation*}
-		
-		GLMs have the form:
-		\begin{equation*}
-		E[Y] = g^{-1} (x^t \beta)
-		\end{equation*}
-		
-		With g being the link function connecting the linear predictor space with the outcome space.
-		
-		For example, logistic regression uses the logit function as the link, $ \mu = \frac{\exp (x^t \beta)}{1 + \exp (x^t \beta)} $, while linear regression uses the identity function.
-		
-		The model then uses a loss function, usually maximum likelihood, to estimate the coefficients of the model. Under certain assumptions, these coefficients can have epidemiological interpretations, such as the coefficients of logistic regression being interpreted as odds ratio of an exposure for a given outcome. The model can also be used for prediction, disregarding all such assumptions.
-		
-		\subsubsection{Cox Proportional Hazards}
-		
-		The cox model is a survival analysis model (that is, it uses a compound outcome of time-to-event data) that is semi-parametric. A baseline hazard ($ \lambda_0 $) is estimated non-parametrically from the data, while a parametric linear hazard model is estimated in parallel\cite{Cox1972}.
-		
-		The overall hazard model is thus $ \lambda(t) = \lambda_0(t) \cdot x^t \beta $. The hazard itself is a somewhat elusive term rooted in calculus, representing the probability of death at a certain infinitesimal time window assuming survival up to that point. Survival is then one minus the integral of the hazard over time.
-		
-		Similar to GLMs, the coefficients are estimated using a process of maximum likelihood (dubbed partial likelihood in the context of Cox regression), and under strict assumptions have the interpretation of hazard ratios, similar to odd ratios.
-		
-		The assumptions for cox regression warrant special mention. While the assumption of linearity is similar to GLMs, cox proportional hazards also assumes proportionality - that is, that the hazard ratio between risk factors remains constant over time. This is a very strong assumption that does not always hold. It should be mentioned that some models circumvent this assumption at the cost of complexity and loss of interpretability. Just as before, the model can also be used for prediction, disregarding all assumptions.
-		
-		\subsubsection{Parametric Vs. Non-Parametric Models}
-		Parametric models, such as those described above, summarize the data with a set of parameters of fixed size that is independent of the number of training examples. This has the advantage of simplicity, interpretability and speed, but also leads to biases in prediction if the "true" population model is different than the chosen model.
-		
-		Non-parametric models make no such assumptions about the structure of the target function they seek to learn. This requires far more data for accurate training, and does not allow interpretation of coefficients using terms such as odd ratios, but does afford more predictive accuracy when sufficient data exists\cite{Russell2002}.
-		
-		\subsubsection{The Rise of AI and Machine Learning}
-		
-		In recent years the fields of machine and statistical learning have seen a tremendous rise\cite{Obermeyer2016}. this growth in machine learning, including predictive modeling, has occurred thanks to three main factors\cite{Shalev-Shwartz2014}:
-		\begin{itemize}
-			\item A large increase in the amount of accessible data.
-			\item The development of new algorithms and methods.
-			\item An increase in computation power.
-		\end{itemize} 
-		These new methods have several defining characteristics, including:
-		\begin{itemize}
-			\item The use of a wider range of algorithms, not limited to generalized linear models.
-			\item Less reliance on domain expertise, in essence allowing the algorithm to both find the main risk factors and to estimate their respective weights.
-			\item The need for larger sample sizes, to allow the more complex modeling to occur successfully.
-		\end{itemize}
-		To date, these methods have yet to gain wide-acceptance in medical practice\cite{Obermeyer2016,Deo2015}.
-		
-		\subsubsection{Black-Box Vs. White-Box Models}
-		While there are obstacles from many different domains to the integration of machine learning approaches in medicine: psychological, legal, regulatory and others, one overarching concern is the preeminence of black-box models in machine learning\cite{Price2015}.
-		
-		Broadly defined, black-box models are models whose results cannot be readily explained. For example, a logistic regression result can be fairly easily reasoned about: baseline risk was x\%, and a certain combination of variables increased the risk by y\% more. The same cannot be said for most models used in modern machine learning, including neural networks and tree-ensemble models. These models generate a result that is a complex non-linear function of their inputs, and one cannot easily explain why a specific patient got a risk of x\%, while another got y\%.
-		
-		Beyond the legal and psychological difficulty this creates (how does one explain, to oneself and others, a decision based on unclear reasoning?), it also introduces the possibility of discrimination. The algorithm could choose to optimize for one (majority) population, while neglecting other (minority) populations\cite{Hebert-Johnson2017}. This fascinating area of research falls under the more general notion of algorithmic fairness, more widely studied in other non-medical fields\cite{Corbett-Davies2017}, and is beyond the scope of this thesis.
-		
-		\subsubsection{Electronic Health Record based Observational Studies}
-		
-		Most medical risk models in wide-use were developed based on specialized cohort studies\cite{Goldstein2016}. This has the known advantages of cohort studies, most notably the accurate definition of exposures and outcomes, but is expensive and time-consuming, and by definition only allows inclusion of risk factors that were decided on in advance and measured as part of the study. On the other hand, with the larger availability of EHR data, risk models developed on such data have risen in amount. These models have the known disadvantages of EHR data (first of which are the non-standardized definitions), but offer a wealth of information that in certain cases, including the case in Israel\cite{Lovis2015}, encompasses the full extent of a patient's encounters with the health system\cite{Goldstein2017}.
-		
-		\subsubsection{The Gap and our Thesis}
-		
-		We suggest using the unique availability of widely encompassing EHR data with large historic depth, coupled with modern statistical learning methods, to develop a generic method for generation of risk models based on the Clalit's EHR.
-		
-		This method will make use of most available EHR data, and will require no pre-specification of risk factors, instead allowing the algorithm to ascertain the relative importance of the different factors by itself. Not only will this allow the creation of accurate risk models, it will also provide a way to automatically identify associations that exist in the EHR and could present novel risk factors and biological pathways.
-		
-		We will then use this method to develop 2 specific models to predict CVD and mortality. As this model will make use of large portions of the EHR data and will be purposely built on the Clalit's population, it is likely to perform well.
+			Most medical risk models in wide-use were developed based on specialized cohort studies\cite{Goldstein2016}. This has the known advantages of cohort studies, most notably the accurate definition of exposures and outcomes, but is expensive and time-consuming, and by definition only allows inclusion of risk factors that were decided on in advance and measured as part of the study. On the other hand, with the larger availability of EHR data, risk models developed on such data have risen in amount. These models have the known disadvantages of EHR data (first of which are the non-standardized definitions), but offer a wealth of information that in certain cases, including the case in Israel\cite{Lovis2015}, encompasses the full extent of a patient's encounters with the health system\cite{Goldstein2017}.
+			
+			\subsubsection{The Gap and our Thesis}
+			
+			We suggest using the unique availability of widely encompassing EHR data with large historic depth, coupled with modern statistical learning methods, to develop a generic method for generation of risk models based on the Clalit's EHR.
+			
+			This method will make use of most available EHR data, and will require no pre-specification of risk factors, instead allowing the algorithm to ascertain the relative importance of the different factors by itself. Not only will this allow the creation of accurate risk models, it will also provide a way to automatically identify associations that exist in the EHR and could represent novel risk factors and biological pathways.
+			
+			We will then use this method to develop a specific model to predict cardiovascular disease. As this model will make use of large portions of the EHR data and will be purposely built on the Clalit's population, it is likely to perform well.
 		
 		\subsection{Part II}
 		
-			\subsubsection{Epidemiology of Cardiovascular Disease}
-			
-			In its usual definition, cardiovascular disease (CVD) includes several disease categories\cite{WHO2017}:
+		\subsubsection{Epidemiology of Cardiovascular Disease and Stroke}
+		
+		In its usual definition, cardiovascular disease (CVD) includes several disease categories\cite{WHO2017}:
+		\begin{enumerate}
+			\item Coronary Heart Disease
 			\begin{enumerate}
-				\item Coronary Heart Disease
-				\begin{enumerate}
-					\item Myocardial Infarction
-					\item Angina Pectoris
-					\item Heart Failure
-					\item Coronary death
-				\end{enumerate}
-				\item Cerebrovascular Disease
-				\begin{enumerate}
-					\item Stroke (Thrombotic and Hemorrhagic)
-					\item Transient Ischemic Attack
-				\end{enumerate}
-				\item Peripheral Artery Disease
-				\item Aortic Disease
-				\begin{enumerate}
-					\item Atherosclerosis
-					\item Aneurysm
-				\end{enumerate}
-				\item Rheumatic Heart Disease
-				\item Congenital Heart Disease
-				\item Venous Thromboembolism
-				\begin{enumerate}
-					\item Pulmonary Embolism
-					\item Deep Vein Thrombosis
-				\end{enumerate}
+				\item Myocardial Infarction
+				\item Angina Pectoris
+				\item Heart Failure
+				\item Coronary death
 			\end{enumerate}
+			\item Cerebrovascular Disease
+			\begin{enumerate}
+				\item Stroke (Thrombotic and Hemorrhagic)
+				\item Transient Ischemic Attack
+			\end{enumerate}
+			\item Peripheral Artery Disease
+			\item Aortic Disease
+			\begin{enumerate}
+				\item Atherosclerosis
+				\item Aneurysm
+			\end{enumerate}
+			\item Rheumatic Heart Disease
+			\item Congenital Heart Disease
+			\item Venous Thromboembolism
+			\begin{enumerate}
+				\item Pulmonary Embolism
+				\item Deep Vein Thrombosis
+			\end{enumerate}
+		\end{enumerate}
 		
-			CVD is very common. Lifetime risk for people aged 30 with no prior cardiovascular disease approaches 50 percent\cite{Rapsomaniki2014}, with coronary heart disease being the most common specific diagnosis\cite{Benjamin2017}.
-	
-			While the rates of cardiovascular disease in general have declined in developed countries over the last 30 years\cite{Koton2014,Vangen-Loenne2017}, they remain significant public health problems, being the second most common cause of mortality and third most common cause of disability worldwide\cite{Lozano2012}. The statistics in Israel are similar\cite{ICDC2017}.
-			
-			Among diseases with such a significant public health impact, cardiovascular disease stands out in two ways. First, its risk factors are well understood, with 90\% of its population-attributable-risk caused by nine risk factors. It's also a very preventable disease, as these risk factors are mostly preventable\cite{Yusuf2004,ODonnell2016}: Smoking, dyslipidemia, hypertension, diabetes, etc.
-			
-			\subsubsection{History of Multivariate Risk Models}
+		CVD is very common. Lifetime risk for people aged 30 with no prior cardiovascular disease approaches 50 percent\cite{Rapsomaniki2014}, with coronary heart disease being the most common specific diagnosis\cite{Benjamin2017}.
 		
-			These unique characteristics have made CVD the main outcome in risk models, when such models began to enter clinical practice in the 1990s\cite{Wilson1998,NationalCholesterolEducationProgramNCEPExpertPanelonDetection2002,Conroy2003,Hippisley-Cox2007,DAgostino2008,Hippisley-Cox2008,Goff2014}. Still the most notable of said risk models is the Framingham risk model family, developed on a US population in Massachusetts, Boston\cite{Wilson1998}, and the SCORE risk model, developed in 2003 on a European population\cite{Conroy2003}.
-			
-			Perhaps more important that their mere existence, is that these models have made their way into widely-accepted international guidelines, with their use mandated in routine clinical care. Two examples we'll cite are the use of these risk models in deciding on Statin therapy\cite{Goff2014} and their use in deciding on anti-platelet therapy\cite{Bibbins-Domingo2016}, both for primary prevention of CVD.
-			
-			While CVD prediction was the bedrock for clinical risk models, they have since spread to encompass a large variety of diseases categories\cite{Kanis2008,Kansagara2011}, and have found use not only in prediction, but also in diagnosis\cite{Usher-Smith2016}. This increasingly important place taken by risk models has brought about the publication of guidelines designed to regulate and improve their creation\cite{Collins2015}. As estimating the probability for existing and future disease is a significant portion of the clinical process\cite{Moons2009}, and as this task can in large parts be automated, it seems likely that risk models will gain an increasingly important place in the medical practice.
-			
-			\subsubsection{Limitations of Risk Models}
+		While the rates of cardiovascular disease have declined in developed countries over the last 30 years\cite{Koton2014,Vangen-Loenne2017}, they remain significant public health problems, being the second most common cause of mortality and third most common cause of disability worldwide\cite{Lozano2012}. The statistics in Israel are similar\cite{ICDC2017}.
 		
-			Naturally, risk models are developed on a specific population, whose data is available to the researchers developing the model. As patients differ in a variety of ways (both genetic and environmental), and even such basic things as lab methods and disease definitions differ in different areas, models tend to function better when used on the population on which they were developed\cite{DAgostino2001,Bastuji-Garin2002}.
-			
-			Recent models have tried to deal with this problem by including more ethnically varied populations\cite{DeFilippis2015} or recalibrating the model for each new population\cite{Kanis2008}, but such efforts are limited to specific risk models, and even then have only been partially successful\cite{Dagan2017}. As one specific Israeli example, this phenomenon was observed in a recent publication that illustrated significant mis-calibration for osteoporosis prediction models that are in wide clinical use and incorporated into guidelines\cite{Dagan2017}. As the probabilities generated by the model eventually help determine the proper interventions to perform, according to respective guidelines, such mis-calibration could invalidate the use of the model, making external validation an important endeavor\cite{Moons2012}.
-			
-			\subsubsection{The Gap and our Thesis}
+		Among diseases with such a significant public health impact, cardiovascular disease stands out in two ways. First, its risk factors are well understood, with 90\% of its population-attributable-risk caused by nine risk factors. It's also a very preventable disease, as these risk factors are mostly preventable\cite{Yusuf2004,ODonnell2016}: Smoking, dyslipidemia, hypertension, diabetes, etc.
 		
-			Though the risk scores are currently used in common medical practice, external validation of international CVD risk models for the Israeli population has yet to be performed, and recommendations on which model to use are based on expert opinion\cite{Bitzur2015}.
-			
-			We will, as part of our effort, externally validate widely used risk models for the prediction of CVD risk on the Israeli population. This could help decide which model has the best performance, and if all such models' performance is deemed unsatisfactory, this will have significant consequences for guidelines and practices based on said models.
-			
-			We will then compare said models to our own internally developed model.
-			
+		\subsubsection{History of Multivariate Risk Models}
+		
+		These unique characteristics have made CVD the main outcome in risk models, when such models began to enter clinical practice in the 1990s\cite{Wilson1998,NationalCholesterolEducationProgramNCEPExpertPanelonDetection2002,Conroy2003,Hippisley-Cox2007,DAgostino2008,Hippisley-Cox2008,Goff2014}. Still the most notable of said risk models is the Framingham risk model family, developed on a US population in Massachusetts, Boston\cite{Wilson1998}, and the SCORE risk model, developed in 2003 on a European population\cite{Conroy2003}.
+		
+		Perhaps more important that their mere existence, is that these models have made their way into widely-accepted international guidelines, with their use mandated in routine clinical care. Two examples we'll cite are the use of these risk models in deciding on Statin therapy\cite{Goff2014} and their use in deciding on anti-platelet therapy\cite{Bibbins-Domingo2016}, both for primary prevention of CVD.
+		
+		While CVD prediction was the bedrock for clinical risk models, they have since spread to encompass a large variety of diseases categories\cite{Kanis2008,Kansagara2011}, and have found use not only in prediction, but also in diagnosis\cite{Usher-Smith2016}. This increasingly important place taken by risk models has brought about the publication of guidelines designed to regulate and improve their creation\cite{Collins2015}. As estimating the probability for existing and future disease is a significant portion of the clinical process\cite{Moons2009}, and as this task can in large parts be automated, it seems likely that risk models will gain an increasingly important place in the medical practice.
+		
+		\subsubsection{Limitations of Risk Models}
+		
+		Naturally, risk models are developed on a specific population, whose data is available to the researchers developing the model. As patients differ in a variety of ways (both genetic and environmental), and even such basic things as lab methods and disease definitions differ in different areas, models tend to function better when used on the population on which they were developed\cite{DAgostino2001,Bastuji-Garin2002}.
+		
+		Recent models have tried to deal with this problem by including more ethnically varied populations\cite{DeFilippis2015} or recalibrating the model for each new population\cite{Kanis2008}, but such efforts are limited to specific risk models, and even then have only been partially successful\cite{Dagan2017}. As one specific Israeli example, this phenomenon was observed in a recent publication that illustrated significant mis-calibration for osteoporosis prediction models that are in wide clinical use and incorporated into guidelines\cite{Dagan2017}. As the probabilities generated by the model eventually help determine the proper interventions to perform, according to respective guidelines, such mis-calibration could invalidate the use of the model, making external validation an important endeavor\cite{Moons2012}.
+		
+		\subsubsection{The Gap and our Thesis}
+		
+		Though the risk scores are currently used in common medical practice, external validation of international CVD risk models for the Israeli population has yet to be performed, and recommendations on which model to use are based on expert opinion\cite{Bitzur2015}.
+		
+		We suggest, as a first effort, to externally validate widely used risk models for the prediction of CVD risk on the Israeli population. This could help decide which model has the best performance, and if all such models' performance is deemed unsatisfactory, this will have significant consequences for guidelines and practices based on said models. These models will then be compared to the internally developed model in part I.
 		
 		\subsection{Part III}
 		
@@ -323,28 +319,13 @@
 			
 			It should be said that this entire time consuming act is expected to occur in an already time-strained primary care encounter\cite{Konrad2010}.
 			
-			\subsubsection{Empowering Patients to Control Risk Factors}
-			This physician-led approach to health maintenance is by no means the only one. Complementary to it is the idea of self-care, the enlightening definition for which we'll copy from the WHO verbatim: \textbf{"Self-care in health refers to the activities individuals, families and communities undertake with the intention of enhancing health, preventing disease, limiting illness and restoring health. These activities are derived from knowledge and skills from the pool of both professional and lay experience. They are undertaken by lay people on their own behalf, either separately or in participative collaboration with professionals"}\cite{Organization1984}.
-			
-			These ideas are of particular importance in the field of CVD management and prevention as\cite{Riegel2017}:
-			\begin{itemize}
-				\item CVD is very prevalent, and management of its many risk factors, signs and symptoms could "drown" modern primary care.
-				\item CVD has many risk factors that can be addressed independently by patients with little-to-no physician involvement (e.g. by physical activity, proper diet, smoking cessation, etc.)
-			\end{itemize}
-		
-			\subsubsection{Bridging Self-Care and Risk Modeling}
-			
-			Naturally, knowledge of one's health status is paramount to one's management of it. Such plans as the American Heart Association's "know your numbers" are geared towards encouraging patients to question their family physicians regarding several basic clinical markers and lab results\cite{Riegel2017}. While this approach also requires the direct involvement of the treating physician, this requirement is brought about by the structure of the American health care system and availability of information, and is not inherent in the problem.
-			
-			Whether such interventions are effective is an open question. While the American health care system does not allow easy appraising of the effectiveness of interventions such as "know your numbers", other health care systems do. A study conducted in Australia found that patients advised regarding their own hypertension in incidental pharmacy visits, had improved knowledge of hypertension management and sought health-care more often\cite{Cadilhac2015}.
-			
 			\subsubsection{The Gap and our Thesis}
 			
-			We suggest that the structure of the Israeli health care system is ideal for performing and evaluating an intervention based on promoting CVD prevention self-care.
+			We suggest that the structure of the Israeli health care system is ideal for performing and evaluating an intervention based EHR based prediction of cardiovascular risk.
 			
-			In this thesis, the risk model will be presented directly to the patient, with the different covariates extracted seamlessly from the patient's electronic health record. The presentation will include visual queues regarding the normal range of risk factors and an ability to view the effect of altering specific risk factors.
+			Instead of the usual methodology, by which patients are identified as high-risk when they enter the physician's office, usually for other concerns and in severe time constraints, we will predict the risk at once for all patients in the database.
 			
-			It will also include personalized recommendations for the reduction of risk based on the patient's characteristics, suggesting self-care options when such options exist, and recommending physician contact when such contact is warranted.
+			We will then use this  prediction to simulate an intervention by which all patients with a sufficient risk are  prescribed statins and aspirin, and the relative yield of this intervention is measured and compared to the actual outcomes observed and among the different models.
 	
 	\section{The Novelty of the Thesis}
 	
@@ -352,15 +333,15 @@
 	
 	\begin{itemize}
 		
-		\item We propose that the methodology by which the model will be developed, and specifically its wide applicability, requiring little human intervention and pre-processing, offers significant advantages. The ability to identify risk factors and construct models for a wide variety of pathologies, some of which "unmapped" in regard to their primary risk factors, offers a promise of better understanding and more focused interventions to prevent these diseases.
-
 		\item External validation of existing risk models is of utmost importance\cite{Moons2012}, as these models are used constantly as part of existing guidelines (e.g. the American Heart Association's pooled risk model and Statin treatment\cite{Goff2014}, FRAX and Osteoporosis treatment\cite{Kanis2008}). This is especially true, as previous external validation studies have at times documented significant mis-calibration\cite{Bastuji-Garin2002,Dagan2017}, that would make treatment decisions based on the models problematic.
 		
-		\item Population wide EHR-data based interventions using predictive risk models have yet to be implemented, to the best of our information. Illustrating the advantages of such interventions, specifically with the rising availability of EHR data, is of significant importance.
+		\item While development of a new risk model for the prediction of stroke in the Israeli population is important and novel by itself, we propose that the methodology by which the model will be developed, and specifically its wide applicability, requiring little human intervention and pre-processing, is by itself even more meaningful. The ability to identify risk factors and construct models for a wide variety of pathologies, some of which "unmapped" in regard to their primary risk factors, offers a promise of better understanding and more focused interventions to prevent these diseases.
+		
+		\item Risk-model based interventions have usually taken one of two forms: Either physician guidelines based on the risk score(e.g. \cite{Hippisley-Cox2008,DAgostino2008}); or the simple presentation of the risk model to patients, allowing them to calculate their own risk, assuming they know and have measured all their covariates(e.g. \cite{Parmar2015}). We propose a third alternative, by which a risk model is shown to the patients directly, but is "wired" into the patient's electronic health record, presenting the patient his risk based on his recorded measurements. This model is novel, and to the best of our information no previous such attempts have been made and formally evaluated. It is also particularly useful for the Israeli population, owing to the depth of EHR data in Israel\cite{Lovis2015}.
 		
 	\end{itemize}
 	
-	\section{@@Published Work@@}
+	\section{Published Work}
 	
 	The epidemiological characteristics of CVD in general and of stroke in particular are well understood\cite{Koton2014,Vangen-Loenne2017}, and the dominant risk factors in the population well mapped\cite{Yusuf2004,ODonnell2016}. This is true both in the developed and in the developing world\cite{Lozano2012}. It is also true in Israel\cite{ICDC2017}.
 	
@@ -392,9 +373,31 @@
 	\subsection{Planning}
 	
 		\subsubsection{Part I}
-		Our models will be developed on the following population.
+		We will externally validate four models that encompass a large and representative sample of existing models, two designed to assess risk for cardiovascular disease (CVD) and two designed to assess risk specifically for stroke.
 		
-		CVD Model:
+		The models with their respective populations and outcomes are:
+		\begin{table}[H]
+		\begin{tabular}{|p{4cm}|p{1cm}|p{3cm}|p{4cm}|}
+			\hline
+			Name & Age & Model & Outcome \\
+			\hline
+			American Heart Association 2013 pooled risk model\cite{Goff2014} & 40-79 & Cox proportional hazards & Myocardial infarction, coronary heart disease death, stroke and stroke death \\
+			\hline
+			Framingham general CVD risk score\cite{DAgostino2008} & 30-74 & Cox proportional hazards & CHD death, nonfatal MI, coronary insufficiency, stroke (ischemic or hemorrhagic), TIA, peripheral vascular disease, heart failure \\
+			\hline
+			Modified Framingham Stroke Risk Score\cite{Wolf1991,DAgostino1994} & 55-84 & Cox proportional hazards & All forms of stroke (transient ischemic event, thrombotic, hemorrhagic and subarachnoid hemorrhage) \\
+			\hline
+			QStroke\cite{Hippisley-Cox2013} & 25-84 & Cox proportional hazards & Transient ischemic event or thrombotic stroke \\
+			\hline
+		\end{tabular}
+		\caption{Models to be Externally Validated}
+		\end{table}
+	
+		Each model uses its own variables, see appendix A for full model variable lists.
+		
+		\subsubsection{Part II}
+		Our model will be developed on the following population.
+		
 		Inclusion:
 		\begin{itemize}
 			\item Ages 30-90.
@@ -403,37 +406,17 @@
 		\end{itemize}
 		Exclusion:
 		\begin{itemize}
-			\item Past CVD event (Stroke, Myocardial Infarction, Peripheral Artery Disease).
+			\item Past stroke event.
 		\end{itemize}
-		
+	
 		As is the standard for cardiovascular disease risk models, our model will predict disease for 10 years after the index date. The index date will be set at 1/6/2007, and follow up will persist until 1/6/2017, as illustrated in the following design diagram.
 		
 		\begin{figure}[h]
 			\centering
-			\includegraphics[width=\textwidth]{prelim-results/Panpredictor/timeline1.png}
+			\includegraphics[width=\textwidth]{prelim-results/Panpredictor/timeline.png}
 			\caption{Study Design Timeline}
 		\end{figure}
 	
-		Mortality Model:
-			Inclusion:
-		\begin{itemize}
-			\item Ages 50-90.
-			\item At least 1 year of continuous membership in the Clalit prior to the index date.
-			\item Continuous membership until the study end date or until death.
-		\end{itemize}
-		Exclusion:
-		\begin{itemize}
-			\item None.
-		\end{itemize}
-		
-		Our model will predict all-cause mortality for 1 year after the index date. The index date will be set at 1/6/2016, and follow up will persist until 1/6/2017, as illustrated in the following design diagram.
-		
-		\begin{figure}[h]
-			\centering
-			\includegraphics[width=\textwidth]{prelim-results/Panpredictor/timeline1.png}
-			\caption{Study Design Timeline}
-		\end{figure}
-		
 		Logically, model construction will encompass two steps: Using a sparsity inducing model to select among hundreds of variables, then building a model using the selected variables. In effect, algorithms will be chosen that perform both stages at once. See more details in the modeling section ahead.
 		
 		The covariates supplied to the first step will be: 
@@ -446,34 +429,51 @@
 		\end{itemize}
 		A full list can be found in appendix C.
 	
-		\subsubsection{Part II}
-		We will compare our models to four other models that encompass a large and representative sample of existing models, two designed to assess risk for cardiovascular disease (CVD) and two designed to assess risk  for mortality.
-		
-		The models with their respective populations and outcomes are:
-		\begin{table}[H]
-		\begin{tabular}{|p{4cm}|p{1cm}|p{3cm}|p{4cm}|}
-			\hline
-			Name & Age & Model & Outcome \\
-			\hline
-			American Heart Association 2013 pooled risk model\cite{Goff2014} & 40-79 & Cox proportional hazards & Myocardial infarction, coronary heart disease death, stroke and stroke death \\
-			\hline
-			Framingham general CVD risk score\cite{DAgostino2008} & 30-74 & Cox proportional hazards & CHD death, nonfatal MI, coronary insufficiency, stroke (ischemic or hemorrhagic), TIA, peripheral vascular disease, heart failure \\
-			\hline
-			Charlson Score\cite{Charlson1987} & 55-84 & Cox proportional hazards & All-cause mortality \\
-			\hline
-			QMortality\cite{Hippisley-Cox2017} & 65-100 & Cox proportional hazards & All-cause mortality \\
-			\hline
-		\end{tabular}
-		\caption{Models to be Externally Validated}
-		\end{table}
-	
-		Each model uses its own variables, see appendix A for full model variable lists.
-		
 		\subsubsection{Part III}
-		The population for the application simulation will include all members of the Clalit's insured population as of 1/6/2007 that were members of the test set for the CVD prediction model. Inclusion and exclusion criteria will be the same as for the model (as mentioned above). The patients will be followed up for 10 years and their CVD outcomes recorded (as per the CVD outcomes in appendix A).
+		The population for the application evaluation will include all members of the Clalit's insured population who will use the application from its launch date onwards. As the application will not display for patients with a prior stroke event, this exclusion will occur implicitly.
+		
+		This will be a retrospective cohort design. The population will include all users of the application, with each user matched by age, sex and altogether 10-year risk with controls. The index date for each patient will be the date of his first recorded use of the application. The index date for each matched control will be the index date of his matched case. We'll collect covariates in the 3 years before the index date and outcomes in the 6 months following.
+		
+		The following variables will be collected and used for adjustment:
+		\begin{enumerate}
+			\item Socioeconomic status
+			\item Sector (arab/jew)
+			\item Charlson score
+			\item Smoking status
+			\item Systolic and diastolic blood pressure
+			\item LDL
+			\item Weight
+			\item BMI
+			\item Drug adherence, as measured by the MPR and PDC indices\cite{Lam2015}
+		\end{enumerate}
+	
+		We'll conduct a power analysis to calculate the required sample size using R's pwr package\cite{Champely2017}. Assumptions:
+		\begin{itemize}
+			\item Model is a logistic regression model.
+			\item Expected effect size is small, which for logistic regression is $ R^2 = 0.02 $\cite{Cohen1988}.
+			\item We'll have 11 confounders adjusted for, as just specified (the list plus use of the calculator, which is the main exposure).
+			\item Requested power is 0.8, as usual.
+			\item Significance level is 0.05.
+		\end{itemize}
+	
+		We get a result of $ n = 850 $. As we assume we'll have at least 500 calculator users, we could settle for a 1-to-1 case-control ratio, but as controls are plentiful and the process automated, we'll opt for a 1-to-5 ratio.
+	
+		Outcomes will be:
+		\begin{enumerate}
+			\item Change in overall risk.
+			\item Change in the four alterable risk factors:
+			\begin{enumerate}
+				\item Smoking status
+				\item Weight
+				\item LDL
+				\item Systolic and diastolic blood pressure
+			\end{enumerate}
+			\item Change in drug adherence.
+			\item Change in healthcare utilization (overall cost, number of physician visits and number of drug dispensings).
+		\end{enumerate}
 	
 	\subsection{Data Extraction}
-	The general population for all different parts of the study is the population of patients insured by Clalit Health Services (CHS). CHS is the largest sick fund in Israel, with an insured population of 4.4 active members. Clalit is both an insurer and a provider, directly providing primary care, specialist care, lab, imaging and pharamacy services. Additionally, clalit directly operates several large hospitals. The “attrition rate” (the percentage of patients leaving the sick fund each year) stands on a low 2\%, allowing long term follow-up of patients.
+	The general population for all different parts of the study is the population of patients insured by Clalit Health Services (CHS). CHS is the largest sick fund in Israel, with an insured population of 4.4 active members. Clalit is both an insurer and a provider, directly providing primary care, specialist care, lab, imaging and pharamacy services. Additionally, clalit directly operates several large hospitals. The “attrition rate” (the percentage of patients leaving the sick fund each year) stands on a low 1\%, allowing long term follow-up of patients.
 	
 	The data will be collected using the CHS's electronic health record (EHR). CHS has maintained a comprehensive electronic health record since the year 2000, and has continued to improve it with time. This EHR contains, among others, demographic data, medical data (including clinical covariates, lab results, imaging studies, etc.) and claims data for both services rendered as part of the mandatory health insurance and for services rendered as part of the additive insurance (“Mashlim”). On top of the internal Clalit data, the database also contains external information such as the ministry of interior's causes of death listings and the ministry of health's cancer registry. This comprehensive database, combining both medical and claims data, covers large facets of a person's health.
 	
@@ -489,28 +489,74 @@
 		\item Drug dispensings will be evaluated using the dedicated pharmacy database. Actual dispensings will be counted (as opposed to prescriptions). Drug adherence will be calculated using drug prescriptions and drug dispensings, with PDC and MPR as the actual statistics\cite{Lam2015}.
 		\item Health care utilization will be calculated by simply counting and summing the patient's encounters and actual cost, both in the community and in hospitals.
 	\end{itemize}
+
+	Information regarding patient's use of the calculator application will be collected directly from that application's database, which includes patients' information and access dates.
 	
-	In part II, where external validation of international models is to take part, special care will be required to handle variables that are not perfect "fits" for the Clalit's database, for example:
+	In part I, where external validation of international models is to take part, special care will be required to handle variables that are not perfect "fits" for the Clalit's database, for example:
 	\begin{itemize}
 		\item UK socioeconomic status ("Townsend Deprivation Score"), which has different levels and is directed in the opposite direction (more means lower SES) than the Clalit's socioeconomic status.
 		\item Diagnoses, that are collected based on dedicated physician visits in cohort studies and on ICD codes in EHR based studies, will be collected using a mixture of ICD codes, free text validation and validation using lab measurements (e.g glucose for diabetes) and drug dispensings (e.g. diuretics, ACE inhibitors, beta blockers and calcium channel blockers for hypertension).
 	\end{itemize}
 
-	CVD definitions, that are used as the outcome in the different models, will be based on those defined by a consensus committee organized by the CRI and headed by a cardiology and neurology specialists. These definitions similar to those used outside the CRI, such as by the Israeli acute stroke registry\cite{ICDC2017} (active within the ICDC).
-	
+	Stroke definitions, that are used as the outcome in the different models, will be based on those defined by a consensus committee organized by the CRI and headed by a stroke specialist. These definitions are very similar to those of the Israeli acute stroke registry\cite{ICDC2017} (active within the ICDC).
 	
 	\subsection{Descriptive Statistics}
 	The specific population for each of the four models will be described in a dedicated population table ("Table 1") with appropriate statistics for each variable: proportions for categorical variables, means and standard deviations for continuous variables.
 	
-	The population to be used for comparing the external models to the internal model will also be described in a population table. This table will include separate columns for the train and test populations (see ahead for modeling details), with the same appropriate statistics for each variable. Statistical tests will be used to compare these populations for differences in baseline variables that could affect model generalizability. The statistical tests to be used are Student's t-test for continuous variables and the Chi square goodness-of-fit test for categorical variables, once the basic assumptions (e.g. normality) are tested.
+	The common population to be used for comparing the four external models and to construct the internal model will also be described in a population table. This table will include separate columns for the train and test populations (see ahead for modeling details), with the same appropriate statistics for each variable. Statistical tests will be used to compare these populations for differences in baseline variables that could affect model generalizability. The statistical tests to be used are Student's t-test for continuous variables and the Chi square goodness-of-fit test for categorical variables, once the basic assumptions (e.g. normality) are tested.
+	
+	Lastly, the population in part III will also be displayed in a dedicated population table that will include columns for cases and controls. The same statistics and statistical tests as above will be used.
+	
+	We will present basic descriptive graphs to visualize the relation between certain variables and the outcomes. For the internal predictive model in part II, this will obviously only be done using the training population, so as to avoid so-called "data leaks".
 	
 	Missing data will be multiply imputed using chained equations. Specifically, continuous variables will be imputed using predictive mean matching, while categorical variables will utilize logistic regression\cite{Buuren2011}. Five datasets will be imputed, with the results combined as per Rubin's law\cite{Rubin1987}.
 	
 	\subsection{Modeling and Inferential Statistics}
 	
 		\subsubsection{Part I}
+
+		All models will be evaluated twice:
+		\begin{enumerate}
+			\item Once on a population that exactly mirrors the population they were originally defined on.
+			\item Once on a common shared population that represents the population for which we intend to use the model in our thesis.
+		\end{enumerate}
+		This design is similar to previously published work\cite{Dagan2017}.
 		
-		To develop the new models we will create a generic framework capable of generating models for any disease, given a fitting definition of the outcome.
+		The first phase will employ the full population matching the model's inclusion and exclusion criteria, so as to mirror their development population as much as possible.
+		
+		For the second phase we'll use only the inclusion and exclusion criteria detailed above. This will be a common, shared population so as to allow comparison of model's performance on a joint dataset.
+		
+		The population will be separated into three sets for the sake of model development: Train, Validation and Test in a 72\%/8\%/20\% ratio. The training and validation sets will be discussed in subsection "part II" ahead. The test set will be used for comparing model's performance.
+		
+		The following performance statistics will be computed and reported for each model\cite{Steyerberg2008,FrankE.Harrell2015}:
+		
+		\begin{itemize}
+			\item Area under the receiver operating characteristics (AUROC) curve, or c-statistic, as a measure of discrimination.
+			\item Calibration slope as a measure of calibration.
+			\item Brier score, as a combined measure of prediction accuracy.
+			\item Sensitivity, Specificity, PPV and NPV for the 7.5\% and 10\% risk threshold. These thresholds are chosen for their importance in existing guidelines\cite{Goff2014,Bibbins-Domingo2016}.
+		\end{itemize}
+		
+		To calculate the risk scores, the exact coefficients as published by the model's authors will be used. If dedicated software is available, it will be used instead.
+		
+		While the risk scores from the stroke models will be used as is, we will perform linear recalibration of the CVD models, as using their results as-is to predict stroke will necessarily incur mis-calibration due to "over-prediction". This recalibration will be done using the framework suggested by Van Houwlingen et al\cite{Houwelingen2000}. Specifically, the model's linear predictor will be fit again as a sole predictor in a logistic regression model and the ensuing slope and intercept recorded. These will then be used to adjust all model predictions.
+	
+		Mathematically:
+		
+		\begin{equation*}
+		\forall_i \text{LP}_i = \sum_{j=1}^{p}\beta_jx_j
+		\end{equation*}
+		\begin{equation*}
+		\hat{y}_i = \gamma \text{LP}_i + \delta
+		\end{equation*}
+		
+		Where $ LP_i $ is the linear predictor, $ \beta_{ij} $ is the coefficient for covariate j in patient i, $ x_{ij} $ is the covariate j in patient i, $ \hat{y} $ is the recalibrated prediction, for which $ \gamma $ is the slope and $ \delta $ the intercept.
+		
+		Or in words: We take the linear predictor from the original model, but allow it a new slope and intercept, thus preserving the relative importance of each covariate in the model, with the freedom to reset the global risk.
+		
+		\subsubsection{Part II}
+		
+		To develop the new model, we will create a generic framework capable of generating models for any disease, given a fitting definition of the outcome.
 		
 		The framework will serve two consecutive tasks. The first is to choose the relevant covariates from the long list of candidate covariates supplied to it. The second is to actually build the model.
 		
@@ -539,74 +585,43 @@
 		
 		Random forest is also an ensemble method employing decision trees as the weak learners. It strives to induce variance among the trees by using bootstrapping to select the training set for each tree, and only using a randomly selected subset of features at each split in the tree.
 		
-		Both gradient boosting and random forest induce sparsity by deciding on the important features at each split in each tree. The rules for these decisions are themselves parameters to the models, but all generally employ a version of Claude Shannon's information entropy\cite{Shannon1948}:
+		Both gradient boosting and random forest induce sparsity by deciding on the important features at each split in each tree. The rules for these decisions are themselves parameters to the models, but all generally employ a version of Claude Shannon's information entropy:
 		
 		For a given variable x, the entropy is defined as $ H(x) = -\sum_{i=1}^{n} P(x_i) \log P(x_i)$. This entropy is maximized when the "doubt" about the value of a variable is maximal, and the different tree models strive to minimize it by choosing maximally informative variables for each split.
 		
 		Hyper-parameter tuning, per each model's hyper-parameter lists, will be conducted on the validation set using random search\cite{Bergstra2012}. The best performing model with regard to area under the ROC curve will be selected.
 		
+		The model as produced by the sparsity inducing algorithm will be compared to the existing models examined in phase I using the above mentioned performance measures. For the sake of demonstrating clinical utility, we will also compare the best model from phase I to our model for net reclassification improvement\cite{Pencina2008} and decision curves\cite{Vickers2016}.
+		
 		We will include a learning curve for our model so as to demonstrate lack of over-fitting.
-	
-		\subsubsection{Part I}
-
-		All externally validated models will be evaluated twice:
-		\begin{enumerate}
-			\item Once on a population that exactly mirrors the population they were originally defined on.
-			\item Once on a common shared population that represents the population for which we intend to use the model in our thesis.
-		\end{enumerate}
-		This design is similar to previously published work\cite{Dagan2017}.
 		
-		The first phase will employ the full population matching the model's inclusion and exclusion criteria, so as to mirror their development population as much as possible.
+		While in essence we could use the models from phase I or the model as produced by our sparsity inducing algorithm as is, the requirement of using the model in a web application, including tight memory and responsiveness constrains, forces us to fit a simpler final model.
 		
-		For the second phase we'll use only the inclusion and exclusion criteria detailed above. This will be a common, shared population so as to allow comparison of model's performance on a joint dataset.
-		
-		The population will be separated into three sets for the sake of model development: Train, Validation and Test in a 72\%/8\%/20\% ratio. The training and validation sets will be discussed in subsection "part II" ahead. The test set will be used for comparing model's performance.
-		
-		The following performance statistics will be computed and reported for each model\cite{Steyerberg2008,FrankE.Harrell2015}:
-		
-		\begin{itemize}
-			\item Area under the receiver operating characteristics (AUROC) curve, or c-statistic, as a measure of discrimination.
-			\item Calibration slope as a measure of calibration.
-			\item Brier score, as a combined measure of prediction accuracy.
-			\item Sensitivity, Specificity, PPV and NPV for the appropriate thresholds (e.g. 7.5\% for CVD prediction) as in existing guidelines\cite{Goff2014,Bibbins-Domingo2016}.
-		\end{itemize}
-		
-		To calculate the risk scores, the exact coefficients as published by the model's authors will be used. If dedicated software is available, it will be used instead.
-		
-		Prior to comparing the model's to our own model, we will allow them linear recalibration, so as to "even the playing field" between a model being internally validated (our model) and models being externally validated. This recalibration will be done using the framework suggested by Van Houwlingen et al\cite{Houwelingen2000}. Specifically, the model's linear predictor will be fit again as a sole predictor in a logistic regression model and the ensuing slope and intercept recorded. These will then be used to adjust all model predictions.
-	
-		Mathematically:
-		
-		\begin{equation*}
-		\forall_i \text{LP}_i = \sum_{j=1}^{p}\beta_jx_j
-		\end{equation*}
-		\begin{equation*}
-		\hat{y}_i = \gamma \text{LP}_i + \delta
-		\end{equation*}
-		
-		Where $ LP_i $ is the linear predictor, $ \beta_{ij} $ is the coefficient for covariate j in patient i, $ x_{ij} $ is the covariate j in patient i, $ \hat{y} $ is the recalibrated prediction, for which $ \gamma $ is the slope and $ \delta $ the intercept.
-		
-		Or in words: We take the linear predictor from the original model, but allow it a new slope and intercept, thus preserving the relative importance of each covariate in the model, with the freedom to reset the global risk.
-	
-		These models will be compared to the model as produced by the sparsity inducing algorithm (in step I) using the above mentioned performance measures. For the best performing CVD model, in preparation for step III, we will also include measures that demonstrate clinical utility, such as net reclassification improvement\cite{Pencina2008} and decision curves\cite{Vickers2016}.
+		To account for this, we will take the covariates from the best model and use them construct a simple logistic regression model. This will be our final model to be used in the application.
 		
 		\subsubsection{Part III}
-		We will use the both external CVD models and the internal CVD model to generate recommendations for statin and aspirin use for all patients in the test set of the CVD algorithm. We will illustrate that the internal model is more accurate when deciding on the population to treat, and its use would have prevented more CVD events.
+		Recall that this portion employs a cohort design and tests four outcomes: change in overall risk, change in specific risk factors, change in drug adherence and change in health-care utilization.
+		
+		The modeling will be done using multivariate logistic regression for categorical outcomes and linear regression for continuous outcomes, adjusting for all the aforementioned variables. We'll report the respective coefficients, together with 95\% confidence intervals and p-values.
 		
 	\section{Preliminary Results}
-	We will present preliminary results for the first 2 parts.
+	We will present preliminary results for each of the 3 portions.
 
 	\subsection{Part 1}
 
-	Population Table for the Framingham general CVD risk score\cite{DAgostino2008} model:
+	Population Table for the Framingham Stroke Risk Score\cite{DAgostino1994} model:
 
 	\csvautotabular[separator=pipe]{prelim-results/FSRS/T1.csv}
 	
-	Calibration and ROC Curves for the Framingham general CVD risk score model are presented in appendix D.
+	Calibration and ROC Curves for the Framingham Stroke Risk Score model are presented in appendix D.
 	
 	\subsection{Part 2}
 	
 	The population flow chart for the predictor is presented in appendix D.
+	
+	\subsection{Part 3}
+	
+	Early mock drafts of the calculators for the Clalit's website, this specific one for chronic kidney disease, are presented in appendix D. Eventually, the finalized stroke calculator will look similar.
 	
 	\section{References}
 	
@@ -617,9 +632,9 @@
    	\begin{appendices}
    		
    		\section{Model Variable Lists}
-   		\begin{itemize}
+   		\begin{enumerate}
    			\item American Heart Association 2013 pooled risk model
-   			\begin{itemize}
+   			\begin{enumerate}
    				\item Sex
    				\item Age
    				\item Total Cholesterol
@@ -628,9 +643,9 @@
    				\item Untreated Systolic Blood Pressure
    				\item Smoking Status
    				\item Diabetes
-   			\end{itemize}
+   			\end{enumerate}
    			\item Framingham general CVD risk score
-   			\begin{itemize}
+   			\begin{enumerate}
    				\item Sex
    				\item Age
    				\item Total Cholesterol
@@ -639,95 +654,304 @@
    				\item Untreated Systolic Blood Pressure
    				\item Smoking Status
    				\item Diabetes
-   			\end{itemize}
-   			\item Charlson Score
-   			\begin{itemize}
-   				\item Myocardial Infarction
-   				\item CHF
-   				\item PVD
-   				\item Cerebrovascular Disease
-   				\item Dementia
-   				\item Chronic Pulmonary Disease
-   				\item Connective Tissue Disease
-   				\item Ulcer Disease
-   				\item Mild Liver Disease
+   			\end{enumerate}
+   			\item Modified Framingham Stroke Risk Score
+   			\begin{enumerate}
+   				\item Sex
+   				\item Age
+   				\item Systolic Blood Pressure
+   				\item Hypertension Treatment
+   				\item Cardiovascular Disease
+   				\item Left Ventricle Hypertrophy
+   				\item Smoking Status
+   				\item Atrial Fibrillation
    				\item Diabetes
-   				\item Hemiplegia
-   				\item Moderate or Severe Renal Disease
-   				\item Diabetes with End Organ Damage
-   				\item Any Tumor
-   				\item Leukemia
-   				\item Lymphoma
-   				\item Moderate or Severe Liver Disease
-   				\item metastatic Solid Tumor
-   				\item AIDS
-   			\end{itemize}
-	   		\item QMortality
-	   		\begin{itemize}
+   			\end{enumerate}
+	   		\item QStroke
+	   		\begin{enumerate}
+	   			\item Sex
 	   			\item Age
-	   			\item Graphical Region
-	   			\item Townsend Deprivation Score
-	   			\item Ethnic Group
-	   			\item Alcohol Intake
+	   			\item Ethnicity
 	   			\item Smoking Status
+	   			\item Atrial Fibrillation
+	   			\item Systolic Blood Pressure
+	   			\item Total Cholesterol
+	   			\item HDL
 	   			\item BMI
-	   			\item Unplanned Hospital Admissions
-	   			\item Poor Mobility
-	   			\item Lives in Care Home
-	   			\item Lives Alone
-	   			\item AF
-	   			\item CHF
-	   			\item CVD
+	   			\item Family History of Coronary Disease
+	   			\item Townsend Deprivation Score
+	   			\item Hypertension Treatment
+	   			\item Rheumatoid Arthritis
+	   			\item Chronic Kidney Disease
+	   			\item Type 1 Diabetes
+	   			\item Type 2 Diabetes
+	   			\item Coronary Heart Disease
+	   			\item Congestive Heart Failure
 	   			\item Valvular Heart Disease
-	   			\item PVD
-	   			\item Treated Hypertension
-	   			\item CKD (stages 4 and 5)
-	   			\item Diabetes
-	   			\item Hypothyroidism
-	   			\item Hyperthyroidism
-	   			\item Cancer
-	   			\item Chronic Liver Disease or Pancreatitis
-	   			\item Malabsorption
-	   			\item Peptic Ulcer
-	   			\item Asthma or COPD
-	   			\item Epilepsy
-	   			\item Dementia
-	   			\item Learning Disability
-	   			\item Osteoporosis
-	   			\item Fragility Fracture
-	   			\item Parkinson's Disease or Syndrome
-	   			\item RA
-	   			\item Falls
-	   			\item Bipolar Disease or Schizophrenia
-	   			\item Depression in past 12 months
-	   			\item VTE
-	   			\item Anemia
-	   			\item Abnormal LFTs
-	   			\item High Platelet Count
-	   			\item Leg Ulcer
-	   			\item Blindness
-	   			\item Appetite Loss in past 12 months
-	   			\item Weight Loss in past 12 months
-	   			\item Urinary Incontinence in past 12 months
-	   			\item Nocturia in past 12 months
-	   			\item Urinary Retention in past 12 months
-	   			\item Syncope
-	   			\item Dizziness in past 12 months
-	   			\item Insomnia in past 12 months
-	   			\item Dyspnea in past 12 months
-	   			\item Hearing Impairment or deafness in past 12 months
-	   			\item Loneliness in past 12 months
-	   			\item Use of anticoagulants
-	   			\item Use of antidepressants
-	   			\item Use of antipsychotics
-	   			\item Use of corticosteroids
-	   			\item NSAIDs
-	   		\end{itemize}
-   		\end{itemize}
+	   		\end{enumerate}
+   		\end{enumerate}
    		\newpage
    		
+   		\section{Extraction Protocol}
+   			\subsection{Outcome Diagnoses}
+   				\begin{enumerate}
+   					\item 
+		   			\begin{description}
+		   				\item[Name] Intra-Cranial Hemorrhage
+		   				\item[ICD9 Codes] 431\%
+		   				\item[ICPC Codes] NA
+		   				\item[CHR Codes] NA
+		   				\item[Sources] Admissions
+		   				\item[Free-Text Inclusion] NA
+		   				\item[Free-Text Exclusion] NA
+		   				\item[Comments] Primary diagnosis only, not from rehabilitation
+		   			\end{description}
+	   				\item 
+	   				\begin{description}
+	   					\item[Name] Ischemic CVA
+	   					\item[ICD9 Codes] 433, 433.\_, 433.\_1, 434\%, 362.3[1-3], 362.4\%
+	   					\item[ICPC Codes] NA
+	   					\item[CHR Codes] NA
+	   					\item[Sources] Admissions
+	   					\item[Free-Text Inclusion] NA
+	   					\item[Free-Text Exclusion] NA
+	   					\item[Comments] Primary diagnosis only, not from rehabilitation
+	   				\end{description}
+   					\item 
+   					\begin{description}
+   						\item[Name] CVA NOS
+   						\item[ICD9 Codes] 436\%
+   						\item[ICPC Codes] NA
+   						\item[CHR Codes] NA
+   						\item[Sources] Admissions
+   						\item[Free-Text Inclusion] NA
+   						\item[Free-Text Exclusion] NA
+   						\item[Comments] Primary diagnosis only, not from rehabilitation
+   					\end{description}
+   					\item 
+   					\begin{description}
+   						\item[Name] Transient Ischemic Event
+   						\item[ICD9 Codes] 435\%
+   						\item[ICPC Codes] NA
+   						\item[CHR Codes] NA
+   						\item[Sources] admissions, community, permanent, hospitals
+   						\item[Free-Text Inclusion] \%transient\%ischemic\%attack\%, \%ischemic\%attack\%transient\%, \%transient\%cerebral\%ischemia\%, \%vertebral\%artery\%syndrome\%, \%ischemic\%attack\%transient\%
+   						\item[Free-Text Exclusion] NA
+   						\item[Comments] Primary diagnoses only, not from rehabilitation, only community neurologis
+   					\end{description}
+   					\item 
+   					\begin{description}
+   						\item[Name] Subarachnoid Hemorrhage
+   						\item[ICD9 Codes] 430\%
+   						\item[ICPC Codes] NA
+   						\item[CHR Codes] NA
+   						\item[Sources] Admissions
+   						\item[Free-Text Inclusion] NA
+   						\item[Free-Text Exclusion] NA
+   						\item[Comments] Primary diagnosis only, not from rehabilitation
+   					\end{description}
+   					\item 
+   					\begin{description}
+   						\item[Name] Myocardial Infarction
+   						\item[ICD9 Codes] 410\%
+   						\item[ICPC Codes] NA
+   						\item[CHR Codes] NA
+   						\item[Sources] Admissions
+   						\item[Free-Text Inclusion] NA
+   						\item[Free-Text Exclusion] NA
+   						\item[Comments] Primary diagnosis only, not from rehabilitation
+   					\end{description}
+   					\item 
+   					\begin{description}
+   						\item[Name] Non-MI Coronary Heart Disease
+   						\item[ICD9 Codes] 41[01234]\%
+   						\item[ICPC Codes] K75, K76
+   						\item[CHR Codes] 110.1, 110.9
+   						\item[Sources] admissions, permanent, diagnoses  and hospitals
+   						\item[Free-Text Inclusion] \%angina\%, \%prectoris\%, \%heart\%attack\%, \%myocardial\%inf\%, \%ischemic\%heart\%, \%ischaemic\%heart\%, \%coronary\%atherosclerosis\%, \%arterioscl\%cardiovascular\%, \%post\%coronary\%bypass\%, \%coronary\%insuf\%, \%atheroscl\%cardiovasc\%, \%acute\%coronary\%, \%cardial\%ischemia\%, \%intermediate\%coronary\%, \%dyspnea\%effort\%, infarction\%myocardial\%, \%infarction\%subendocardial\%, \%subendocardial\%infarction\%
+   						\item[Free-Text Exclusion] \%fear\%, \%gynecologic\%, \%no\%disease\%, \%us\%examination\%, \%normal\%, \%breast\%, \%medical\%examination\%, \%herp\%angina\%, \%hearing\%
+   						\item[Comments] NA
+   					\end{description}
+   					\item
+   					\begin{description}
+   						\item[Name] Congestive Heart Failure
+   						\item[ICD9 Codes] 428\%
+   						\item[ICPC Codes] NA
+   						\item[CHR Codes] 112\%
+   						\item[Sources] community, admissions, permanent
+   						\item[Free-Text Inclusion] \%congestive\%heart\%, \%heart\%failure\%, \%systolic\%dysfunction\%, \%diastolic\%dysfunction\%, \%ventricular\%failure\%, \%CHF\%, \%ventricular\%d[yi]sfunction\%
+   						\item[Free-Text Exclusion] NA
+   						\item[Comments] NA
+   					\end{description}
+   					\item
+   					\begin{description}
+   						\item[Name] Peripheral Vascular Disease
+   						\item[ICD9 Codes] 443\%, 440.[23489]\%, 250.7\%, 444.2\%
+   						\item[ICPC Codes] K92
+   						\item[CHR Codes] 126\%
+   						\item[Sources] community, permanent, chronic registry, hospitals
+   						\item[Free-Text Inclusion] \%peripheral\%vascular\%, \%PVD\%, \%claudication\%, \%buerger\%, \%thromboangiitis\%obliterans\%
+   						\item[Free-Text Exclusion] \%neurogenic\%, \%spinal\%, , \%dissection\%, \%acute\%, \%vitreous\%, \%floater\%, \%eye\%, \%detachment\%, \%PVD\%BE\%, \%BE\%PVD\%, \%OD\%PVD\%, \%PVD\%OD\%, \%PVD\%LE\%, \%LE\%PVD\%, \%raynaud\%
+   						\item[Comments] Exclude ophtalmologist diagnoses
+   					\end{description}
+	   			\end{enumerate}
+   			
+   			\subsection{Causes of Death}
+   				\begin{enumerate}
+   					\item
+   					\begin{description}
+   						\item[Name] Coronary Death
+   						\item[ICD10 Codes] (I11\% OR I13\% OR I21\% OR I24\% OR I25\% OR I20\% OR I44\% OR I47\% OR I50\% OR I51\%) AND (NOT I456\%) AND (NOT I514\%)
+   					\end{description}
+   				\end{enumerate}
+	   			             
+	   		\subsection{Background Diagnoses}
+	   			\begin{enumerate}
+	   				\item
+	   				\begin{description}
+	   					\item[Name] Stroke (all kinds)
+	   					\item[ICD9 Codes] 43[0-8]\%
+	   					\item[ICPC Codes] K90
+	   					\item[CHR Codes] 95.2, 124
+	   					\item[Sources] community, admissions, permanent, chronic registry
+	   					\item[Free-Text Inclusion] \%cerebrovascular\%accident\%, \%transient\%ischemic\%attack\%, \%intracerebral\%hemorrhage\%, \%CVA\%, \%cerebelar\%hemorrhage\%, \%cerebral\%hemorrhage\%, \%cerebral\%vasospasm\%, \%cerebrovascular\%disease\%, \%stroke\%, \%cerebral\%ischemia\%, \%subarachnoid\%hemorrhage\%, \%ischemic\%attack\%transient\%, \%aneurysm\%berry\%ruptured\%, \%intracranial\%hemorrhage\%, \%hemorrhage\%brain\%nontraumic\%
+	   					\item[Free-Text Exclusion] \%extradural\%
+	   					\item[Comments] NA
+	   				\end{description}
+   					\item
+   					\begin{description}
+   						\item[Name] Left Ventricular Hypertrophy
+   						\item[ICD9 Codes] 429.3\%
+   						\item[ICPC Codes] NA
+   						\item[CHR Codes] NA
+   						\item[Sources] community, admissions, permanent
+   						\item[Free-Text Inclusion] \%cardiomegaly\%, \%ventricular\%, \%hypertrophy\%
+   						\item[Free-Text Exclusion] NA
+   						\item[Comments] Primary diagnosis NA
+   					\end{description}
+   					\item
+   					\begin{description}
+   						\item[Name] Congestive Heart Failure
+   						\item[ICD9 Codes] 428\%
+   						\item[ICPC Codes] NA
+   						\item[CHR Codes] 112\%
+   						\item[Sources] community, admissions, permanent
+   						\item[Free-Text Inclusion] \%congestive\%heart\%, \%heart\%failure\%, \%systolic\%dysfunction\%, \%diastolic\%dysfunction\%, \%ventricular\%failure\%, \%CHF\%, \%ventricular\%d[yi]sfunction\%
+   						\item[Free-Text Exclusion] NA
+   						\item[Comments] NA
+   					\end{description}
+   					\item
+   					\begin{description}
+   						\item[Name] Coronary Heart Disease
+   						\item[ICD9 Codes] 41[012-34]\%
+   						\item[ICPC Codes] K75, K76
+   						\item[CHR Codes] 110.1, 110.9
+   						\item[Sources] community, permanent, chronic registry, hospitals
+   						\item[Free-Text Inclusion] \%angina\%, \%prectoris\%, \%heart\%attack\%, \%myocardial\%inf\%, \%ischemic\%heart\%, \%ischaemic\%heart\%, \%coronary\%atherosclerosis\%, \%arterioscl\%cardiovascular\%, \%post\%coronary\%bypass\%, \%coronary\%insuf\%, \%atheroscl\%cardiovasc\%, \%acute\%coronary\%, \%cardial\%ischemia\%, \%intermediate\%coronary\%, \%dyspnea\%effort\%, infarction\%myocardial\%, \%infarction\%subendocardial\%, \%subendocardial\%infarction\%
+   						\item[Free-Text Exclusion] \%fear\%, \%gynecologic\%, \%no\%disease\%, \%us\%examination\%, \%normal\%, \%breast\%, \%medical\%examination\%, \%herp\%angina\%, \%hearing\%
+   						\item[Comments] NA
+   					\end{description}
+   					\item
+   					\begin{description}
+   						\item[Name] Peripheral Vascular Disease
+   						\item[ICD9 Codes] 443\%, 440.[23489]\%, 250.7\%, 444.2\%
+   						\item[ICPC Codes] K92
+   						\item[CHR Codes] 126\%
+   						\item[Sources] community, permanent, chronic registry, hospitals
+   						\item[Free-Text Inclusion] \%peripheral\%vascular\%, \%PVD\%, \%claudication\%, \%buerger\%, \%thromboangiitis\%obliterans\%
+   						\item[Free-Text Exclusion] \%neurogenic\%, \%spinal\%, , \%dissection\%, \%acute\%, \%vitreous\%, \%floater\%, \%eye\%, \%detachment\%, \%PVD\%BE\%, \%BE\%PVD\%, \%OD\%PVD\%, \%PVD\%OD\%, \%PVD\%LE\%, \%LE\%PVD\%, \%raynaud\%
+   						\item[Comments] Exclude ophtalmologist diagnoses
+   					\end{description}
+   					\item
+   					\begin{description}
+   						\item[Name] Hypertension
+   						\item[ICD9 Codes] 40[12345]
+   						\item[ICPC Codes] K85, K86, K87
+   						\item[CHR Codes] 120\%
+   						\item[Sources] community, permanent, chronic registry, hospitals
+   						\item[Free-Text Inclusion] \%hypertension\%, \%hypertensive\%, \%hypert\%with\%, \%nephrosclerosis\%, \%hypert\%, \%essential\%hypert\%, \%hypertesion\%, \%hypertention\%
+   						\item[Free-Text Exclusion] \%low\%, \%w/o\%, \%pulmonary\%, \%pulmoanry\%, \%ocular\%, \%portal\%, \%holter\%, \%no\%hypert\%, \%no\%retino\%, \%pre\%hyper\%, \%borderline\%, \%prostat\%, \%hyperthy\%, \%hypertrig\%, \%ventricular\%, \%tonsil\%, \%hypertroph\%, \%hypertg\%, \%hyperton\%, \%cranial\%, \%endomet\%, \%adenoid\%
+   						\item[Comments] NA
+   					\end{description}
+   					\item
+   					\begin{description}
+   						\item[Name] Rheumatoid Arthritis
+   						\item[ICD9 Codes] 714.0\%, 714.2\%
+   						\item[ICPC Codes] L88\%
+   						\item[CHR Codes] 231\%
+   						\item[Sources] community, permanent, chronic registry, hospitals
+   						\item[Free-Text Inclusion] \% rheumatoid\% arthritis\%, \% arthritis\% atrophic\%
+   						\item[Free-Text Exclusion] NA
+   						\item[Comments] NA
+   					\end{description}
+   					\item
+   					\begin{description}
+   						\item[Name] Chronic Kidney Disease
+   						\item[ICD9 Codes] 585\%
+   						\item[ICPC Codes] NA
+   						\item[CHR Codes] 177\%
+   						\item[Sources] community, permanent, chronic registry, hospitals
+   						\item[Free-Text Inclusion] \%chronic\%kidney\%, \%chronic\%renal\%, \%renal\% failure\%chronic\%, \%uremia\%
+   						\item[Free-Text Exclusion] NA
+   						\item[Comments] NA
+   					\end{description}
+   					\item
+   					\begin{description}
+   						\item[Name] Valvular Heart Disease
+   						\item[ICD9 Codes] 424.0\%, 424.1\%, 424.2\%, 424.3\%, 394\%, 395\%, 396\%, 397\%, 093.2\%, 746.0\%, 746.1\%, 746.2\%, 746.3\%, 746.4\%, 746.5\%, 746.6\%
+   						\item[ICPC Codes] K83\%
+   						\item[CHR Codes] 111\%
+   						\item[Sources] community, permanent, chronic registry, hospitals
+   						\item[Free-Text Inclusion] \%valv\%, \%stenosis\%, \%regurgitation\%, \%incompetence\%, \%insufficiency\%, \%ebstein\%, \%tricuspid\%atresia\%, \%pulmonary\%atresia\%
+   						\item[Free-Text Exclusion] NA
+   						\item[Comments] NA
+   					\end{description}
+   					\item
+   					\begin{description}
+   						\item[Name] Diabetes Mellitus
+   						\item[ICD9 Codes] Use internal CRI registry
+   						\item[ICPC Codes] Use internal CRI registry
+   						\item[CHR Codes] Use internal CRI registry
+   						\item[Sources] NA
+   						\item[Free-Text Inclusion] NA
+   						\item[Free-Text Exclusion] NA
+   						\item[Comments] NA
+   					\end{description}
+   					\item
+   					\begin{description}
+   						\item[Name] Atrial Fibrillation
+   						\item[ICD9 Codes] Use internal CRI registry
+   						\item[ICPC Codes] Use internal CRI registry
+   						\item[CHR Codes] Use internal CRI registry
+   						\item[Sources] NA
+   						\item[Free-Text Inclusion] NA
+   						\item[Free-Text Exclusion] NA
+   						\item[Comments] NA
+   					\end{description}
+	   			\end{enumerate}
+   			
+   			\subsection{Drugs}
+   				\begin{enumerate}
+   					\item
+   					\begin{description}
+   						\item[Name] Hypertension
+   						\item[ATC Codes] C09\%, C07AB03, C07FB03, C07CB03, C07CB53, C07BB03, C07DB01, C07DB01, C07AB02, C07FX03, C07FB13, C07FB02, C07FX05, C07CB02, C07BB02, C07BB52, C08C\%, C08G\%, C03A\%, C02AC01
+   					\end{description}
+   					\item
+   					\begin{description}
+   						\item[Name] Diabetes Mellitus
+   						\item[ATC Codes] A10\%
+   					\end{description}
+   					\item
+   					\begin{description}
+   						\item[Name] Anti-coagulants
+   						\item[ATC Codes] B01AA03, B01AA07, B01AA02, B01AE07, B01AF01, B01AF02
+   					\end{description}
+   				\end{enumerate}
+   				\newpage
+   		
    		\section{Generic Predictor Variable List}
-   		\begin{itemize}
+   		\begin{enumerate}
    			\itemsep0em 
    			\item age
    			\item birth\_area\_desc
@@ -1494,24 +1718,24 @@
    			\item Blindness
    			\item Retinitis Pigmentosum
    			\item Chronic Medication User
-   		\end{itemize}
+   		\end{enumerate}
    		\newpage
    		
    		\section{Preliminary Result Graphs and Drawings}
-   			\subsection{Framingham CVD Risk Score Result Graphs}
+   			\subsection{Framingham Stroke Risk Score (FSRS) Result Graphs}
 	   		\begin{figure}[H]
 	   			\begin{minipage}{.45\linewidth}
 	   				\includegraphics[width=8cm, height=8cm]{prelim-results/FSRS/FSRScal.png}
-	   				\label{Fram1}
+	   				\label{FSRS1}
 	   				\captionsetup{justification=justified,singlelinecheck=false,margin=1cm}
-	   				\caption{Framingham Calibration Curve}
+	   				\caption{FSRS Calibration Curve}
 	   			\end{minipage}
 	   			\hspace{.01\linewidth}
 	   			\begin{minipage}{.45\linewidth}
 	   				\includegraphics[width=8cm, height=8cm]{prelim-results/FSRS/FSRSdisc.png}
-	   				\label{Fram2}
+	   				\label{FSRS2}
 	   				\captionsetup{justification=justified,singlelinecheck=false,margin=1cm}
-	   				\caption{Framingham ROC Curve}
+	   				\caption{FSRS ROC Curve}
 	   			\end{minipage}
 	   		\end{figure}
    		
@@ -1522,6 +1746,25 @@
 	   			\caption{Population Flow Chart}
 	   		\end{figure}
    			
+   			\subsection{Application Mock Drafts}
+   			\begin{figure}[H]
+   				%\centering
+   				\begin{minipage}{.3\linewidth}
+   					\includegraphics[width=4.5cm, height=7cm]{prelim-results/calc3}
+   					\label{calc3}
+   				\end{minipage}
+   				\hspace{.01\linewidth}
+   				\begin{minipage}{.3\linewidth}
+   					\includegraphics[width=4.5cm, height=7cm]{prelim-results/calc2b}
+   					\label{calc2}
+   				\end{minipage}
+   				\hspace{.01\linewidth}
+   				\begin{minipage}{.3\linewidth}
+   					\includegraphics[width=4.5cm, height=7cm]{prelim-results/calc1}
+   					\label{calc1}
+   				\end{minipage}
+   			\end{figure}
+   		
    	\end{appendices}
 	
 \end{document}
