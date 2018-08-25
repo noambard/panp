@@ -1,3 +1,6 @@
+% TODO:
+% Change the first set of perlim results to be AHA results and not FSRS
+
 % general
 \documentclass[a4paper,12pt]{article}
 
@@ -325,7 +328,7 @@
 			
 			Instead of the usual methodology, by which patients are identified as high-risk when they enter the physician's office, usually for other concerns and in severe time constraints, we will predict the risk at once for all patients in the database.
 			
-			We will then use this  prediction to simulate an intervention by which all patients with a sufficient risk are  prescribed statins and aspirin, and the relative yield of this intervention is measured and compared to the actual outcomes observed and among the different models.
+			We will then use this  prediction to simulate an intervention by which all patients with a sufficient risk are prescribed statins and aspirin, and the relative yield of this intervention is measured and compared to the actual outcomes observed and among the different models.
 	
 	\section{The Novelty of the Thesis}
 	
@@ -333,11 +336,11 @@
 	
 	\begin{itemize}
 		
+		\item We propose that the methodology by which the model will be developed, and specifically its wide applicability, requiring little human intervention and pre-processing, offers significant advantages. The ability to identify risk factors and construct models for a wide variety of pathologies, some of which "unmapped" in regard to their primary risk factors, offers a promise of better understanding and more focused interventions to prevent these diseases.
+		
 		\item External validation of existing risk models is of utmost importance\cite{Moons2012}, as these models are used constantly as part of existing guidelines (e.g. the American Heart Association's pooled risk model and Statin treatment\cite{Goff2014}, FRAX and Osteoporosis treatment\cite{Kanis2008}). This is especially true, as previous external validation studies have at times documented significant mis-calibration\cite{Bastuji-Garin2002,Dagan2017}, that would make treatment decisions based on the models problematic.
 		
-		\item While development of a new risk model for the prediction of stroke in the Israeli population is important and novel by itself, we propose that the methodology by which the model will be developed, and specifically its wide applicability, requiring little human intervention and pre-processing, is by itself even more meaningful. The ability to identify risk factors and construct models for a wide variety of pathologies, some of which "unmapped" in regard to their primary risk factors, offers a promise of better understanding and more focused interventions to prevent these diseases.
-		
-		\item Risk-model based interventions have usually taken one of two forms: Either physician guidelines based on the risk score(e.g. \cite{Hippisley-Cox2008,DAgostino2008}); or the simple presentation of the risk model to patients, allowing them to calculate their own risk, assuming they know and have measured all their covariates(e.g. \cite{Parmar2015}). We propose a third alternative, by which a risk model is shown to the patients directly, but is "wired" into the patient's electronic health record, presenting the patient his risk based on his recorded measurements. This model is novel, and to the best of our information no previous such attempts have been made and formally evaluated. It is also particularly useful for the Israeli population, owing to the depth of EHR data in Israel\cite{Lovis2015}.
+		\item Population wide EHR-data based interventions using predictive risk models have yet to be implemented, to the best of our information. Illustrating the advantages of such interventions, specifically with the rising availability of EHR data, is of significant importance.
 		
 	\end{itemize}
 	
@@ -373,29 +376,6 @@
 	\subsection{Planning}
 	
 		\subsubsection{Part I}
-		We will externally validate four models that encompass a large and representative sample of existing models, two designed to assess risk for cardiovascular disease (CVD) and two designed to assess risk specifically for stroke.
-		
-		The models with their respective populations and outcomes are:
-		\begin{table}[H]
-		\begin{tabular}{|p{4cm}|p{1cm}|p{3cm}|p{4cm}|}
-			\hline
-			Name & Age & Model & Outcome \\
-			\hline
-			American Heart Association 2013 pooled risk model\cite{Goff2014} & 40-79 & Cox proportional hazards & Myocardial infarction, coronary heart disease death, stroke and stroke death \\
-			\hline
-			Framingham general CVD risk score\cite{DAgostino2008} & 30-74 & Cox proportional hazards & CHD death, nonfatal MI, coronary insufficiency, stroke (ischemic or hemorrhagic), TIA, peripheral vascular disease, heart failure \\
-			\hline
-			Modified Framingham Stroke Risk Score\cite{Wolf1991,DAgostino1994} & 55-84 & Cox proportional hazards & All forms of stroke (transient ischemic event, thrombotic, hemorrhagic and subarachnoid hemorrhage) \\
-			\hline
-			QStroke\cite{Hippisley-Cox2013} & 25-84 & Cox proportional hazards & Transient ischemic event or thrombotic stroke \\
-			\hline
-		\end{tabular}
-		\caption{Models to be Externally Validated}
-		\end{table}
-	
-		Each model uses its own variables, see appendix A for full model variable lists.
-		
-		\subsubsection{Part II}
 		Our model will be developed on the following population.
 		
 		Inclusion:
@@ -406,9 +386,9 @@
 		\end{itemize}
 		Exclusion:
 		\begin{itemize}
-			\item Past stroke event.
+			\item Past CVD event.
 		\end{itemize}
-	
+		
 		As is the standard for cardiovascular disease risk models, our model will predict disease for 10 years after the index date. The index date will be set at 1/6/2007, and follow up will persist until 1/6/2017, as illustrated in the following design diagram.
 		
 		\begin{figure}[h]
@@ -416,7 +396,7 @@
 			\includegraphics[width=\textwidth]{prelim-results/Panpredictor/timeline.png}
 			\caption{Study Design Timeline}
 		\end{figure}
-	
+		
 		Logically, model construction will encompass two steps: Using a sparsity inducing model to select among hundreds of variables, then building a model using the selected variables. In effect, algorithms will be chosen that perform both stages at once. See more details in the modeling section ahead.
 		
 		The covariates supplied to the first step will be: 
@@ -429,49 +409,30 @@
 		\end{itemize}
 		A full list can be found in appendix C.
 	
+		\subsubsection{Part II}
+		We will externally validate three models that are the most significant and widely used existing models designed to assess risk for cardiovascular disease (CVD).
+		
+		The models with their respective populations and outcomes are:
+		\begin{table}[H]
+		\begin{tabular}{|p{4cm}|p{1cm}|p{3cm}|p{4cm}|}
+			\hline
+			Name & Age & Model & Outcome \\
+			\hline
+			American Heart Association 2013 pooled risk model\cite{Goff2014} & 40-79 & Cox proportional hazards & Myocardial infarction, coronary heart disease death, stroke and stroke death \\
+			\hline
+			SCORE\cite{Conroy2003} & 45-64 & Cox proportional hazards & Fatal cardiovascular disease  \\
+			\hline
+			Qrisk\cite{Hippisley-Cox2008} & 35-74 & Cox proportional hazards & coronary heart disease, stroke \\
+			\hline
+		\end{tabular}
+		\caption{Models to be Externally Validated}
+		\end{table}
+	
+		Each model uses its own variables, see appendix A for full model variable lists.
+	
 		\subsubsection{Part III}
-		The population for the application evaluation will include all members of the Clalit's insured population who will use the application from its launch date onwards. As the application will not display for patients with a prior stroke event, this exclusion will occur implicitly.
+		The population for the application simulation will include all members of the Clalit's insured population as of 1/6/2007 that were members of the test set for the CVD prediction model. Inclusion and exclusion criteria will be the same as for the model (as mentioned above). The patients will be followed up for 10 years and their CVD outcomes recorded (as per the CVD outcomes in appendix A).
 		
-		This will be a retrospective cohort design. The population will include all users of the application, with each user matched by age, sex and altogether 10-year risk with controls. The index date for each patient will be the date of his first recorded use of the application. The index date for each matched control will be the index date of his matched case. We'll collect covariates in the 3 years before the index date and outcomes in the 6 months following.
-		
-		The following variables will be collected and used for adjustment:
-		\begin{enumerate}
-			\item Socioeconomic status
-			\item Sector (arab/jew)
-			\item Charlson score
-			\item Smoking status
-			\item Systolic and diastolic blood pressure
-			\item LDL
-			\item Weight
-			\item BMI
-			\item Drug adherence, as measured by the MPR and PDC indices\cite{Lam2015}
-		\end{enumerate}
-	
-		We'll conduct a power analysis to calculate the required sample size using R's pwr package\cite{Champely2017}. Assumptions:
-		\begin{itemize}
-			\item Model is a logistic regression model.
-			\item Expected effect size is small, which for logistic regression is $ R^2 = 0.02 $\cite{Cohen1988}.
-			\item We'll have 11 confounders adjusted for, as just specified (the list plus use of the calculator, which is the main exposure).
-			\item Requested power is 0.8, as usual.
-			\item Significance level is 0.05.
-		\end{itemize}
-	
-		We get a result of $ n = 850 $. As we assume we'll have at least 500 calculator users, we could settle for a 1-to-1 case-control ratio, but as controls are plentiful and the process automated, we'll opt for a 1-to-5 ratio.
-	
-		Outcomes will be:
-		\begin{enumerate}
-			\item Change in overall risk.
-			\item Change in the four alterable risk factors:
-			\begin{enumerate}
-				\item Smoking status
-				\item Weight
-				\item LDL
-				\item Systolic and diastolic blood pressure
-			\end{enumerate}
-			\item Change in drug adherence.
-			\item Change in healthcare utilization (overall cost, number of physician visits and number of drug dispensings).
-		\end{enumerate}
-	
 	\subsection{Data Extraction}
 	The general population for all different parts of the study is the population of patients insured by Clalit Health Services (CHS). CHS is the largest sick fund in Israel, with an insured population of 4.4 active members. Clalit is both an insurer and a provider, directly providing primary care, specialist care, lab, imaging and pharamacy services. Additionally, clalit directly operates several large hospitals. The “attrition rate” (the percentage of patients leaving the sick fund each year) stands on a low 1\%, allowing long term follow-up of patients.
 	
@@ -490,71 +451,24 @@
 		\item Health care utilization will be calculated by simply counting and summing the patient's encounters and actual cost, both in the community and in hospitals.
 	\end{itemize}
 
-	Information regarding patient's use of the calculator application will be collected directly from that application's database, which includes patients' information and access dates.
-	
-	In part I, where external validation of international models is to take part, special care will be required to handle variables that are not perfect "fits" for the Clalit's database, for example:
+	In part II, where external validation of international models is to take part, special care will be required to handle variables that are not perfect "fits" for the Clalit's database, for example:
 	\begin{itemize}
 		\item UK socioeconomic status ("Townsend Deprivation Score"), which has different levels and is directed in the opposite direction (more means lower SES) than the Clalit's socioeconomic status.
 		\item Diagnoses, that are collected based on dedicated physician visits in cohort studies and on ICD codes in EHR based studies, will be collected using a mixture of ICD codes, free text validation and validation using lab measurements (e.g glucose for diabetes) and drug dispensings (e.g. diuretics, ACE inhibitors, beta blockers and calcium channel blockers for hypertension).
 	\end{itemize}
 
-	Stroke definitions, that are used as the outcome in the different models, will be based on those defined by a consensus committee organized by the CRI and headed by a stroke specialist. These definitions are very similar to those of the Israeli acute stroke registry\cite{ICDC2017} (active within the ICDC).
+	CVD definitions, that are used as the outcome in the different models, will be based on those defined by a consensus committee organized by the CRI and headed by a cardiology and neurology specialists. These definitions similar to those used outside the CRI, such as by the Israeli acute stroke registry\cite{ICDC2017} (active within the ICDC).
 	
 	\subsection{Descriptive Statistics}
-	The specific population for each of the four models will be described in a dedicated population table ("Table 1") with appropriate statistics for each variable: proportions for categorical variables, means and standard deviations for continuous variables.
+	The specific population for each of the models will be described in a dedicated population table ("Table 1") with appropriate statistics for each variable: proportions for categorical variables, means and standard deviations for continuous variables.
 	
-	The common population to be used for comparing the four external models and to construct the internal model will also be described in a population table. This table will include separate columns for the train and test populations (see ahead for modeling details), with the same appropriate statistics for each variable. Statistical tests will be used to compare these populations for differences in baseline variables that could affect model generalizability. The statistical tests to be used are Student's t-test for continuous variables and the Chi square goodness-of-fit test for categorical variables, once the basic assumptions (e.g. normality) are tested.
-	
-	Lastly, the population in part III will also be displayed in a dedicated population table that will include columns for cases and controls. The same statistics and statistical tests as above will be used.
-	
-	We will present basic descriptive graphs to visualize the relation between certain variables and the outcomes. For the internal predictive model in part II, this will obviously only be done using the training population, so as to avoid so-called "data leaks".
+	The common population to be used for comparing the external models and to construct the internal model will also be described in a population table. This table will include separate columns for the train and test populations (see ahead for modeling details), with the same appropriate statistics for each variable. Statistical tests will be used to compare these populations for differences in baseline variables that could affect model generalizability. The statistical tests to be used are Student's t-test for continuous variables and the Chi square goodness-of-fit test for categorical variables, once the basic assumptions (e.g. normality) are tested.
 	
 	Missing data will be multiply imputed using chained equations. Specifically, continuous variables will be imputed using predictive mean matching, while categorical variables will utilize logistic regression\cite{Buuren2011}. Five datasets will be imputed, with the results combined as per Rubin's law\cite{Rubin1987}.
 	
 	\subsection{Modeling and Inferential Statistics}
 	
 		\subsubsection{Part I}
-
-		All models will be evaluated twice:
-		\begin{enumerate}
-			\item Once on a population that exactly mirrors the population they were originally defined on.
-			\item Once on a common shared population that represents the population for which we intend to use the model in our thesis.
-		\end{enumerate}
-		This design is similar to previously published work\cite{Dagan2017}.
-		
-		The first phase will employ the full population matching the model's inclusion and exclusion criteria, so as to mirror their development population as much as possible.
-		
-		For the second phase we'll use only the inclusion and exclusion criteria detailed above. This will be a common, shared population so as to allow comparison of model's performance on a joint dataset.
-		
-		The population will be separated into three sets for the sake of model development: Train, Validation and Test in a 72\%/8\%/20\% ratio. The training and validation sets will be discussed in subsection "part II" ahead. The test set will be used for comparing model's performance.
-		
-		The following performance statistics will be computed and reported for each model\cite{Steyerberg2008,FrankE.Harrell2015}:
-		
-		\begin{itemize}
-			\item Area under the receiver operating characteristics (AUROC) curve, or c-statistic, as a measure of discrimination.
-			\item Calibration slope as a measure of calibration.
-			\item Brier score, as a combined measure of prediction accuracy.
-			\item Sensitivity, Specificity, PPV and NPV for the 7.5\% and 10\% risk threshold. These thresholds are chosen for their importance in existing guidelines\cite{Goff2014,Bibbins-Domingo2016}.
-		\end{itemize}
-		
-		To calculate the risk scores, the exact coefficients as published by the model's authors will be used. If dedicated software is available, it will be used instead.
-		
-		While the risk scores from the stroke models will be used as is, we will perform linear recalibration of the CVD models, as using their results as-is to predict stroke will necessarily incur mis-calibration due to "over-prediction". This recalibration will be done using the framework suggested by Van Houwlingen et al\cite{Houwelingen2000}. Specifically, the model's linear predictor will be fit again as a sole predictor in a logistic regression model and the ensuing slope and intercept recorded. These will then be used to adjust all model predictions.
-	
-		Mathematically:
-		
-		\begin{equation*}
-		\forall_i \text{LP}_i = \sum_{j=1}^{p}\beta_jx_j
-		\end{equation*}
-		\begin{equation*}
-		\hat{y}_i = \gamma \text{LP}_i + \delta
-		\end{equation*}
-		
-		Where $ LP_i $ is the linear predictor, $ \beta_{ij} $ is the coefficient for covariate j in patient i, $ x_{ij} $ is the covariate j in patient i, $ \hat{y} $ is the recalibrated prediction, for which $ \gamma $ is the slope and $ \delta $ the intercept.
-		
-		Or in words: We take the linear predictor from the original model, but allow it a new slope and intercept, thus preserving the relative importance of each covariate in the model, with the freedom to reset the global risk.
-		
-		\subsubsection{Part II}
 		
 		To develop the new model, we will create a generic framework capable of generating models for any disease, given a fitting definition of the outcome.
 		
@@ -599,15 +513,54 @@
 		
 		To account for this, we will take the covariates from the best model and use them construct a simple logistic regression model. This will be our final model to be used in the application.
 		
-		\subsubsection{Part III}
-		Recall that this portion employs a cohort design and tests four outcomes: change in overall risk, change in specific risk factors, change in drug adherence and change in health-care utilization.
+		\subsubsection{Part II}
 		
-		The modeling will be done using multivariate logistic regression for categorical outcomes and linear regression for continuous outcomes, adjusting for all the aforementioned variables. We'll report the respective coefficients, together with 95\% confidence intervals and p-values.
+		All models will be evaluated twice:
+		\begin{enumerate}
+			\item Once on a population that exactly mirrors the population they were originally defined on.
+			\item Once on a common shared population that represents the population for which we intend to use the model in our thesis.
+		\end{enumerate}
+		This design is similar to previously published work\cite{Dagan2017}.
+		
+		The first phase will employ the full population matching the model's inclusion and exclusion criteria, so as to mirror their development population as much as possible.
+		
+		For the second phase we'll use only the inclusion and exclusion criteria detailed above. This will be a common, shared population so as to allow comparison of model's performance on a joint dataset.
+		
+		The population will be separated into three sets for the sake of model development: Train, Validation and Test in a 72\%/8\%/20\% ratio. The training and validation sets will be discussed in subsection "part II" ahead. The test set will be used for comparing model's performance.
+		
+		The following performance statistics will be computed and reported for each model\cite{Steyerberg2008,FrankE.Harrell2015}:
+		
+		\begin{itemize}
+			\item Area under the receiver operating characteristics (AUROC) curve, or c-statistic, as a measure of discrimination.
+			\item Calibration slope as a measure of calibration.
+			\item Brier score, as a combined measure of prediction accuracy.
+			\item Sensitivity, Specificity, PPV and NPV for the 7.5\% and 10\% risk threshold. These thresholds are chosen for their importance in existing guidelines\cite{Goff2014,Bibbins-Domingo2016}.
+		\end{itemize}
+		
+		To calculate the risk scores, the exact coefficients as published by the model's authors will be used. If dedicated software is available, it will be used instead.
+		
+		Prior to comparing the model's to our own model, we will allow them linear recalibration, so as to "even the playing field" between a model being internally validated (our model) and models being externally validated. This recalibration will be done using the framework suggested by Van Houwlingen et al\cite{Houwelingen2000}. Specifically, the model's linear predictor will be fit again as a sole predictor in a logistic regression model and the ensuing slope and intercept recorded. These will then be used to adjust all model predictions.
+		
+		Mathematically:
+		
+		\begin{equation*}
+		\forall_i \text{LP}_i = \sum_{j=1}^{p}\beta_jx_j
+		\end{equation*}
+		\begin{equation*}
+		\hat{y}_i = \gamma \text{LP}_i + \delta
+		\end{equation*}
+		
+		Where $ LP_i $ is the linear predictor, $ \beta_{ij} $ is the coefficient for covariate j in patient i, $ x_{ij} $ is the covariate j in patient i, $ \hat{y} $ is the recalibrated prediction, for which $ \gamma $ is the slope and $ \delta $ the intercept.
+		
+		Or in words: We take the linear predictor from the original model, but allow it a new slope and intercept, thus preserving the relative importance of each covariate in the model, with the freedom to reset the global risk.
+		
+		\subsubsection{Part III}
+		We will use the both external CVD models and the internal CVD model to generate recommendations for statin and aspirin use for all patients in the test set of the CVD algorithm. We will illustrate that the internal model is more accurate when deciding on the population to treat, and its use would have prevented more CVD events.
 		
 	\section{Preliminary Results}
-	We will present preliminary results for each of the 3 portions.
+	We will present preliminary results for the first two parts.
 
-	\subsection{Part 1}
+	\subsection{@@@@Part 1}
 
 	Population Table for the Framingham Stroke Risk Score\cite{DAgostino1994} model:
 
@@ -618,10 +571,6 @@
 	\subsection{Part 2}
 	
 	The population flow chart for the predictor is presented in appendix D.
-	
-	\subsection{Part 3}
-	
-	Early mock drafts of the calculators for the Clalit's website, this specific one for chronic kidney disease, are presented in appendix D. Eventually, the finalized stroke calculator will look similar.
 	
 	\section{References}
 	
@@ -644,51 +593,32 @@
    				\item Smoking Status
    				\item Diabetes
    			\end{enumerate}
-   			\item Framingham general CVD risk score
+   			\item SCORE
    			\begin{enumerate}
    				\item Sex
    				\item Age
    				\item Total Cholesterol
-   				\item HDL
    				\item Treated Systolic Blood Pressure
    				\item Untreated Systolic Blood Pressure
    				\item Smoking Status
-   				\item Diabetes
    			\end{enumerate}
-   			\item Modified Framingham Stroke Risk Score
+   			\item QRisk2
    			\begin{enumerate}
-   				\item Sex
+   				\item Ethnicity
    				\item Age
-   				\item Systolic Blood Pressure
-   				\item Hypertension Treatment
-   				\item Cardiovascular Disease
-   				\item Left Ventricle Hypertrophy
+   				\item Sex
    				\item Smoking Status
-   				\item Atrial Fibrillation
-   				\item Diabetes
+   				\item Systolic Blood Pressure
+   				\item Total Cholesterol / HDL Ratio
+   				\item BMI
+   				\item Family Hx of CHD
+   				\item Townsend Deprivation Score
+   				\item Treated Hypertension
+   				\item RA
+   				\item CKD
+   				\item Type II Diabetes
+   				\item AF 
    			\end{enumerate}
-	   		\item QStroke
-	   		\begin{enumerate}
-	   			\item Sex
-	   			\item Age
-	   			\item Ethnicity
-	   			\item Smoking Status
-	   			\item Atrial Fibrillation
-	   			\item Systolic Blood Pressure
-	   			\item Total Cholesterol
-	   			\item HDL
-	   			\item BMI
-	   			\item Family History of Coronary Disease
-	   			\item Townsend Deprivation Score
-	   			\item Hypertension Treatment
-	   			\item Rheumatoid Arthritis
-	   			\item Chronic Kidney Disease
-	   			\item Type 1 Diabetes
-	   			\item Type 2 Diabetes
-	   			\item Coronary Heart Disease
-	   			\item Congestive Heart Failure
-	   			\item Valvular Heart Disease
-	   		\end{enumerate}
    		\end{enumerate}
    		\newpage
    		
