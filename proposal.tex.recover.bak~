@@ -3,11 +3,7 @@
 
 % other packages
 \usepackage[fleqn]{amsmath}
-
-\usepackage{geometry}
-\geometry{a4paper, portrait, margin=0.7in}
-
-
+%\usepackage{geometry}
 
 % graphics
 \usepackage{graphicx}
@@ -36,7 +32,7 @@
 
 % spacing
 \usepackage{setspace}
-\linespread{1}
+\linespread{1.25}
 \setlength{\parskip}{\medskipamount}
 \setlength{\parindent}{0pt}
 
@@ -561,13 +557,13 @@
 	\section{Preliminary Results}
 	We will present preliminary results for the first two parts.
 
-	\subsection{Part 1}
+	\subsection{@@@@Part 1}
 
-	Population Table for the AHA/ACC 2013 model\cite{Goff2014}:
+	Population Table for the Framingham Stroke Risk Score\cite{DAgostino1994} model:
 
-	\csvautotabular[separator=pipe]{prelim-results/AHA/AHA2013.csv}
+	\csvautotabular[separator=pipe]{prelim-results/FSRS/T1.csv}
 	
-	ROC Curve for the AHA/ACC 2013 Risk Score model is presented in appendix D.
+	Calibration and ROC Curves for the Framingham Stroke Risk Score model are presented in appendix D.
 	
 	\subsection{Part 2}
 	
@@ -1653,12 +1649,21 @@
    		\newpage
    		
    		\section{Preliminary Result Graphs and Drawings}
-   			\subsection{AHA/ACC 2013 Risk Model  Result Graph}
+   			\subsection{Framingham Stroke Risk Score (FSRS) Result Graphs}
 	   		\begin{figure}[H]
-   				\includegraphics[width=8cm, height=8cm]{prelim-results/AHA/AHA_ROC.png}
-   				\label{AHAROC}
-   				\captionsetup{justification=justified,singlelinecheck=false,margin=1cm}
-   				\caption{AHA/ACC 2013 ROC Curve}
+	   			\begin{minipage}{.45\linewidth}
+	   				\includegraphics[width=8cm, height=8cm]{prelim-results/FSRS/FSRScal.png}
+	   				\label{FSRS1}
+	   				\captionsetup{justification=justified,singlelinecheck=false,margin=1cm}
+	   				\caption{FSRS Calibration Curve}
+	   			\end{minipage}
+	   			\hspace{.01\linewidth}
+	   			\begin{minipage}{.45\linewidth}
+	   				\includegraphics[width=8cm, height=8cm]{prelim-results/FSRS/FSRSdisc.png}
+	   				\label{FSRS2}
+	   				\captionsetup{justification=justified,singlelinecheck=false,margin=1cm}
+	   				\caption{FSRS ROC Curve}
+	   			\end{minipage}
 	   		\end{figure}
    		
    			\subsection{Clalit Model Population Flow Chart}
@@ -1667,6 +1672,25 @@
 	   			\captionsetup{justification=justified,singlelinecheck=false,margin=2cm}
 	   			\caption{Population Flow Chart}
 	   		\end{figure}
+   			
+   			\subsection{Application Mock Drafts}
+   			\begin{figure}[H]
+   				%\centering
+   				\begin{minipage}{.3\linewidth}
+   					\includegraphics[width=4.5cm, height=7cm]{prelim-results/calc3}
+   					\label{calc3}
+   				\end{minipage}
+   				\hspace{.01\linewidth}
+   				\begin{minipage}{.3\linewidth}
+   					\includegraphics[width=4.5cm, height=7cm]{prelim-results/calc2b}
+   					\label{calc2}
+   				\end{minipage}
+   				\hspace{.01\linewidth}
+   				\begin{minipage}{.3\linewidth}
+   					\includegraphics[width=4.5cm, height=7cm]{prelim-results/calc1}
+   					\label{calc1}
+   				\end{minipage}
+   			\end{figure}
    		
    	\end{appendices}
 	
