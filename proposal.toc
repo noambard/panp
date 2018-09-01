@@ -2,6 +2,10 @@
 \defcounter {refsection}{0}\relax 
 \select@language {english}
 \defcounter {refsection}{0}\relax 
+\select@language {hebrew}
+\defcounter {refsection}{0}\relax 
+\select@language {english}
+\defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {1}Abstract}{3}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {1.1}Background}{3}
