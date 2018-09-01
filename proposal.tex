@@ -1,12 +1,13 @@
-% TODO:
-% Change the first set of perlim results to be AHA results and not FSRS
-
 % general
 \documentclass[a4paper,12pt]{article}
 
 % other packages
 \usepackage[fleqn]{amsmath}
-%\usepackage{geometry}
+
+\usepackage{geometry}
+\geometry{a4paper, portrait, margin=0.7in}
+
+
 
 % graphics
 \usepackage{graphicx}
@@ -35,7 +36,7 @@
 
 % spacing
 \usepackage{setspace}
-\linespread{1.25}
+\linespread{1}
 \setlength{\parskip}{\medskipamount}
 \setlength{\parindent}{0pt}
 
@@ -98,18 +99,18 @@
 			
 			למודלים אלו מספר מאפיינים:
 			\begin{itemize}
-				\item פיתוחם דרש באופן מסורתי התייצעות נרחבת עם מומחי תוכן (קלינאים), על מנת שאלו יספקו את המידע הנדרש בנוגע למשתנים הנדרשים לחיזוי התוצא.
-				\item ביצועיהם של מודלים אלו מיטבי כאשר משתמשים בהם באוכלוסיות עליהם פותחו, ופוחת באוכלוסיות השונות מאוכלוסיות אלו מבחינה גנטית או אחרת\cite{DAgostino2001,Bastuji-Garin2002,DeFilippis2015}.
+				\item פיתוחם דרש באופן מסורתי התייעצות נרחבת עם מומחי תוכן (קלינאים), על מנת שאלו יספקו את המידע הנדרש בנוגע למשתנים הנדרשים לחיזוי התוצא.
+				\item ביצועיהם של מודלים אלו מיטביים כאשר משתמשים בהם באוכלוסיות עליהם פותחו, ופוחת באוכלוסיות השונות מאוכלוסיות אלו מבחינה גנטית או אחרת\cite{DAgostino2001,Bastuji-Garin2002,DeFilippis2015}.
 				\item המודלים מבוססים ככלל על שיטות ביוסטטיסטיות מסורתיות, בפרט על רגרסיה לוגיסטית ורגרסיית קוקס.
 			\end{itemize}
 		
-		במודלים אלו נעשו שימוש בייחוד לחיזוי ומניעה של מחלה קרדיו-וסקולרית, אשר חרף הירידה בהיארעותה בעולם המפותח בשנים האחרונות\cite{Koton2014,Vangen-Loenne2017}, נותרה סיבה חשובה לתחלואה ולתמותה\cite{ODonnell2016}.
+		במודלים אלו נעשה שימוש בייחוד לחיזוי ולמניעה של מחלה קרדיו-וסקולרית, אשר חרף הירידה בהיארעותה בעולם המפותח בשנים האחרונות\cite{Koton2014,Vangen-Loenne2017}, נותרה סיבה חשובה לתחלואה ולתמותה\cite{ODonnell2016}.
 				
 		\subsection*{מטרות}
 			כוונתנו להשיג שלוש מטרות בתזה זו:
 			\begin{itemize}
-				\item חידושים מודרניים בלמידה חישובית מאפשרים גישות חדשות למידול סיכון רפואי\cite{Obermeyer2016}. בניגוד לגישה הקיימת, המבוססת על שימוש בידע תחומי לפירוט-מראש של גורמי הסיכון, גישות מודרניות מתירות לאלגוריתם החישובי, המוזן עם מאות משתנים אפשריים, לברור מביניהם את המשתנים הרלוונטיים בכחות עצמו\cite{Weng2017}. לאחר מכן, משתנים אלו משמשים לבניית המודל עצמו. טכנולוגיות אלו מאפשרות גישה יותר אחידה למידול סיכון, המשתמשת בבסיס נתונים נרחב יחיד עם תוצאים שונים\cite{Rajkomar2018}.
-				\item בהיותה מובחנת אתנית מהאוכלוסיות האמריקאיות והאירופאיות עליהן פותחו, ביצועיהם של מודלי חיזוי קרדיו-וסקולריים באוכלוסיה הישראלית צפויים להיות ירודים. השערה זו טרם נבדקה על אוכלוסיה גדולה, המייצגת את האוכלוסיה הישראלית כולה\cite{Lovis2015}. אנו מתכוונים לבדוק השערה זו על מדגם נרחב של האוכלוסיה הישראלית, בהקשר של חיזוי מחלה קרדיווסקולרית.
+				\item חידושים מודרניים בלמידה חישובית מאפשרים גישות חדשות למידול סיכון רפואי\cite{Obermeyer2016}. בניגוד לגישה הקיימת, המבוססת על שימוש בידע תחומי לפירוט-מראש של גורמי הסיכון, גישות מודרניות מתירות לאלגוריתם החישובי, המוזן עם מאות משתנים אפשריים, לברור מביניהם את המשתנים הרלוונטיים בכחות עצמו\cite{Weng2017}. לאחר מכן, משתנים אלו משמשים לבניית המודל. טכנולוגיות אלו מאפשרות גישה אחידה יותר למידול סיכון, המשתמשת בבסיס נתונים נרחב יחיד עם תוצאים שונים\cite{Rajkomar2018}.
+				\item בהיותה מובחנת אתנית מהאוכלוסיות האמריקאיות והאירופאיות עליהן פותחו, ביצועיהם של מודלי חיזוי קרדיו-וסקולריים באוכלוסיה הישראלית צפויים להיות ירודים. השערה זו טרם נבדקה על אוכלוסיה גדולה, המייצגת את האוכלוסיה הישראלית כולה\cite{Lovis2015}. אנו מתכוונים לבדוק השערה זו על מדגם נרחב של האוכלוסיה הישראלית.
 				\item אנו נשתמש במודלים השונים (הן הקיימים והן המודל שיפותח כחלק מעבודה זו) על מנת לבצע סימולציה של התערבות אוכלוסייתית רחבה המבוססת על מידע מהתיק הרפואי הממוחשב, וזאת לפי הקווים המנחים הקיימים\cite{Goff2014}.
 			\end{itemize}
 		
@@ -118,7 +119,7 @@
 		
 		על מנת לבצע תיקוף חיצוני והשוואה, שלושת המודלים המובילים לחיזוי CVD ייבחרו מהספרות וייבנו מחדש על גבי בסיס הנתונים של הכללית. המודלים יושוו הן בהרכב האוכלוסיה המקורי בו נבנו והן בהרכב האוכלוסיה בו אנו עתידים לדמות התערבות.
 		
-		סימולציית ההתערבות תבחן עקבה רטרוספקטיבית , ובאמצעות ידע קיים בנוגע להפחתת התמותה המיוחסת לשימוש בסטטינים ובאספירין, תדמה התוצאים ל-10 שנים  של עקבה זו  באם הקוים המנחים הקיימים היו מקויימים כלשונם, לפי המודלים הקיימים ולפי המודל החדש.
+		סימולציית ההתערבות תבחן עקבה רטרוספקטיבית, ובאמצעות ידע קיים בנוגע להפחתת התמותה המיוחסת לשימוש בסטטינים ובאספירין, תדמה התוצאים ל-10 שנים  של עקבה זו  באם הקוים המנחים הקיימים היו מקויימים כלשונם, לפי הסיכון אותו חוזים המודלים הקיימים והמודל החדש.
 		
 		
 		\subsection*{חשיבות}
@@ -142,12 +143,14 @@
 		
 		\item[Simulated Intervention] The CVD models will be used to simulate an intervention based on a historic cohort of patients from the CHS' database. The true outcomes, the predicted outcomes based on existing models and the predicted outcomes based on our models will be compared.
 		
-		Based on these aims, we hypothesize that:
+		Based on these aims, we hypothesize:
 		\begin{enumerate}
 			
 			\item That using less pre-specification of risk factors, and allowing a computerized algorithm to select risk factors in an autonomous fashion, will enable detection of novel risk factors, whose inclusion in future risk models will improve their performance.
 			
 			\item That a model developed in such fashion will outperform traditional risk models.
+			
+			\item That existing CVD risk models will perform poorly on the ethnically distinct Israeli population.
 			
 			\item That the advantages of such a model will have the potential to improve patient outcomes if used in a population-wide intervention based on EHR data.
 			
@@ -189,7 +192,7 @@
 			
 			For example, logistic regression uses the logit function as the link, $ \mu = \frac{\exp (x^t \beta)}{1 + \exp (x^t \beta)} $, while linear regression uses the identity function.
 			
-			The model then uses a loss function, usually maximum likelihood, to estimate the coefficients of the model. Under certain assumptions, these coefficients can have epidemiological interpretations, such as the coefficients of logistic regression being interpreted as odds ratio of an exposure for a given outcome. The model can also be used for prediction, disregarding all such assumptions.
+			The model then uses a loss function, usually maximum likelihood, to estimate the coefficients of the model. Under certain assumptions, these coefficients can have epidemiological interpretations, such as the coefficients of logistic regression being interpreted as the odds ratio of an exposure for a given outcome. The model can also be used for prediction, disregarding all such assumptions.
 			
 			\subsubsection{Cox Proportional Hazards}
 			
@@ -197,14 +200,14 @@
 			
 			The overall hazard model is thus $ \lambda(t) = \lambda_0(t) \cdot x^t \beta $. The hazard itself is a somewhat elusive term rooted in calculus, representing the probability of death at a certain infinitesimal time window assuming survival up to that point. Survival is then one minus the integral of the hazard over time.
 			
-			Similar to GLMs, the coefficients are estimated using a process of maximum likelihood (dubbed partial likelihood in the context of Cox regression), and under strict assumptions have the interpretation of hazard ratios, similar to odd ratios.
+			Similar to GLMs, the coefficients are estimated using a process of maximum likelihood (dubbed partial likelihood in the context of Cox regression), and under strict assumptions have the interpretation of hazard ratios, similar to odds ratios.
 			
 			The assumptions for cox regression warrant special mention. While the assumption of linearity is similar to GLMs, cox proportional hazards also assumes proportionality - that is, that the hazard ratio between risk factors remains constant over time. This is a very strong assumption that does not always hold. It should be mentioned that some models circumvent this assumption at the cost of complexity and loss of interpretability. Just as before, the model can also be used for prediction, disregarding all assumptions.
 			
 			\subsubsection{Parametric Vs. Non-Parametric Models}
 			Parametric models, such as those described above, summarize the data with a set of parameters of fixed size that is independent of the number of training examples. This has the advantage of simplicity, interpretability and speed, but also leads to biases in prediction if the "true" population model is different than the chosen model.
 			
-			Non-parametric models make no such assumptions about the structure of the target function they seek to learn. This requires far more data for accurate training, and does not allow interpretation of coefficients using terms such as odd ratios, but does afford more predictive accuracy when sufficient data exists\cite{Russell2002}.
+			Non-parametric models make no such assumptions about the structure of the target function they seek to learn. This requires far more data for accurate training, and does not allow interpretation of coefficients using terms such as odds ratios, but does afford more predictive accuracy when sufficient data exists\cite{Russell2002}.
 			
 			\subsubsection{The Rise of AI and Machine Learning}
 		
@@ -231,7 +234,7 @@
 			
 			\subsubsection{Electronic Health Record based Observational Studies}
 		
-			Most medical risk models in wide-use were developed based on specialized cohort studies\cite{Goldstein2016}. This has the known advantages of cohort studies, most notably the accurate definition of exposures and outcomes, but is expensive and time-consuming, and by definition only allows inclusion of risk factors that were decided on in advance and measured as part of the study. On the other hand, with the larger availability of EHR data, risk models developed on such data have risen in amount. These models have the known disadvantages of EHR data (first of which are the non-standardized definitions), but offer a wealth of information that in certain cases, including the case in Israel\cite{Lovis2015}, encompasses the full extent of a patient's encounters with the health system\cite{Goldstein2017}.
+			Most medical risk models in wide-use were developed based on specialized cohort studies\cite{Goldstein2016}. This has the known advantages of cohort studies, most notably the accurate definition of exposures and outcomes, but is expensive and time-consuming, and by definition only allows inclusion of risk factors that were decided on in advance and measured as part of the study. On the other hand, with the larger availability of EHRs, risk models developed on such data have risen in amount. These models have the known disadvantages of EHR data (first of which are the non-standardized definitions), but offer a wealth of information that in certain cases, including the case in Israel\cite{Lovis2015}, encompasses the full extent of a patient's encounters with the health system\cite{Goldstein2017}.
 			
 			\subsubsection{The Gap and our Thesis}
 			
@@ -298,7 +301,7 @@
 		
 		Though the risk scores are currently used in common medical practice, external validation of international CVD risk models for the Israeli population has yet to be performed, and recommendations on which model to use are based on expert opinion\cite{Bitzur2015}.
 		
-		We suggest, as a first effort, to externally validate widely used risk models for the prediction of CVD risk on the Israeli population. This could help decide which model has the best performance, and if all such models' performance is deemed unsatisfactory, this will have significant consequences for guidelines and practices based on said models. These models will then be compared to the internally developed model in part I.
+		We suggest, as a first effort, to externally validate widely used risk models for the prediction of CVD risk on the Israeli population. This could help decide which model has the best performance, and if all such models' performance is deemed unsatisfactory, this will have significant consequences for guidelines and practices based on said models. Immediately thereafter, these models will be compared to the internally developed model in part I.
 		
 		\subsection{Part III}
 		
@@ -324,11 +327,11 @@
 			
 			\subsubsection{The Gap and our Thesis}
 			
-			We suggest that the structure of the Israeli health care system is ideal for performing and evaluating an intervention based EHR based prediction of cardiovascular risk.
+			We suggest that the structure of the Israeli health care system is ideal for performing and evaluating an intervention based on EHR based prediction of cardiovascular risk.
 			
 			Instead of the usual methodology, by which patients are identified as high-risk when they enter the physician's office, usually for other concerns and in severe time constraints, we will predict the risk at once for all patients in the database.
 			
-			We will then use this  prediction to simulate an intervention by which all patients with a sufficient risk are prescribed statins and aspirin, and the relative yield of this intervention is measured and compared to the actual outcomes observed and among the different models.
+			We will then use this  prediction to simulate an intervention by which all patients with sufficient risk are prescribed statins and aspirin, and the relative yield of this intervention is measured and compared between the different models and to the actual outcomes observed.
 	
 	\section{The Novelty of the Thesis}
 	
@@ -354,15 +357,11 @@
 	
 	Risk models have been incorporated into guidelines for the prevention, diagnosis and treatment of varying conditions. Specifically for CVD prediction, these risks help decide on cholesterol lowering treatment, anti-platelet treatment and more generally, the intensity of follow-up\cite{NationalCholesterolEducationProgramNCEPExpertPanelonDetection2002,Graham2007,Goff2014,Bibbins-Domingo2016}.
 	
-	Models' tendency to under-perform when the target population is changed is widely recognized\cite{DAgostino2001,Bastuji-Garin2002,DeFilippis2015} and accordingly, the importance of external validation of models prior to their use in new population is recommended\cite{Moons2012}. External validation of CVD models has been performed in several populations\cite{DAgostino2001,Bastuji-Garin2002,DeFilippis2015}, though not in the Israeli population\cite{Bitzur2015}. This is in contrary to, for example, Osteoporosis\cite{Dagan2017}.
+	Models' tendency to under-perform when the target population is changed is widely recognized\cite{DAgostino2001,Bastuji-Garin2002,DeFilippis2015} and accordingly, the importance of external validation of models prior to their use in new population is recommended\cite{Moons2012}. External validation of CVD models has been performed in several populations\cite{DAgostino2001,Bastuji-Garin2002,DeFilippis2015}, though not in the Israeli population\cite{Bitzur2015}. This is in contrast to, for example, Osteoporosis\cite{Dagan2017}.
 	
-	Much has been written on the advent of AI in general and machine learning in particular. In a relatively short time span, these technologies have penetrated large parts of the domains of modern life, and continue to do so in increasing force\cite{Ng2017}.
+	Much has been written on the advent of AI in general and machine learning in particular. In a relatively short time span, these technologies have penetrated large parts of the domains of modern life, and continue to do so with increasing force\cite{Ng2017}.
 	
 	That this process has been relatively slow in medicine is also widely recognized, and many efforts now exist to better incorporate such technologies in health-care\cite{Obermeyer2016}. Specifically for risk prediction models, recent literature has emerged that details attempts at developing more generic risk models, though different than the idea proposed here both in method and in goal\cite{Rajkomar2018}.
-	
-	Attempts to more proactively involve patients in their own care have existed for a long time\cite{MedicineUSCommitteeonQualityofHealthCareinAmerica2001}. As AI and machine learning advance, it is only natural that these technologies will take part in such interventions. These attempts have taken varied forms: general diagnostic models based on provider statistics\cite{Aurbach2018}, smartphone apps designed to ease communications between providers and patients\cite{Sundberg2017}, wearable devices designed to encourage lifestyle change\cite{Gordon2017}, etc.
-	
-	More similar to this thesis are calculators presented directly to patients. These are many, and some deal directly with CVD and stroke\cite{Parmar2015}. But none of these calculators are based on locally developed models and none are able to access the patient's EHR, instead relying on him being knowledgeable about his risk factors. Also, being disconnected from the patient's EHR, these models cannot follow up on a patient's risk and health behavior, and accordingly cannot evaluate their own performance.
 	
 	\section{Research Methodology}
 	We will elaborate on the following for each of the three parts:
@@ -407,7 +406,6 @@
 			\item Chronic diagnoses, as defined by the Clalit's chronic registry\cite{Rennert2001}, up to the index date.
 			\item Drug dispensings, including all drug dispensed to the patient in ATC4 granularity\cite{DrugStatisticsMethodology2010}. Data will be extracted separately for the 3 years before the index date and all the years before that.
 		\end{itemize}
-		A full list can be found in appendix C.
 	
 		\subsubsection{Part II}
 		We will externally validate three models that are the most significant and widely used existing models designed to assess risk for cardiovascular disease (CVD).
@@ -499,7 +497,7 @@
 		
 		Random forest is also an ensemble method employing decision trees as the weak learners. It strives to induce variance among the trees by using bootstrapping to select the training set for each tree, and only using a randomly selected subset of features at each split in the tree.
 		
-		Both gradient boosting and random forest induce sparsity by deciding on the important features at each split in each tree. The rules for these decisions are themselves parameters to the models, but all generally employ a version of Claude Shannon's information entropy:
+		Both gradient boosting and random forest induce sparsity by deciding on the important features at each split in each tree. The rules for these decisions are themselves parameters to the models, but all generally employ a version of Claude Shannon's information entropy\cite{Shannon1948}:
 		
 		For a given variable x, the entropy is defined as $ H(x) = -\sum_{i=1}^{n} P(x_i) \log P(x_i)$. This entropy is maximized when the "doubt" about the value of a variable is maximal, and the different tree models strive to minimize it by choosing maximally informative variables for each split.
 		
@@ -508,10 +506,6 @@
 		The model as produced by the sparsity inducing algorithm will be compared to the existing models examined in phase I using the above mentioned performance measures. For the sake of demonstrating clinical utility, we will also compare the best model from phase I to our model for net reclassification improvement\cite{Pencina2008} and decision curves\cite{Vickers2016}.
 		
 		We will include a learning curve for our model so as to demonstrate lack of over-fitting.
-		
-		While in essence we could use the models from phase I or the model as produced by our sparsity inducing algorithm as is, the requirement of using the model in a web application, including tight memory and responsiveness constrains, forces us to fit a simpler final model.
-		
-		To account for this, we will take the covariates from the best model and use them construct a simple logistic regression model. This will be our final model to be used in the application.
 		
 		\subsubsection{Part II}
 		
@@ -555,22 +549,22 @@
 		Or in words: We take the linear predictor from the original model, but allow it a new slope and intercept, thus preserving the relative importance of each covariate in the model, with the freedom to reset the global risk.
 		
 		\subsubsection{Part III}
-		We will use the both external CVD models and the internal CVD model to generate recommendations for statin and aspirin use for all patients in the test set of the CVD algorithm. We will illustrate that the internal model is more accurate when deciding on the population to treat, and its use would have prevented more CVD events.
+		We will use the both external CVD models and the internal CVD model to generate recommendations for statin and aspirin use for all patients in the test set of the CVD algorithm. Using published data regarding the effectiveness of statin and aspirin use, we will illustrate that the internal model is more accurate when deciding on the population to treat, and its use would have prevented more CVD events.
 		
 	\section{Preliminary Results}
 	We will present preliminary results for the first two parts.
 
-	\subsection{@@@@Part 1}
+	\subsection{Part 1}
 
-	Population Table for the Framingham Stroke Risk Score\cite{DAgostino1994} model:
+	Population Table for the AHA/ACC 2013 model\cite{Goff2014}:
 
-	\csvautotabular[separator=pipe]{prelim-results/FSRS/T1.csv}
+	\csvautotabular[separator=pipe]{prelim-results/AHA/AHA2013.csv}
 	
-	Calibration and ROC Curves for the Framingham Stroke Risk Score model are presented in appendix D.
+	ROC Curve for the AHA/ACC 2013 Risk Score model is presented in appendix C.
 	
 	\subsection{Part 2}
 	
-	The population flow chart for the predictor is presented in appendix D.
+	The population flow chart for the predictor is presented in appendix C.
 	
 	\section{References}
 	
@@ -880,793 +874,13 @@
    				\end{enumerate}
    				\newpage
    		
-   		\section{Generic Predictor Variable List}
-   		\begin{enumerate}
-   			\itemsep0em 
-   			\item age
-   			\item birth\_area\_desc
-   			\item bmi\_last\_v
-   			\item charlson
-   			\item DBP\_last\_v
-   			\item date\_of\_birth
-   			\item date\_of\_death
-   			\item ethnicity
-   			\item GFR
-   			\item immigration\_date
-   			\item LEUCOCYTES-SED
-   			\item ERYTHROCYTES-SED
-   			\item EPITHELIAL-SED
-   			\item BACTERIA-SED
-   			\item ESTRADIOL (E-2)
-   			\item PROGESTERONE
-   			\item 17-OH-PROGESTERONE
-   			\item LH
-   			\item Throat culture p
-   			\item FSH
-   			\item WBC
-   			\item PROLACTIN
-   			\item TESTOSTERONE- TOTAL
-   			\item Aerobic blood cult.
-   			\item Anaerobic blood cult
-   			\item Bacterial culture
-   			\item Body fluid culture
-   			\item Ear culture 1
-   			\item Fungal culture
-   			\item DHEA SULPHATE
-   			\item MRSA culture
-   			\item CORTISOL-BLOOD
-   			\item Pediatric blood cul
-   			\item Sputum culture
-   			\item Stool culture
-   			\item Throat culture
-   			\item Urine dipsl culture
-   			\item Urine culture
-   			\item Urine plating cult.P
-   			\item Wound culture
-   			\item RBC
-   			\item Wound and Sec.Aer+An
-   			\item TSH
-   			\item First isolate
-   			\item Second isolate
-   			\item PRELIMINARY
-   			\item T3-TOTAL
-   			\item T3- FREE
-   			\item CPE culture result
-   			\item T4- FREE
-   			\item HB
-   			\item PTH
-   			\item HCT
-   			\item PLT
-   			\item MCV
-   			\item MCH
-   			\item MCHC
-   			\item RDW
-   			\item MPV
-   			\item BAB- Blood agar base
-   			\item MacConkey agar
-   			\item Sabour dextrose agar
-   			\item PCT
-   			\item ESBL test
-   			\item PDW
-   			\item MID abs.
-   			\item MID \%
-   			\item VAR-F
-   			\item LI
-   			\item HDW
-   			\item MICRO-F
-   			\item ABO conf final (ad)
-   			\item Rh confirmation
-   			\item RH
-   			\item BLOOD TYPE
-   			\item Antibody screen Fin
-   			\item BLAST-F
-   			\item LUC\%
-   			\item LUC abs
-   			\item MPXI
-   			\item LEFT SHIFT
-   			\item MACRO\%
-   			\item MICRO \%
-   			\item HYPER\%
-   			\item HYPO \%
-   			\item ANISO-F
-   			\item LYMP.abs
-   			\item LYM\%
-   			\item NEUT.abs
-   			\item NEUT\%
-   			\item MONO.abs
-   			\item MONO\%
-   			\item EOS.abs
-   			\item EOS \%
-   			\item BASO abs
-   			\item BASO \%
-   			\item HCT/HGB Ratio
-   			\item Gram stain direct
-   			\item Parasites microscopy
-   			\item RDW-SD
-   			\item RDW-CV
-   			\item RETICUL. COUNT abs
-   			\item RETICULOCYTES COUNT\%
-   			\item ALY\%
-   			\item ALY
-   			\item LIC\%
-   			\item LIC
-   			\item P-LCR
-   			\item CHr
-   			\item CH
-   			\item PLATLATE CLUMPS
-   			\item MICRO\%/HYPO\%
-   			\item NORMOBLAST.abs
-   			\item NORMOBLAST.\%
-   			\item TRANSGLUTAMINASE\_IgA
-   			\item C13 UREA BREATH CALC
-   			\item PT-INR
-   			\item PT-SEC
-   			\item PT \%
-   			\item APTT-sec
-   			\item APTT-R
-   			\item FIBRINOGEN CALCU
-   			\item FIBRINOGEN
-   			\item CONTROL PT
-   			\item CONTROL PTT
-   			\item OCCULT BLOOD STOOL
-   			\item LYMPHOCYTES \%-DIF
-   			\item GLUCOSE
-   			\item OCCULT BLOOD SCREEN
-   			\item NEUTROPHILS\%-DIF
-   			\item UREA
-   			\item MONOCYTES\%-DIF
-   			\item CREATININE
-   			\item EOSINOPHILS\%-DIF
-   			\item URIC ACID
-   			\item BASOPHILS\%-DIF
-   			\item SODIUM
-   			\item POTASSIUM
-   			\item CHLORIDE
-   			\item CALCIUM
-   			\item lab\_208512
-   			\item PHOSPHORUS
-   			\item CHOCOLATE
-   			\item STABS \%-DIF
-   			\item PROTEIN-TOTAL
-   			\item ALBUMIN
-   			\item ATYPICAL LYMPH.\%-DIF
-   			\item CHOLESTEROL
-   			\item LYMPHOCYTES abs-DIF
-   			\item TRIGLYCERIDES
-   			\item NEUTROPHILS abs-DIF
-   			\item CHOLESTEROL- HDL
-   			\item MONOCYTES abs-DIF
-   			\item CHOLESTEROL-LDL calc
-   			\item EOSINOPHILS abs-DIF
-   			\item BASOPHILS abs-DIF
-   			\item ALK. PHOSPHATASE
-   			\item GOT (AST)
-   			\item GPT (ALT)
-   			\item STABS abs-DIF
-   			\item GGT
-   			\item LDH
-   			\item ATYPICAL LYMPH-DIF
-   			\item CK-CREAT.KINASE(CPK)
-   			\item ANISOCYTOSIS-DIF
-   			\item AMYLASE
-   			\item IRON
-   			\item TRANSFERRIN
-   			\item BILIRUBIN TOTAL
-   			\item BILIRUBIN-DIRECT
-   			\item ALBUMIN (BY EP)
-   			\item GLOBULIN ALPHA-1
-   			\item GLOBULIN ALPHA-2
-   			\item GLOBULIN GAMA
-   			\item REMARK-MANU-DIF
-   			\item MAGNESIUM
-   			\item HEMOGLOBIN A1C \%
-   			\item FRUCTOSAMINE
-   			\item SODIUM
-   			\item POTASSIUM
-   			\item CHLORIDE
-   			\item CALCIUM IONIZED
-   			\item pH BLOOD
-   			\item pCO2
-   			\item TOTAL HEMOGLOBIN
-   			\item HCO3
-   			\item TCO2
-   			\item pO2
-   			\item O2 SATURATION
-   			\item Hct- OXIMETRY
-   			\item CARBOXYHEMOGLO-OXIME
-   			\item DEOXYHEMOGLOBIN-OXIM
-   			\item METHEMOGLOBIN-OXIMET
-   			\item OXYHEMOGLOBIN-OXIMET
-   			\item STD BASE EXC (SBE)
-   			\item TOTAL OXYGEN CONTENT
-   			\item O2 TEN. AT 50\% SAT
-   			\item ACTUAL BASE EXCBSS
-   			\item STANDARD BICARBONATE
-   			\item LACTATE
-   			\item VITAMIN B12
-   			\item VITAMIN D (25-OH)
-   			\item LIPASE
-   			\item BILIRUBIN-NEONATAL
-   			\item ZINC
-   			\item REMARK-MAN-DIF
-   			\item TROPONIN I
-   			\item TROPONIN T
-   			\item FOLIC ACID
-   			\item CHOLESTEROL/ HDL
-   			\item TRANSFERRIN SATURATI
-   			\item MICROALBUMIN/CREAT
-   			\item GLUCOSE I
-   			\item BILIRUBIN INDIRECT
-   			\item IRON SATURATION
-   			\item GLOBULIN
-   			\item ICTERIC
-   			\item HEMOLYTIC
-   			\item LIPEMIC
-   			\item VLDL
-   			\item ESR
-   			\item CREATININE- U 24h
-   			\item PROTEIN- U SAMPLE
-   			\item CREATININE- U SAMPLE
-   			\item SODIUM-URINE SAMPLE
-   			\item POTASSIUM- U SAMPLE
-   			\item CALCIUM- URINE 24h
-   			\item PROTEIN- URINE 24h
-   			\item MICROALBUMIN- U 24h
-   			\item CALCIUM- U SAMPLE
-   			\item MICROALBUMIN-U SAMP
-   			\item HbF
-   			\item HbA2
-   			\item CARBAMAZEPINE
-   			\item DIGOXIN
-   			\item VALPROIC ACID
-   			\item GLUCOSE 50g
-   			\item CREATININE ENZ.CHILD
-   			\item GLOM.FILTR.RATE
-   			\item NON-HDL\_CHOLESTEROL
-   			\item ANA PATTERN
-   			\item ANA TITER
-   			\item CELIAC SCREEN
-   			\item ANTISTREPTOLYSIN O
-   			\item C-REACTIVE PROTEIN
-   			\item RHEUMATOID FACTOR
-   			\item ANTINUCLEAR Ab\_(ANA)
-   			\item ANTI CARDIOLIPIN IgM
-   			\item THYROGLOBULIN Ab
-   			\item DNA (ds) Ab
-   			\item RNP
-   			\item Sm (anti Smith Ab)
-   			\item COMPLEMENT C3
-   			\item COMPLEMENT C4
-   			\item TOXOPLASMA IgG
-   			\item TOXOPLASMA IgM
-   			\item HELICO PYLORI IgG
-   			\item REMARKS (GENERAL)
-   			\item REMARKS MICRO
-   			\item HEPATITIS Bs Ag
-   			\item HEPATITIS C Ab
-   			\item HEPATITIS Bs Ab
-   			\item HEPATITIS A IgM
-   			\item CMV IgG
-   			\item CMV IgM
-   			\item EBV VCA\_IgG
-   			\item EBV IgG-EBNA
-   			\item EBV VCA IgM
-   			\item RUBELLA Ab IgG
-   			\item Anti Jo-1 Ab
-   			\item Scl-70 Ab
-   			\item ANTI CARDIOLIPIN IgG
-   			\item HEPATITIS Bc Ab TOT.
-   			\item Ig-E TOTAL
-   			\item ANTI THYROID PEROXID
-   			\item COOMBS INDIRECT
-   			\item IgG
-   			\item IgM
-   			\item IgA
-   			\item ANTICENTROMERE Ab
-   			\item ALPHA FETOPROTEIN TM
-   			\item CA-125
-   			\item CA-15-3
-   			\item CA-19-9
-   			\item CEA
-   			\item FERRITIN
-   			\item PSA
-   			\item GLUCOSE - U STRIP
-   			\item BILIRUBIN- U STRIP
-   			\item KETONES- U STRIP
-   			\item SPECIFIC GRAV-U STRI
-   			\item PROTEIN- U STRIP
-   			\item NITRITE- U STRIP
-   			\item LEUCOCYTES - U STRIP
-   			\item ERYTHROCYTES-U STRIP
-   			\item UROBILINOGEN-U STRIP
-   			\item PH- U STRIP
-   			\item SBP\_last\_v
-   			\item sector
-   			\item SES
-   			\item sex
-   			\item smoking\_last\_v
-   			\item sw\_confined
-   			\item sw\_immigrant
-   			\item sw\_malig\_active
-   			\item sw\_malig\_ever
-   			\item sw\_nursing\_care
-   			\item Antiinfectives for Local Oral Treatment
-   			\item Corticosteroids for Local Oral Treatment
-   			\item Calcium Compounds
-   			\item Combination of Complexes of Calcium, Magnesium and AluminumCompounds
-   			\item H2 Receptor Antagonists
-   			\item Proton Pump Inhibitors
-   			\item Synthetic Anticholinergics, Esters with Tertiary Amino Groups
-   			\item Papaverine and Derivatives
-   			\item Other drugs for func. gastro. disorders
-   			\item Other Antispasmodics in Combination with Analgesics
-   			\item Propulsives
-   			\item Serotonin (5HT3) Antagonists
-   			\item Other Antiemetics
-   			\item Bile Acid and derivatives
-   			\item Softeners, Emollients
-   			\item Contact Laxatives
-   			\item Osmotically Acting Laxatives
-   			\item Enemas
-   			\item Other drugs for constipation
-   			\item Charcoal Preparations
-   			\item Bismuth Preparations
-   			\item Oral Rehydrating Salt Formulations
-   			\item Antipropulsives
-   			\item Aminosalicylic Acid and Similar Agents
-   			\item Antidiarrheal Microorganisms
-   			\item Enzyme Preparations
-   			\item Insulins and Analogues, for Injection, Fast Acting
-   			\item Insulin and Analogues, for Injection, Long Acting
-   			\item Biguanides
-   			\item Sufonylureas
-   			\item Combinations or Oral Blood Glucose Lowering Drugs
-   			\item Alpha Glucosidase Inhibitors
-   			\item Dipeptidyl peptidase 4 (DPP-4) Iinhibi.
-   			\item Glucagon-like peptide-1(GLP-1) analogues
-   			\item Sodium-glucose co-transfer 2(SGLT2) Inhibitors
-   			\item Other Blood Glucose Lowering Agents, Excluding Insulins
-   			\item Multiple Vitamins with Minerals
-   			\item Vitamin D and Analogues
-   			\item Vitamin B1, in Combination with Vitamin B6 and/or B12
-   			\item Ascorbic Acid (Vitamin C), Plain
-   			\item Ascorbic Acid (Vitamin C), Combinations
-   			\item Other Plain Vitamin Combinations
-   			\item Vitamins, Other Combinations
-   			\item Calcium
-   			\item Calc.,Comb.with vit.D and/or other drugs
-   			\item Potassium
-   			\item Magnesium
-   			\item Varoius Alimentary Tract and Metabolism Products
-   			\item Vitamin K Antagonists
-   			\item Heparin Group
-   			\item Platelet Aggregation Inhibitors, Excluding Heparin
-   			\item Direct Thrombin Inhibitors
-   			\item Direct factor Xa inhibitors
-   			\item Iron Bivalent, Oral Preparations
-   			\item Iron Trivalent, Oral Preparations
-   			\item Iron , Parenteral Preparations
-   			\item Iron in Combination with Folic Acid
-   			\item Iron in Other Combinations
-   			\item Vitamin B12 (Cyanocobalamine and Derivatives)
-   			\item Folic Acid and Derivatives
-   			\item Other Antianemic Preparations
-   			\item Digitalis Glycosides
-   			\item Antiarrhythmics, Class IC
-   			\item Antiarrhythmics, Class III
-   			\item Organic Nitrates
-   			\item Imidazoline Receptor Agonists
-   			\item Alpha Adrenergic Blocking Agents
-   			\item Thiazides, Plain
-   			\item Sulfonamides, Plain
-   			\item Aldosterone Antagonists
-   			\item Other Antihemorrhoidals for Topical Use
-   			\item Beta Blocking Agents, Non Selective
-   			\item Beta Blocking Agents, Selective
-   			\item Alpha and Beta Blocking Agents
-   			\item Dihydropyridine Derivatives
-   			\item Phenylalkalylamine Derivatives
-   			\item ACE Inhibitors, Plain
-   			\item ACE Inhibitors and Diuretics
-   			\item ACE Inhibitors and Calcium Channel Blockers
-   			\item Angiotensin II Antagonists, Plain
-   			\item Angiotensin II Antagonists and Diuretics
-   			\item Angiotensin II Antagonists and Calcium Channel Blockers
-   			\item HMG CoA Reductase Inhibitors
-   			\item Fibrates
-   			\item Other lipid modifying agents
-   			\item Imidazole Derivatives
-   			\item Other Antifungals for Topical Use
-   			\item Antifungals for Systemic Use
-   			\item Zinc Products
-   			\item Soft Paraffin and Fat Products
-   			\item Carbamide Products
-   			\item Salicylic Acid Products
-   			\item Other Emollients and Protectives
-   			\item Protectives Against UV-Radiations for Topical Use
-   			\item Cod Liver Oil Ointments
-   			\item Other Cicatrizants
-   			\item Antihistamines for Topical Use
-   			\item Anesthetic for Topical Use
-   			\item Other Antipsoriatics for Topical Use
-   			\item Other Antibiotics for Topical Use
-   			\item Sulfonamides
-   			\item Antivirals
-   			\item Corticosteroids, Potent (Group III)
-   			\item Corticosteroids, Very Potent (Group IV)
-   			\item CORTICOSTEROIDS, WEAK, COMBINATIONS WITH ANTIBIOTICS
-   			\item CORTICOSTEROIDS, MODERATELY POTENT, COMBINATIONS WITH ANTIBITICS
-   			\item Corticosteroids, Potent, Combinations with Antibiotics
-   			\item Corticosteroids, Potent, Other Combinations
-   			\item Biguanides and Amidines
-   			\item Phenol and Derivatives
-   			\item Iodine Products
-   			\item Other Antiseptics and Disinfectants
-   			\item Retinoids for Topical Use in Acne
-   			\item Peroxides
-   			\item Antiinfectives for Treatment of Acne
-   			\item Retinoids for Treatment of Acne
-   			\item Medicated Shampoos
-   			\item Wart and Anti-Corn Preparations
-   			\item Other Dermatologicals
-   			\item Imidazole Derivatives
-   			\item Progestogens and Estrogens, Fixed Combinations
-   			\item Progestogens
-   			\item 3-Oxoandrosten (3) Derivatives
-   			\item Natural and Semisynthetic Estrogens, Plain
-   			\item Pregnen (4) Derivatives
-   			\item Estren Derivatives
-   			\item Progestogedns and Estrogens in Fixed Combination
-   			\item Gonadotrophins
-   			\item Antiandrogens and Estrogens
-   			\item Selective Estrogen Receptor Modulator
-   			\item Acidifiers
-   			\item Urinary Concrement Solvents
-   			\item Drugs for urinary frequency and incontinence
-   			\item Drugs Used in Erectile Dysfunction
-   			\item Other Urologicals
-   			\item Alpha-Adrenoreceptor Antagonists
-   			\item Testerone-5 Alpha Reductase Inhibitors
-   			\item Other Drugs Used to Treat Benign Prostatic Hypertrophy
-   			\item Somatotrophin and Somatrophin Agonists
-   			\item Vasopressin and Analogues
-   			\item Glucocorticoids
-   			\item Thyroid Hormones
-   			\item Other anti-parathyroid agents
-   			\item Tetracyclines
-   			\item Penicillins with Extended Spectrum
-   			\item Beta Lactamase Sensitive Penicillins
-   			\item Combinations of Penicillins, Including Beta-Lactamase Inhibitors
-   			\item First-Generation Cephalosporins
-   			\item Second-Generation Cephalosporins
-   			\item Combinations of Sulfonamides and Trimethoprim, Including Derivatives
-   			\item Macrolides
-   			\item LINCOSAMIDES
-   			\item Fluoroquinolones
-   			\item Nitrofuran Derivatives
-   			\item Other Antibacterials
-   			\item Triazole Derivatives
-   			\item Nucleosides and Nucleotides (excl. Reverse Transcriptase Inhibitors)
-   			\item Antivirals for treatment of HIV infections, combinations
-   			\item Influenza Vaccines
-   			\item Hepatitis Vaccines
-   			\item Bacterial and Viral Vaccines, Combined
-   			\item Pyrimidine Analogues
-   			\item Monoclonal Antibodies
-   			\item Other Antineoplastic Agents
-   			\item Gonadotrophin Releasing Hormone Analogues
-   			\item Antiestrogens
-   			\item Aromatase inhibitors
-   			\item SELECTIVE IMMUNOSUPPRESANTS
-   			\item Tumor Necrosis Factor Alpha (TNBF-a) Inhibitors
-   			\item Calcineurin Inhibitors
-   			\item Other Immunosuppressants
-   			\item Acetic Acid Derivatives and Related Substances
-   			\item Oxicams
-   			\item Propionic Acid Derivatives
-   			\item Coxibs
-   			\item Other Antiinflammatory and Antirheumatic Products, Non Steroids
-   			\item Antiinflammatory Preparations, Non Steroid for Topical Use
-   			\item Capsicum and Similar Agents
-   			\item Preparations with Salicylic Acid Derivatives
-   			\item Ethers, Chemically Close to Antihistamines
-   			\item Other Centrally Acting Agents
-   			\item Preparations Inhibiting Uric Acid Production
-   			\item Preparations with No Effect on Uric Acid Metabolism
-   			\item Biphosphonates
-   			\item Biphosphonates and Calcium, Sequential Preparations
-   			\item Amides
-   			\item Natural Opium Alkaloids
-   			\item Phenylpiperidine Derivatives
-   			\item Oripavine Derivatives
-   			\item Opioids in combin. with non-opioid analg.
-   			\item Other Opioids
-   			\item Pyrazolones
-   			\item Anilides
-   			\item SELECTIVE 5HT-RECEPTOR AGONISTS
-   			\item Barbiturates and Derivatives
-   			\item Hydantoins and Derivatives
-   			\item Benzodiazepine Derivatives
-   			\item Carboxamide Derivatives
-   			\item Fatty Acid Derivatives
-   			\item Other Antiepileptics
-   			\item Tertiary Amines
-   			\item DOPA and DOPA Derivatives
-   			\item Amantane Derivatives
-   			\item Dopamine Agonists
-   			\item Monoamine Oxidase Type B Inhibitors
-   			\item Phenothiazines with Aliphatic Side Chain
-   			\item Phenothiazines with Piperazine Structure
-   			\item Phenothiazines with Piperidine Structure
-   			\item Butyrophenone Derivatives
-   			\item Thioxanthine Derivatives
-   			\item Dibenzepines, Oxazepines, thiazepines, and oxepines
-   			\item Benzamides
-   			\item Lithium
-   			\item Other Antipsychotics
-   			\item Benzodiazepine Derivatives
-   			\item Benzodiazepine Derivatives
-   			\item Benzodiazepine Related Drugs
-   			\item Other Hypnotics and Sedatives
-   			\item Nonselective Monoamine Reuptake Inhibitors
-   			\item Selective Serotonin Reuptake Inhibitors
-   			\item Other Antidepressants
-   			\item Centrally Acting Sympathomimetics
-   			\item Anticholinesterases
-   			\item Other Anti-Dementia Drugs
-   			\item Drugs Used in Nicoitine Dependence
-   			\item Antivertigo Preparations
-   			\item Nitroimidazole Derivatives
-   			\item Aminoquinolines
-   			\item Benzimidzole Derivatives
-   			\item Other Ectoparasiticides, Including Scabies
-   			\item Other Insecticides and Repellants
-   			\item Sympathomimetics, Plain
-   			\item Sympathomimetics, Combinations Excluding Corticosteroids
-   			\item Corticosteroids
-   			\item Other Nasal Preparations
-   			\item Sympathomimetics
-   			\item Antiseptics
-   			\item Selective Beta-2 Adrenoreceptor Agonists
-   			\item Adrenergics in combinations with corticosteroids or other drugs, excl. anticholinergics
-   			\item Corticosteroids
-   			\item Anticholinergics
-   			\item Leukotriene Receptor Antagonists
-   			\item Expectorants
-   			\item Mucolytics
-   			\item Opium Alkaloids and Derivatives
-   			\item Other Cough Suppressants
-   			\item Opium Derivatives and Expectorants
-   			\item Substituted Alkylamines
-   			\item Phenothiazine Derivatives
-   			\item Piperazine Derivatives
-   			\item Other Antihistamines for Systemic Use
-   			\item ANTIBIOTICS
-   			\item Fluoroquinolones
-   			\item Corticosteroids, Plain
-   			\item Corticosteroids and Antiinfectives in Combination
-   			\item Sympathomimetics in Glaucoma Therapy
-   			\item Carbonic Anhydrase Inhibitors
-   			\item Beta Blocking Agents
-   			\item Prostaglandin Analogues
-   			\item Sympathomimetics Used as Decongestants
-   			\item Other Antiallergics
-   			\item Other Ophthalmologicals
-   			\item Corticosteroids and Antiinfectives in Combination
-   			\item Analgesics and Anesthetics
-   			\item Indifferent Preparations
-   			\item Antiinfectives
-   			\item Drugs for Treatment of Hyperkalemia
-   			\item Nutrients with Low Calcium Content
-   			\item Other Infant Formulas
-   			\item Fat/Carbohydrate/Protein/Minerals/Vitamins, Combinations
-   			\item Solvents and Diluting Agents, Including Irrigating Solutions
-   			\item Cosmetics-C
-   			\item Cosmetics-E
-   			\item Hearing loss and Deafness
-   			\item S - IHD (s/p MI)
-   			\item S - Ischemic Heart Disease
-   			\item Valvular Cardiac Dis (excl. MVP)
-   			\item CHF-systolic w/o selected medications
-   			\item CHF-systolic with selected medications
-   			\item CHF-non systolic
-   			\item CHF NOS with diuretics
-   			\item CHF NOS
-   			\item Cardiomyopathy
-   			\item IHSS
-   			\item Atrial fibrilation
-   			\item Arrhythmia other
-   			\item S - Hypertension / Diet Treatment
-   			\item S - Hypertension / Drug Treatment
-   			\item S - Hypertension / Unknown Treatment
-   			\item Pulmonary Hypertension
-   			\item s/p CVA
-   			\item Carotid Artery Disease
-   			\item S - Diabetes PVD
-   			\item S - PVD
-   			\item Aortic Aneurism
-   			\item S - Amputation of Limb (Diabetic)
-   			\item Amputation of Limb (Non-Diabetic)
-   			\item S - Amputation of Limb
-   			\item COPD
-   			\item S - Asthma
-   			\item s/p Pulmonary Embolism
-   			\item s/p Pneumothorax
-   			\item Chronic Bronchitis
-   			\item Bronchiectasis
-   			\item Hepatitis B Carrier
-   			\item Celiac Disease
-   			\item Peptic Ulcer
-   			\item Reflux Esophagitis / Gastritis / Deudenitis
-   			\item Irritable Bowel Syndrome
-   			\item Addisons Disease
-   			\item Chronic Act/Per Hepatitis
-   			\item Cirrhosis
-   			\item Wilsons Disease
-   			\item Other Liver Disease
-   			\item Ulcerative Colitis
-   			\item Crohns Disease
-   			\item H - Dialysis
-   			\item Kidney Transplant
-   			\item Prostatic Hypertrophy
-   			\item Liver Transplant
-   			\item Heart Transplant
-   			\item Pancreas Transplant
-   			\item Lung Transplant
-   			\item Bone Marrow Transplant
-   			\item Other Transplant
-   			\item Unknown Transplant
-   			\item Chronic Renal Failure
-   			\item s/p splenectomy
-   			\item Infertility Male/Female
-   			\item S - Diabetic Nephropathy
-   			\item S - Other Kidney Disease
-   			\item Hepatitis C Carrier
-   			\item Pemphigus Vulgaris
-   			\item Psoriasis
-   			\item Hidradenitis Suppurativa
-   			\item Arthropathy
-   			\item SLE
-   			\item Rheumatoid Arthritis
-   			\item Osteoporosis
-   			\item Joint Replacement
-   			\item Sarcoidosis
-   			\item Scleroderma
-   			\item Behcets Disease
-   			\item Other Rheumatic / Autoimmune
-   			\item Polymyalgia Rheumatica
-   			\item Gout
-   			\item s/p Head of Femur Fracture
-   			\item Congenital Anomalies
-   			\item H - AIDS Patient
-   			\item HIV Carrier
-   			\item Familial Mediteranean Fever
-   			\item G-6-P-D Deficiency
-   			\item Amyloidosis
-   			\item S - Breast Cancer
-   			\item S - Malignancy of Colon or Rectum
-   			\item S - Malignancy of Prostate
-   			\item S - Malignancy of Lung
-   			\item S - Malignancy of Bladder
-   			\item S - Malignancy of Ovary
-   			\item S - Malignancy of Uterus
-   			\item S - Malignancy of Pancreas
-   			\item S - Malignancy of Brain / CNS
-   			\item S - Stomach Cancer
-   			\item S - Melanoma
-   			\item S - Hodgkins Lymphoma
-   			\item S - Non Hodgkin Lymphoma / Mycosis Fungoides
-   			\item S - Acute Leukemia
-   			\item S - Chronic Leukemia
-   			\item S - Malignancy of Kidney
-   			\item S - Malignancy of Larynx
-   			\item S - Malignancy of Cervix Uteri
-   			\item S - Malignancy of Pharynx
-   			\item S - Malignancy of Esophagus
-   			\item S - Malignancy of Liver / Bile Ducts
-   			\item S - Malignancy of Thyroid
-   			\item S - Malignancy of Bone
-   			\item S - Malignancy of Connective Tissue / Sarcoma
-   			\item S - Malignancy of Other Male/Female Genital Organs
-   			\item S - Multiple Myeloma
-   			\item S - Polycytemia Vera
-   			\item S - Myelodysplastic Syndrom
-   			\item S - Myelo/Lymphoproliferative Syndrom
-   			\item S - Neurofibromatosis
-   			\item S - Malignancy of Other Sites
-   			\item S - Malignancy of Unknown Site
-   			\item Tuberculosis
-   			\item Benign Brain Tumor
-   			\item Disability / Bedbound
-   			\item Disability / Homebound
-   			\item Disability / Requires assistance with ambulation
-   			\item Breast Family History
-   			\item Colon Family History
-   			\item Hyperthyroidism
-   			\item Hypothyroidism
-   			\item Tuberculosis s/p
-   			\item S - Diabetes / Diet Treatment
-   			\item S - Diabetes / Oral Treatment
-   			\item S - Diabetes / Insulin Treatment
-   			\item S - Diabetes / Insulin + Oral Treatment
-   			\item S - Diabetes / Unknown Treatment
-   			\item H - Gaucher Disease
-   			\item Hypo/Hyperparathyroidism
-   			\item Acromegaly
-   			\item Obesity
-   			\item S - Hyperlipidemia / No Treatment
-   			\item S - Hyperlipidemia / Treatment
-   			\item S - Hyperlipidemia / Unknown Treatment
-   			\item Cystic Fibrosis
-   			\item Hyperprolactinemia
-   			\item Other Endocrine and Metabolic Disease
-   			\item Syphilis / Gonorrhea
-   			\item Cushings Disease
-   			\item Diabetes Insipidus
-   			\item Hypophysary Adenoma
-   			\item H - Hemophilia
-   			\item H - Thalassemia Minor
-   			\item H - Thalassemia Intermedia
-   			\item H - Thalassemia Major
-   			\item H - Thalassemia NOS
-   			\item Other Hematologic Dis (excl. Iron Def Anemia)
-   			\item Sickle Cell Anemia
-   			\item Pernicious Anemia
-   			\item ITP
-   			\item Psychoses
-   			\item Schizophrenia
-   			\item Bipolar Disease (Manic Depressive)
-   			\item Autism
-   			\item Neuroses
-   			\item Depression
-   			\item Anxiety
-   			\item Eating Disorders
-   			\item Alcohol Abuse
-   			\item Current Smoker
-   			\item Former Smoker
-   			\item Smoker
-   			\item Drug Abuse
-   			\item Mental Retardation (incl. Down)
-   			\item Dementia / Alzheimers / OMS
-   			\item Myasthenia Gravis
-   			\item Parkinsons Disease
-   			\item Epilepsy
-   			\item Multiple Sclerosis
-   			\item Cerebral Palsy
-   			\item Huntingtons Chorea
-   			\item Familial Dysautonomia
-   			\item Hereditary Neurological Disease
-   			\item Muscular Dystrophy
-   			\item Motor Neuron Disease
-   			\item S - Diabetic Neuropathy
-   			\item s/p TIA
-   			\item S - Other Neurological Disease
-   			\item S - Diabetic Retinopathy
-   			\item Non-Diabetic Retinopathy
-   			\item S - Retinopathy
-   			\item Glaucoma
-   			\item Blindness
-   			\item Retinitis Pigmentosum
-   			\item Chronic Medication User
-   		\end{enumerate}
-   		\newpage
-   		
    		\section{Preliminary Result Graphs and Drawings}
-   			\subsection{Framingham Stroke Risk Score (FSRS) Result Graphs}
+   			\subsection{AHA/ACC 2013 Risk Model  Result Graph}
 	   		\begin{figure}[H]
-	   			\begin{minipage}{.45\linewidth}
-	   				\includegraphics[width=8cm, height=8cm]{prelim-results/FSRS/FSRScal.png}
-	   				\label{FSRS1}
-	   				\captionsetup{justification=justified,singlelinecheck=false,margin=1cm}
-	   				\caption{FSRS Calibration Curve}
-	   			\end{minipage}
-	   			\hspace{.01\linewidth}
-	   			\begin{minipage}{.45\linewidth}
-	   				\includegraphics[width=8cm, height=8cm]{prelim-results/FSRS/FSRSdisc.png}
-	   				\label{FSRS2}
-	   				\captionsetup{justification=justified,singlelinecheck=false,margin=1cm}
-	   				\caption{FSRS ROC Curve}
-	   			\end{minipage}
+   				\includegraphics[width=8cm, height=8cm]{prelim-results/AHA/AHA_ROC.png}
+   				\label{AHAROC}
+   				\captionsetup{justification=justified,singlelinecheck=false,margin=1cm}
+   				\caption{AHA/ACC 2013 ROC Curve}
 	   		\end{figure}
    		
    			\subsection{Clalit Model Population Flow Chart}
@@ -1675,25 +889,6 @@
 	   			\captionsetup{justification=justified,singlelinecheck=false,margin=2cm}
 	   			\caption{Population Flow Chart}
 	   		\end{figure}
-   			
-   			\subsection{Application Mock Drafts}
-   			\begin{figure}[H]
-   				%\centering
-   				\begin{minipage}{.3\linewidth}
-   					\includegraphics[width=4.5cm, height=7cm]{prelim-results/calc3}
-   					\label{calc3}
-   				\end{minipage}
-   				\hspace{.01\linewidth}
-   				\begin{minipage}{.3\linewidth}
-   					\includegraphics[width=4.5cm, height=7cm]{prelim-results/calc2b}
-   					\label{calc2}
-   				\end{minipage}
-   				\hspace{.01\linewidth}
-   				\begin{minipage}{.3\linewidth}
-   					\includegraphics[width=4.5cm, height=7cm]{prelim-results/calc1}
-   					\label{calc1}
-   				\end{minipage}
-   			\end{figure}
    		
    	\end{appendices}
 	
