@@ -5,7 +5,7 @@
 \usepackage[fleqn]{amsmath}
 
 \usepackage{geometry}
-\geometry{a4paper, portrait, margin=0.7in}
+\geometry{a4paper, portrait, margin=0.9in}
 
 % graphics
 \usepackage{graphicx}
@@ -62,7 +62,9 @@
 		{\large \today\par}
 		\vfill
 		Supervisor's Signature, Prof. Nadav Davidovich: \underline{\hspace{5cm}}\par
+		\vspace{0.5cm}
 		Supervisor's Signature, Prof. Eitan Bachmat: \underline{\hspace{5cm}}\par
+		\vspace{0.5cm}
 		Chairman of Departmental Graduate Studies's Signature: \underline{\hspace{5cm}}\par
 		
 	\end{titlepage}
@@ -78,26 +80,16 @@
 	
 		\subsection{Background}
 		Since the early 1990s, and more so in the last few years,  multivariate risk models have been created to estimate patients' risk for different diseases over different time spans (e.g. \cite{Wilson1998,Conroy2003,DAgostino2008}). These models are used to identify patients at risk and are capable of exact risk quantification over time\cite{Goff2014}. Through their many variations, these risk models are included in different guidelines and occupy an important place in both primary prevention and diagnosis of different diseases\cite{Graham2007,Goff2014}.
+	
+		These risk models have been particularly used for the diagnosis and prevention of cardiovascular disease (CVD), which despite reduced incidence in the developed world in recent years\cite{Koton2014,Vangen-Loenne2017}, remains a significant cause of morbidity and mortality\cite{ODonnell2016}.
 		
-		Such multivariate risk models have several characteristics:
-		\begin{itemize}
-			\item Their development has traditionally required extensive input from domain experts (clinicians) for the choice of predictors.
-			\item Their performance is highest in the population used to develop them and is reduced on populations that are genetically or otherwise different\cite{DAgostino2001,Bastuji-Garin2002,DeFilippis2015}.
-			\item They are traditionally based on classic biostatistical models, usually logistic and Cox regression.
-		\end{itemize}
-	
-		Such risk models have been particularly used for the diagnosis and prevention of cardiovascular disease (CVD), which despite reduced incidence in the developed world in recent years\cite{Koton2014,Vangen-Loenne2017}, remains a significant cause of morbidity and mortality\cite{ODonnell2016}.
-
+		Such multivariate risk models have traditionally required extensive input from domain experts (clinicians) for the choice of predictors and are based on classic biostatistical models, usually logistic and Cox regression.
+		
 		\subsection{Goals}
-		We intend to pursue three goals in this thesis:
-		\begin{itemize}
-			\item Recent advances in machine learning allow for a new approach to medical risk modeling\cite{Obermeyer2016}. Contrary to the classic approach that emphasizes domain knowledge for the pre-specification of risk factors, novel methods rely instead on sophisticated algorithms being presented with thousands of candidate variables and selecting the relevant ones by themselves. These variables are then used for the actual model building\cite{Weng2017}. Such technologies allow a more standardized "one-size fits all" approach to risk modeling, utilizing a single comprehensive database with different outcomes\cite{Rajkomar2018}. We intend to establish a generic prediction framework allowing the standardized construction of validated predictive models for any outcome.
-			\item Being ethnically distinct from the US and European populations used to develop existing models, CVD risk models are expected to perform sub-optimally in the Israeli population, but such external validation has yet to be performed on a population-wide scale\cite{Lovis2015}. We intend to perform external validation of CVD predictive models on a wide sample of the Israeli population.
-			\item Once the comparison has been performed, we will use the different models to simulate a wide-scale population-wide intervention on the Clalit's population using EHR data based on current guidelines\cite{Goff2014}.
-		\end{itemize}
-	
+		In this thesis we intend to build a generic prediction framework, capable of constructing validated prediction models for any outcome with no domain expert input. We will use this framework to construct a predictive model for cardiovascular disease (CVD) and compare said model to the current leading CVD predictive models, externally validating them in the process, and to simulate an application of said model for an EHR based population-wide prevention program.
+
 		\subsection{Methods}
-		The generic prediction framework will make use of a sparsity inducing algorithm fed with the majority of the variables in the Clalit's electronic health record. The algorithm will then choose the appropriate variables and construct a model. The model will first be tuned on a validation set and then evaluated on a test set.
+		This generic prediction framework will make use of a sparsity inducing algorithm fed with the majority of the variables in the Clalit's electronic health record. The algorithm will then choose the appropriate variables and construct a model.
 		
 		To perform external validation and comparison, the three leading CVD models will be selected and recreated on the Clalit's database. The models will be compared in their original population composition and on a common sample corresponding to the population on which we intend to simulate our intervention.
 		
@@ -115,23 +107,13 @@
 	\begin{hebrew}
 		\subsection*{רקע}
 				מתחילת שנות ה-90 החלה, ובשנים האחרונות גברה, יצירתם של מודלים רב-משתניים לחישוב סיכון למחלות שונות(לדוגמה \cite{Wilson1998,Conroy2003,DAgostino2008}). מודלים אלו משמשים לזיהוי חולים בסיכון, ומאפשרים כימות מדויק של הסיכון לאורך שנים רבות\cite{Goff2014}. כיום, בצורותיהן השונות, מודלים אלו כלולים בקווים המנחים של ארגונים מקצועיים רבים, ולהם מקום חשוב הן במניעה הראשונית והן באבחנה של מחלות \cite{Graham2007,Goff2014}.
-			
-			למודלים אלו מספר מאפיינים:
-			\begin{itemize}
-				\item פיתוחם דרש באופן מסורתי התייעצות נרחבת עם מומחי תוכן (קלינאים), על מנת שאלו יספקו את המידע הנדרש בנוגע למשתנים הנדרשים לחיזוי התוצא.
-				\item ביצועיהם של מודלים אלו מיטביים כאשר משתמשים בהם באוכלוסיות עליהם פותחו, ופוחת באוכלוסיות השונות מאוכלוסיות אלו מבחינה גנטית או אחרת\cite{DAgostino2001,Bastuji-Garin2002,DeFilippis2015}.
-				\item המודלים מבוססים ככלל על שיטות ביוסטטיסטיות מסורתיות, בפרט על רגרסיה לוגיסטית ורגרסיית קוקס.
-			\end{itemize}
-		
-		במודלים אלו נעשה שימוש בייחוד לחיזוי ולמניעה של מחלה קרדיו-וסקולרית, אשר חרף הירידה בהיארעותה בעולם המפותח בשנים האחרונות\cite{Koton2014,Vangen-Loenne2017}, נותרה סיבה חשובה לתחלואה ולתמותה\cite{ODonnell2016}.
 				
+				במודלים אלו נעשה שימוש בייחוד לחיזוי ולמניעה של מחלה קרדיו-וסקולרית, אשר חרף הירידה בהיארעותה בעולם המפותח בשנים האחרונות\cite{Koton2014,Vangen-Loenne2017}, נותרה סיבה חשובה לתחלואה ולתמותה\cite{ODonnell2016}.
+				
+				ככלל, מודלים אלו דרשו התייעצות נרחבת עם מומחי תוכן (קלינאים) על מנתשאלו יספקו את המידע הנדרש בנוגע למשתנים הנדרשים לחיזוי התוצאה, והתבססו על שיטות ביוסטטיסטיות מסורתיות, ובפרט על רגרסיה לוגיסטית ורגרסיית קוקס.
+			
 		\subsection*{מטרות}
-			כוונתנו להשיג שלוש מטרות בתזה זו:
-			\begin{itemize}
-				\item חידושים מודרניים בלמידה חישובית מאפשרים גישות חדשות למידול סיכון רפואי\cite{Obermeyer2016}. בניגוד לגישה הקיימת, המבוססת על שימוש בידע תחומי לפירוט-מראש של גורמי הסיכון, גישות מודרניות מתירות לאלגוריתם החישובי, המוזן עם מאות משתנים אפשריים, לברור מביניהם את המשתנים הרלוונטיים בכחות עצמו\cite{Weng2017}. לאחר מכן, משתנים אלו משמשים לבניית המודל. טכנולוגיות אלו מאפשרות גישה אחידה יותר למידול סיכון, המשתמשת בבסיס נתונים נרחב יחיד עם תוצאים שונים\cite{Rajkomar2018}.
-				\item בהיותה מובחנת אתנית מהאוכלוסיות האמריקאיות והאירופאיות עליהן פותחו, ביצועיהם של מודלי חיזוי קרדיו-וסקולריים באוכלוסיה הישראלית צפויים להיות ירודים. השערה זו טרם נבדקה על אוכלוסיה גדולה, המייצגת את האוכלוסיה הישראלית כולה\cite{Lovis2015}. אנו מתכוונים לבדוק השערה זו על מדגם נרחב של האוכלוסיה הישראלית.
-				\item אנו נשתמש במודלים השונים (הן הקיימים והן המודל שיפותח כחלק מעבודה זו) על מנת לבצע סימולציה של התערבות אוכלוסייתית רחבה המבוססת על מידע מהתיק הרפואי הממוחשב, וזאת לפי הקווים המנחים הקיימים\cite{Goff2014}.
-			\end{itemize}
+				בתזה זו אנו מתכוונים לבנות שלד גנרי לחיזוי סיכון, המסוגל לבנות מודלים מתוקפים לכל תוצא ללא כל מידע ממומחי תוכן. אנו נשתמש במנגנון זה לבנות מודל לחיזוי מחלה קרדיוסקולרית, ונשווה ביצועיו למודלים המובילים הקיימים בספרות למטרה זו, תוך שאנו מתקפים אותם חיצונית. לבסוף, נבצע סימולציה של תכנית התערבות מבוססת תיק רפואי ממוחשב על אוכלוסיית הקופה.
 		
 		\subsection*{שיטות}
 				השלד לחיזוי גנרי יעשה שימוש באלגוריתם המבצע בחירת משתנים כחלק מפעולתו. אלגוריתם זה יוזן עם מרבית המשתנים הזמינים בבסיס הנתונים של קופ"ח כללית, מהם יבחר המשתנים הרלוונטיים בהם יעשה שימוש לבניית מודל. המודל יכוונן על גבי אוכלוסיית פיתוח וייבדק מול אוכלוסיית בדיקה.
@@ -146,7 +128,7 @@
 		
 		תיקוף חיצוני של מודלים לחיזוי מחלה קרדיווסקולרית, המצויים בשימוש רחב ומשולבים בקווים המנחים, הוא בעל חשיבות מכרעת\cite{Collins2015}.
 		
-			ביצוע והערכת ההתערבות המתוכננת יאפשר לנו לשפוט את היעילות של התערבויות שכאלה, להם חשיבות מיוחדות במניעת מחלות קרדיווסקולריות\cite{Riegel2017}, ואשר הופכות אפשריות יותר ויותר עם הזמינות הגוברת של תיקים רפואיים ממוחשבים.
+			ביצוע והערכת ההתערבות המתוכננת יאפשר לנו לשפוט את היעילות של התערבויות שכאלה, להם חשיבות מיוחדות במניעת מחלות קרדיווסקולריות, ואשר הופכות אפשריות יותר ויותר עם הזמינות הגוברת של תיקים רפואיים ממוחשבים.
 		
 	\end{hebrew}
 	
