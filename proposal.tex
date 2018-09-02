@@ -17,6 +17,8 @@
 \usepackage{pdflscape}
 \usepackage{longtable}
 
+\usepackage{sectsty}
+
 % hebrew
 \usepackage{fontspec}
 \usepackage{polyglossia}
@@ -25,6 +27,16 @@
 %\newfontfamily\hebrewfont[Script=Hebrew]{Miriam Mono CLM}
 %\newfontfamily\hebrewfont[Script=Hebrew]{Frank Ruehl CLM}
 \newfontfamily\hebrewfont[Script=Hebrew]{David CLM}
+\newfontfamily{\hebrewfontsf}[Script=Hebrew]{Linux Libertine O}
+\newfontfamily{\hebrewfonttt}[Script=Hebrew]{Linux Libertine O}
+
+% Font experiments
+%\setmainfont{DejaVu Sans}
+%\setmonofont{DejaVu Sans}
+%\newfontfamily\hebrewfont{DejaVu Sans}[Script=Hebrew]
+%\newfontfamily\hebrewfontsf{DejaVu Sans}[Script=Hebrew]
+%\newfontfamily\hebrewfonttt{DejaVu Sans}[Script=Hebrew]
+
 \setmainlanguage{english}
 \setotherlanguage{hebrew}
 
@@ -58,7 +70,7 @@
 		{\huge\bfseries חיזוי סיכון גנרי ברפואה למניעת מחלה קרדיווסקולרית\par}
 		\end{hebrew}
 		\vspace{1.5cm}
-		{\Large\itshape Noam Barda\par}
+		{\Large\itshape Noam Barda, MD\par}
 		{\large \today\par}
 		\vfill
 		Supervisor's Signature, Prof. Nadav Davidovich: \underline{\hspace{5cm}}\par
@@ -102,20 +114,32 @@
 		
 		Simulating  the intervention will allow us to gauge the potential effectiveness of interventions based on such risk models. Such interventions are becoming more and more possible with widespread electronic health record availability.
 		
-	\section{Hebrew Abstract}
+		\subsection{Keywords}
+		Medical Prediction Models, Generic Prediction, Cardiovascular Disease, Electronic Health Records
 	
-	\begin{hebrew}
-		\subsection*{רקע}
+	\begin{hebrew}	
+	\section{\texthebrew{תקציר בעברית}}
+	
+	%\begin{hebrew}
+		%{\large\bfseries 2.1 רקע\par}
+		%\vspace{0.5cm}
+		\subsection{\texthebrew{רקע}}
 				מתחילת שנות ה-90 החלה, ובשנים האחרונות גברה, יצירתם של מודלים רב-משתניים לחישוב סיכון למחלות שונות(לדוגמה \cite{Wilson1998,Conroy2003,DAgostino2008}). מודלים אלו משמשים לזיהוי חולים בסיכון, ומאפשרים כימות מדויק של הסיכון לאורך שנים רבות\cite{Goff2014}. כיום, בצורותיהן השונות, מודלים אלו כלולים בקווים המנחים של ארגונים מקצועיים רבים, ולהם מקום חשוב הן במניעה הראשונית והן באבחנה של מחלות \cite{Graham2007,Goff2014}.
 				
 				במודלים אלו נעשה שימוש בייחוד לחיזוי ולמניעה של מחלה קרדיו-וסקולרית, אשר חרף הירידה בהיארעותה בעולם המפותח בשנים האחרונות\cite{Koton2014,Vangen-Loenne2017}, נותרה סיבה חשובה לתחלואה ולתמותה\cite{ODonnell2016}.
 				
 				ככלל, מודלים אלו דרשו התייעצות נרחבת עם מומחי תוכן (קלינאים) על מנתשאלו יספקו את המידע הנדרש בנוגע למשתנים הנדרשים לחיזוי התוצאה, והתבססו על שיטות ביוסטטיסטיות מסורתיות, ובפרט על רגרסיה לוגיסטית ורגרסיית קוקס.
 			
-		\subsection*{מטרות}
+		%\vspace{0.3cm}
+		%{\large\bfseries 2.2 מטרות\par}
+		%\vspace{0.5cm}
+		\subsection{\texthebrew{מטרות}}
 				בתזה זו אנו מתכוונים לבנות שלד גנרי לחיזוי סיכון, המסוגל לבנות מודלים מתוקפים לכל תוצא ללא כל מידע ממומחי תוכן. אנו נשתמש במנגנון זה לבנות מודל לחיזוי מחלה קרדיוסקולרית, ונשווה ביצועיו למודלים המובילים הקיימים בספרות למטרה זו, תוך שאנו מתקפים אותם חיצונית. לבסוף, נבצע סימולציה של תכנית התערבות מבוססת תיק רפואי ממוחשב על אוכלוסיית הקופה.
-		
-		\subsection*{שיטות}
+				
+		%\vspace{0.3cm}
+		%{\large\bfseries 2.3 שיטות\par}
+		%\vspace{0.5cm}
+		\subsection{\texthebrew{שיטות}}
 				השלד לחיזוי גנרי יעשה שימוש באלגוריתם המבצע בחירת משתנים כחלק מפעולתו. אלגוריתם זה יוזן עם מרבית המשתנים הזמינים בבסיס הנתונים של קופ"ח כללית, מהם יבחר המשתנים הרלוונטיים בהם יעשה שימוש לבניית מודל. המודל יכוונן על גבי אוכלוסיית פיתוח וייבדק מול אוכלוסיית בדיקה.
 		
 		על מנת לבצע תיקוף חיצוני והשוואה, שלושת המודלים המובילים לחיזוי CVD ייבחרו מהספרות וייבנו מחדש על גבי בסיס הנתונים של הכללית. המודלים יושוו הן בהרכב האוכלוסיה המקורי בו נבנו והן בהרכב האוכלוסיה בו אנו עתידים לדמות התערבות.
@@ -123,12 +147,21 @@
 		סימולציית ההתערבות תבחן עקבה רטרוספקטיבית, ובאמצעות ידע קיים בנוגע להפחתת התמותה המיוחסת לשימוש בסטטינים ובאספירין, תדמה התוצאים ל-10 שנים  של עקבה זו  באם הקוים המנחים הקיימים היו מקויימים כלשונם, לפי הסיכון אותו חוזים המודלים הקיימים והמודל החדש.
 		
 		
-		\subsection*{חשיבות}
+		%\vspace{0.3cm}
+		%{\large\bfseries 2.4 חשיבות\par}
+		%\vspace{0.5cm}
+		\subsection{\texthebrew{חשיבות}}
 		מסגרת לחיזוי גנרי תאפשר בניית מודלים מתוקפים ובאיכות גבוהה לחיזוי מחלות שונות, ועצם תהליך בחירת המשתנים יכול שיאפשר תובנות ביולוגיות.
 		
 		תיקוף חיצוני של מודלים לחיזוי מחלה קרדיווסקולרית, המצויים בשימוש רחב ומשולבים בקווים המנחים, הוא בעל חשיבות מכרעת\cite{Collins2015}.
 		
 			ביצוע והערכת ההתערבות המתוכננת יאפשר לנו לשפוט את היעילות של התערבויות שכאלה, להם חשיבות מיוחדות במניעת מחלות קרדיווסקולריות, ואשר הופכות אפשריות יותר ויותר עם הזמינות הגוברת של תיקים רפואיים ממוחשבים.
+			
+			%\vspace{0.3cm}
+			%{\large\bfseries 2.5 מילות מפתח\par}
+			%\vspace{0.5cm}
+			\subsection{\texthebrew{מילות מפתח}}
+			מודלי חיזוי רפואיים, חיזוי גנרי, מחלה קרדיווסקולרית, תיק רפואי ממוחשב.
 		
 	\end{hebrew}
 	

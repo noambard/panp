@@ -16,15 +16,27 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {1.4}Importance}{3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2}Hebrew Abstract}{4}
+\contentsline {subsection}{\numberline {1.5}Keywords}{4}
 \defcounter {refsection}{0}\relax 
 \select@language {hebrew}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2}\texthebrew {תקציר בעברית}}{4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.1}\texthebrew {רקע}}{4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.2}\texthebrew {מטרות}}{4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.3}\texthebrew {שיטות}}{4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.4}\texthebrew {חשיבות}}{5}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.5}\texthebrew {מילות מפתח}}{5}
 \defcounter {refsection}{0}\relax 
 \select@language {english}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3}Aim of the Thesis}{5}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4}Importance and Background}{5}
+\contentsline {section}{\numberline {4}Importance and Background}{6}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {4.1}Part I}{6}
 \defcounter {refsection}{0}\relax 
@@ -32,37 +44,37 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {4.1.2}Generalized Linear Models}{6}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.1.3}Cox Proportional Hazards}{6}
+\contentsline {subsubsection}{\numberline {4.1.3}Cox Proportional Hazards}{7}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {4.1.4}Parametric Vs. Non-Parametric Models}{7}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {4.1.5}The Rise of AI and Machine Learning}{7}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.1.6}Black-Box Vs. White-Box Models}{7}
+\contentsline {subsubsection}{\numberline {4.1.6}Black-Box Vs. White-Box Models}{8}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {4.1.7}Electronic Health Record based Observational Studies}{8}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {4.1.8}The Gap and our Thesis}{8}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2}Part II}{8}
+\contentsline {subsection}{\numberline {4.2}Part II}{9}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.2.1}Epidemiology of Cardiovascular Disease and Stroke}{8}
+\contentsline {subsubsection}{\numberline {4.2.1}Epidemiology of Cardiovascular Disease and Stroke}{9}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.2.2}History of Multivariate Risk Models}{9}
+\contentsline {subsubsection}{\numberline {4.2.2}History of Multivariate Risk Models}{10}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {4.2.3}Limitations of Risk Models}{10}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {4.2.4}The Gap and our Thesis}{10}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3}Part III}{10}
+\contentsline {subsection}{\numberline {4.3}Part III}{11}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.3.1}Traditional Aim of Risk Models}{10}
+\contentsline {subsubsection}{\numberline {4.3.1}Traditional Aim of Risk Models}{11}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {4.3.2}The Way Risk Models are Used}{11}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {4.3.3}The Gap and our Thesis}{11}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5}The Novelty of the Thesis}{11}
+\contentsline {section}{\numberline {5}The Novelty of the Thesis}{12}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {6}Published Work}{12}
 \defcounter {refsection}{0}\relax 
@@ -90,7 +102,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {8}Preliminary Results}{19}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {8.1}Part 1}{19}
+\contentsline {subsection}{\numberline {8.1}Part 1}{20}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {8.2}Part 2}{20}
 \defcounter {refsection}{0}\relax 

@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018/Arch Linux) (preloaded format=xelatex 2018.8.28)  1 SEP 2018 12:08
+This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018/Arch Linux) (preloaded format=xelatex 2018.8.28)  2 SEP 2018 05:06
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -190,6 +190,10 @@ Package: longtable 2014/10/28 v4.11 Multi-page Table package (DPC)
 \c@LT@tables=\count108
 \c@LT@chunks=\count109
 \LT@p@ftn=\toks23
+)
+(/usr/share/texmf-dist/tex/latex/sectsty/sectsty.sty
+Package: sectsty 2002/02/25 v2.0.2 Commands to change all sectional heading sty
+les
 )
 (/usr/share/texmf-dist/tex/latex/fontspec/fontspec.sty
 (/usr/share/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
@@ -620,6 +624,28 @@ Package inputenc Warning: inputenc package ignored with utf8 based engines.
 . CLM/BI/OT:script=hebr;language=DFLT;"
 . - 'bold italic small caps'  (bx/itsc) with NFSS spec.: 
 .................................................
+\g__fontspec_family_LinuxLibertineO_int=\count271
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'LinuxLibertineO(0)' created for font 'Linux Libertine O' with
+. options [Script=Hebrew].
+.  
+.  This font family consists of the following NFSS series/shapes:
+.  
+. - 'normal' (m/n) with NFSS spec.: <->"Linux Libertine
+. O/OT:script=hebr;language=DFLT;"
+. - 'small caps'  (m/sc) with NFSS spec.: 
+. - 'bold' (bx/n) with NFSS spec.: <->"Linux Libertine
+. O/B/OT:script=hebr;language=DFLT;"
+. - 'bold small caps'  (bx/sc) with NFSS spec.: 
+. - 'italic' (m/it) with NFSS spec.: <->"Linux Libertine
+. O/I/OT:script=hebr;language=DFLT;"
+. - 'italic small caps'  (m/itsc) with NFSS spec.: 
+. - 'bold italic' (bx/it) with NFSS spec.: <->"Linux Libertine
+. O/BI/OT:script=hebr;language=DFLT;"
+. - 'bold italic small caps'  (bx/itsc) with NFSS spec.: 
+.................................................
  (/usr/share/texmf-dist/tex/latex/polyglossia/gloss-english.ldf
 File: gloss-english.ldf polyglossia: module for english
 )
@@ -668,16 +694,16 @@ and LuaTeX
 Package: biditools 2018/02/22 v1.4 Programming tools for bidi package
 \@bidi@envbody=\toks28
 \@bidi@emptytoks=\toks29
-\bidi@tempcountb=\count271
+\bidi@tempcountb=\count272
 \bidi@temptoksa=\toks30
 \bidi@temptoksb=\toks31
-\bidi@dummies=\count272
+\bidi@dummies=\count273
 \bidi@are@these@correct=\toks32
 \bidi@toks@lista=\toks33
 \bidi@toks@listb=\toks34
-\bidi@stack@length=\count273
+\bidi@stack@length=\count274
 \bidi@empty@stack=\toks35
-\bidi@looprepeat@depth=\count274
+\bidi@looprepeat@depth=\count275
 )
 (/usr/share/texmf-dist/tex/latex/oberdiek/zref-abspage.sty
 Package: zref-abspage 2016/05/21 v2.26 Module abspage for zref (HO)
@@ -714,7 +740,7 @@ Package zref Info: New property list: main on input line 759.
 Package zref Info: New property: default on input line 760.
 Package zref Info: New property: page on input line 761.
 )
-\c@abspage=\count275
+\c@abspage=\count276
 Package zref Info: New property: abspage on input line 62.
 )
 \@bidi@copyins@=\insert252
@@ -723,12 +749,12 @@ Package zref Info: New property: abspage on input line 62.
 File: latex-xetex-bidi.def 2018/02/22 v1.3.3 bidi adaptations for `latex.ltx' f
 or XeTeX engine
 \bidi@n@everypar=\toks36
-\bidi@column@check@number=\count276
+\bidi@column@check@number=\count277
 
 (/usr/share/texmf-dist/tex/xelatex/bidi/footnote-xetex-bidi.def
 File: footnote-xetex-bidi.def 2017/08/09 v1.1 bidi footnote macros for XeTeX en
 gine
-\c@footdir@label=\count277
+\c@footdir@label=\count278
 \footdir@toks=\toks37
 )
 (/usr/share/texmf-dist/tex/xelatex/bidi/article-xetex-bidi.def
@@ -771,22 +797,22 @@ ackage for XeTeX engine
 File: loadingorder-xetex-bidi.def 2017/12/29 v0.97 making sure that bidi is the
  last package loaded
 )
-\bidi@digits=\count278
+\bidi@digits=\count279
 \bidi@digits@charclass=\XeTeXcharclass2
 \bidi@sepmark@charclass=\XeTeXcharclass3
 )
 (/usr/share/texmf-dist/tex/latex/polyglossia/cal-util.def
-\c@tmpA=\count279
-\c@tmpB=\count280
-\c@tmpC=\count281
-\c@tmpD=\count282
-\c@tmpE=\count283
-\c@tmpF=\count284
+\c@tmpA=\count280
+\c@tmpB=\count281
+\c@tmpC=\count282
+\c@tmpD=\count283
+\c@tmpE=\count284
+\c@tmpF=\count285
 )
-\hebrewday=\count285
-\hebrewmonth=\count286
-\hebrewyear=\count287
-\@common=\count288
+\hebrewday=\count286
+\hebrewmonth=\count287
+\hebrewyear=\count288
+\@common=\count289
 )
 
 Package polyglossia Warning: No hyphenation patterns were loaded for `Hebrew'
@@ -806,7 +832,7 @@ Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
 )
 (/usr/share/texmf-dist/tex/latex/logreq/logreq.sty
 Package: logreq 2010/08/04 v1.0 xml request logger
-\lrq@indent=\count289
+\lrq@indent=\count290
 
 (/usr/share/texmf-dist/tex/latex/logreq/logreq.def
 File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
@@ -821,49 +847,49 @@ Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 (/usr/share/texmf-dist/tex/generic/xstring/xstring.sty
 (/usr/share/texmf-dist/tex/generic/xstring/xstring.tex
 \@xs@message=\write3
-\integerpart=\count290
-\decimalpart=\count291
+\integerpart=\count291
+\decimalpart=\count292
 )
 Package: xstring 2013/10/13  v1.7c  String manipulations (C Tellechea)
 )
-\c@tabx@nest=\count292
-\c@listtotal=\count293
-\c@listcount=\count294
-\c@liststart=\count295
-\c@liststop=\count296
-\c@citecount=\count297
-\c@citetotal=\count298
-\c@multicitecount=\count299
-\c@multicitetotal=\count300
-\c@instcount=\count301
-\c@maxnames=\count302
-\c@minnames=\count303
-\c@maxitems=\count304
-\c@minitems=\count305
-\c@citecounter=\count306
-\c@savedcitecounter=\count307
-\c@uniquelist=\count308
-\c@uniquename=\count309
-\c@refsection=\count310
-\c@refsegment=\count311
-\c@maxextratitle=\count312
-\c@maxextratitleyear=\count313
-\c@maxextradate=\count314
-\c@maxextraalpha=\count315
-\c@abbrvpenalty=\count316
-\c@highnamepenalty=\count317
-\c@lownamepenalty=\count318
-\c@maxparens=\count319
-\c@parenlevel=\count320
-\blx@tempcnta=\count321
-\blx@tempcntb=\count322
-\blx@tempcntc=\count323
-\blx@maxsection=\count324
-\blx@maxsegment@0=\count325
-\blx@notetype=\count326
-\blx@parenlevel@text=\count327
-\blx@parenlevel@foot=\count328
-\blx@sectionciteorder@0=\count329
+\c@tabx@nest=\count293
+\c@listtotal=\count294
+\c@listcount=\count295
+\c@liststart=\count296
+\c@liststop=\count297
+\c@citecount=\count298
+\c@citetotal=\count299
+\c@multicitecount=\count300
+\c@multicitetotal=\count301
+\c@instcount=\count302
+\c@maxnames=\count303
+\c@minnames=\count304
+\c@maxitems=\count305
+\c@minitems=\count306
+\c@citecounter=\count307
+\c@savedcitecounter=\count308
+\c@uniquelist=\count309
+\c@uniquename=\count310
+\c@refsection=\count311
+\c@refsegment=\count312
+\c@maxextratitle=\count313
+\c@maxextratitleyear=\count314
+\c@maxextradate=\count315
+\c@maxextraalpha=\count316
+\c@abbrvpenalty=\count317
+\c@highnamepenalty=\count318
+\c@lownamepenalty=\count319
+\c@maxparens=\count320
+\c@parenlevel=\count321
+\blx@tempcnta=\count322
+\blx@tempcntb=\count323
+\blx@tempcntc=\count324
+\blx@maxsection=\count325
+\blx@maxsegment@0=\count326
+\blx@notetype=\count327
+\blx@parenlevel@text=\count328
+\blx@parenlevel@foot=\count329
+\blx@sectionciteorder@0=\count330
 \labelnumberwidth=\skip56
 \labelalphawidth=\skip57
 \biblabelsep=\skip58
@@ -874,9 +900,9 @@ Package: xstring 2013/10/13  v1.7c  String manipulations (C Tellechea)
 \bibhang=\skip63
 \blx@bcfin=\read2
 \blx@bcfout=\write4
-\c@mincomprange=\count330
-\c@maxcomprange=\count331
-\c@mincompwidth=\count332
+\c@mincomprange=\count331
+\c@maxcomprange=\count332
+\c@mincompwidth=\count333
 Package biblatex Info: Trying to load biblatex default data model...
 Package biblatex Info: ... file 'blx-dm.def' found.
 
@@ -885,74 +911,74 @@ File: blx-dm.def 2018/03/04 v3.11 biblatex localization (PK/MW)
 )
 Package biblatex Info: Trying to load biblatex custom data model...
 Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
-\c@afterword=\count333
-\c@savedafterword=\count334
-\c@annotator=\count335
-\c@savedannotator=\count336
-\c@author=\count337
-\c@savedauthor=\count338
-\c@bookauthor=\count339
-\c@savedbookauthor=\count340
-\c@commentator=\count341
-\c@savedcommentator=\count342
-\c@editor=\count343
-\c@savededitor=\count344
-\c@editora=\count345
-\c@savededitora=\count346
-\c@editorb=\count347
-\c@savededitorb=\count348
-\c@editorc=\count349
-\c@savededitorc=\count350
-\c@foreword=\count351
-\c@savedforeword=\count352
-\c@holder=\count353
-\c@savedholder=\count354
-\c@introduction=\count355
-\c@savedintroduction=\count356
-\c@namea=\count357
-\c@savednamea=\count358
-\c@nameb=\count359
-\c@savednameb=\count360
-\c@namec=\count361
-\c@savednamec=\count362
-\c@translator=\count363
-\c@savedtranslator=\count364
-\c@shortauthor=\count365
-\c@savedshortauthor=\count366
-\c@shorteditor=\count367
-\c@savedshorteditor=\count368
-\c@labelname=\count369
-\c@savedlabelname=\count370
-\c@institution=\count371
-\c@savedinstitution=\count372
-\c@lista=\count373
-\c@savedlista=\count374
-\c@listb=\count375
-\c@savedlistb=\count376
-\c@listc=\count377
-\c@savedlistc=\count378
-\c@listd=\count379
-\c@savedlistd=\count380
-\c@liste=\count381
-\c@savedliste=\count382
-\c@listf=\count383
-\c@savedlistf=\count384
-\c@location=\count385
-\c@savedlocation=\count386
-\c@organization=\count387
-\c@savedorganization=\count388
-\c@origlocation=\count389
-\c@savedoriglocation=\count390
-\c@origpublisher=\count391
-\c@savedorigpublisher=\count392
-\c@publisher=\count393
-\c@savedpublisher=\count394
-\c@language=\count395
-\c@savedlanguage=\count396
-\c@origlanguage=\count397
-\c@savedoriglanguage=\count398
-\c@pageref=\count399
-\c@savedpageref=\count400
+\c@afterword=\count334
+\c@savedafterword=\count335
+\c@annotator=\count336
+\c@savedannotator=\count337
+\c@author=\count338
+\c@savedauthor=\count339
+\c@bookauthor=\count340
+\c@savedbookauthor=\count341
+\c@commentator=\count342
+\c@savedcommentator=\count343
+\c@editor=\count344
+\c@savededitor=\count345
+\c@editora=\count346
+\c@savededitora=\count347
+\c@editorb=\count348
+\c@savededitorb=\count349
+\c@editorc=\count350
+\c@savededitorc=\count351
+\c@foreword=\count352
+\c@savedforeword=\count353
+\c@holder=\count354
+\c@savedholder=\count355
+\c@introduction=\count356
+\c@savedintroduction=\count357
+\c@namea=\count358
+\c@savednamea=\count359
+\c@nameb=\count360
+\c@savednameb=\count361
+\c@namec=\count362
+\c@savednamec=\count363
+\c@translator=\count364
+\c@savedtranslator=\count365
+\c@shortauthor=\count366
+\c@savedshortauthor=\count367
+\c@shorteditor=\count368
+\c@savedshorteditor=\count369
+\c@labelname=\count370
+\c@savedlabelname=\count371
+\c@institution=\count372
+\c@savedinstitution=\count373
+\c@lista=\count374
+\c@savedlista=\count375
+\c@listb=\count376
+\c@savedlistb=\count377
+\c@listc=\count378
+\c@savedlistc=\count379
+\c@listd=\count380
+\c@savedlistd=\count381
+\c@liste=\count382
+\c@savedliste=\count383
+\c@listf=\count384
+\c@savedlistf=\count385
+\c@location=\count386
+\c@savedlocation=\count387
+\c@organization=\count388
+\c@savedorganization=\count389
+\c@origlocation=\count390
+\c@savedoriglocation=\count391
+\c@origpublisher=\count392
+\c@savedorigpublisher=\count393
+\c@publisher=\count394
+\c@savedpublisher=\count395
+\c@language=\count396
+\c@savedlanguage=\count397
+\c@origlanguage=\count398
+\c@savedoriglanguage=\count399
+\c@pageref=\count400
+\c@savedpageref=\count401
 \shorthandwidth=\skip64
 \shortjournalwidth=\skip65
 \shortserieswidth=\skip66
@@ -992,13 +1018,13 @@ Package biblatex Info: Trying to load generic definitions...
 Package biblatex Info: ... file 'biblatex.def' found.
  (/usr/share/texmf-dist/tex/latex/biblatex/biblatex.def
 File: biblatex.def 2018/03/04 v3.11 biblatex compatibility (PK/MW)
-\c@textcitecount=\count401
-\c@textcitetotal=\count402
-\c@textcitemaxnames=\count403
-\c@biburlnumpenalty=\count404
-\c@biburlucpenalty=\count405
-\c@biburllcpenalty=\count406
-\c@smartand=\count407
+\c@textcitecount=\count402
+\c@textcitetotal=\count403
+\c@textcitemaxnames=\count404
+\c@biburlnumpenalty=\count405
+\c@biburlucpenalty=\count406
+\c@biburllcpenalty=\count407
+\c@smartand=\count408
 )
 Package biblatex Info: Trying to load bibliography style 'numeric'...
 Package biblatex Info: ... file 'numeric.bbx' found.
@@ -1010,8 +1036,8 @@ Package biblatex Info: ... file 'standard.bbx' found.
 
 (/usr/share/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
 File: standard.bbx 2018/03/04 v3.11 biblatex bibliography style (PK/MW)
-\c@bbx:relatedcount=\count408
-\c@bbx:relatedtotal=\count409
+\c@bbx:relatedcount=\count409
+\c@bbx:relatedtotal=\count410
 ))
 Package biblatex Info: Trying to load citation style 'numeric'...
 Package biblatex Info: ... file 'numeric.cbx' found.
@@ -1041,9 +1067,9 @@ Package: setspace 2011/12/19 v6.7a set line spacing
 )
 (/usr/share/texmf-dist/tex/latex/appendix/appendix.sty
 Package: appendix 2009/09/02 v1.2b extra appendix facilities
-\c@@pps=\count410
-\c@@ppsavesec=\count411
-\c@@ppsaveapp=\count412
+\c@@pps=\count411
+\c@@ppsavesec=\count412
+\c@@ppsaveapp=\count413
 )
 (/usr/share/texmf-dist/tex/latex/csvsimple/csvsimple.sty
 Package: csvsimple 2016/07/01 version 1.20 LaTeX CSV file processing
@@ -1061,9 +1087,9 @@ Package: shellesc 2016/06/07 v0.02a unified shell escape interface for LaTeX
 Package shellesc Info: Restricted shell escape enabled on input line 69.
 )
 \csv@file=\read3
-\c@csvinputline=\count413
-\c@csvrow=\count414
-\c@csvcol=\count415
+\c@csvinputline=\count414
+\c@csvrow=\count415
+\c@csvcol=\count416
 \csv@out=\write5
 )
 Package biblatex Info: Trying to load language 'hebrew'...
@@ -1071,7 +1097,7 @@ Package biblatex Info: ... file 'hebrew.lbx' not found.
 
 
 Package biblatex Warning: Language 'hebrew' not supported.
-(biblatex)                Using fallback language 'english' on input line 47.
+(biblatex)                Using fallback language 'english' on input line 57.
 
 Package biblatex Info: Trying to load language 'english'...
 Package biblatex Info: ... file 'english.lbx' found.
@@ -1082,25 +1108,25 @@ File: english.lbx 2018/03/04 v3.11 biblatex localization (PK/MW)
 Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
 (biblatex)                Loading 'csquotes' recommended.
 
-\@quotelevel=\count416
-\@quotereset=\count417
+\@quotelevel=\count417
+\@quotereset=\count418
 (./proposal.aux)
 \openout1 = `proposal.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: xetex
@@ -1151,56 +1177,56 @@ Package caption Info: End \AtBeginDocument code.
 .................................................
 \symlegacymaths=\mathgroup4
 LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
-(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 47.
-LaTeX Font Info:    Redeclaring math accent \acute on input line 47.
-LaTeX Font Info:    Redeclaring math accent \grave on input line 47.
-LaTeX Font Info:    Redeclaring math accent \ddot on input line 47.
-LaTeX Font Info:    Redeclaring math accent \tilde on input line 47.
-LaTeX Font Info:    Redeclaring math accent \bar on input line 47.
-LaTeX Font Info:    Redeclaring math accent \breve on input line 47.
-LaTeX Font Info:    Redeclaring math accent \check on input line 47.
-LaTeX Font Info:    Redeclaring math accent \hat on input line 47.
-LaTeX Font Info:    Redeclaring math accent \dot on input line 47.
-LaTeX Font Info:    Redeclaring math accent \mathring on input line 47.
-LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 47.
-LaTeX Font Info:    Redeclaring math symbol \Delta on input line 47.
-LaTeX Font Info:    Redeclaring math symbol \Theta on input line 47.
-LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 47.
-LaTeX Font Info:    Redeclaring math symbol \Xi on input line 47.
-LaTeX Font Info:    Redeclaring math symbol \Pi on input line 47.
-LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 47.
-LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 47.
-LaTeX Font Info:    Redeclaring math symbol \Phi on input line 47.
-LaTeX Font Info:    Redeclaring math symbol \Psi on input line 47.
-LaTeX Font Info:    Redeclaring math symbol \Omega on input line 47.
-LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 47.
-LaTeX Font Info:    Redeclaring symbol font `operators' on input line 47.
+(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 57.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 57.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 57.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 57.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 57.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 57.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 57.
+LaTeX Font Info:    Redeclaring math accent \check on input line 57.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 57.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 57.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 57.
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 57.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 57.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 57.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 57.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 57.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 57.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 57.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 57.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 57.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 57.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 57.
+LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 57.
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 57.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `normal' on input line 47.
+(Font)              `operators' in the math version `normal' on input line 57.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> TU/lmr/m/n on input line 47.
+(Font)                  OT1/cmr/m/n --> TU/lmr/m/n on input line 57.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `bold' on input line 47.
+(Font)              `operators' in the math version `bold' on input line 57.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> TU/lmr/m/n on input line 47.
+(Font)                  OT1/cmr/bx/n --> TU/lmr/m/n on input line 57.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  TU/lmr/m/n --> TU/lmr/m/n on input line 47.
+(Font)                  TU/lmr/m/n --> TU/lmr/m/n on input line 57.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> TU/lmr/m/it on input line 47.
+(Font)                  OT1/cmr/m/it --> TU/lmr/m/it on input line 57.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> TU/lmr/bx/n on input line 47.
+(Font)                  OT1/cmr/bx/n --> TU/lmr/bx/n on input line 57.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 47.
+(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 57.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 47.
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 57.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  TU/lmr/m/n --> TU/lmr/bx/n on input line 47.
+(Font)                  TU/lmr/m/n --> TU/lmr/bx/n on input line 57.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> TU/lmr/bx/it on input line 47.
+(Font)                  OT1/cmr/bx/it --> TU/lmr/bx/it on input line 57.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> TU/lmss/bx/n on input line 47.
+(Font)                  OT1/cmss/bx/n --> TU/lmss/bx/n on input line 57.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/bx/n on input line 47.
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/bx/n on input line 57.
 Package biblatex Info: XeTeX detected.
 (biblatex)             Assuming input encoding 'utf8'.
 Package biblatex Info: Automatic encoding selection.
@@ -1277,35 +1303,15 @@ Package biblatex Warning: BibTeX reported the following issues
 (biblatex)                - Invalid format of field 'date'.
 
 )
-Package biblatex Info: Reference section=0 on input line 47.
-Package biblatex Info: Reference segment=0 on input line 47.
+Package biblatex Info: Reference section=0 on input line 57.
+Package biblatex Info: Reference segment=0 on input line 57.
  [1
 
 ] (./proposal.toc [1])
 \tf@toc=\write6
 \openout6 = `proposal.toc'.
 
- [2] [3]
-Missing character: There is no ר in font [lmroman12-bold]:mapping=tex-text;!
-Missing character: There is no ק in font [lmroman12-bold]:mapping=tex-text;!
-Missing character: There is no ע in font [lmroman12-bold]:mapping=tex-text;!
-Missing character: There is no מ in font [lmroman12-bold]:mapping=tex-text;!
-Missing character: There is no ט in font [lmroman12-bold]:mapping=tex-text;!
-Missing character: There is no ר in font [lmroman12-bold]:mapping=tex-text;!
-Missing character: There is no ו in font [lmroman12-bold]:mapping=tex-text;!
-Missing character: There is no ת in font [lmroman12-bold]:mapping=tex-text;!
-Missing character: There is no ש in font [lmroman12-bold]:mapping=tex-text;!
-Missing character: There is no י in font [lmroman12-bold]:mapping=tex-text;!
-Missing character: There is no ט in font [lmroman12-bold]:mapping=tex-text;!
-Missing character: There is no ו in font [lmroman12-bold]:mapping=tex-text;!
-Missing character: There is no ת in font [lmroman12-bold]:mapping=tex-text;!
-Missing character: There is no ח in font [lmroman12-bold]:mapping=tex-text;!
-Missing character: There is no ש in font [lmroman12-bold]:mapping=tex-text;!
-Missing character: There is no י in font [lmroman12-bold]:mapping=tex-text;!
-Missing character: There is no ב in font [lmroman12-bold]:mapping=tex-text;!
-Missing character: There is no ו in font [lmroman12-bold]:mapping=tex-text;!
-Missing character: There is no ת in font [lmroman12-bold]:mapping=tex-text;!
- [4] [5] [6] [7] [8] [9] [10] [11] [12]
+ [2] [3] [4] [5] [6] [7] [8] [9] [10] [11] [12]
 File: prelim-results/Panpredictor/timeline.png Graphic file (type bmp)
 <prelim-results/Panpredictor/timeline.png>
 
@@ -1313,232 +1319,232 @@ File: prelim-results/Panpredictor/timeline.png Graphic file (type bmp)
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Overfull \hbox (16.84851pt too wide) in paragraph at lines 404--405
+Overfull \hbox (16.84851pt too wide) in paragraph at lines 435--436
 [][]\TU/lmr/m/n/12 Full demographic information, including age, sex, socioecono
 mic status, sector (arab/jew),[]
  []
 
 [13]
-Underfull \hbox (badness 1817) in paragraph at lines 420--420
+Underfull \hbox (badness 1817) in paragraph at lines 451--451
 [][]\TU/lmr/m/n/12 American Heart As-[]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 420--420
+Underfull \hbox (badness 10000) in paragraph at lines 451--451
 [][]\TU/lmr/m/n/12 Cox propor-[]
  []
 
 
-Underfull \hbox (badness 7012) in paragraph at lines 420--421
+Underfull \hbox (badness 7012) in paragraph at lines 451--452
 []\TU/lmr/m/n/12 coronary heart dis-[]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 422--422
+Underfull \hbox (badness 10000) in paragraph at lines 453--453
 [][]\TU/lmr/m/n/12 Cox propor-[]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 422--423
+Underfull \hbox (badness 10000) in paragraph at lines 453--454
 [][]\TU/lmr/m/n/12 Fatal cardiovascular[]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 424--424
+Underfull \hbox (badness 10000) in paragraph at lines 455--455
 [][]\TU/lmr/m/n/12 Cox propor-[]
  []
 
 
-Underfull \hbox (badness 7012) in paragraph at lines 424--425
+Underfull \hbox (badness 7012) in paragraph at lines 455--456
 [][]\TU/lmr/m/n/12 coronary heart dis-[]
  []
 
 [14] [15] [16] [17] [18] [19] [20] [21]
-Overfull \hbox (4.75114pt too wide) in paragraph at lines 573--573
+Overfull \hbox (4.75114pt too wide) in paragraph at lines 604--604
 []\TU/lmr/m/n/12 978-8280823694. \TU/lmr/m/sc/12 url\TU/lmr/m/n/12 : $[][][][][
 ] [] [] [] [][][] [] [][][][][][] [] [][][] [] [][][][][][][][][][] [][] [][][]
  [][] [][][][][][][][][][][][][][] [][]$[]
  []
 
 
-Overfull \hbox (17.72073pt too wide) in paragraph at lines 573--573
+Overfull \hbox (17.72073pt too wide) in paragraph at lines 604--604
 []$[][][][][][][] [][] [][] [] [][][][][][][][] [] [][][] [] [][][][] [] [][][]
 [] [] [][][][][][][][] [] [][][][][][] [] [][][][][][][][][][][][] [] [][][][][
 ][][][][][]$\TU/lmr/m/n/12 . []
  []
 
 [22]
-Overfull \hbox (14.76506pt too wide) in paragraph at lines 573--573
+Overfull \hbox (14.76506pt too wide) in paragraph at lines 604--604
 [][]\TU/lmr/m/n/12 Úrsula Hébert-Johnson et al. “Calibration for the (Computati
 onally-Identifiable) Masses”.[]
  []
 
 [23] [24]
-Overfull \hbox (15.98071pt too wide) in paragraph at lines 573--573
+Overfull \hbox (15.98071pt too wide) in paragraph at lines 604--604
 []$[][][][][][][][][][] [][] [][][][][][][][][][][][] [][] [][][][][][] [][] []
 [][][][][][][] [][] [][][] [] [][] [] [][][][][][][][][][] [] [][][][][][][][][
 ][][][][][] []$[]
  []
 
 
-Overfull \hbox (9.8247pt too wide) in paragraph at lines 573--573
+Overfull \hbox (9.8247pt too wide) in paragraph at lines 604--604
 []$[][][][][] [] [] [] [][][] [] [][][][][][] [] [][][] [] [][][][][][][][][][]
 [][][] [][] [][][][][][][] [][] [][][][][][][][] [][] [][][][][][] [][] [][][][
 ][][][][][][] []$[]
  []
 
 
-Overfull \hbox (20.6607pt too wide) in paragraph at lines 573--573
+Overfull \hbox (20.6607pt too wide) in paragraph at lines 604--604
 []$[][] [] [][][][][][][][][][] [] [][][][][][][][][][][][][][] [] [][][][][][]
 [][][][][][][][][][][][][][] [] [][][] [] [][][][][][][] [][] [][] [] [][][][][
 ][][][] []$[]
  []
 
 
-Overfull \hbox (58.24066pt too wide) in paragraph at lines 573--573
+Overfull \hbox (58.24066pt too wide) in paragraph at lines 604--604
 []$[][][][][][] [][] [][][][][][][][][][][] [][] [][][][][][][][][][] [] [][] [
 ] [][][][][][][][][][] [] [][][][][][][][][][][][][][] [] [][][][][][][][][][][
 ][][][][][][][][][] []$[]
  []
 
 [25]
-Overfull \hbox (18.91087pt too wide) in paragraph at lines 573--573
+Overfull \hbox (18.91087pt too wide) in paragraph at lines 604--604
 [][]\TU/lmr/m/n/12 WHO. \TU/lmr/m/it/12 Cardiovascular Disease fact sheet\TU/lm
 r/m/n/12 . 2017. \TU/lmr/m/sc/12 url\TU/lmr/m/n/12 : $[][][][] [] [] [] [][][] 
 [] [][][] [] [][][] [] [][][][][][][][][][][] []$[]
  []
 
 [26] [27]
-Overfull \hbox (10.94606pt too wide) in paragraph at lines 663--664
+Overfull \hbox (10.94606pt too wide) in paragraph at lines 694--695
 [][]\TU/lmr/m/n/12 %transient%ischemic%attack%, %ischemic%attack%transient%,[]
  []
 
 
-Overfull \hbox (94.49083pt too wide) in paragraph at lines 663--664
+Overfull \hbox (94.49083pt too wide) in paragraph at lines 694--695
 []\TU/lmr/m/n/12 %transient%cerebral%ischemia%, %vertebral%artery%syndrome%, %i
 schemic%attack%transient% []
  []
 
 [28]
-Overfull \hbox (9.00368pt too wide) in paragraph at lines 696--697
+Overfull \hbox (9.00368pt too wide) in paragraph at lines 727--728
 [][]\TU/lmr/m/n/12 %angina%, %prectoris%, %heart%attack%, %myocardial%inf%,[]
  []
 
 
-Overfull \hbox (95.63164pt too wide) in paragraph at lines 696--697
+Overfull \hbox (95.63164pt too wide) in paragraph at lines 727--728
 []\TU/lmr/m/n/12 rioscl%cardiovascular%, %post%coronary%bypass%, %coronary%insu
 f%, %atheroscl%cardiovasc%,[]
  []
 
 
-Overfull \hbox (5.37968pt too wide) in paragraph at lines 697--698
+Overfull \hbox (5.37968pt too wide) in paragraph at lines 728--729
 [][]\TU/lmr/m/n/12 %fear%, %gynecologic%, %no%disease%, %us%examination%,[]
  []
 
 
-Overfull \hbox (21.63887pt too wide) in paragraph at lines 707--708
+Overfull \hbox (21.63887pt too wide) in paragraph at lines 738--739
 [][]\TU/lmr/m/n/12 %congestive%heart%, %heart%failure%, %systolic%dysfunction%,
 []
  []
 
 
-Overfull \hbox (53.95561pt too wide) in paragraph at lines 707--708
+Overfull \hbox (53.95561pt too wide) in paragraph at lines 738--739
 []\TU/lmr/m/n/12 %diastolic%dysfunction%, %ventricular%failure%, %CHF%, %ventri
 cular%d[yi]sfunction% []
  []
 
 [29]
-Overfull \hbox (12.23169pt too wide) in paragraph at lines 718--719
+Overfull \hbox (12.23169pt too wide) in paragraph at lines 749--750
 [][]\TU/lmr/m/n/12 %peripheral%vascular%, %PVD%, %claudication%, %buerger%,[]
  []
 
 
-Overfull \hbox (39.19806pt too wide) in paragraph at lines 719--720
+Overfull \hbox (39.19806pt too wide) in paragraph at lines 750--751
 []\TU/lmr/m/n/12 ous%, %floater%, %eye%, %detachment%, %PVD%BE%, %BE%PVD%, %OD%
 PVD%,[]
  []
 
 
-Overfull \hbox (1.41806pt too wide) in paragraph at lines 742--743
+Overfull \hbox (1.41806pt too wide) in paragraph at lines 773--774
 [][]\TU/lmr/m/n/12 %cerebrovascular%accident%, %transient%ischemic%attack%,[]
  []
 
 
-Overfull \hbox (74.82361pt too wide) in paragraph at lines 742--743
+Overfull \hbox (74.82361pt too wide) in paragraph at lines 773--774
 []\TU/lmr/m/n/12 %intracerebral%hemorrhage%, %CVA%, %cerebelar%hemorrhage%, %ce
 rebral%hemorrhage%,[]
  []
 
 
-Overfull \hbox (40.74364pt too wide) in paragraph at lines 742--743
+Overfull \hbox (40.74364pt too wide) in paragraph at lines 773--774
 []\TU/lmr/m/n/12 %cerebral%vasospasm%, %cerebrovascular%disease%, %stroke%, %ce
 rebral%ischemia%,[]
  []
 
 
-Overfull \hbox (82.02281pt too wide) in paragraph at lines 742--743
+Overfull \hbox (82.02281pt too wide) in paragraph at lines 773--774
 []\TU/lmr/m/n/12 %subarachnoid%hemorrhage%, %ischemic%attack%transient%, %aneur
 ysm%berry%ruptured%,[]
  []
 
 [30]
-Overfull \hbox (21.63887pt too wide) in paragraph at lines 764--765
+Overfull \hbox (21.63887pt too wide) in paragraph at lines 795--796
 [][]\TU/lmr/m/n/12 %congestive%heart%, %heart%failure%, %systolic%dysfunction%,
 []
  []
 
 
-Overfull \hbox (53.95561pt too wide) in paragraph at lines 764--765
+Overfull \hbox (53.95561pt too wide) in paragraph at lines 795--796
 []\TU/lmr/m/n/12 %diastolic%dysfunction%, %ventricular%failure%, %CHF%, %ventri
 cular%d[yi]sfunction% []
  []
 
 
-Overfull \hbox (9.00368pt too wide) in paragraph at lines 775--776
+Overfull \hbox (9.00368pt too wide) in paragraph at lines 806--807
 [][]\TU/lmr/m/n/12 %angina%, %prectoris%, %heart%attack%, %myocardial%inf%,[]
  []
 
 
-Overfull \hbox (95.63164pt too wide) in paragraph at lines 775--776
+Overfull \hbox (95.63164pt too wide) in paragraph at lines 806--807
 []\TU/lmr/m/n/12 rioscl%cardiovascular%, %post%coronary%bypass%, %coronary%insu
 f%, %atheroscl%cardiovasc%,[]
  []
 
 
-Overfull \hbox (5.37968pt too wide) in paragraph at lines 776--777
+Overfull \hbox (5.37968pt too wide) in paragraph at lines 807--808
 [][]\TU/lmr/m/n/12 %fear%, %gynecologic%, %no%disease%, %us%examination%,[]
  []
 
 
-Overfull \hbox (12.23169pt too wide) in paragraph at lines 786--787
+Overfull \hbox (12.23169pt too wide) in paragraph at lines 817--818
 [][]\TU/lmr/m/n/12 %peripheral%vascular%, %PVD%, %claudication%, %buerger%,[]
  []
 
 
-Overfull \hbox (39.19806pt too wide) in paragraph at lines 787--788
+Overfull \hbox (39.19806pt too wide) in paragraph at lines 818--819
 []\TU/lmr/m/n/12 ous%, %floater%, %eye%, %detachment%, %PVD%BE%, %BE%PVD%, %OD%
 PVD%,[]
  []
 
 
-Overfull \hbox (23.43968pt too wide) in paragraph at lines 797--798
+Overfull \hbox (23.43968pt too wide) in paragraph at lines 828--829
 [][]\TU/lmr/m/n/12 %hypertension%, %hypertensive%, %hypert%with%, %nephroscle-[
 ]
  []
 
 [31]
-Overfull \hbox (26.59888pt too wide) in paragraph at lines 819--820
+Overfull \hbox (26.59888pt too wide) in paragraph at lines 850--851
 [][]\TU/lmr/m/n/12 %chronic%kidney%, %chronic%renal%, %renal% failure%chronic%,
 []
  []
 
 
-Overfull \hbox (5.44049pt too wide) in paragraph at lines 830--831
+Overfull \hbox (5.44049pt too wide) in paragraph at lines 861--862
 [][]\TU/lmr/m/n/12 %valv%, %stenosis%, %regurgitation%, %incompetence%, %in-[]
  []
 
 [32]
-Overfull \hbox (23.97086pt too wide) in paragraph at lines 863--864
+Overfull \hbox (23.97086pt too wide) in paragraph at lines 894--895
 []\TU/lmr/m/n/12 C07DB01, C07AB02, C07FX03, C07FB13, C07FB02, C07FX05, C07CB02,
  C07BB02,[]
  []
@@ -1554,11 +1560,11 @@ Package logreq Info: Writing requests to 'proposal.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 23722 strings out of 492970
- 499147 string characters out of 6139408
- 1010576 words of memory out of 5000000
- 27431 multiletter control sequences out of 15000+600000
- 533874 words of font info for 58 fonts, out of 8000000 for 9000
+ 23850 strings out of 492970
+ 501566 string characters out of 6139408
+ 1011787 words of memory out of 5000000
+ 27542 multiletter control sequences out of 15000+600000
+ 533987 words of font info for 65 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  63i,10n,77p,10415b,6019s stack positions out of 5000i,500n,10000p,200000b,80000s
 
