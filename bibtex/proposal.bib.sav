@@ -1813,6 +1813,31 @@ Today's health care providers have more research findings and more technology av
   publisher = {Institute of Electrical and Electronics Engineers ({IEEE})},
 }
 
+@Book{BradleyEfron1994,
+  author    = {Bradley Efron, Robert Tibshirani},
+  title     = {An Introduction to the Bootstrap},
+  year      = {1994},
+  date      = {1994-05-15},
+  publisher = {Taylor \& Francis Ltd},
+  isbn      = {0412042312},
+  pagetotal = {456},
+  url       = {https://www.ebook.de/de/product/3596896/bradley_efron_robert_tibshirani_an_introduction_to_the_bootstrap.html},
+  ean       = {9780412042317},
+}
+
+@Article{Schomaker2016,
+  author      = {Michael Schomaker and Christian Heumann},
+  title       = {Bootstrap Inference when Using Multiple Imputation},
+  date        = {2016-02-25},
+  doi         = {10.1002/sim.7654},
+  eprint      = {http://arxiv.org/abs/1602.07933v6},
+  eprintclass = {stat.ME},
+  eprinttype  = {arXiv},
+  abstract    = {Many modern estimators require bootstrapping to calculate confidence intervals because either no analytic standard error is available or the distribution of the parameter of interest is non-symmetric. It remains however unclear how to obtain valid bootstrap inference when dealing with multiple imputation to address missing data. We present four methods which are intuitively appealing, easy to implement, and combine bootstrap estimation with multiple imputation. We show that three of the four approaches yield valid inference, but that the performance of the methods varies with respect to the number of imputed data sets and the extent of missingness. Simulation studies reveal the behavior of our approaches in finite samples. A topical analysis from HIV treatment research, which determines the optimal timing of antiretroviral treatment initiation in young children, demonstrates the practical implications of the four methods in a sophisticated and realistic setting. This analysis suffers from missing data and uses the $g$-formula for inference, a method for which no standard errors are available.},
+  file        = {:http\://arxiv.org/pdf/1602.07933v6:PDF},
+  keywords    = {stat.ME},
+}
+
 @Comment{jabref-meta: databaseType:biblatex;}
 
 @Comment{jabref-meta: grouping:

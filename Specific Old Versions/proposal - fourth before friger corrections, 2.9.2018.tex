@@ -41,7 +41,7 @@
 \setotherlanguage{hebrew}
 
 % bib
-\usepackage[backend=bibtex, sorting=none]{biblatex}
+\usepackage[backend=bibtex]{biblatex}
 \addbibresource{bibtex/proposal.bib}
 
 % spacing
@@ -81,34 +81,38 @@
 		
 	\end{titlepage}
 	
+	%\title{PhD Proposal}
+	%\author{Noam Barda}
+	%\maketitle
+	
 	\tableofcontents
 	\newpage
 	
 	\section{Abstract}
 	
 		\subsection{Background}
-		Since the early 1990s, and more so in the last few years,  multivariable risk models have been created to estimate patients' risk for different diseases over different time spans (e.g. \cite{Wilson1998,Conroy2003,DAgostino2008}). These models are used to identify patients at risk and are capable of exact risk quantification over time\cite{Goff2014}. Through their many variations, these risk models are included in different guidelines and occupy an important place in both primary prevention and diagnosis of different diseases\cite{Graham2007,Goff2014}.
+		Since the early 1990s, and more so in the last few years,  multivariate risk models have been created to estimate patients' risk for different diseases over different time spans (e.g. \cite{Wilson1998,Conroy2003,DAgostino2008}). These models are used to identify patients at risk and are capable of exact risk quantification over time\cite{Goff2014}. Through their many variations, these risk models are included in different guidelines and occupy an important place in both primary prevention and diagnosis of different diseases\cite{Graham2007,Goff2014}.
 	
 		These risk models have been particularly used for the diagnosis and prevention of cardiovascular disease (CVD), which despite reduced incidence in the developed world in recent years\cite{Koton2014,Vangen-Loenne2017}, remains a significant cause of morbidity and mortality\cite{ODonnell2016}.
 		
-		Such multivariable risk models have traditionally required extensive input from domain experts (clinicians) for the choice of predictors and are based on classic biostatistical models, usually logistic and Cox regression.
+		Such multivariate risk models have traditionally required extensive input from domain experts (clinicians) for the choice of predictors and are based on classic biostatistical models, usually logistic and Cox regression.
 		
 		\subsection{Goals}
-		In this thesis we intend to build a generic prediction framework, capable of constructing validated prediction models for any outcome with no domain expert input. We will use this framework to construct a predictive model for cardiovascular disease (CVD). We will externally validate existing CVD prediction models on the Israeli population. And we will compare the model we constructed to the current models, in essence simulating an application of said models for an EHR based population-wide prevention program.
+		In this thesis we intend to build a generic prediction framework, capable of constructing validated prediction models for any outcome with no domain expert input. We will use this framework to construct a predictive model for cardiovascular disease (CVD) and compare said model to the current leading CVD predictive models, externally validating them in the process, and to simulate an application of said model for an EHR based population-wide prevention program.
 
 		\subsection{Methods}
-		This generic prediction framework will make use of a sparsity inducing algorithm fed a curated version of the majority of the variables in the Clalit's electronic health record. The algorithm will then choose the appropriate variables and construct a model.
+		This generic prediction framework will make use of a sparsity inducing algorithm fed with the majority of the variables in the Clalit's electronic health record. The algorithm will then choose the appropriate variables and construct a model.
 		
-		To perform external validation and comparison, the three leading CVD models will be selected and recreated on the Clalit's database. The models will be compared on a common sample corresponding to the population on which we intend to simulate our intervention.
+		To perform external validation and comparison, the three leading CVD models will be selected and recreated on the Clalit's database. The models will be compared in their original population composition and on a common sample corresponding to the population on which we intend to simulate our intervention.
 		
-		The simulated CVD intervention will examine a retrospective cohort of patients, and compare the decisions that would have been made for the patients using the existing models vs. the new model.
+		The simulated CVD intervention will examine a retrospective cohort of patients, and will utilize existing knowledge regarding the mortality reduction attributed to statin and aspirin use to simulate the 10-year-outcomes of this cohort had existing guidelines been adhered to.
 		
 		\subsection{Importance}
 		A generic prediction framework will allow easy construction of validated predictive models of high quality, with the variable selection portion affording possible biological insight.
 		
 		External validation of CVD and mortality risk models, currently in wide use and integrated into guidelines, is of vital importance\cite{Moons2012}.
 		
-		Simulating  the intervention will allow us to examine the relative improvement in decision-making afforded by the new model. It will also allow us to gauge the potential effectiveness of interventions based on such risk models. Such interventions are becoming more and more possible with widespread electronic health record availability.
+		Simulating  the intervention will allow us to gauge the potential effectiveness of interventions based on such risk models. Such interventions are becoming more and more possible with widespread electronic health record availability.
 		
 		\subsection{Keywords}
 		Medical Prediction Models, Generic Prediction, Cardiovascular Disease, Electronic Health Records
@@ -116,6 +120,9 @@
 	\begin{hebrew}	
 	\section{\texthebrew{תקציר בעברית}}
 	
+	%\begin{hebrew}
+		%{\large\bfseries 2.1 רקע\par}
+		%\vspace{0.5cm}
 		\subsection{\texthebrew{רקע}}
 				מתחילת שנות ה-90 החלה, ובשנים האחרונות גברה, יצירתם של מודלים רב-משתניים לחישוב סיכון למחלות שונות(לדוגמה \cite{Wilson1998,Conroy2003,DAgostino2008}). מודלים אלו משמשים לזיהוי חולים בסיכון, ומאפשרים כימות מדויק של הסיכון לאורך שנים רבות\cite{Goff2014}. כיום, בצורותיהן השונות, מודלים אלו כלולים בקווים המנחים של ארגונים מקצועיים רבים, ולהם מקום חשוב הן במניעה הראשונית והן באבחנה של מחלות \cite{Graham2007,Goff2014}.
 				
@@ -123,41 +130,53 @@
 				
 				ככלל, מודלים אלו דרשו התייעצות נרחבת עם מומחי תוכן (קלינאים) על מנתשאלו יספקו את המידע הנדרש בנוגע למשתנים הנדרשים לחיזוי התוצאה, והתבססו על שיטות ביוסטטיסטיות מסורתיות, ובפרט על רגרסיה לוגיסטית ורגרסיית קוקס.
 			
+		%\vspace{0.3cm}
+		%{\large\bfseries 2.2 מטרות\par}
+		%\vspace{0.5cm}
 		\subsection{\texthebrew{מטרות}}
-				בתזה זו אנו מתכוונים לבנות שלד גנרי לחיזוי סיכון, המסוגל לבנות מודלים מתוקפים לכל תוצא ללא כל מידע ממומחי תוכן. אנו נשתמש במנגנון זה לבנות מודל לחיזוי מחלה קרדיוסקולרית. אנו נבצע תיקוף חיצוני למודלים המובילים בספרות לחיזוי מחלה קרדיווסקולרית על האוכלוסיה הישראלת. ולבסוף, אנו נשווה את ביצועי המודל החדש למודלים הקיימים באופן שלמעשה יבצע סימולציה של תכנית התערבות מבוססת תיק רפואי ממוחשב על אוכלוסיית הקופה.
+				בתזה זו אנו מתכוונים לבנות שלד גנרי לחיזוי סיכון, המסוגל לבנות מודלים מתוקפים לכל תוצא ללא כל מידע ממומחי תוכן. אנו נשתמש במנגנון זה לבנות מודל לחיזוי מחלה קרדיוסקולרית, ונשווה ביצועיו למודלים המובילים הקיימים בספרות למטרה זו, תוך שאנו מתקפים אותם חיצונית. לבסוף, נבצע סימולציה של תכנית התערבות מבוססת תיק רפואי ממוחשב על אוכלוסיית הקופה.
 				
+		%\vspace{0.3cm}
+		%{\large\bfseries 2.3 שיטות\par}
+		%\vspace{0.5cm}
 		\subsection{\texthebrew{שיטות}}
-				השלד לחיזוי גנרי יעשה שימוש באלגוריתם המבצע בחירת משתנים כחלק מפעולתו. אלגוריתם זה יוזן עם מרבית המשתנים הזמינים בבסיס הנתונים של קופ"ח כללית, מהם יבחר המשתנים הרלוונטיים ובהם יעשה שימוש לבניית מודל.
+				השלד לחיזוי גנרי יעשה שימוש באלגוריתם המבצע בחירת משתנים כחלק מפעולתו. אלגוריתם זה יוזן עם מרבית המשתנים הזמינים בבסיס הנתונים של קופ"ח כללית, מהם יבחר המשתנים הרלוונטיים בהם יעשה שימוש לבניית מודל. המודל יכוונן על גבי אוכלוסיית פיתוח וייבדק מול אוכלוסיית בדיקה.
 		
-		על מנת לבצע תיקוף חיצוני והשוואה, שלושת המודלים המובילים לחיזוי CVD ייבחרו מהספרות וייבנו מחדש על גבי בסיס הנתונים של הכללית. המודלים יושוו בהרכב האוכלוסיה בו אנו עתידים לדמות התערבות.
+		על מנת לבצע תיקוף חיצוני והשוואה, שלושת המודלים המובילים לחיזוי CVD ייבחרו מהספרות וייבנו מחדש על גבי בסיס הנתונים של הכללית. המודלים יושוו הן בהרכב האוכלוסיה המקורי בו נבנו והן בהרכב האוכלוסיה בו אנו עתידים לדמות התערבות.
 		
-		סימולציית ההתערבות תבחן עקבה רטרוספקטיבית, ותשווה ההחלטות שהיו מתקבלות תוך שימוש במודלים הקיימים לעומת המודל החדש.
+		סימולציית ההתערבות תבחן עקבה רטרוספקטיבית, ובאמצעות ידע קיים בנוגע להפחתת התמותה המיוחסת לשימוש בסטטינים ובאספירין, תדמה התוצאים ל-10 שנים  של עקבה זו  באם הקוים המנחים הקיימים היו מקויימים כלשונם, לפי הסיכון אותו חוזים המודלים הקיימים והמודל החדש.
 		
 		
+		%\vspace{0.3cm}
+		%{\large\bfseries 2.4 חשיבות\par}
+		%\vspace{0.5cm}
 		\subsection{\texthebrew{חשיבות}}
 		מסגרת לחיזוי גנרי תאפשר בניית מודלים מתוקפים ובאיכות גבוהה לחיזוי מחלות שונות, ועצם תהליך בחירת המשתנים יכול שיאפשר תובנות ביולוגיות.
 		
 		תיקוף חיצוני של מודלים לחיזוי מחלה קרדיווסקולרית, המצויים בשימוש רחב ומשולבים בקווים המנחים, הוא בעל חשיבות מכרעת\cite{Collins2015}.
 		
-		סימולציית ההתערבות תאפשר לנו לבחון את השיפור בקבלת ההחלטות שהיה מתקבל על-ידי המודל החדש, לו היה מיושם באופן גורף על אוכלוסיית הקופה כולה. הודות לזמינות הגוברת של תיקים רפואיים ממוחשבים, התערבויות שכאלה הופכות אפשריות יותר ויותר.
+			ביצוע והערכת ההתערבות המתוכננת יאפשר לנו לשפוט את היעילות של התערבויות שכאלה, להם חשיבות מיוחדות במניעת מחלות קרדיווסקולריות, ואשר הופכות אפשריות יותר ויותר עם הזמינות הגוברת של תיקים רפואיים ממוחשבים.
 			
+			%\vspace{0.3cm}
+			%{\large\bfseries 2.5 מילות מפתח\par}
+			%\vspace{0.5cm}
 			\subsection{\texthebrew{מילות מפתח}}
 			מודלי חיזוי רפואיים, חיזוי גנרי, מחלה קרדיווסקולרית, תיק רפואי ממוחשב.
 		
 	\end{hebrew}
 	
 	\section{Aim of the Thesis}
-	The main aim of this thesis is to design, implement and evaluate an algorithm to develop multivariable predictive models based on Clalit Health Services' (CHS) electronic health record based database; to use it to generate a risk model for cardiovascular disease; to reconstruct existing CVD prediction models on CHS' population, externally validating them in the process; and to compare the performance of the new model against these existing models in regard to the decisions that would have been made had a population-wide intervention been performed using any of them.
+	The main aim of this thesis is to design, implement and evaluate an algorithm to develop multivariate predictive models based on Clalit Health Services' (CHS) electronic health record based database; to use it to generate a risk model for cardiovascular disease; to compare this model to existing risk models, externally validating them in the process; and to simulate an intervention on the Israeli population based on these risk models.
 	
 	The aforementioned goal will require three steps:
 	\begin{description}
 		
-		\item[Internal Model Development and Evaluation] A modern and novel approach to develop risk models based on Electronic Health Record (EHR) data will be developed. The full details of this approach will be detailed below, under "Research Methodology", but briefly, it will require no preliminary domain expertise, instead utilizing modern methods to simultaneously choose variables and create the model based on them. This model will then be evaluated on a test population.
+		\item[Model Development] A modern and novel approach to develop risk models based on Electronic Health Record (EHR) data will be developed. The full details of this approach will be detailed below, under "Research Methodology", but briefly, it will require no preliminary domain expertise, instead utilizing modern methods to simultaneously choose variables and create the model based on them.
 		
-		\item[External Model Evaluation] Existing models from the literature will be reconstructed on the CHS' population, and their results calculated for the test population. Complete performance metrics will be generated for each model, performing external validation of these models on a large dataset.
+		\item[Model Evaluation] The above-mentioned approach will be used to construct a risk model for 10-year prediction of Cardiovascular Disease (CVD). The merits of this model will be tested by comparing it to the leading existing models from the literature. This evaluation will comprise a comprehensive test of these models' performance in both their original population composition and in a shared population with the characteristics we intend to use in our intervention.
 		
-		\item[Model Comparison and Simulated Intervention] The internal model will be matched against the external models on a retrospective cohort of patients, comparing the recommendations each model would yield and their appropriateness given the eventual outcome of the patients.
-
+		\item[Simulated Intervention] The CVD models will be used to simulate an intervention based on a historic cohort of patients from the CHS' database. The true outcomes, the predicted outcomes based on existing models and the predicted outcomes based on our models will be compared.
+		
 		Based on these aims, we hypothesize:
 		\begin{enumerate}
 			
@@ -167,7 +186,7 @@
 			
 			\item That existing CVD risk models will perform poorly on the ethnically distinct Israeli population.
 			
-			\item That decisions made using the new model will be better, across many decisions thresholds, when compared to those made by using existing models.
+			\item That the advantages of such a model will have the potential to improve patient outcomes if used in a population-wide intervention based on EHR data.
 			
 		\end{enumerate}
 		
@@ -209,7 +228,7 @@
 			
 			The model then uses a loss function, usually maximum likelihood, to estimate the coefficients of the model. Under certain assumptions, these coefficients can have epidemiological interpretations, such as the coefficients of logistic regression being interpreted as the odds ratio of an exposure for a given outcome. The model can also be used for prediction, disregarding all such assumptions.
 			
-			\subsubsection{Cox Proportional Hazards Model}
+			\subsubsection{Cox Proportional Hazards}
 			
 			The cox model is a survival analysis model (that is, it uses a compound outcome of time-to-event data) that is semi-parametric. A baseline hazard ($ \lambda_0 $) is estimated non-parametrically from the data, while a parametric linear hazard model is estimated in parallel\cite{Cox1972}.
 			
@@ -217,7 +236,7 @@
 			
 			Similar to GLMs, the coefficients are estimated using a process of maximum likelihood (dubbed partial likelihood in the context of Cox regression), and under strict assumptions have the interpretation of hazard ratios, similar to odds ratios.
 			
-			The assumptions for cox regression warrant special mention. While the assumption of linearity is similar to GLMs, cox regression also assumes proportionality - that is, that the hazard ratio between risk factors remains constant over time. This is a very strong assumption that does not always hold. Some models circumvent this assumption at the cost of complexity and loss of interpretability. Just as before, the model can also be used for prediction, disregarding all assumptions.
+			The assumptions for cox regression warrant special mention. While the assumption of linearity is similar to GLMs, cox proportional hazards also assumes proportionality - that is, that the hazard ratio between risk factors remains constant over time. This is a very strong assumption that does not always hold. It should be mentioned that some models circumvent this assumption at the cost of complexity and loss of interpretability. Just as before, the model can also be used for prediction, disregarding all assumptions.
 			
 			\subsubsection{Parametric Vs. Non-Parametric Models}
 			Parametric models, such as those described above, summarize the data with a set of parameters of fixed size that is independent of the number of training examples. This has the advantage of simplicity, interpretability and speed, but also leads to biases in prediction if the "true" population model is different than the chosen model.
@@ -251,7 +270,7 @@
 		
 			Most medical risk models in wide-use were developed based on specialized cohort studies\cite{Goldstein2016}. This has the known advantages of cohort studies, most notably the accurate definition of exposures and outcomes, but is expensive and time-consuming, and by definition only allows inclusion of risk factors that were decided on in advance and measured as part of the study. On the other hand, with the larger availability of EHRs, risk models developed on such data have risen in amount. These models have the known disadvantages of EHR data (first of which are the non-standardized definitions), but offer a wealth of information that in certain cases, including the case in Israel\cite{Lovis2015}, encompasses the full extent of a patient's encounters with the health system\cite{Goldstein2017}.
 			
-			\subsubsection{The Scientific Gap}
+			\subsubsection{The Gap and our Thesis}
 			
 			We suggest using the unique availability of widely encompassing EHR data with large historic depth, coupled with modern statistical learning methods, to develop a generic method for generation of risk models based on the Clalit's EHR.
 			
@@ -298,7 +317,7 @@
 		
 		Among diseases with such a significant public health impact, cardiovascular disease stands out in two ways. First, its risk factors are well understood, with 90\% of its population-attributable-risk caused by nine risk factors. It's also a very preventable disease, as these risk factors are mostly preventable\cite{Yusuf2004,ODonnell2016}: Smoking, dyslipidemia, hypertension, diabetes, etc.
 		
-		\subsubsection{History of multivariable Risk Models}
+		\subsubsection{History of Multivariate Risk Models}
 		
 		These unique characteristics have made CVD the main outcome in risk models, when such models began to enter clinical practice in the 1990s\cite{Wilson1998,NationalCholesterolEducationProgramNCEPExpertPanelonDetection2002,Conroy2003,Hippisley-Cox2007,DAgostino2008,Hippisley-Cox2008,Goff2014}. Still the most notable of said risk models is the Framingham risk model family, developed on a US population in Massachusetts, Boston\cite{Wilson1998}, and the SCORE risk model, developed in 2003 on a European population\cite{Conroy2003}.
 		
@@ -312,11 +331,11 @@
 		
 		Recent models have tried to deal with this problem by including more ethnically varied populations\cite{DeFilippis2015} or recalibrating the model for each new population\cite{Kanis2008}, but such efforts are limited to specific risk models, and even then have only been partially successful\cite{Dagan2017}. As one specific Israeli example, this phenomenon was observed in a recent publication that illustrated significant mis-calibration for osteoporosis prediction models that are in wide clinical use and incorporated into guidelines\cite{Dagan2017}. As the probabilities generated by the model eventually help determine the proper interventions to perform, according to respective guidelines, such mis-calibration could invalidate the use of the model, making external validation an important endeavor\cite{Moons2012}.
 		
-		\subsubsection{The Scientific Gap}
+		\subsubsection{The Gap and our Thesis}
 		
 		Though the risk scores are currently used in common medical practice, external validation of international CVD risk models for the Israeli population has yet to be performed, and recommendations on which model to use are based on expert opinion\cite{Bitzur2015}.
 		
-		We will externally validate existing models for the prediction of CVD on the Israeli population. As current guidelines direct clinicians to perform risk prediction prior to making decisions regarding prevention, the performance of the different models is of utmost importance.
+		We suggest, as a first effort, to externally validate widely used risk models for the prediction of CVD risk on the Israeli population. This could help decide which model has the best performance, and if all such models' performance is deemed unsatisfactory, this will have significant consequences for guidelines and practices based on said models. Immediately thereafter, these models will be compared to the internally developed model in part I.
 		
 		\subsection{Part III}
 		
@@ -336,17 +355,18 @@
 				\item The decisions to be made can only be made by a physician. A patient cannot prescribe statins to himself.
 			\end{enumerate}
 			
-			And so the use of such model has mostly been limited to physicians. To make use of these risk models, the physician, usually the primary care physician, is required to the fill in the different covariates based on the patient's health record, communicate the results to the patient, and advise on whatever intervention is mandated to mitigate the risk. This entire time consuming act is expected to occur in an already time-strained primary care encounter\cite{Konrad2010}.
+			And so the use of such model has mostly been limited to physicians. To make use of these risk models, the physician, usually the primary care physician, is required to the fill in the different covariates based on the patient's health record, communicate the results to the patient, and advise on whatever intervention is mandated to mitigate the risk.
 			
-			\subsubsection{The Scientific Gap}
+			It should be said that this entire time consuming act is expected to occur in an already time-strained primary care encounter\cite{Konrad2010}.
+			
+			\subsubsection{The Gap and our Thesis}
 			
 			We suggest that the structure of the Israeli health care system is ideal for performing and evaluating an intervention based on EHR based prediction of cardiovascular risk.
 			
 			Instead of the usual methodology, by which patients are identified as high-risk when they enter the physician's office, usually for other concerns and in severe time constraints, we will predict the risk at once for all patients in the database.
 			
-			We will compare the decisions that would have been made had these different models been used on the retrospective cohort, in view of the actual outcomes of the different patients. This will allow us to judge whether the novel model would have indeed improved patient outcomes.
-			
-
+			We will then use this  prediction to simulate an intervention by which all patients with sufficient risk are prescribed statins and aspirin, and the relative yield of this intervention is measured and compared between the different models and to the actual outcomes observed.
+	
 	\section{The Novelty of the Thesis}
 	
 	All aforementioned aspects of the thesis contain measures of novelty to them:
@@ -357,7 +377,7 @@
 		
 		\item External validation of existing risk models is of utmost importance\cite{Moons2012}, as these models are used constantly as part of existing guidelines (e.g. the American Heart Association's pooled risk model and Statin treatment\cite{Goff2014}, FRAX and Osteoporosis treatment\cite{Kanis2008}). This is especially true, as previous external validation studies have at times documented significant mis-calibration\cite{Bastuji-Garin2002,Dagan2017}, that would make treatment decisions based on the models problematic.
 		
-		\item Comparing the novel model with the existing ones will provide potential proof of the superiority of the novel methodology. Additionally,  Simulating a Population wide EHR-data based interventions using predictive risk models would illustrate the applicability and the advantages of such interventions, which specifically with the rising availability of EHR data, is of significant importance.
+		\item Population wide EHR-data based interventions using predictive risk models have yet to be implemented, to the best of our information. Illustrating the advantages of such interventions, specifically with the rising availability of EHR data, is of significant importance.
 		
 	\end{itemize}
 	
@@ -378,129 +398,31 @@
 	That this process has been relatively slow in medicine is also widely recognized, and many efforts now exist to better incorporate such technologies in health-care\cite{Obermeyer2016}. Specifically for risk prediction models, recent literature has emerged that details attempts at developing more generic risk models, though different than the idea proposed here both in method and in goal\cite{Rajkomar2018}.
 	
 	\section{Research Methodology}
-	We will divide this section into two parts. In the first part, we'll review important concepts that will be used in the analysis. In the second part, we'll detail the exact research plan for this thesis.
-	
-	\subsection{Important Concepts}
-	
-		\subsubsection{Source of Data for Study}
-		The general population for all different parts of the study is the population of patients insured by Clalit Health Services (CHS). CHS is the largest sick fund in Israel, with an insured population of 4.5 active members. Clalit is both an insurer and a provider, directly providing primary care, specialist care, lab, imaging and pharamacy services. Additionally, clalit directly operates several large hospitals. The “attrition rate” (the percentage of patients leaving the sick fund each year) stands on less than 2\%, allowing long term follow-up of patients.
-		
-		The data will be collected using the CHS's electronic health record (EHR). CHS has maintained a comprehensive electronic health record since the year 2000, and has continued to improve it with time. This EHR contains, among others, demographic data, medical data (including clinical covariates, lab results, imaging studies, etc.) and claims data for both services rendered as part of the mandatory health insurance and for services rendered as part of the additive insurance (“Mashlim”). On top of the internal Clalit data, the database also contains external information such as the ministry of interior's causes of death listings and the ministry of health's cancer registry. This comprehensive database, combining both medical and claims data, covers large facets of a person's health.
-		
-		\subsubsection{Issues with EHR Data}
-		The difficulties that arise in conducting observational studies on EHR data are many and well documented: Data inaccuracy, missing data, cohort effects, selection biases, myriad ontologies, etc\cite{Hripcsak2011,Jensen2012,Goldstein2017}. Some of these issues, such as missing data, can be partially dealt with using statistical methods (see ahead), while some require in-depth expertise and know-how regarding the data's structure and collection methods, knowledge that can only be acquired through rigorous analysis of it. The Clalit's research institute's (CRI) is the research body for Clalit Health Services, and is thus the main consumer of the clalit's EHR data. This grants the CRI intimate knowledge of the data, as is evidenced by the many studies published in major journals based on the Clalit's database and on the CRI's methods in extracting its information (e.g. \cite{Reges2018,Dagan2017}).
-		
-		\subsubsection{Data Extraction Principles}
-		\begin{itemize}
-			\item CVD definitions, that are used as the outcome in the different models, will be based on those defined by a consensus committee organized by the CRI and headed by a cardiology and neurology specialists. These definitions similar to those used outside the CRI, such as by the Israeli acute stroke registry\cite{ICDC2017} (active within the ICDC).
-			\item Demographic characteristics will be extracted from the Clalit's demographic database. Those that are time-dependent (e.g. age) will be extracted current to the index dates, those that are constantly overridden will be extracted to their latest value (e.g. SES).
-			\item Cause of death will be collected directly from the ministry of interior's causes of death table.
-			\item Clinical covariates will be extracted from their dedicated database. The latest value prior to the index date will be used. Tests that can be used as-is (e.g. systolic blood pressure) will be used as-is. Weights and heights measured within a 3-month span will be joined for the calculation of BMI. Smoking status will be "flattened" to never/present/past to account for partial "pack-years" reporting.
-			\item Lab data will be extracted from the dedicated lab results database, using the latest lab values prior to the index date.
-			\item Diagnoses will be collected from the community (both session and permanent diagnoses), from hospitalizations and from the Clalit's chronic registry\cite{Rennert2001}. Diagnoses will be extracted based on ICD9 codes, ICPC codes and chronic registry codes. Community diagnoses will be corroborated using free text validation so as to exclude suspicions, etc.
-			\item Drug dispensings will be evaluated using the dedicated pharmacy database. Actual dispensings will be counted (as opposed to prescriptions). Drug adherence will be calculated using drug prescriptions and drug dispensings, with PDC and MPR as the actual statistics\cite{Lam2015}.
-			\item Health care utilization will be calculated by simply counting and summing the patient's encounters and actual cost, both in the community and in hospitals.
-		\end{itemize}
-	
-		\subsubsection{Migration of Foreign-defined Variables}
-		In part II, where external validation of international models is to take part, special care will be required to handle variables that are not perfect "fits" for the Clalit's database, for example:
-		\begin{itemize}
-			\item UK socioeconomic status ("Townsend Deprivation Score"), which has different levels and is directed in the opposite direction (more means lower SES) than the Clalit's socioeconomic status.
-			\item Diagnoses, that are collected based on dedicated physician visits in cohort studies and on ICD codes in EHR based studies, will be collected using a mixture of ICD codes, free text validation and validation using lab measurements (e.g glucose for diabetes) and drug dispensings (e.g. diuretics, ACE inhibitors, beta blockers and calcium channel blockers for hypertension).
-		\end{itemize}
-	
-		\subsubsection{LASSO Regression}
-		Least absolute shrinkage and selection operator (LASSO)\cite{Tibshirani2011} is a variant of logistic regression that adds a regularization term based on the sum of the absolute values of the coefficients ($ L_1 $ norm) to the normal loss function to be optimized. Namely, the model minimizes:
-		
-		\begin{equation*}
-		\arg \min_\beta \sum_i y_i \cdot \hat{y_i} + (1- y_i) \cdot (1 - \hat{y_i}) + \lambda \sum_{i}|\beta|_i
-		\end{equation*}
-		
-		$ \beta $ being the vector of coefficients and lambda being a regularization parameter. This is the the normal logistic regression loss function, summed with a regularization term based on the $ L_1 $ norm. Owing to the geometric structure of the $ L_1 $ norm, this has the effect of setting many covariates to 0, inducing sparsity. The parameter lambda is selected using cross-validation on the validation set, with predictive performance (e.g. AUROC) as the goal.
-		
-		As the regularization portion of the loss is dependent on variable scales, variables are normalized to have equal means and standard deviations prior to model fitting.
-		
-		\subsubsection{Gradient Boosting}
-		Gradient boosting\cite{Freund1997} is an ensemble method that combines several weak learners (usually shallow trees) together using a weighted majority vote. Each consecutive learning phase focuses on those samples in the training set that were predicted wrong by the previous phases.
-		
-		Gradient boosting induces sparsity by deciding on the important features at each split in each tree. The rules for these decisions are themselves parameters to the models, but all generally employ a version of Claude Shannon's information entropy\cite{Shannon1948}:
-		
-		For a given variable x, the entropy is defined as 
-		
-		\begin{equation*}
-		H(x) = -\sum_{i=1}^{n} P(x_i) \log P(x_i)
-		\end{equation*}
-		This entropy is maximized when the "doubt" about the value of a variable is maximal, and the different tree models strive to minimize it by choosing maximally informative variables for each split.
-		
-		Hyper-parameter tuning, per each model's hyper-parameter lists, is conducted by cross-validation using random search\cite{Bergstra2012}. The best performing model with regard to area under the ROC curve is selected.
-		
-		\subsubsection{Learning Curves}
-		Learning curves are plots of model performance on the training and test sets as a function of sample size. They provide simple visual indication that the model has a sufficiently large sample size so as not to over-fit or under-fit.
-		
-		\subsubsection{Linear Recalibration}
-		Calibration is the agreement between predicted and observed probabilities. When a model is applied to a population different than its original training set, it tends to be mis-calibrated. Recalibration attempts to deal with this problem.
-		
-		The framework suggested by Van Houwlingen et al\cite{Houwelingen2000} performs linear recalibration for binary prediction models. It uses the predictions from the original model as a sole covariate in a new logistic regression model. The predictions from this new model are then the recalibrated predictions to be used in subsequent phases.
-				
-		Mathematically, the new model being fit is:
-		\begin{equation*}
-		\log(\frac{y_i}{1-y_i}) = \gamma \hat{p} + \delta
-		\end{equation*}
-		
-		Where $ \hat{p} $ are the predictions from the original model, $ y_i $ are the outcomes, $ \gamma $ is the slope and $ \delta $ the intercept.
-		
-		Conceptually, we take the predictions from the original model, but allow them a new slope and intercept, thus preserving the relative importance of each covariate in the model, with the freedom to reset the global risk.
-		
-		\subsubsection{Imputation}
-		As first explained by Rubin et al.\cite{Rubin1987}, missing data can be one of three types
-		\begin{enumerate}
-			\item Missing completely at random (MCAR) - the data is missing in a pattern that is unrelated to other variables and to the outcome.
-			\item Missing at random (MAR) - The data is missing in a pattern that is related to other measured variables.
-			\item Missing not at random (MNAR) - The data is missing in a pattern that is related to unmeasured variables or to its own value.
-		\end{enumerate}
-		The first type can be ignored. The third type can not, in theory, be dealt with. The second type requires handling to avoid bias. Multiple imputation can be used to fill in the missing values while still retaining a measure of the variance created by the act of imputation\cite{Rubin1987}. Multiple imputation with chained equations (MICE) is currently the standard way to impute data in biostatistical research\cite{Buuren2011}.
-		
-		\subsubsection{The Bootstrap}
-		The bootstrap, as developed by Efron et al.\cite{BradleyEfron1994}, is a resampling technique whereby an original sample of size $ n $ is resampled $ n $ times with replacement. This process is repeated $ k $ times. The resulting $ k  $ samples of size $ n  $ can be used to estimate the variance of different statistics in relation to their corresponding population parameters. This method allows determination of standard errors for statistics that lack a theoretical distribution.
-		
-		Combining multiple imputation and the bootstrap is an open problem in biostatistics. Multiple ways have been suggested and compared empirically on simulated data\cite{Schomaker2016}.
-		
-		\subsubsection{Net Reclassification Improvement}
-		Net Reclassification improvement (NRI) aims to measure the improvement in decisions made by using a different prediction model\cite{Pencina2008}. Continuous sums the total number of patients who have been reclassified in the correct direction (i.e. were given a higher score if they did eventually experience an event, and a lower score otherwise). Categorical NRI does the same thing, but only considers movement around a decision threshold.
-		
-		\subsubsection{Decision Curves}
-		Decision curves, who have recently gained popularity in the medical literature\cite{Vickers2016}, aim to compare different models in relation to the decision made using them on different thresholds. The basic measure used is "Net Benefit", measured as
-		
-		\begin{equation*}
-		\text{Net Benefit} = \frac{\text{True Positives}}{N} - \frac{\text{False Positives}}{N} \cdot \frac{p_t}{1-p_t}
-		\end{equation*}
-		
-		Where $ p_t $ is the threshold used for decision making. Conceptually, net benefit measures a weighted average of true positives and false positives, weighted by the relative importance the clinician and patient give each result. For example, is the decision threshold is 25\%, this implies that a true positive is 3 times more important that a false positive. Decision curves are then a plot of net benefit for different thresholds.
-		
-	\subsection{Analysis Plan}
-	We detail each part in turn.
+	We will elaborate on the following for each of the three parts:
+	\begin{itemize}
+		\item Planning, including population definition and variables.
+		\item Data extraction.
+		\item Descriptive statistics.
+		\item Modeling and inferential statistics.
+	\end{itemize}
+
+	\subsection{Planning}
 	
 		\subsubsection{Part I}
-		In this part we will develop a framework for the generic generation of prediction models. This framework will perform feature selection as part of the modeling process.
+		Our model will be developed on the following population.
 		
-		\subsubsection*{Study Design}
-		This is a retrospective cohort study based on electronic health record data.
-		
-		\subsubsection*{Study Population}
-		Inclusion Criteria:
+		Inclusion:
 		\begin{itemize}
 			\item Ages 30-90.
 			\item At least 1 year of continuous membership in the Clalit prior to the index date.
 			\item Continuous membership until the study end date or until death.
 		\end{itemize}
-		
-		Exclusion Criteria:
+		Exclusion:
 		\begin{itemize}
-			\item Past CVD event (as detailed above).
+			\item Past CVD event.
 		\end{itemize}
 		
-		\subsubsection*{Study Timeline}
-		As is the standard for cardiovascular disease risk models, our model will predict disease for 10 years after the index date. The index date will be set at 1/1/2008, and follow up will persist until 1/1/2018, as illustrated in the following design diagram.
+		As is the standard for cardiovascular disease risk models, our model will predict disease for 10 years after the index date. The index date will be set at 1/6/2007, and follow up will persist until 1/6/2017, as illustrated in the following design diagram.
 		
 		\begin{figure}[h]
 			\centering
@@ -508,136 +430,161 @@
 			\caption{Study Design Timeline}
 		\end{figure}
 		
-		\subsubsection*{Variables}
+		Logically, model construction will encompass two steps: Using a sparsity inducing model to select among hundreds of variables, then building a model using the selected variables. In effect, algorithms will be chosen that perform both stages at once. See more details in the modeling section ahead.
+		
+		The covariates supplied to the first step will be: 
 		\begin{itemize}
-			\item Demographics - Taken at index date
-			\begin{itemize}
-				\item Sex
-				\item Age
-				\item Socioeconomic Status by clinic and by address
-				\item Country of birth (coalesced into regions when necessary) and immigration date
-				\item Ethnicity by country of individual’s or parents’ birth
-				\item Sector (clinic level data - predominantly Arab / Jewish)
-			\end{itemize}
-			\item Clinical Markers - Last result before index date
-			\begin{itemize}
-				\item Body Mass Index
-				\item Glomerular Filtration Rate
-				\item Blood Pressure
-				\item Smoking Status
-				\item Charlson Co-morbidity Index
-				\item Past Malignancy Status (ever diagnosed with cancer)
-			\end{itemize}
-			\item Diagnoses - Before index Date
-			\begin{itemize}
-				\item Chronic Diagnosis - From chronic registry
-				\item Community Diagnosis - At ICD9 level
-				\item Hospitalization Diagnoses - At ICD9 level
-			\end{itemize}
-			\item Medication Prescriptions and Dispensings - Before Index Date
-			\begin{itemize}
-				\item All drugs at ATC5 level
-			\end{itemize}
-			\item Labs - Last result before Index Date
-			\begin{itemize}
-				\item All labs per CHS' coding
-			\end{itemize}
-			\item Procedures - Before Index Date
-			\begin{itemize}
-				\item All procedures at ministry of health code level
-			\end{itemize}
+			\item Full demographic information, including age, sex, socioeconomic status, sector (arab/jew), ethnicity, etc.
+			\item Clinical covariates, including blood pressure, height, weight, smoking status, etc. The data used will be the last result for each patient in the two years prior to the index date.
+			\item Lab data, including all labs performed for each patient. Data will be extracted separately for the year before the index date, the year before that and the year before that.
+			\item Chronic diagnoses, as defined by the Clalit's chronic registry\cite{Rennert2001}, up to the index date.
+			\item Drug dispensings, including all drug dispensed to the patient in ATC4 granularity\cite{DrugStatisticsMethodology2010}. Data will be extracted separately for the 3 years before the index date and all the years before that.
 		\end{itemize}
 	
-		\subsubsection*{Modeling}
-		\begin{enumerate}
-			\item The population will be divided into a training and test set, to allow for accurate estimation of predictive performance. The division will be, as customary, 80\% to the training set and 20\% to the test set.
-			\item Missing data will be imputed once for the training set and 5 times for the test set, as detailed above.
-			\item Two models will be fit: LASSO and gradient boosting, as detailed above.
-			\item Cross-validation will be performed on the training set for hyper-parameter tuning.
-			\item Feature importance statistics will be described for each model. for LASSO - coefficients, for gradient boosting - total information gain.
-			\item Confidence intervals for the different statistics will be derived by bootstrapping the test set, as detailed above. 500 bootstraps per imputed dataset will be performed. the 2.5\% and 97.5\% percentiles of the resulting results will be reported as the 95\% confidence interval.
-			\item Model performance on the test set will be reported for the following statistics \cite{Steyerberg2008,FrankE.Harrell2015}
-			\begin{itemize}
-				\item Area under the receiver operating characteristics (AUROC) curve, or c-statistic, as a measure of discrimination.
-				\item Calibration slope as a measure of calibration.
-				\item Brier score, as a combined measure of prediction accuracy.
-				\item Sensitivity, Specificity, PPV and NPV for the 7.5\% and 10\% risk threshold. These thresholds are chosen for their importance in existing guidelines\cite{Goff2014,Bibbins-Domingo2016}.
-			\end{itemize}
-		\end{enumerate}
-		
 		\subsubsection{Part II}
-		In this part, we will externally validate three models that are the most significant and widely used existing models designed to assess risk for cardiovascular disease (CVD).
+		We will externally validate three models that are the most significant and widely used existing models designed to assess risk for cardiovascular disease (CVD).
 		
-		\subsubsection*{The Models}
-		The models to be compared are:
-		\begin{enumerate}
-			\item American Heart Association 2013 pooled cohort equations\cite{Goff2014}
-			\item SCORE\cite{Conroy2003}
-			\item Qrisk\cite{Hippisley-Cox2008}
-		\end{enumerate}
-
-		\subsubsection*{Study Design}
-		This is a retrospective cohort study based on electronic health record data.
-		
-		\subsubsection*{Study Population}
-		The population is similar to the population in part I.
-		
-		\subsubsection*{Study Timeline}
-		The timeline is similar to the timeline in part I.
+		The models with their respective populations and outcomes are:
+		\begin{table}[H]
+		\begin{tabular}{|p{4cm}|p{1cm}|p{3cm}|p{4cm}|}
+			\hline
+			Name & Age & Model & Outcome \\
+			\hline
+			American Heart Association 2013 pooled risk model\cite{Goff2014} & 40-79 & Cox proportional hazards & Myocardial infarction, coronary heart disease death, stroke and stroke death \\
+			\hline
+			SCORE\cite{Conroy2003} & 45-64 & Cox proportional hazards & Fatal cardiovascular disease  \\
+			\hline
+			Qrisk\cite{Hippisley-Cox2008} & 35-74 & Cox proportional hazards & coronary heart disease, stroke \\
+			\hline
+		\end{tabular}
+		\caption{Models to be Externally Validated}
+		\end{table}
 	
-		\subsubsection*{Variables}
 		Each model uses its own variables, see appendix A for full model variable lists.
-		
-		\subsubsection*{Descriptive Statistics}
-		\begin{enumerate}
-			\item A population table ("table 1") will be provided.
-			\item For each variable, a fitting description of its distribution will be provided (e.g. frequencies for categorical variables, mean and standard deviation for continuous variables).
-		\end{enumerate}
-	
-		\subsubsection*{Modeling}
-		\begin{enumerate}
-			\item The published coefficients for each model will be used to recreate it accurately on the study population.
-			\item Linear recalibration, as detailed above, will be performed for each model using the training set.
-			\item Performance metrics, as in part I, will be stated for each model.
-			\item Confidence intervals, as above, will be generated using 500 bootstrap repetitions per each multiply imputed dataset.
-		\end{enumerate}
 	
 		\subsubsection{Part III}
-		In this part, we will compare the performance of the external models with that of the internal model, specifically noting the number of patients that would have received more appropriate care, had the recommendations per each model adhered to.
+		The population for the application simulation will include all members of the Clalit's insured population as of 1/6/2007 that were members of the test set for the CVD prediction model. Inclusion and exclusion criteria will be the same as for the model (as mentioned above). The patients will be followed up for 10 years and their CVD outcomes recorded (as per the CVD outcomes in appendix A).
 		
-		\subsubsection*{Study Design}
-		This is a retrospective cohort study based on electronic health record data.
-		
-		\subsubsection*{Study Population}
-		The population is similar to the population in part I.
-		
-		\subsubsection*{Study Timeline}
-		The timeline is similar to the timeline in part I.
-		
-		\subsubsection*{Variables}
-		\begin{enumerate}
-			\item The predictions from the previous parts.
-			\item CVD outcomes, as detailed above.
-		\end{enumerate}
+	\subsection{Data Extraction}
+	The general population for all different parts of the study is the population of patients insured by Clalit Health Services (CHS). CHS is the largest sick fund in Israel, with an insured population of 4.4 active members. Clalit is both an insurer and a provider, directly providing primary care, specialist care, lab, imaging and pharamacy services. Additionally, clalit directly operates several large hospitals. The “attrition rate” (the percentage of patients leaving the sick fund each year) stands on a low 1\%, allowing long term follow-up of patients.
 	
-		\subsubsection*{Model Performance Comparison}
-		We will compare metrics that are related to the decisions that would have been made for each patient, in light of the outcomes we observed.
-		The different metrics are:
-		\begin{enumerate}
-			\item Continuous Net Reclassification Improvement
-			\item Categorical Net Reclassification Improvement - Combined and separately for events and for non-events.
-			\item Decision Curves
-		\end{enumerate}
-		All metrics are explained above. Metrics that rely on a threshold will be reported for 7.5\% and 10\% risk thresholds, as explained above.
-		
-		\subsubsection*{Power Analysis}
-		Assuming a test set of over 300,000 patients, of which 10\% will have any CVD event over 5 years, our study is sufficiently powered to detect even small differences.
-		
-		For the sake of completeness, using the calculation described by Cohen (\cite{Cohen1988}), the power of this study to detect a small effect via logistic regression is >0.99, assuming an eventual 30 variables in the model, and a significance level (alpha) of 0.05.
-		
-		\subsection{Ethics}
-		This study requires an Institutional review board (IRB) approval. It has been submitted for such approval. Analysis will be commence after the approval is granted.
+	The data will be collected using the CHS's electronic health record (EHR). CHS has maintained a comprehensive electronic health record since the year 2000, and has continued to improve it with time. This EHR contains, among others, demographic data, medical data (including clinical covariates, lab results, imaging studies, etc.) and claims data for both services rendered as part of the mandatory health insurance and for services rendered as part of the additive insurance (“Mashlim”). On top of the internal Clalit data, the database also contains external information such as the ministry of interior's causes of death listings and the ministry of health's cancer registry. This comprehensive database, combining both medical and claims data, covers large facets of a person's health.
 	
+	The difficulties that arise in conducting observational studies on EHR data are many and well documented: Data inaccuracy, missing data, cohort effects, selection biases, myriad ontologies, etc\cite{Hripcsak2011,Jensen2012,Goldstein2017}. Some of these issues, such as missing data, can be partially dealt with using statistical methods (see ahead), while some require in-depth expertise and know-how regarding the data's structure and collection methods, knowledge that can only be acquired through rigorous analysis of it. The Clalit's research institute's (CRI) is the research body for Clalit Health Services, and is thus the main consumer of the clalit's EHR data. This grants the CRI intimate knowledge of the data, as is evidenced by the many studies published in major journals based on the Clalit's database and on the CRI's methods in extracting its information (e.g. \cite{Reges2018,Dagan2017}).
+	
+	Data extraction principles for these studies are:
+	\begin{itemize}
+		\item Demographic characteristics will be extracted from the Clalit's demographic database. Those that are time-dependent (e.g. age) will be extracted current to the index dates, those that are constantly overridden will be extracted to their latest value (e.g. SES).
+		\item Cause of death will be collected directly from the ministry of interior's causes of death table.
+		\item Clinical covariates will be extracted from their dedicated database. The latest value prior to the index date will be used. Tests that can be used as-is (e.g. systolic blood pressure) will be used as-is. Weights and heights measured within a 3-month span will be joined for the calculation of BMI. Smoking status will be "flattened" to never/present/past to account for partial "pack-years" reporting.
+		\item Lab data will be extracted from the dedicated lab results database, using the latest lab values prior to the index date.
+		\item Diagnoses will be collected from the community (both session and permanent diagnoses), from hospitalizations and from the Clalit's chronic registry\cite{Rennert2001}. Diagnoses will be extracted based on ICD9 codes, ICPC codes and chronic registry codes. Community diagnoses will be corroborated using free text validation so as to exclude suspicions, etc.
+		\item Drug dispensings will be evaluated using the dedicated pharmacy database. Actual dispensings will be counted (as opposed to prescriptions). Drug adherence will be calculated using drug prescriptions and drug dispensings, with PDC and MPR as the actual statistics\cite{Lam2015}.
+		\item Health care utilization will be calculated by simply counting and summing the patient's encounters and actual cost, both in the community and in hospitals.
+	\end{itemize}
+
+	In part II, where external validation of international models is to take part, special care will be required to handle variables that are not perfect "fits" for the Clalit's database, for example:
+	\begin{itemize}
+		\item UK socioeconomic status ("Townsend Deprivation Score"), which has different levels and is directed in the opposite direction (more means lower SES) than the Clalit's socioeconomic status.
+		\item Diagnoses, that are collected based on dedicated physician visits in cohort studies and on ICD codes in EHR based studies, will be collected using a mixture of ICD codes, free text validation and validation using lab measurements (e.g glucose for diabetes) and drug dispensings (e.g. diuretics, ACE inhibitors, beta blockers and calcium channel blockers for hypertension).
+	\end{itemize}
+
+	CVD definitions, that are used as the outcome in the different models, will be based on those defined by a consensus committee organized by the CRI and headed by a cardiology and neurology specialists. These definitions similar to those used outside the CRI, such as by the Israeli acute stroke registry\cite{ICDC2017} (active within the ICDC).
+	
+	\subsection{Descriptive Statistics}
+	The specific population for each of the models will be described in a dedicated population table ("Table 1") with appropriate statistics for each variable: proportions for categorical variables, means and standard deviations for continuous variables.
+	
+	The common population to be used for comparing the external models and to construct the internal model will also be described in a population table. This table will include separate columns for the train and test populations (see ahead for modeling details), with the same appropriate statistics for each variable. Statistical tests will be used to compare these populations for differences in baseline variables that could affect model generalizability. The statistical tests to be used are Student's t-test for continuous variables and the Chi square goodness-of-fit test for categorical variables, once the basic assumptions (e.g. normality) are tested.
+	
+	Missing data will be multiply imputed using chained equations. Specifically, continuous variables will be imputed using predictive mean matching, while categorical variables will utilize logistic regression\cite{Buuren2011}. Five datasets will be imputed, with the results combined as per Rubin's law\cite{Rubin1987}.
+	
+	\subsection{Modeling and Inferential Statistics}
+	
+		\subsubsection{Part I}
+		
+		To develop the new model, we will create a generic framework capable of generating models for any disease, given a fitting definition of the outcome.
+		
+		The framework will serve two consecutive tasks. The first is to choose the relevant covariates from the long list of candidate covariates supplied to it. The second is to actually build the model.
+		
+		It should be specifically noted that both parts carry independent significance. The covariate selection awards biological insight into the risk factors for a disease, while the model is the actual tool used for risk prediction.
+		
+		The first step will involve applying a model to the training data that employs sparsity. That is, we will opt for models that include variable selection as a part of the fitting process. The hyperparameters for these models will be tuned using the validation set.
+		
+		The three sparsity inducing models we intend to fit are:
+		\begin{enumerate}
+			\item LASSO\cite{Tibshirani2011}
+			\item Gradient Boosting\cite{Freund1997}
+			\item Random Forest\cite{Breiman2001}
+		\end{enumerate}
+		
+		least absolute shrinkage and selection operator (LASSO) is a variant of regression that adds a regularization term based on the $ L_1 $ norm of the coefficients to the normal loss function to be optimized. Namely, the model minimizes:
+		
+		\begin{equation*}
+		\arg \min_w L(w) + \lambda \sum_{i}|\beta|_i
+		\end{equation*}
+		
+		L being the likelihood function and lambda being a regularization parameter. Owing to the geometric structure of the $ L_1 $ norm, this has the effect of setting many covariates to 0, inducing sparsity. The parameter lambda is selected using cross-validation on the validation set, with predictive performance (e.g. AUROC) as the goal.
+		
+		As the regularization portion of the loss is dependent on variable scales, we will normalize the variables to have equal mean and standard deviation prior to model fitting.
+		
+		Gradient boosting is an ensemble method that combines several weak learners (e.g. shallow trees) together using a weighted majority vote. Each consecutive learning phase focuses on those samples in the training set that were predicted wrong by the previous phases.
+		
+		Random forest is also an ensemble method employing decision trees as the weak learners. It strives to induce variance among the trees by using bootstrapping to select the training set for each tree, and only using a randomly selected subset of features at each split in the tree.
+		
+		Both gradient boosting and random forest induce sparsity by deciding on the important features at each split in each tree. The rules for these decisions are themselves parameters to the models, but all generally employ a version of Claude Shannon's information entropy\cite{Shannon1948}:
+		
+		For a given variable x, the entropy is defined as $ H(x) = -\sum_{i=1}^{n} P(x_i) \log P(x_i)$. This entropy is maximized when the "doubt" about the value of a variable is maximal, and the different tree models strive to minimize it by choosing maximally informative variables for each split.
+		
+		Hyper-parameter tuning, per each model's hyper-parameter lists, will be conducted on the validation set using random search\cite{Bergstra2012}. The best performing model with regard to area under the ROC curve will be selected.
+		
+		The model as produced by the sparsity inducing algorithm will be compared to the existing models examined in phase I using the above mentioned performance measures. For the sake of demonstrating clinical utility, we will also compare the best model from phase I to our model for net reclassification improvement\cite{Pencina2008} and decision curves\cite{Vickers2016}.
+		
+		We will include a learning curve for our model so as to demonstrate lack of over-fitting.
+		
+		\subsubsection{Part II}
+		
+		All models will be evaluated twice:
+		\begin{enumerate}
+			\item Once on a population that exactly mirrors the population they were originally defined on.
+			\item Once on a common shared population that represents the population for which we intend to use the model in our thesis.
+		\end{enumerate}
+		This design is similar to previously published work\cite{Dagan2017}.
+		
+		The first phase will employ the full population matching the model's inclusion and exclusion criteria, so as to mirror their development population as much as possible.
+		
+		For the second phase we'll use only the inclusion and exclusion criteria detailed above. This will be a common, shared population so as to allow comparison of model's performance on a joint dataset.
+		
+		The population will be separated into three sets for the sake of model development: Train, Validation and Test in a 72\%/8\%/20\% ratio. The training and validation sets will be discussed in subsection "part II" ahead. The test set will be used for comparing model's performance.
+		
+		The following performance statistics will be computed and reported for each model\cite{Steyerberg2008,FrankE.Harrell2015}:
+		
+		\begin{itemize}
+			\item Area under the receiver operating characteristics (AUROC) curve, or c-statistic, as a measure of discrimination.
+			\item Calibration slope as a measure of calibration.
+			\item Brier score, as a combined measure of prediction accuracy.
+			\item Sensitivity, Specificity, PPV and NPV for the 7.5\% and 10\% risk threshold. These thresholds are chosen for their importance in existing guidelines\cite{Goff2014,Bibbins-Domingo2016}.
+		\end{itemize}
+		
+		To calculate the risk scores, the exact coefficients as published by the model's authors will be used. If dedicated software is available, it will be used instead.
+		
+		Prior to comparing the model's to our own model, we will allow them linear recalibration, so as to "even the playing field" between a model being internally validated (our model) and models being externally validated. This recalibration will be done using the framework suggested by Van Houwlingen et al\cite{Houwelingen2000}. Specifically, the model's linear predictor will be fit again as a sole predictor in a logistic regression model and the ensuing slope and intercept recorded. These will then be used to adjust all model predictions.
+		
+		Mathematically:
+		
+		\begin{equation*}
+		\forall_i \text{LP}_i = \sum_{j=1}^{p}\beta_jx_j
+		\end{equation*}
+		\begin{equation*}
+		\hat{y}_i = \gamma \text{LP}_i + \delta
+		\end{equation*}
+		
+		Where $ LP_i $ is the linear predictor, $ \beta_{ij} $ is the coefficient for covariate j in patient i, $ x_{ij} $ is the covariate j in patient i, $ \hat{y} $ is the recalibrated prediction, for which $ \gamma $ is the slope and $ \delta $ the intercept.
+		
+		Or in words: We take the linear predictor from the original model, but allow it a new slope and intercept, thus preserving the relative importance of each covariate in the model, with the freedom to reset the global risk.
+		
+		\subsubsection{Part III}
+		We will use the both external CVD models and the internal CVD model to generate recommendations for statin and aspirin use for all patients in the test set of the CVD algorithm. Using published data regarding the effectiveness of statin and aspirin use, we will illustrate that the internal model is more accurate when deciding on the population to treat, and its use would have prevented more CVD events.
+		
 	\section{Preliminary Results}
 	We will present preliminary results for the first two parts.
 
@@ -662,15 +609,13 @@
    	\begin{appendices}
    		
    		\section{Model Variable Lists}
-   		In the following section, \% and \_ are wildcards meaning, respectively, any string and any character.
-   		
    		\begin{enumerate}
    			\item American Heart Association 2013 pooled risk model
    			\begin{enumerate}
    				\item Sex
    				\item Age
    				\item Total Cholesterol
-   				\item High Density Lipoprotein (HDL)
+   				\item HDL
    				\item Treated Systolic Blood Pressure
    				\item Untreated Systolic Blood Pressure
    				\item Smoking Status
@@ -692,15 +637,15 @@
    				\item Sex
    				\item Smoking Status
    				\item Systolic Blood Pressure
-   				\item Total Cholesterol / High Density Lipoprotein Ratio
-   				\item Body Mass Index (BMI)
-   				\item Family History of Coronary Heart Disease (CHD)
+   				\item Total Cholesterol / HDL Ratio
+   				\item BMI
+   				\item Family Hx of CHD
    				\item Townsend Deprivation Score
    				\item Treated Hypertension
-   				\item Rheumatoid Arthritis
-   				\item Chronic Kidney Disease
+   				\item RA
+   				\item CKD
    				\item Type II Diabetes
-   				\item Atrial Fibrillation
+   				\item AF 
    			\end{enumerate}
    		\end{enumerate}
    		\newpage
@@ -715,9 +660,9 @@
 		   				\item[ICPC Codes] NA
 		   				\item[CHR Codes] NA
 		   				\item[Sources] Admissions
-		   				%\item[Free-Text Inclusion] NA
-		   				%\item[Free-Text Exclusion] NA
-		   				\item[Comments] Primary diagnosis only, not from a rehabilitation ward
+		   				\item[Free-Text Inclusion] NA
+		   				\item[Free-Text Exclusion] NA
+		   				\item[Comments] Primary diagnosis only, not from rehabilitation
 		   			\end{description}
 	   				\item 
 	   				\begin{description}
@@ -726,9 +671,9 @@
 	   					\item[ICPC Codes] NA
 	   					\item[CHR Codes] NA
 	   					\item[Sources] Admissions
-	   					%\item[Free-Text Inclusion] NA
-	   					%\item[Free-Text Exclusion] NA
-	   					\item[Comments] Primary diagnosis only, not from a rehabilitation ward
+	   					\item[Free-Text Inclusion] NA
+	   					\item[Free-Text Exclusion] NA
+	   					\item[Comments] Primary diagnosis only, not from rehabilitation
 	   				\end{description}
    					\item 
    					\begin{description}
@@ -737,9 +682,9 @@
    						\item[ICPC Codes] NA
    						\item[CHR Codes] NA
    						\item[Sources] Admissions
-   						%\item[Free-Text Inclusion] NA
-   						%\item[Free-Text Exclusion] NA
-   						\item[Comments] Primary diagnosis only, not from a rehabilitation ward
+   						\item[Free-Text Inclusion] NA
+   						\item[Free-Text Exclusion] NA
+   						\item[Comments] Primary diagnosis only, not from rehabilitation
    					\end{description}
    					\item 
    					\begin{description}
@@ -748,9 +693,9 @@
    						\item[ICPC Codes] NA
    						\item[CHR Codes] NA
    						\item[Sources] admissions, community, permanent, hospitals
-   						%\item[Free-Text Inclusion] \%transient\%ischemic\%attack\%, \%ischemic\%attack\%transient\%, \%transient\%cerebral\%ischemia\%, \%vertebral\%artery\%syndrome\%, \%ischemic\%attack\%transient\%
-   						%\item[Free-Text Exclusion] NA
-   						\item[Comments] Primary diagnoses only, not from a rehabilitation ward, only community neurologist
+   						\item[Free-Text Inclusion] \%transient\%ischemic\%attack\%, \%ischemic\%attack\%transient\%, \%transient\%cerebral\%ischemia\%, \%vertebral\%artery\%syndrome\%, \%ischemic\%attack\%transient\%
+   						\item[Free-Text Exclusion] NA
+   						\item[Comments] Primary diagnoses only, not from rehabilitation, only community neurologis
    					\end{description}
    					\item 
    					\begin{description}
@@ -759,9 +704,9 @@
    						\item[ICPC Codes] NA
    						\item[CHR Codes] NA
    						\item[Sources] Admissions
-   						%\item[Free-Text Inclusion] NA
-   						%\item[Free-Text Exclusion] NA
-   						\item[Comments] Primary diagnosis only, not from a rehabilitation ward
+   						\item[Free-Text Inclusion] NA
+   						\item[Free-Text Exclusion] NA
+   						\item[Comments] Primary diagnosis only, not from rehabilitation
    					\end{description}
    					\item 
    					\begin{description}
@@ -770,9 +715,9 @@
    						\item[ICPC Codes] NA
    						\item[CHR Codes] NA
    						\item[Sources] Admissions
-   						%\item[Free-Text Inclusion] NA
-   						%\item[Free-Text Exclusion] NA
-   						\item[Comments] Primary diagnosis only, not from a rehabilitation ward
+   						\item[Free-Text Inclusion] NA
+   						\item[Free-Text Exclusion] NA
+   						\item[Comments] Primary diagnosis only, not from rehabilitation
    					\end{description}
    					\item 
    					\begin{description}
@@ -781,8 +726,8 @@
    						\item[ICPC Codes] K75, K76
    						\item[CHR Codes] 110.1, 110.9
    						\item[Sources] admissions, permanent, diagnoses  and hospitals
-   						%\item[Free-Text Inclusion] \%angina\%, \%prectoris\%, \%heart\%attack\%, \%myocardial\%inf\%, \%ischemic\%heart\%, \%ischaemic\%heart\%, \%coronary\%atherosclerosis\%, \%arterioscl\%cardiovascular\%, \%post\%coronary\%bypass\%, \%coronary\%insuf\%, \%atheroscl\%cardiovasc\%, \%acute\%coronary\%, \%cardial\%ischemia\%, \%intermediate\%coronary\%, \%dyspnea\%effort\%, infarction\%myocardial\%, \%infarction\%subendocardial\%, \%subendocardial\%infarction\%
-   						%\item[Free-Text Exclusion] \%fear\%, \%gynecologic\%, \%no\%disease\%, \%us\%examination\%, \%normal\%, \%breast\%, \%medical\%examination\%, \%herp\%angina\%, \%hearing\%
+   						\item[Free-Text Inclusion] \%angina\%, \%prectoris\%, \%heart\%attack\%, \%myocardial\%inf\%, \%ischemic\%heart\%, \%ischaemic\%heart\%, \%coronary\%atherosclerosis\%, \%arterioscl\%cardiovascular\%, \%post\%coronary\%bypass\%, \%coronary\%insuf\%, \%atheroscl\%cardiovasc\%, \%acute\%coronary\%, \%cardial\%ischemia\%, \%intermediate\%coronary\%, \%dyspnea\%effort\%, infarction\%myocardial\%, \%infarction\%subendocardial\%, \%subendocardial\%infarction\%
+   						\item[Free-Text Exclusion] \%fear\%, \%gynecologic\%, \%no\%disease\%, \%us\%examination\%, \%normal\%, \%breast\%, \%medical\%examination\%, \%herp\%angina\%, \%hearing\%
    						\item[Comments] NA
    					\end{description}
    					\item
@@ -792,8 +737,8 @@
    						\item[ICPC Codes] NA
    						\item[CHR Codes] 112\%
    						\item[Sources] community, admissions, permanent
-   						%\item[Free-Text Inclusion] \%congestive\%heart\%, \%heart\%failure\%, \%systolic\%dysfunction\%, \%diastolic\%dysfunction\%, \%ventricular\%failure\%, \%CHF\%, \%ventricular\%d[yi]sfunction\%
-   						%\item[Free-Text Exclusion] NA
+   						\item[Free-Text Inclusion] \%congestive\%heart\%, \%heart\%failure\%, \%systolic\%dysfunction\%, \%diastolic\%dysfunction\%, \%ventricular\%failure\%, \%CHF\%, \%ventricular\%d[yi]sfunction\%
+   						\item[Free-Text Exclusion] NA
    						\item[Comments] NA
    					\end{description}
    					\item
@@ -803,8 +748,8 @@
    						\item[ICPC Codes] K92
    						\item[CHR Codes] 126\%
    						\item[Sources] community, permanent, chronic registry, hospitals
-   						%\item[Free-Text Inclusion] \%peripheral\%vascular\%, \%PVD\%, \%claudication\%, \%buerger\%, \%thromboangiitis\%obliterans\%
-   						%\item[Free-Text Exclusion] \%neurogenic\%, \%spinal\%, , \%dissection\%, \%acute\%, \%vitreous\%, \%floater\%, \%eye\%, \%detachment\%, \%PVD\%BE\%, \%BE\%PVD\%, \%OD\%PVD\%, \%PVD\%OD\%, \%PVD\%LE\%, \%LE\%PVD\%, \%raynaud\%
+   						\item[Free-Text Inclusion] \%peripheral\%vascular\%, \%PVD\%, \%claudication\%, \%buerger\%, \%thromboangiitis\%obliterans\%
+   						\item[Free-Text Exclusion] \%neurogenic\%, \%spinal\%, , \%dissection\%, \%acute\%, \%vitreous\%, \%floater\%, \%eye\%, \%detachment\%, \%PVD\%BE\%, \%BE\%PVD\%, \%OD\%PVD\%, \%PVD\%OD\%, \%PVD\%LE\%, \%LE\%PVD\%, \%raynaud\%
    						\item[Comments] Exclude ophtalmologist diagnoses
    					\end{description}
 	   			\end{enumerate}
@@ -827,8 +772,8 @@
 	   					\item[ICPC Codes] K90
 	   					\item[CHR Codes] 95.2, 124
 	   					\item[Sources] community, admissions, permanent, chronic registry
-	   					%\item[Free-Text Inclusion] \%cerebrovascular\%accident\%, \%transient\%ischemic\%attack\%, \%intracerebral\%hemorrhage\%, \%CVA\%, \%cerebelar\%hemorrhage\%, \%cerebral\%hemorrhage\%, \%cerebral\%vasospasm\%, \%cerebrovascular\%disease\%, \%stroke\%, \%cerebral\%ischemia\%, \%subarachnoid\%hemorrhage\%, \%ischemic\%attack\%transient\%, \%aneurysm\%berry\%ruptured\%, \%intracranial\%hemorrhage\%, \%hemorrhage\%brain\%nontraumic\%
-	   					%\item[Free-Text Exclusion] \%extradural\%
+	   					\item[Free-Text Inclusion] \%cerebrovascular\%accident\%, \%transient\%ischemic\%attack\%, \%intracerebral\%hemorrhage\%, \%CVA\%, \%cerebelar\%hemorrhage\%, \%cerebral\%hemorrhage\%, \%cerebral\%vasospasm\%, \%cerebrovascular\%disease\%, \%stroke\%, \%cerebral\%ischemia\%, \%subarachnoid\%hemorrhage\%, \%ischemic\%attack\%transient\%, \%aneurysm\%berry\%ruptured\%, \%intracranial\%hemorrhage\%, \%hemorrhage\%brain\%nontraumic\%
+	   					\item[Free-Text Exclusion] \%extradural\%
 	   					\item[Comments] NA
 	   				\end{description}
    					\item
@@ -838,8 +783,8 @@
    						\item[ICPC Codes] NA
    						\item[CHR Codes] NA
    						\item[Sources] community, admissions, permanent
-   						%\item[Free-Text Inclusion] \%cardiomegaly\%, \%ventricular\%, \%hypertrophy\%
-   						%\item[Free-Text Exclusion] NA
+   						\item[Free-Text Inclusion] \%cardiomegaly\%, \%ventricular\%, \%hypertrophy\%
+   						\item[Free-Text Exclusion] NA
    						\item[Comments] Primary diagnosis NA
    					\end{description}
    					\item
@@ -849,8 +794,8 @@
    						\item[ICPC Codes] NA
    						\item[CHR Codes] 112\%
    						\item[Sources] community, admissions, permanent
-   						%\item[Free-Text Inclusion] \%congestive\%heart\%, \%heart\%failure\%, \%systolic\%dysfunction\%, \%diastolic\%dysfunction\%, \%ventricular\%failure\%, \%CHF\%, \%ventricular\%d[yi]sfunction\%
-   						%\item[Free-Text Exclusion] NA
+   						\item[Free-Text Inclusion] \%congestive\%heart\%, \%heart\%failure\%, \%systolic\%dysfunction\%, \%diastolic\%dysfunction\%, \%ventricular\%failure\%, \%CHF\%, \%ventricular\%d[yi]sfunction\%
+   						\item[Free-Text Exclusion] NA
    						\item[Comments] NA
    					\end{description}
    					\item
@@ -860,8 +805,8 @@
    						\item[ICPC Codes] K75, K76
    						\item[CHR Codes] 110.1, 110.9
    						\item[Sources] community, permanent, chronic registry, hospitals
-   						%\item[Free-Text Inclusion] \%angina\%, \%prectoris\%, \%heart\%attack\%, \%myocardial\%inf\%, \%ischemic\%heart\%, \%ischaemic\%heart\%, \%coronary\%atherosclerosis\%, \%arterioscl\%cardiovascular\%, \%post\%coronary\%bypass\%, \%coronary\%insuf\%, \%atheroscl\%cardiovasc\%, \%acute\%coronary\%, \%cardial\%ischemia\%, \%intermediate\%coronary\%, \%dyspnea\%effort\%, infarction\%myocardial\%, \%infarction\%subendocardial\%, \%subendocardial\%infarction\%
-   						%\item[Free-Text Exclusion] \%fear\%, \%gynecologic\%, \%no\%disease\%, \%us\%examination\%, \%normal\%, \%breast\%, \%medical\%examination\%, \%herp\%angina\%, \%hearing\%
+   						\item[Free-Text Inclusion] \%angina\%, \%prectoris\%, \%heart\%attack\%, \%myocardial\%inf\%, \%ischemic\%heart\%, \%ischaemic\%heart\%, \%coronary\%atherosclerosis\%, \%arterioscl\%cardiovascular\%, \%post\%coronary\%bypass\%, \%coronary\%insuf\%, \%atheroscl\%cardiovasc\%, \%acute\%coronary\%, \%cardial\%ischemia\%, \%intermediate\%coronary\%, \%dyspnea\%effort\%, infarction\%myocardial\%, \%infarction\%subendocardial\%, \%subendocardial\%infarction\%
+   						\item[Free-Text Exclusion] \%fear\%, \%gynecologic\%, \%no\%disease\%, \%us\%examination\%, \%normal\%, \%breast\%, \%medical\%examination\%, \%herp\%angina\%, \%hearing\%
    						\item[Comments] NA
    					\end{description}
    					\item
@@ -871,8 +816,8 @@
    						\item[ICPC Codes] K92
    						\item[CHR Codes] 126\%
    						\item[Sources] community, permanent, chronic registry, hospitals
-   						%\item[Free-Text Inclusion] \%peripheral\%vascular\%, \%PVD\%, \%claudication\%, \%buerger\%, \%thromboangiitis\%obliterans\%
-   						%\item[Free-Text Exclusion] \%neurogenic\%, \%spinal\%, , \%dissection\%, \%acute\%, \%vitreous\%, \%floater\%, \%eye\%, \%detachment\%, \%PVD\%BE\%, \%BE\%PVD\%, \%OD\%PVD\%, \%PVD\%OD\%, \%PVD\%LE\%, \%LE\%PVD\%, \%raynaud\%
+   						\item[Free-Text Inclusion] \%peripheral\%vascular\%, \%PVD\%, \%claudication\%, \%buerger\%, \%thromboangiitis\%obliterans\%
+   						\item[Free-Text Exclusion] \%neurogenic\%, \%spinal\%, , \%dissection\%, \%acute\%, \%vitreous\%, \%floater\%, \%eye\%, \%detachment\%, \%PVD\%BE\%, \%BE\%PVD\%, \%OD\%PVD\%, \%PVD\%OD\%, \%PVD\%LE\%, \%LE\%PVD\%, \%raynaud\%
    						\item[Comments] Exclude ophtalmologist diagnoses
    					\end{description}
    					\item
@@ -882,8 +827,8 @@
    						\item[ICPC Codes] K85, K86, K87
    						\item[CHR Codes] 120\%
    						\item[Sources] community, permanent, chronic registry, hospitals
-   						%\item[Free-Text Inclusion] \%hypertension\%, \%hypertensive\%, \%hypert\%with\%, \%nephrosclerosis\%, \%hypert\%, \%essential\%hypert\%, \%hypertesion\%, \%hypertention\%
-   						%\item[Free-Text Exclusion] \%low\%, \%w/o\%, \%pulmonary\%, \%pulmoanry\%, \%ocular\%, \%portal\%, \%holter\%, \%no\%hypert\%, \%no\%retino\%, \%pre\%hyper\%, \%borderline\%, \%prostat\%, \%hyperthy\%, \%hypertrig\%, \%ventricular\%, \%tonsil\%, \%hypertroph\%, \%hypertg\%, \%hyperton\%, \%cranial\%, \%endomet\%, \%adenoid\%
+   						\item[Free-Text Inclusion] \%hypertension\%, \%hypertensive\%, \%hypert\%with\%, \%nephrosclerosis\%, \%hypert\%, \%essential\%hypert\%, \%hypertesion\%, \%hypertention\%
+   						\item[Free-Text Exclusion] \%low\%, \%w/o\%, \%pulmonary\%, \%pulmoanry\%, \%ocular\%, \%portal\%, \%holter\%, \%no\%hypert\%, \%no\%retino\%, \%pre\%hyper\%, \%borderline\%, \%prostat\%, \%hyperthy\%, \%hypertrig\%, \%ventricular\%, \%tonsil\%, \%hypertroph\%, \%hypertg\%, \%hyperton\%, \%cranial\%, \%endomet\%, \%adenoid\%
    						\item[Comments] NA
    					\end{description}
    					\item
@@ -893,8 +838,8 @@
    						\item[ICPC Codes] L88\%
    						\item[CHR Codes] 231\%
    						\item[Sources] community, permanent, chronic registry, hospitals
-   						%\item[Free-Text Inclusion] \% rheumatoid\% arthritis\%, \% arthritis\% atrophic\%
-   						%\item[Free-Text Exclusion] NA
+   						\item[Free-Text Inclusion] \% rheumatoid\% arthritis\%, \% arthritis\% atrophic\%
+   						\item[Free-Text Exclusion] NA
    						\item[Comments] NA
    					\end{description}
    					\item
@@ -904,8 +849,8 @@
    						\item[ICPC Codes] NA
    						\item[CHR Codes] 177\%
    						\item[Sources] community, permanent, chronic registry, hospitals
-   						%\item[Free-Text Inclusion] \%chronic\%kidney\%, \%chronic\%renal\%, \%renal\% failure\%chronic\%, \%uremia\%
-   						%\item[Free-Text Exclusion] NA
+   						\item[Free-Text Inclusion] \%chronic\%kidney\%, \%chronic\%renal\%, \%renal\% failure\%chronic\%, \%uremia\%
+   						\item[Free-Text Exclusion] NA
    						\item[Comments] NA
    					\end{description}
    					\item
@@ -915,8 +860,8 @@
    						\item[ICPC Codes] K83\%
    						\item[CHR Codes] 111\%
    						\item[Sources] community, permanent, chronic registry, hospitals
-   						%\item[Free-Text Inclusion] \%valv\%, \%stenosis\%, \%regurgitation\%, \%incompetence\%, \%insufficiency\%, \%ebstein\%, \%tricuspid\%atresia\%, \%pulmonary\%atresia\%
-   						%\item[Free-Text Exclusion] NA
+   						\item[Free-Text Inclusion] \%valv\%, \%stenosis\%, \%regurgitation\%, \%incompetence\%, \%insufficiency\%, \%ebstein\%, \%tricuspid\%atresia\%, \%pulmonary\%atresia\%
+   						\item[Free-Text Exclusion] NA
    						\item[Comments] NA
    					\end{description}
    					\item
@@ -948,12 +893,12 @@
    					\item
    					\begin{description}
    						\item[Name] Hypertension
-   						\item[ATC Codes] C09, C07AB03, C07FB03, C07CB03, C07CB53, C07BB03, C07DB01, C07DB01, C07AB02, C07FX03, C07FB13, C07FB02, C07FX05, C07CB02, C07BB02, C07BB52, C08C, C08G, C03A, C02AC01
+   						\item[ATC Codes] C09\%, C07AB03, C07FB03, C07CB03, C07CB53, C07BB03, C07DB01, C07DB01, C07AB02, C07FX03, C07FB13, C07FB02, C07FX05, C07CB02, C07BB02, C07BB52, C08C\%, C08G\%, C03A\%, C02AC01
    					\end{description}
    					\item
    					\begin{description}
    						\item[Name] Diabetes Mellitus
-   						\item[ATC Codes] A10
+   						\item[ATC Codes] A10\%
    					\end{description}
    					\item
    					\begin{description}
@@ -969,7 +914,7 @@
    				\includegraphics[width=8cm, height=8cm]{prelim-results/AHA/AHA_ROC.png}
    				\label{AHAROC}
    				\captionsetup{justification=justified,singlelinecheck=false,margin=1cm}
-   				\caption{AHA/ACC 2013 ROC Curve, p-value < 0.001}
+   				\caption{AHA/ACC 2013 ROC Curve}
 	   		\end{figure}
    		
    			\subsection{Clalit Model Population Flow Chart}

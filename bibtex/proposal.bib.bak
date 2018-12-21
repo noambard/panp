@@ -1809,8 +1809,20 @@ Today's health care providers have more research findings and more technology av
   pages     = {379--423},
   doi       = {10.1002/j.1538-7305.1948.tb01338.x},
   file      = {:PDFs/shannon1948.pdf:PDF},
-  groups    = {Self Care},
+  groups    = {Books},
   publisher = {Institute of Electrical and Electronics Engineers ({IEEE})},
+}
+
+@Book{BradleyEfron1994,
+  author    = {Bradley Efron, Robert Tibshirani},
+  title     = {An Introduction to the Bootstrap},
+  year      = {1994},
+  date      = {1994-05-15},
+  publisher = {Taylor \& Francis Ltd},
+  isbn      = {0412042312},
+  pagetotal = {456},
+  url       = {https://www.ebook.de/de/product/3596896/bradley_efron_robert_tibshirani_an_introduction_to_the_bootstrap.html},
+  ean       = {9780412042317},
 }
 
 @Comment{jabref-meta: databaseType:biblatex;}

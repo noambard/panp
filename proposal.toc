@@ -6,119 +6,135 @@
 \defcounter {refsection}{0}\relax 
 \select@language {english}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1}Abstract}{3}
+\contentsline {section}{\numberline {1}Abstract}{4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.1}Background}{3}
+\contentsline {subsection}{\numberline {1.1}Background}{4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.2}Goals}{3}
+\contentsline {subsection}{\numberline {1.2}Goals}{4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.3}Methods}{3}
+\contentsline {subsection}{\numberline {1.3}Methods}{4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.4}Importance}{3}
+\contentsline {subsection}{\numberline {1.4}Importance}{4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.5}Keywords}{4}
+\contentsline {subsection}{\numberline {1.5}Keywords}{5}
 \defcounter {refsection}{0}\relax 
 \select@language {hebrew}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2}\texthebrew {תקציר בעברית}}{4}
+\contentsline {section}{\numberline {2}\texthebrew {תקציר בעברית}}{5}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.1}\texthebrew {רקע}}{4}
+\contentsline {subsection}{\numberline {2.1}\texthebrew {רקע}}{5}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2}\texthebrew {מטרות}}{4}
+\contentsline {subsection}{\numberline {2.2}\texthebrew {מטרות}}{5}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3}\texthebrew {שיטות}}{4}
+\contentsline {subsection}{\numberline {2.3}\texthebrew {שיטות}}{5}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.4}\texthebrew {חשיבות}}{5}
+\contentsline {subsection}{\numberline {2.4}\texthebrew {חשיבות}}{6}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.5}\texthebrew {מילות מפתח}}{5}
+\contentsline {subsection}{\numberline {2.5}\texthebrew {מילות מפתח}}{6}
 \defcounter {refsection}{0}\relax 
 \select@language {english}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3}Aim of the Thesis}{5}
+\contentsline {section}{\numberline {3}Aim of the Thesis}{6}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4}Importance and Background}{6}
+\contentsline {section}{\numberline {4}Importance and Background}{7}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1}Part I}{6}
+\contentsline {subsection}{\numberline {4.1}Part I}{7}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.1.1}Methodology of Traditional Risk Models}{6}
+\contentsline {subsubsection}{\numberline {4.1.1}Methodology of Traditional Risk Models}{7}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.1.2}Generalized Linear Models}{6}
+\contentsline {subsubsection}{\numberline {4.1.2}Generalized Linear Models}{7}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.1.3}Cox Proportional Hazards}{7}
+\contentsline {subsubsection}{\numberline {4.1.3}Cox Proportional Hazards Model}{8}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.1.4}Parametric Vs. Non-Parametric Models}{7}
+\contentsline {subsubsection}{\numberline {4.1.4}Parametric Vs. Non-Parametric Models}{8}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.1.5}The Rise of AI and Machine Learning}{7}
+\contentsline {subsubsection}{\numberline {4.1.5}The Rise of AI and Machine Learning}{8}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.1.6}Black-Box Vs. White-Box Models}{8}
+\contentsline {subsubsection}{\numberline {4.1.6}Black-Box Vs. White-Box Models}{9}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.1.7}Electronic Health Record based Observational Studies}{8}
+\contentsline {subsubsection}{\numberline {4.1.7}Electronic Health Record based Observational Studies}{9}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.1.8}The Gap and our Thesis}{8}
+\contentsline {subsubsection}{\numberline {4.1.8}The Scientific Gap}{9}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2}Part II}{9}
+\contentsline {subsection}{\numberline {4.2}Part II}{10}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.2.1}Epidemiology of Cardiovascular Disease and Stroke}{9}
+\contentsline {subsubsection}{\numberline {4.2.1}Epidemiology of Cardiovascular Disease and Stroke}{10}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.2.2}History of Multivariate Risk Models}{10}
+\contentsline {subsubsection}{\numberline {4.2.2}History of multivariable Risk Models}{11}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.2.3}Limitations of Risk Models}{10}
+\contentsline {subsubsection}{\numberline {4.2.3}Limitations of Risk Models}{11}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.2.4}The Gap and our Thesis}{10}
+\contentsline {subsubsection}{\numberline {4.2.4}The Scientific Gap}{11}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3}Part III}{11}
+\contentsline {subsection}{\numberline {4.3}Part III}{12}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.3.1}Traditional Aim of Risk Models}{11}
+\contentsline {subsubsection}{\numberline {4.3.1}Traditional Aim of Risk Models}{12}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.3.2}The Way Risk Models are Used}{11}
+\contentsline {subsubsection}{\numberline {4.3.2}The Way Risk Models are Used}{12}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.3.3}The Gap and our Thesis}{11}
+\contentsline {subsubsection}{\numberline {4.3.3}The Scientific Gap}{12}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5}The Novelty of the Thesis}{12}
+\contentsline {section}{\numberline {5}The Novelty of the Thesis}{13}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6}Published Work}{12}
+\contentsline {section}{\numberline {6}Published Work}{13}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7}Research Methodology}{13}
+\contentsline {section}{\numberline {7}Research Methodology}{14}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.1}Planning}{13}
+\contentsline {subsection}{\numberline {7.1}Important Concepts}{14}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {7.1.1}Part I}{13}
+\contentsline {subsubsection}{\numberline {7.1.1}Source of Data for Study}{14}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {7.1.2}Part II}{14}
+\contentsline {subsubsection}{\numberline {7.1.2}Issues with EHR Data}{14}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {7.1.3}Part III}{15}
+\contentsline {subsubsection}{\numberline {7.1.3}Data Extraction Principles}{15}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.2}Data Extraction}{15}
+\contentsline {subsubsection}{\numberline {7.1.4}Migration of Foreign-defined Variables}{15}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.3}Descriptive Statistics}{16}
+\contentsline {subsubsection}{\numberline {7.1.5}LASSO Regression}{16}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.4}Modeling and Inferential Statistics}{17}
+\contentsline {subsubsection}{\numberline {7.1.6}Gradient Boosting}{16}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {7.4.1}Part I}{17}
+\contentsline {subsubsection}{\numberline {7.1.7}Learning Curves}{16}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {7.4.2}Part II}{18}
+\contentsline {subsubsection}{\numberline {7.1.8}Linear Recalibration}{17}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {7.4.3}Part III}{19}
+\contentsline {subsubsection}{\numberline {7.1.9}Imputation}{17}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8}Preliminary Results}{19}
+\contentsline {subsubsection}{\numberline {7.1.10}The Bootstrap}{17}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {8.1}Part 1}{20}
+\contentsline {subsubsection}{\numberline {7.1.11}Net Reclassification Improvement}{18}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {8.2}Part 2}{20}
+\contentsline {subsubsection}{\numberline {7.1.12}Decision Curves}{18}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {9}References}{20}
+\contentsline {subsection}{\numberline {7.2}Analysis Plan}{18}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Appendices}{27}
+\contentsline {subsubsection}{\numberline {7.2.1}Part I}{18}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A}Model Variable Lists}{27}
+\contentsline {subsubsection}{\numberline {7.2.2}Part II}{20}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {B}Extraction Protocol}{28}
+\contentsline {subsubsection}{\numberline {7.2.3}Part III}{21}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {B.1}Outcome Diagnoses}{28}
+\contentsline {subsection}{\numberline {7.3}Ethics}{22}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {B.2}Causes of Death}{30}
+\contentsline {section}{\numberline {8}Preliminary Results}{22}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {B.3}Background Diagnoses}{30}
+\contentsline {subsection}{\numberline {8.1}Part 1}{23}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {8.2}Part 2}{23}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {9}References}{23}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{Appendices}{29}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {A}Model Variable Lists}{29}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {B}Extraction Protocol}{30}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {B.1}Outcome Diagnoses}{30}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {B.2}Causes of Death}{31}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {B.3}Background Diagnoses}{31}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {B.4}Drugs}{33}
 \defcounter {refsection}{0}\relax 
