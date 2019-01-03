@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018/Arch Linux) (preloaded format=xelatex 2018.12.19)  21 DEC 2018 11:03
+This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018/Arch Linux) (preloaded format=xelatex 2018.12.19)  3 JAN 2019 16:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -910,7 +910,7 @@ Package biblatex Info: ... file 'hebrew.lbx' not found.
 
 
 Package biblatex Warning: Language 'hebrew' not supported.
-(biblatex)                Using fallback language 'english' on input line 59.
+(biblatex)                Using fallback language 'english' on input line 60.
 
 Package biblatex Info: Trying to load language 'english'...
 Package biblatex Info: ... file 'english.lbx' found.
@@ -926,20 +926,20 @@ Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
 (./proposal.aux)
 \openout1 = `proposal.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: xetex
@@ -989,56 +989,56 @@ Package fontspec Info: Adjusting the maths setup (use [no-math] to avoid
 
 \symlegacymaths=\mathgroup4
 LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
-(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 59.
-LaTeX Font Info:    Redeclaring math accent \acute on input line 59.
-LaTeX Font Info:    Redeclaring math accent \grave on input line 59.
-LaTeX Font Info:    Redeclaring math accent \ddot on input line 59.
-LaTeX Font Info:    Redeclaring math accent \tilde on input line 59.
-LaTeX Font Info:    Redeclaring math accent \bar on input line 59.
-LaTeX Font Info:    Redeclaring math accent \breve on input line 59.
-LaTeX Font Info:    Redeclaring math accent \check on input line 59.
-LaTeX Font Info:    Redeclaring math accent \hat on input line 59.
-LaTeX Font Info:    Redeclaring math accent \dot on input line 59.
-LaTeX Font Info:    Redeclaring math accent \mathring on input line 59.
-LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 59.
-LaTeX Font Info:    Redeclaring math symbol \Delta on input line 59.
-LaTeX Font Info:    Redeclaring math symbol \Theta on input line 59.
-LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 59.
-LaTeX Font Info:    Redeclaring math symbol \Xi on input line 59.
-LaTeX Font Info:    Redeclaring math symbol \Pi on input line 59.
-LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 59.
-LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 59.
-LaTeX Font Info:    Redeclaring math symbol \Phi on input line 59.
-LaTeX Font Info:    Redeclaring math symbol \Psi on input line 59.
-LaTeX Font Info:    Redeclaring math symbol \Omega on input line 59.
-LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 59.
-LaTeX Font Info:    Redeclaring symbol font `operators' on input line 59.
+(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 60.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 60.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 60.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 60.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 60.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 60.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 60.
+LaTeX Font Info:    Redeclaring math accent \check on input line 60.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 60.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 60.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 60.
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 60.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 60.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 60.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 60.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 60.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 60.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 60.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 60.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 60.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 60.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 60.
+LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 60.
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 60.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `normal' on input line 59.
+(Font)              `operators' in the math version `normal' on input line 60.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> TU/lmr/m/n on input line 59.
+(Font)                  OT1/cmr/m/n --> TU/lmr/m/n on input line 60.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `bold' on input line 59.
+(Font)              `operators' in the math version `bold' on input line 60.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> TU/lmr/m/n on input line 59.
+(Font)                  OT1/cmr/bx/n --> TU/lmr/m/n on input line 60.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  TU/lmr/m/n --> TU/lmr/m/n on input line 59.
+(Font)                  TU/lmr/m/n --> TU/lmr/m/n on input line 60.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> TU/lmr/m/it on input line 59.
+(Font)                  OT1/cmr/m/it --> TU/lmr/m/it on input line 60.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> TU/lmr/bx/n on input line 59.
+(Font)                  OT1/cmr/bx/n --> TU/lmr/bx/n on input line 60.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 59.
+(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 60.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 59.
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 60.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  TU/lmr/m/n --> TU/lmr/bx/n on input line 59.
+(Font)                  TU/lmr/m/n --> TU/lmr/bx/n on input line 60.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> TU/lmr/bx/it on input line 59.
+(Font)                  OT1/cmr/bx/it --> TU/lmr/bx/it on input line 60.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> TU/lmss/bx/n on input line 59.
+(Font)                  OT1/cmss/bx/n --> TU/lmss/bx/n on input line 60.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/bx/n on input line 59.
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/bx/n on input line 60.
 Package biblatex Info: XeTeX detected.
 (biblatex)             Assuming input encoding 'utf8'.
 Package biblatex Info: Automatic encoding selection.
@@ -1053,20 +1053,6 @@ Package biblatex Info: ... file 'proposal.bbl' found.
  (./proposal.bbl
 
 Package biblatex Warning: BibTeX reported the following issues
-(biblatex)                with 'Weng2017':
-(biblatex)                - Invalid format of field 'month'.
-
-Invalid UTF-8 byte or sequence at line 1915 replaced by U+FFFD.
-Invalid UTF-8 byte or sequence at line 1917 replaced by U+FFFD.
-Invalid UTF-8 byte or sequence at line 1941 replaced by U+FFFD.
-Invalid UTF-8 byte or sequence at line 1942 replaced by U+FFFD.
-
-Package biblatex Warning: BibTeX reported the following issues
-(biblatex)                with 'Lovis2015':
-(biblatex)                - Invalid format of field 'month'.
-
-
-Package biblatex Warning: BibTeX reported the following issues
 (biblatex)                with 'WHO2017':
 (biblatex)                - Invalid format of field 'date' 
 (biblatex)                - Invalid format of field 'date'.
@@ -1076,6 +1062,20 @@ Package biblatex Warning: BibTeX reported the following issues
 (biblatex)                with 'ICDC2017':
 (biblatex)                - Invalid format of field 'date' 
 (biblatex)                - Invalid format of field 'date'.
+
+
+Package biblatex Warning: BibTeX reported the following issues
+(biblatex)                with 'Weng2017':
+(biblatex)                - Invalid format of field 'month'.
+
+Invalid UTF-8 byte or sequence at line 6673 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 6675 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 6699 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 6700 replaced by U+FFFD.
+
+Package biblatex Warning: BibTeX reported the following issues
+(biblatex)                with 'Lovis2015':
+(biblatex)                - Invalid format of field 'month'.
 
 
 Package biblatex Warning: BibTeX reported the following issues
@@ -1109,8 +1109,8 @@ Package biblatex Warning: BibTeX reported the following issues
 (biblatex)                - Can't use 'date' + 'year'.
 
 )
-Package biblatex Info: Reference section=0 on input line 59.
-Package biblatex Info: Reference segment=0 on input line 59.
+Package biblatex Info: Reference section=0 on input line 60.
+Package biblatex Info: Reference segment=0 on input line 60.
  [1
 
 ] (./proposal.toc [1] [2])
@@ -1118,93 +1118,142 @@ Package biblatex Info: Reference segment=0 on input line 59.
 \openout5 = `proposal.toc'.
 
  [3] [4] [5] [6] [7] [8] [9] [10] [11] [12]
-[13] [14]
-Overfull \hbox (0.2293pt too wide) in paragraph at lines 423--424
-[]\TU/lmr/m/n/12 Least absolute shrinkage and selection operator (LASSO)[56] is
+[13]
+
+LaTeX Warning: Citation 'Greenland2018' on page 14 undefined on input line 401.
+
+
+
+Overfull \hbox (20.18478pt too wide) in paragraph at lines 401--402
+[][]\TU/lmr/m/n/12 The utility of CAC is well known[31], and the debate regardi
+ng its use ongoing[[]].[]
+ []
+
+[14]
+
+LaTeX Warning: Citation 'GuidoW.Imbens2015' on page 15 undefined on input line 
+407.
+
+
+LaTeX Warning: Citation 'StephenL.Morgan2015' on page 15 undefined on input lin
+e 407.
+
+
+LaTeX Warning: Citation 'JudeaPearl2018' on page 15 undefined on input line 407
+.
+
+
+LaTeX Warning: Citation 'NHS2016' on page 15 undefined on input line 407.
+
+
+Overfull \hbox (19.69807pt too wide) in paragraph at lines 407--408
+[][]\TU/lmr/m/n/12 Causal inference is not a new methodology [[], []],[]
+ []
+
+[15]
+Overfull \hbox (0.2293pt too wide) in paragraph at lines 438--439
+[]\TU/lmr/m/n/12 Least absolute shrinkage and selection operator (LASSO)[70] is
  a variant of logistic regression[]
  []
 
-[15] [16] [17] [18]
-File: prelim-results/Panpredictor/timeline.png Graphic file (type bmp)
-<prelim-results/Panpredictor/timeline.png>
- [19] [20] [21] [22] [23]
-Overfull \hbox (15.98071pt too wide) in paragraph at lines 670--670
-[]$[][][][][][][][][][] [][] [][][][][][][][][][][][] [][] [][][][][][] [][] []
-[][][][][][][] [][] [][][] [] [][] [] [][][][][][][][][][] [] [][][][][][][][][
-][][][][][] []$[]
- []
+[16]
+
+LaTeX Warning: Citation 'Wager2015' on page 17 undefined on input line 449.
 
 
-Overfull \hbox (9.8247pt too wide) in paragraph at lines 670--670
-[]$[][][][][] [] [] [] [][][] [] [][][][][][] [] [][][] [] [][][][][][][][][][]
-[][][] [][] [][][][][][][] [][] [][][][][][][][] [][] [][][][][][] [][] [][][][
-][][][][][][] []$[]
- []
+LaTeX Warning: Citation 'Breiman2001' on page 17 undefined on input line 449.
 
+[17] [18] [19] [20] [21] [22]
 
-Overfull \hbox (20.6607pt too wide) in paragraph at lines 670--670
-[]$[][] [] [][][][][][][][][][] [] [][][][][][][][][][][][][][] [] [][][][][][]
-[][][][][][][][][][][][][][] [] [][][] [] [][][][][][][] [][] [][] [] [][][][][
-][][][] []$[]
- []
+LaTeX Warning: Citation 'GuidoW.Imbens2015' on page 23 undefined on input line 
+660.
 
-[24]
-Overfull \hbox (14.76506pt too wide) in paragraph at lines 670--670
-[][]\TU/lmr/m/n/12 Úrsula Hébert-Johnson et al. “Calibration for the (Computati
-onally-Identifiable) Masses”.[]
- []
-
-
-Overfull \hbox (18.91087pt too wide) in paragraph at lines 670--670
+[23] [24]
+Overfull \hbox (18.91087pt too wide) in paragraph at lines 689--689
 [][]\TU/lmr/m/n/12 WHO. \TU/lmr/m/it/12 Cardiovascular Disease fact sheet\TU/lm
 r/m/n/12 . 2017. \TU/lmr/m/sc/12 url\TU/lmr/m/n/12 : $[][][][] [] [] [] [][][] 
 [] [][][] [] [][][] [] [][][][][][][][][][][] []$[]
  []
 
 [25] [26] [27]
-Overfull \hbox (58.24066pt too wide) in paragraph at lines 670--670
+Overfull \hbox (15.98071pt too wide) in paragraph at lines 689--689
+[]$[][][][][][][][][][] [][] [][][][][][][][][][][][] [][] [][][][][][] [][] []
+[][][][][][][] [][] [][][] [] [][] [] [][][][][][][][][][] [] [][][][][][][][][
+][][][][][] []$[]
+ []
+
+
+Overfull \hbox (9.8247pt too wide) in paragraph at lines 689--689
+[]$[][][][][] [] [] [] [][][] [] [][][][][][] [] [][][] [] [][][][][][][][][][]
+[][][] [][] [][][][][][][] [][] [][][][][][][][] [][] [][][][][][] [][] [][][][
+][][][][][][] []$[]
+ []
+
+
+Overfull \hbox (20.6607pt too wide) in paragraph at lines 689--689
+[]$[][] [] [][][][][][][][][][] [] [][][][][][][][][][][][][][] [] [][][][][][]
+[][][][][][][][][][][][][][] [] [][][] [] [][][][][][][] [][] [][] [] [][][][][
+][][][] []$[]
+ []
+
+[28]
+Overfull \hbox (14.76506pt too wide) in paragraph at lines 689--689
+[][]\TU/lmr/m/n/12 Úrsula Hébert-Johnson et al. “Calibration for the (Computati
+onally-Identifiable) Masses”.[]
+ []
+
+[29]
+Overfull \hbox (58.24066pt too wide) in paragraph at lines 689--689
 []$[][][][][][] [][] [][][][][][][][][][][] [][] [][][][][][][][][][] [] [][] [
 ] [][][][][][][][][][] [] [][][][][][][][][][][][][][] [] [][][][][][][][][][][
 ][][][][][][][][][] []$[]
  []
 
-
-Overfull \hbox (8.84547pt too wide) in paragraph at lines 670--670
+[30]
+Overfull \hbox (8.84547pt too wide) in paragraph at lines 689--689
 []\TU/lmr/m/n/12 Routledge, 1988. \TU/lmr/m/sc/12 isbn\TU/lmr/m/n/12 : 978-0805
 802832. \TU/lmr/m/sc/12 url\TU/lmr/m/n/12 : $[][][][][] [] [] [] [][][] [] [][]
 [][][][] [] [][][] [] [][][][][][][][][][][] [][]$[]
  []
 
 
-Overfull \hbox (89.64063pt too wide) in paragraph at lines 670--670
+Overfull \hbox (89.64063pt too wide) in paragraph at lines 689--689
 []$[][][][][] [][] [][][][][][][][] [][] [][][][][][][][][][] [][] [][][][][][]
 [][] [] [][] [] [][][][][][][][][][] [] [][][][][][][][][][][][][][] [] [][][][
 ][][][][][][][][][][][][][][][][] []$[]
  []
 
-[28] [29] [30] [31] [32]
-Overfull \hbox (23.97086pt too wide) in paragraph at lines 962--963
+[31] [32] [33] [34] [35]
+Overfull \hbox (23.97086pt too wide) in paragraph at lines 953--954
 []\TU/lmr/m/n/12 C07DB01, C07AB02, C07FX03, C07FB13, C07FB02, C07FX05, C07CB02,
  C07BB02,[]
  []
 
-[33]
+[36]
 File: prelim-results/AHA/AHA_ROC.png Graphic file (type bmp)
 <prelim-results/AHA/AHA_ROC.png>
 File: prelim-results/Panpredictor/pop_flow_chart.png Graphic file (type bmp)
 <prelim-results/Panpredictor/pop_flow_chart.png>
- [34] (./proposal.aux)
+ [37] (./proposal.aux)
+
+LaTeX Warning: There were undefined references.
+
+
+Package biblatex Warning: Please (re)run BibTeX on the file(s):
+(biblatex)                proposal
+(biblatex)                and rerun LaTeX afterwards.
+
 Package logreq Info: Writing requests to 'proposal.run.xml'.
 \openout1 = `proposal.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 24808 strings out of 492956
- 511757 string characters out of 6139023
- 991037 words of memory out of 5000000
- 28511 multiletter control sequences out of 15000+600000
+ 24906 strings out of 492956
+ 517395 string characters out of 6139023
+ 1033793 words of memory out of 5000000
+ 28610 multiletter control sequences out of 15000+600000
  536053 words of font info for 67 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 63i,6n,77p,1304b,6195s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 63i,6n,61p,1304b,6196s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on proposal.pdf (35 pages).
+Output written on proposal.pdf (38 pages).

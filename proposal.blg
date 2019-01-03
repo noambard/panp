@@ -16,7 +16,7 @@ Reallocated singl_function (elt_size=8) to 100 items from 50.
 Reallocated singl_function (elt_size=8) to 100 items from 50.
 Reallocated singl_function (elt_size=8) to 100 items from 50.
 Reallocated singl_function (elt_size=8) to 100 items from 50.
-Reallocated field_info (elt_size=8) to 14730 items from 5000.
+Reallocated field_info (elt_size=8) to 16676 items from 5000.
 Database file #1: proposal-blx.bib
 Database file #2: bibtex/proposal.bib
 Reallocated str_pool (elt_size=1) to 130000 items from 65000.
@@ -118,45 +118,45 @@ Name 1 in "Frank E. Harrell ," has a comma at the end for entry FrankE.Harrell20
 while executing---line 2774 of file biblatex.bst
 Name 1 in "Frank E. Harrell ," has a comma at the end for entry FrankE.Harrell2015
 while executing---line 2774 of file biblatex.bst
-You've used 70 entries,
+You've used 84 entries,
             6304 wiz_defined-function locations,
-            1888 strings with 132644 characters,
-and the built_in function-call counts, 1240868 in all, are:
-= -- 111109
-> -- 13735
-< -- 1865
-+ -- 37179
-- -- 7412
-* -- 99865
-:= -- 162491
+            2021 strings with 164360 characters,
+and the built_in function-call counts, 1489070 in all, are:
+= -- 133872
+> -- 15732
+< -- 2133
++ -- 43731
+- -- 8298
+* -- 120701
+:= -- 194540
 add.period$ -- 0
-call.type$ -- 70
-change.case$ -- 795
-chr.to.int$ -- 588
-cite$ -- 138
-duplicate$ -- 112998
-empty$ -- 106048
-format.name$ -- 9776
-if$ -- 235911
+call.type$ -- 84
+change.case$ -- 893
+chr.to.int$ -- 648
+cite$ -- 166
+duplicate$ -- 134254
+empty$ -- 127998
+format.name$ -- 11596
+if$ -- 283921
 int.to.chr$ -- 0
-int.to.str$ -- 159
+int.to.str$ -- 189
 missing$ -- 0
-newline$ -- 5717
-num.names$ -- 2980
-pop$ -- 31890
+newline$ -- 6786
+num.names$ -- 3518
+pop$ -- 38203
 preamble$ -- 1
-purify$ -- 2210
+purify$ -- 2565
 quote$ -- 0
-skip$ -- 13425
+skip$ -- 15743
 stack$ -- 0
-substring$ -- 235368
-swap$ -- 18428
-text.length$ -- 2141
-text.prefix$ -- 32
+substring$ -- 285141
+swap$ -- 21902
+text.length$ -- 2504
+text.prefix$ -- 26
 top$ -- 1
-type$ -- 2366
+type$ -- 2842
 warning$ -- 0
-while$ -- 20522
+while$ -- 24379
 width$ -- 0
-write$ -- 5648
+write$ -- 6703
 (There were 44 error messages)
