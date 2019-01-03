@@ -5,7 +5,7 @@
 \usepackage[fleqn]{amsmath}
 
 \usepackage{geometry}
-\geometry{a4paper, portrait, margin=0.9in}
+\geometry{a4paper, portrait, margin=0.8in}
 
 % graphics
 \usepackage{graphicx}
@@ -93,12 +93,10 @@
 		
 		Since the early 1990s, and more so in the last few years,  multivariable risk prediction models have been created to estimate patients' risk for cardiovascular disease (e.g. \cite{Wilson1998,Conroy2003,DAgostino2008}). These models are used to identify patients at risk and are capable of exact risk quantification over time\cite{Goff2014}. Through their many variations, these risk models are included in different guidelines and occupy an important place in prevention of CVD\cite{Goff2014}.
 	
-		Given this central place, improvement of cardiovascular disease prediction models has the potential to greatly impact public health.
-		
 		\subsection{Goals}
 		
-		In this thesis we will explore three ways to improve CVD prediction. First, we will examine the incorporation of novel biomarkers, generated through automated algorithms, into the model. Second, we will examine A novel way to generate prediction models that does not require any domain expertise, and has the potential to better select variables and construct models. Lastly, we will examine the use of causal inference methods to better quantify the effect of patient risk-lowering interventions.
-
+		The goal of this thesis is to examine different methods by which to improve CVD prediction. We will examine ways to utilize novel biomarkers, to generate better and more generic prediction models and to combine prediction with causal inference.
+		
 		\subsection{Methods}
 		
 		The baseline model used will be the 2013 American Heart Association/American College of Cardiology (AHA/ACC) pooled cohort equations\cite{Goff2014}. This model is of great importance, and is used in the AHA/ACC guidelines and the United States Preventive Services Task Force (USPSTF) guidelines for CVD prevention\cite{Bibbins-Domingo2016}. The population of all studies is the general population of Clalit Health Services (CHS), the largest sick fund in Israel.
@@ -122,12 +120,12 @@
 
 				מתחילת שנות ה-90 החלה, ובשנים האחרונות גברה, יצירתם של מודלים רב-משתניים לחישוב סיכון למחלות שונות(לדוגמה \cite{Wilson1998,Conroy2003,DAgostino2008}). מודלים אלו משמשים לזיהוי חולים בסיכון, ומאפשרים כימות מדויק של הסיכון לאורך שנים רבות\cite{Goff2014}. כיום, בצורותיהן השונות, מודלים אלו כלולים בקווים המנחים של ארגונים מקצועיים רבים, ולהם מקום חשוב הן במניעה הראשונית והן באבחנה של מחלות \cite{Graham2007,Goff2014}.
 				
-				בהינתן חשיבותן הרבה זו, לשיפור הביצועים של מודלי חיזוי הפוטנציאל להשפיע עמוקות על בריאות הציבור.
-			
 		\subsection{\texthebrew{מטרות}}
 		
-				בתזה זו אנו מתכוונים לחקור שלושה דברים לשיפור חיזוי מחלה קרדיוסקולרית. בתחילה, אנו נבדוק האפקט של שילוב ביומרקרים חדשניים, הנוצרים ע"י אלגוריתמים אוטומטיים, לתוך מודל החיזוי. לאחר מכן, אנו נחקור דרך חדשנית לבניית מודלי חיזוי אשר אינה דורשת היעזרות במומחי תוכן מהתחום, ולה הפוטנציאל לבחירת משתנים ומודל טובים יותר. לבסוף, אנו נחקור השימוש בשיטות מתחום ההסקה הסיבתית על מנת לכמת ההשפעה של התערבויות שונות להפחתת הסיכון.
+				The goal of this thesis is to examine different methods by which to improve CVD prediction. We will examine ways to utilize novel biomarkers, to generate better and more generic prediction models and to combine prediction with causal inference.
 				
+				מטרתה של תזה זו היא לבחון דרכים שונות לשפר חיזוי מחלה קרדיווסקולרית. אנו נבחן אמצעים לשלב ביומרקרים חדשניים, לייצר מודלי חיזוי טובים וגנריים יותר ולשלב חיזוי עם הסקה סיבתית.
+		
 		\subsection{\texthebrew{שיטות}}
 		
 		המודל הבסיסי בו נעשה שימוש בעבודה זו הוא מודל האגודה האמריקאית למחלה לב משנת 2013\cite{Goff2014}. למודל זה חשיבות רבה, והוא משמש בקווים המנחים למניעת מחלה קרדיווסקולרית של האגודה האמריקאית למחלות לב ושל הצוות האמריקאי לשירותים מניעתיים\cite{Bibbins-Domingo2016}. האוכלוסיה בכל המחקרים תהיה אוכלוסיית המבוטחים של קופת החולים כללית, הקופה הגדולה בישראל.
@@ -181,30 +179,12 @@
 			In its usual definition, cardiovascular disease (CVD) includes several disease categories\cite{WHO2017}:
 			\begin{enumerate}
 				\item Coronary Heart Disease
-				\begin{enumerate}
-					\item Myocardial Infarction
-					\item Angina Pectoris
-					\item Heart Failure
-					\item Coronary death
-				\end{enumerate}
 				\item Cerebrovascular Disease
-				\begin{enumerate}
-					\item Stroke (Thrombotic and Hemorrhagic)
-					\item Transient Ischemic Attack
-				\end{enumerate}
 				\item Peripheral Artery Disease
 				\item Aortic Disease
-				\begin{enumerate}
-					\item Atherosclerosis
-					\item Aneurysm
-				\end{enumerate}
 				\item Rheumatic Heart Disease
 				\item Congenital Heart Disease
 				\item Venous Thromboembolism
-				\begin{enumerate}
-					\item Pulmonary Embolism
-					\item Deep Vein Thrombosis
-				\end{enumerate}
 			\end{enumerate}
 			
 			CVD is very common. Lifetime risk for people aged 30 with no prior cardiovascular disease approaches 50 percent\cite{Rapsomaniki2014}, with coronary heart disease being the most common specific diagnosis\cite{Benjamin2017}.
@@ -220,12 +200,6 @@
 			Perhaps more important that their mere existence, is that these models have made their way into widely-accepted international guidelines, with their use mandated in routine clinical care. Two examples we'll cite are the use of these risk models in deciding on Statin therapy\cite{Goff2014} and their use in deciding on anti-platelet therapy\cite{Bibbins-Domingo2016}, both for primary prevention of CVD.
 			
 			While CVD prediction was the bedrock for clinical risk models, they have since spread to encompass a large variety of diseases categories\cite{Kanis2008,Kansagara2011}, and have found use not only in prediction, but also in diagnosis\cite{Usher-Smith2016}. This increasingly important place taken by risk models has brought about the publication of guidelines designed to regulate and improve their creation\cite{Collins2015}. As estimating the probability for existing and future disease is a significant portion of the clinical process\cite{Moons2009}, and as this task can in large parts be automated, it seems likely that risk models will gain an increasingly important place in the medical practice.
-			
-			\subsubsection{Limitations of Risk Models}
-			
-			Naturally, risk models are developed on a specific population, whose data is available to the researchers developing the model. As patients differ in a variety of ways (both genetic and environmental), and even such basic things as lab methods and disease definitions differ in different areas, models tend to function better when used on the population on which they were developed\cite{DAgostino2001,Bastuji-Garin2002}.
-			
-			Recent models have tried to deal with this problem by including more ethnically varied populations\cite{DeFilippis2015} or recalibrating the model for each new population\cite{Kanis2008}, but such efforts are limited to specific risk models, and even then have only been partially successful\cite{Dagan2017}. As one specific Israeli example, this phenomenon was observed in a recent publication that illustrated significant mis-calibration for osteoporosis prediction models that are in wide clinical use and incorporated into guidelines\cite{Dagan2017}. As the probabilities generated by the model eventually help determine the proper interventions to perform, according to respective guidelines, such mis-calibration could invalidate the use of the model, making external validation an important endeavor\cite{Moons2012}.
 			
 		\subsection{Part I}
 		
@@ -291,11 +265,6 @@
 			
 			The assumptions for cox regression warrant special mention. While the assumption of linearity is similar to GLMs, cox regression also assumes proportionality - that is, that the hazard ratio between risk factors remains constant over time. This is a very strong assumption that does not always hold. Some models circumvent this assumption at the cost of complexity and loss of interpretability. Just as before, the model can also be used for prediction, disregarding all assumptions.
 			
-			\subsubsection{Parametric Vs. Non-Parametric Models}
-			Parametric models, such as those described above, summarize the data with a set of parameters of fixed size that is independent of the number of training examples. This has the advantage of simplicity, interpretability and speed, but also leads to biases in prediction if the "true" population model is different than the chosen model.
-			
-			Non-parametric models make no such assumptions about the structure of the target function they seek to learn. This requires far more data for accurate training, and does not allow interpretation of coefficients using terms such as odds ratios, but does afford more predictive accuracy when sufficient data exists\cite{Russell2002}.
-			
 			\subsubsection{The Rise of AI and Machine Learning}
 		
 			In recent years the fields of machine and statistical learning have seen a tremendous rise\cite{Obermeyer2016}. this growth in machine learning, including predictive modeling, has occurred thanks to three main factors\cite{Shalev-Shwartz2014}:
@@ -312,13 +281,6 @@
 			\end{itemize}
 			To date, these methods have yet to gain wide-acceptance in medical practice\cite{Obermeyer2016,Deo2015}.
 			
-			\subsubsection{Black-Box Vs. White-Box Models}
-			While there are obstacles from many different domains to the integration of machine learning approaches in medicine: psychological, legal, regulatory and others, one overarching concern is the preeminence of black-box models in machine learning\cite{Price2015}.
-			
-			Broadly defined, black-box models are models whose results cannot be readily explained. For example, a logistic regression result can be fairly easily reasoned about: baseline risk was x\%, and a certain combination of variables increased the risk by y\% more. The same cannot be said for most models used in modern machine learning, including neural networks and tree-ensemble models. These models generate a result that is a complex non-linear function of their inputs, and one cannot easily explain why a specific patient got a risk of x\%, while another got y\%.
-			
-			Beyond the legal and psychological difficulty this creates (how does one explain, to oneself and others, a decision based on unclear reasoning?), it also introduces the possibility of discrimination. The algorithm could choose to optimize for one (majority) population, while neglecting other (minority) populations\cite{Hebert-Johnson2017}. This fascinating area of research falls under the more general notion of algorithmic fairness, more widely studied in other non-medical fields\cite{Corbett-Davies2017}, and is beyond the scope of this thesis.
-			
 			\subsubsection{Electronic Health Record based Observational Studies}
 		
 			Most medical risk models in wide-use were developed based on specialized cohort studies\cite{Goldstein2016}. This has the known advantages of cohort studies, most notably the accurate definition of exposures and outcomes, but is expensive and time-consuming, and by definition only allows inclusion of risk factors that were decided on in advance and measured as part of the study. On the other hand, with the larger availability of EHRs, risk models developed on such data have risen in amount. These models have the known disadvantages of EHR data (first of which are the non-standardized definitions), but offer a wealth of information that in certain cases, including the case in Israel\cite{Lovis2015}, encompasses the full extent of a patient's encounters with the health system\cite{Goldstein2017}.
@@ -329,7 +291,7 @@
 			
 			This method will make use of most available EHR data, and will require no pre-specification of risk factors, instead allowing the algorithm to ascertain the relative importance of the different factors by itself. Not only will this allow the creation of accurate risk models, it will also provide a way to automatically identify associations that exist in the EHR and could represent novel risk factors and biological pathways.
 			
-			We will then use this method to develop a specific model to predict cardiovascular disease. As this model will make use of large portions of the EHR data and will be purposely built on the Clalit's population, it is likely to perform well.
+			We will then use this method to develop a specific model to predict cardiovascular disease.
 		
 		\subsection{Part III}
 		
@@ -346,7 +308,7 @@
 			\begin{equation*}
 			E[Y|X,T]
 			\end{equation*}
-			And a subtracting the predictions with the treatment in different states yields us
+			And subtracting the predictions with the treatment in different states yields us
 			\begin{equation*}
 			E[Y|T=1] - E[Y|T=0]
 			\end{equation*}
@@ -356,29 +318,29 @@
 			\end{equation*}
 			Where $ Y^i $ is the counterfactual for $ T=i $.
 			
-			That is to say, correlation is not causation. Regardless, knowledge of the absolute risk without knowledge of the relative effects of different interventions is not sufficient for deciding on interventions.
+			That is to say - correlation is not causation. Regardless, knowledge of the absolute risk without knowledge of the relative effects of different interventions is not sufficient for deciding on interventions.
 			
 			\subsubsection{Causal Inference}
-			In general, the individual treatment effect (ITE) for a specific patient, $ Y_i^1 - Y_i^0 $ can never be known, as one of the counterfactuals will always be hidden. But, under certain assumptions, the average causal effect is identifiable from observational data.
+			In general, the individual treatment effect (ITE) for a specific patient, $ Y_i^1 - Y_i^0 $ can never be known, as one of the counterfactuals will always be hidden. But, under these assumptions, the average causal effect is identifiable from observational data:
 			\begin{description}
 				\item[Ignorability] Given the covariates, the outcome is independent of the treatment: $ Y \indep  T | X$
 				\item[Positivity] The probability of treatment is positive for any vector of covariate values: $ P(T = 1|X) > 0 $
 				\item[Consistency] The intervention is well defined, and exposes the matching counterfactual value: $ P(Y^i) = P(Y|T=i) $
 			\end{description}
 		
-			Under these assumptions, the causal effect can be identified using a variety of methods, well known to epidemiologists (i.e. covariate adjustment, inverse probability weighting, matching). When this effect is estimated conditional on certain values for X, we derive the Conditional Average Treatment Effect (CATE, $ E[Y_1|X] - E[Y_0|X] $), which is a useful surrogate for the ITE.
+			Under these assumptions, the causal effect can be identified using a variety of methods well known to epidemiologists (i.e. covariate adjustment, inverse probability weighting, matching). When this effect is estimated conditional on certain values for X, we derive the Conditional Average Treatment Effect (CATE, $ E[Y_1|X] - E[Y_0|X] $), which is a useful surrogate for the ITE.
 			
-			Knowledge of a patient's absolute prediction for CVD, together with the relative individualized expected benefit for the patient would allow optimal decision making.
+			Knowledge of a patient's absolute prediction for CVD, together with the individualized expected benefits, would allow optimal decision making.
 			
 			\subsubsection{The Scientific Gap}
 			
-			We suggest that a predictive model coupled with conditional average treatment effects is a far more powerful tool than just predictions. We are not aware of any such tools in existence. Such a tool would allow both better decisions by the physician and would motivate the patient to reduce his risks, with full knowledge of the expected benefit.
+			We suggest that a predictive model coupled with conditional average treatment effects is a far more powerful tool than just predictions. Such a tool would allow both better decisions by the physician and would motivate the patient to reduce his risks, with full knowledge of the expected benefit. We are not aware of any such tools in existence.
 			
 	\section{The Novelty of the Thesis}
 	
 	All aforementioned aspects of the thesis contain measures of novelty to them:
 	
-	\begin{itemize}
+	\begin{description}
 		
 		\item[Use of Automatically Generated Biomarkers] Use of existing studies (imaging or otherwise) to derive biomarkers with predictive power could be of great use to patients, who would benefit from more accurate prediction. The automation of the process would also render it feasible for implementation.
 		
@@ -386,7 +348,7 @@
 		
 		\item[Determining Intervention Effects] To date, predictive models have focused on prediction alone. While this is useful, it is not the entire picture, and modeling the treatment effects is of paramount importance for better physician and patient decision making.
 		
-	\end{itemize}
+	\end{description}
 	
 	\section{Published Work}
 	
@@ -404,7 +366,7 @@
 	
 	That this process has been relatively slow in medicine is also widely recognized, and many efforts now exist to better incorporate such technologies in health-care\cite{Obermeyer2016}. Specifically for risk prediction models, recent literature has emerged that details attempts at developing more generic risk models, though different than the idea proposed here both in method and in goal\cite{Rajkomar2018}.
 	
-	Causal inference is not a new methodology \cite{GuidoW.Imbens2015,StephenL.Morgan2015}, but has been garnering much attention lately\cite{JudeaPearl2018}. While many calculators are published online, allowing patients to modify their risk factors (i.e. \cite{NHS2016}), none that we know of incorporates causal inference.
+	Causal inference is not a new methodology \cite{GuidoWImbens2015,StephenL.Morgan2015}, but has been garnering much attention lately\cite{JudeaPearl2018}. While many calculators are published online, allowing patients to modify their risk factors (i.e. \cite{NHS2016}), none that we know of incorporates causal inference.
 	
 	\section{Research Methodology}
 	We will divide this section into two parts. In the first part, we'll review important concepts that will be used in the analysis. In the second part, we'll detail the exact research plan for this thesis per each part.
@@ -441,15 +403,12 @@
 		\arg \min_\beta \sum_i y_i \cdot \hat{y_i} + (1- y_i) \cdot (1 - \hat{y_i}) + \lambda \sum_{i}|\beta|_i
 		\end{equation*}
 		
-		$ \beta $ being the vector of coefficients and lambda being a regularization parameter. This is the the normal logistic regression loss function, summed with a regularization term based on the $ L_1 $ norm. Owing to the geometric structure of the $ L_1 $ norm, this has the effect of setting many covariates to 0, inducing sparsity. The parameter lambda is selected using cross-validation on the validation set, with predictive performance (e.g. AUROC) as the goal.
+		$ \beta $ being the vector of coefficients and lambda being a regularization parameter. This is the normal logistic regression loss function, summed with a regularization term based on the $ L_1 $ norm. Owing to the geometric structure of the $ L_1 $ norm, this has the effect of setting many covariates to 0, inducing sparsity. The parameter lambda is selected using cross-validation on the validation set, with predictive performance (e.g. AUROC) as the goal.
 		
 		As the regularization portion of the loss is dependent on variable scales, variables are normalized to have equal means and standard deviations prior to model fitting.
 		
 		\subsubsection{Causal Forests}
-		Causal Forests\cite{Wager2015} are a variant of the widely used prediction oriented random forests\cite{Breiman2001}, meant for estimating conditional average treatment effects. While both methods are based on a "forest" of decision trees, where random forests optimizes prediction accuracy of the outcome in each leaf, causal forests instead maximize treatment effect heterogeneity. By first splitting the sample into a "tree construction sample" and an "effect estimation" sample, this allows estimation of the average treatment effects.
-		
-		\subsubsection{Learning Curves}
-		Learning curves are plots of model performance on the training and test sets as a function of sample size. They provide simple visual indication that the model has a sufficiently large sample size so as not to over-fit or under-fit.
+		Causal Forests\cite{Wager2015} are a variant of the widely used prediction oriented random forests\cite{Breiman2001}, meant for estimating conditional average treatment effects. While both methods are based on a "forest" of decision trees, where random forests optimizes prediction accuracy of the outcome in each leaf, causal forests instead maximize treatment effect heterogeneity. By first splitting the sample into a "tree construction sample" and an "effect estimation" sample, this allows estimation of the conditional average treatment effects.
 		
 		\subsubsection{Linear Recalibration}
 		Calibration is the agreement between predicted and observed probabilities. When a model is applied to a population different than its original training set, it tends to be mis-calibrated. Recalibration attempts to deal with this problem.
@@ -609,7 +568,7 @@
 			\item a LASSO model will be fit, as detailed above.
 			\item Cross-validation will be performed on the training set for hyper-parameter tuning.
 			\item Confidence intervals for the different statistics will be derived by bootstrapping the test set, as detailed above. 500 bootstraps per imputed dataset will be performed. the 2.5\% and 97.5\% percentiles of the resulting results will be reported as the 95\% confidence interval.
-			\item Model performance on the test set will be reported for the following statistics \cite{Steyerberg2008,FrankE.Harrell2015}
+			\item Model performance on the test set will be reported for the following statistics \cite{Steyerberg2008,FrankEHarrell2015}
 			\begin{itemize}
 				\item Area under the receiver operating characteristics (AUROC) curve, or c-statistic, as a measure of discrimination.
 				\item Calibration slope as a measure of calibration.
@@ -657,7 +616,7 @@
 			\end{itemize}
 			\item For each such intervention, a propensity score will be constructed using multivariable logistic regression.
 			\item This score will then be used to examine the population for positivity (as defined above), with the population trimmed as needed to ensure that assumption holds.
-			\item A model will then be fit to estimate relative risk conditional average treatment effects. If population size allow, we will use causal forests, if not, we will use doubly robust\cite{GuidoW.Imbens2015} logistic regression with interactions terms.
+			\item A model will then be fit to estimate relative risk conditional average treatment effects. If population size allow, we will use causal forests, if not, we will use doubly robust\cite{GuidoWImbens2015} logistic regression with interactions terms.
 			\item These risks will then be multiplied by the absolute prediction to evaluate for treatment effects.
 		\end{enumerate}
 		
@@ -667,21 +626,17 @@
 		For the sake of completeness, using the calculation described by Cohen (\cite{Cohen1988}), the power of this study to detect a small effect via logistic regression is >0.99, assuming an eventual 30 variables in the model, and a significance level (alpha) of 0.05.
 		
 		\subsection{Ethics}
-		This study requires an Institutional review board (IRB) approval. Parts I and III have already been given such approval. Part II has been submitted for approval. Analysis of this part will commence after the approval is granted.
+		Parts I and III have already been given IRB approval. Part II has been submitted for approval.
 	
 	\section{Preliminary Results}
 
 	\subsection{AHA/ACC 2013 model}
-
-	Population Table for the AHA/ACC 2013 model\cite{Goff2014}:
-
-	\csvautotabular[separator=pipe]{prelim-results/AHA/AHA2013.csv}
 	
-	ROC Curve for the AHA/ACC 2013 Risk Score model is presented in appendix C.
-	
-	\subsection{Generic Predictor}
-	
-	The population flow chart for the predictor is presented in appendix C.
+	\begin{itemize}
+		\item Population Table for the AHA/ACC 2013 model is presented in appendix C.
+		\item ROC Curve for the AHA/ACC 2013 Risk Score model is presented in appendix C.
+		\item The population flow chart for the predictor is presented in appendix C.
+	\end{itemize}
 	
 	\section{References}
 	
@@ -965,21 +920,27 @@
    				\end{enumerate}
    				\newpage
    		
-   		\section{Preliminary Result Graphs and Drawings}
-   			\subsection{AHA/ACC 2013 Risk Model  Result Graph}
-	   		\begin{figure}[H]
-   				\includegraphics[width=8cm, height=8cm]{prelim-results/AHA/AHA_ROC.png}
-   				\label{AHAROC}
-   				\captionsetup{justification=justified,singlelinecheck=false,margin=1cm}
-   				\caption{AHA/ACC 2013 ROC Curve, p-value < 0.001}
-	   		\end{figure}
+   		\section{Preliminary Result Tables, Graphs and Drawings}
    		
-   			\subsection{Clalit Model Population Flow Chart}
-   			\begin{figure}[H]
-	   			\includegraphics[width=10cm,height=8cm]{prelim-results/Panpredictor/pop_flow_chart.png}
-	   			\captionsetup{justification=justified,singlelinecheck=false,margin=2cm}
-	   			\caption{Population Flow Chart}
-	   		\end{figure}
+   		\subsection{AHA/ACC 2013 Population Table}
+   		Population Table for the AHA/ACC 2013 model\cite{Goff2014}:
+   		
+   		\csvautotabular[separator=pipe]{prelim-results/AHA/AHA2013.csv}
+   		
+   		\subsection{AHA/ACC 2013 Risk Model  Result Graph}
+   		\begin{figure}[H]
+   			\includegraphics[width=8cm, height=8cm]{prelim-results/AHA/AHA_ROC.png}
+   			\label{AHAROC}
+   			\captionsetup{justification=justified,singlelinecheck=false,margin=1cm}
+   			\caption{AHA/ACC 2013 ROC Curve, p-value < 0.001}
+   		\end{figure}
+   		
+   		\subsection{Clalit Model Population Flow Chart}
+   		\begin{figure}[H]
+   			\includegraphics[width=10cm,height=8cm]{prelim-results/Panpredictor/pop_flow_chart.png}
+   			\captionsetup{justification=justified,singlelinecheck=false,margin=2cm}
+   			\caption{Population Flow Chart}
+   		\end{figure}
    		
    	\end{appendices}
 	

@@ -6,152 +6,144 @@
 \defcounter {refsection}{0}\relax 
 \select@language {english}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1}Abstract}{4}
+\contentsline {section}{\numberline {1}Abstract}{3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.1}Background}{4}
+\contentsline {subsection}{\numberline {1.1}Background}{3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.2}Goals}{4}
+\contentsline {subsection}{\numberline {1.2}Goals}{3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.3}Methods}{4}
+\contentsline {subsection}{\numberline {1.3}Methods}{3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.4}Importance}{4}
+\contentsline {subsection}{\numberline {1.4}Importance}{3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.5}Keywords}{5}
+\contentsline {subsection}{\numberline {1.5}Keywords}{3}
 \defcounter {refsection}{0}\relax 
 \select@language {hebrew}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2}\texthebrew {תקציר בעברית}}{5}
+\contentsline {section}{\numberline {2}\texthebrew {תקציר בעברית}}{4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.1}\texthebrew {רקע}}{5}
+\contentsline {subsection}{\numberline {2.1}\texthebrew {רקע}}{4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2}\texthebrew {מטרות}}{5}
+\contentsline {subsection}{\numberline {2.2}\texthebrew {מטרות}}{4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3}\texthebrew {שיטות}}{5}
+\contentsline {subsection}{\numberline {2.3}\texthebrew {שיטות}}{4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.4}\texthebrew {חשיבות}}{5}
+\contentsline {subsection}{\numberline {2.4}\texthebrew {חשיבות}}{4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.5}\texthebrew {מילות מפתח}}{6}
+\contentsline {subsection}{\numberline {2.5}\texthebrew {מילות מפתח}}{4}
 \defcounter {refsection}{0}\relax 
 \select@language {english}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3}Aim of the Thesis}{6}
+\contentsline {section}{\numberline {3}Aim of the Thesis}{4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4}Importance and Background}{6}
+\contentsline {section}{\numberline {4}Importance and Background}{5}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1}General Background}{7}
+\contentsline {subsection}{\numberline {4.1}General Background}{5}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.1.1}Epidemiology of Cardiovascular Disease and Stroke}{7}
+\contentsline {subsubsection}{\numberline {4.1.1}Epidemiology of Cardiovascular Disease and Stroke}{5}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.1.2}History of multivariable Risk Models}{8}
+\contentsline {subsubsection}{\numberline {4.1.2}History of multivariable Risk Models}{6}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.1.3}Limitations of Risk Models}{8}
+\contentsline {subsection}{\numberline {4.2}Part I}{6}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2}Part I}{8}
+\contentsline {subsubsection}{\numberline {4.2.1}Coronary Artery Calcium}{6}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.2.1}Coronary Artery Calcium}{8}
+\contentsline {subsubsection}{\numberline {4.2.2}Integration of CAC Scores into CVD Prediction Models}{7}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.2.2}Integration of CAC Scores into CVD Prediction Models}{9}
+\contentsline {subsubsection}{\numberline {4.2.3}Medical Computer Vision}{7}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.2.3}Medical Computer Vision}{9}
+\contentsline {subsubsection}{\numberline {4.2.4}Automatic CAC Scoring}{7}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.2.4}Automatic CAC Scoring}{9}
+\contentsline {subsubsection}{\numberline {4.2.5}The Scientific Gap}{7}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.2.5}The Scientific Gap}{9}
+\contentsline {subsection}{\numberline {4.3}Part II}{7}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3}Part II}{9}
+\contentsline {subsubsection}{\numberline {4.3.1}Methodology of Traditional Risk Models}{7}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.3.1}Methodology of Traditional Risk Models}{9}
+\contentsline {subsubsection}{\numberline {4.3.2}Generalized Linear Models}{8}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.3.2}Generalized Linear Models}{10}
+\contentsline {subsubsection}{\numberline {4.3.3}Cox Proportional Hazards Model}{8}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.3.3}Cox Proportional Hazards Model}{10}
+\contentsline {subsubsection}{\numberline {4.3.4}The Rise of AI and Machine Learning}{8}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.3.4}Parametric Vs. Non-Parametric Models}{11}
+\contentsline {subsubsection}{\numberline {4.3.5}Electronic Health Record based Observational Studies}{9}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.3.5}The Rise of AI and Machine Learning}{11}
+\contentsline {subsubsection}{\numberline {4.3.6}The Scientific Gap}{9}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.3.6}Black-Box Vs. White-Box Models}{11}
+\contentsline {subsection}{\numberline {4.4}Part III}{9}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.3.7}Electronic Health Record based Observational Studies}{12}
+\contentsline {subsubsection}{\numberline {4.4.1}Aim of Risk Models}{9}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.3.8}The Scientific Gap}{12}
+\contentsline {subsubsection}{\numberline {4.4.2}Correlation is not Causation}{10}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.4}Part III}{12}
+\contentsline {subsubsection}{\numberline {4.4.3}Causal Inference}{10}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.4.1}Aim of Risk Models}{12}
+\contentsline {subsubsection}{\numberline {4.4.4}The Scientific Gap}{10}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.4.2}Correlation is not Causation}{12}
+\contentsline {section}{\numberline {5}The Novelty of the Thesis}{11}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.4.3}Causal Inference}{13}
+\contentsline {section}{\numberline {6}Published Work}{11}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.4.4}The Scientific Gap}{13}
+\contentsline {section}{\numberline {7}Research Methodology}{12}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5}The Novelty of the Thesis}{14}
+\contentsline {subsection}{\numberline {7.1}Important Concepts}{12}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6}Published Work}{14}
+\contentsline {subsubsection}{\numberline {7.1.1}Source of Data for Study}{12}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7}Research Methodology}{15}
+\contentsline {subsubsection}{\numberline {7.1.2}Issues with EHR Data}{12}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.1}Important Concepts}{15}
+\contentsline {subsubsection}{\numberline {7.1.3}Data Extraction Principles}{12}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {7.1.1}Source of Data for Study}{15}
+\contentsline {subsubsection}{\numberline {7.1.4}Migration of Foreign-defined Variables}{13}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {7.1.2}Issues with EHR Data}{15}
+\contentsline {subsubsection}{\numberline {7.1.5}LASSO Regression}{13}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {7.1.3}Data Extraction Principles}{16}
+\contentsline {subsubsection}{\numberline {7.1.6}Causal Forests}{14}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {7.1.4}Migration of Foreign-defined Variables}{16}
+\contentsline {subsubsection}{\numberline {7.1.7}Linear Recalibration}{14}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {7.1.5}LASSO Regression}{16}
+\contentsline {subsubsection}{\numberline {7.1.8}Imputation}{14}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {7.1.6}Causal Forests}{17}
+\contentsline {subsubsection}{\numberline {7.1.9}The Bootstrap}{15}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {7.1.7}Learning Curves}{17}
+\contentsline {subsubsection}{\numberline {7.1.10}Net Reclassification Improvement}{15}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {7.1.8}Linear Recalibration}{17}
+\contentsline {subsubsection}{\numberline {7.1.11}Decision Curves}{15}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {7.1.9}Imputation}{18}
+\contentsline {subsection}{\numberline {7.2}Analysis Plan}{15}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {7.1.10}The Bootstrap}{18}
+\contentsline {subsubsection}{\numberline {7.2.1}Part I}{15}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {7.1.11}Net Reclassification Improvement}{18}
+\contentsline {subsubsection}{\numberline {7.2.2}Part II}{17}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {7.1.12}Decision Curves}{18}
+\contentsline {subsubsection}{\numberline {7.2.3}Part III}{19}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.2}Analysis Plan}{19}
+\contentsline {subsection}{\numberline {7.3}Ethics}{20}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {7.2.1}Part I}{19}
+\contentsline {section}{\numberline {8}Preliminary Results}{20}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {7.2.2}Part II}{20}
+\contentsline {subsection}{\numberline {8.1}AHA/ACC 2013 model}{20}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {7.2.3}Part III}{22}
+\contentsline {section}{\numberline {9}References}{21}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.3}Ethics}{24}
+\contentsline {section}{Appendices}{27}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8}Preliminary Results}{24}
+\contentsline {section}{\numberline {A}Model Variable Lists}{27}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {8.1}AHA/ACC 2013 model}{24}
+\contentsline {section}{\numberline {B}Extraction Protocol}{28}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {8.2}Generic Predictor}{24}
+\contentsline {subsection}{\numberline {B.1}Outcome Diagnoses}{28}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {9}References}{25}
+\contentsline {subsection}{\numberline {B.2}Causes of Death}{29}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Appendices}{32}
+\contentsline {subsection}{\numberline {B.3}Background Diagnoses}{29}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A}Model Variable Lists}{32}
+\contentsline {subsection}{\numberline {B.4}Drugs}{31}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {B}Extraction Protocol}{33}
+\contentsline {section}{\numberline {C}Preliminary Result Tables, Graphs and Drawings}{32}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {B.1}Outcome Diagnoses}{33}
+\contentsline {subsection}{\numberline {C.1}AHA/ACC 2013 Population Table}{32}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {B.2}Causes of Death}{34}
+\contentsline {subsection}{\numberline {C.2}AHA/ACC 2013 Risk Model Result Graph}{32}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {B.3}Background Diagnoses}{34}
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {B.4}Drugs}{36}
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {C}Preliminary Result Graphs and Drawings}{37}
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {C.1}AHA/ACC 2013 Risk Model Result Graph}{37}
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {C.2}Clalit Model Population Flow Chart}{37}
+\contentsline {subsection}{\numberline {C.3}Clalit Model Population Flow Chart}{33}

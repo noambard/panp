@@ -4109,501 +4109,6 @@
     \field{year}{2009}
   \endentry
 
-  \entry{DAgostino2001}{article}{}
-    \name{author}{5}{}{%
-      {{hash=DRB}{%
-         family={D'Agostino},
-         familyi={D\bibinitperiod},
-         given={R\bibnamedelima B},
-         giveni={R\bibinitperiod\bibinitdelim B\bibinitperiod},
-      }}%
-      {{hash=GS}{%
-         family={Grundy},
-         familyi={G\bibinitperiod},
-         given={S},
-         giveni={S},
-      }}%
-      {{hash=SLM}{%
-         family={Sullivan},
-         familyi={S\bibinitperiod},
-         given={L\bibnamedelima M},
-         giveni={L\bibinitperiod\bibinitdelim M\bibinitperiod},
-      }}%
-      {{hash=WP}{%
-         family={Wilson},
-         familyi={W\bibinitperiod},
-         given={P},
-         giveni={P},
-      }}%
-      {{hash=GCRP}{%
-         family={Group},
-         familyi={G\bibinitperiod},
-         given={CHD Risk\bibnamedelima Prediction},
-         giveni={C\bibinitperiod\bibinitdelim R\bibinitperiod\bibinitdelim
-  P\bibinitperiod},
-      }}%
-    }
-    \keyw{African Americans; Asian Americans; Coronary Disease, epidemiology,
-  ethnology; Data Interpretation, Statistical; European Continental Ancestry
-  Group; Female; Hispanic Americans; Humans; Indians, North American; Male;
-  Multicenter Studies as Topic; Proportional Hazards Models; Research Design;
-  Risk Assessment; Risk Factors; Socioeconomic Factors; United States,
-  epidemiology}
-    \strng{namehash}{DRB+1}
-    \strng{fullhash}{DRBGSSLMWPGCRP1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{abstract}{%
-    The Framingham Heart Study produced sex-specific coronary heart disease
-  (CHD) prediction functions for assessing risk of developing incident CHD in a
-  white middle-class population. Concern exists regarding whether these
-  functions can be generalized to other populations. To test the validity and
-  transportability of the Framingham CHD prediction functions per a National
-  Heart, Lung, and Blood Institute workshop organized for this purpose.
-  Sex-specific CHD functions were derived from Framingham data for prediction
-  of coronary death and myocardial infarction. These functions were applied to
-  6 prospectively studied, ethnically diverse cohorts (n = 23 424), including
-  whites, blacks, Native Americans, Japanese American men, and Hispanic men:
-  the Atherosclerosis Risk in Communities Study (1987-1988), Physicians' Health
-  Study (1982), Honolulu Heart Program (1980-1982), Puerto Rico Heart Health
-  Program (1965-1968), Strong Heart Study (1989-1991), and Cardiovascular
-  Health Study (1989-1990). The performance, or ability to accurately predict
-  CHD risk, of the Framingham functions compared with the performance of risk
-  functions developed specifically from the individual cohorts' data.
-  Comparisons included evaluation of the equality of relative risks for
-  standard CHD risk factors, discrimination, and calibration. For white men and
-  women and for black men and women the Framingham functions performed
-  reasonably well for prediction of CHD events within 5 years of follow-up.
-  Among Japanese American and Hispanic men and Native American women, the
-  Framingham functions systematically overestimated the risk of 5-year CHD
-  events. After recalibration, taking into account different prevalences of
-  risk factors and underlying rates of developing CHD, the Framingham functions
-  worked well in these populations. The sex-specific Framingham CHD prediction
-  functions perform well among whites and blacks in different settings and can
-  be applied to other ethnic groups after recalibration for differing
-  prevalences of risk factors and underlying rates of CHD events.%
-    }
-    \field{issn}{0098-7484}
-    \field{issue}{2}
-    \field{pages}{180\bibrangedash 187}
-    \field{title}{Validation of the Framingham coronary heart disease
-  prediction scores: results of a multiple ethnic groups investigation.}
-    \field{volume}{286}
-    \verb{file}
-    \verb :PDFs/dagostino2001.pdf:PDF
-    \endverb
-    \field{journaltitle}{JAMA}
-    \field{month}{07}
-    \field{year}{2001}
-  \endentry
-
-  \entry{Bastuji-Garin2002}{article}{}
-    \name{author}{10}{}{%
-      {{hash=BGS}{%
-         family={Bastuji-Garin},
-         familyi={B\bibinithyphendelim G\bibinitperiod},
-         given={Sylvie},
-         giveni={S\bibinitperiod},
-      }}%
-      {{hash=DA}{%
-         family={Deverly},
-         familyi={D\bibinitperiod},
-         given={Anne},
-         giveni={A\bibinitperiod},
-      }}%
-      {{hash=MD}{%
-         family={Moyse},
-         familyi={M\bibinitperiod},
-         given={Dominique},
-         giveni={D\bibinitperiod},
-      }}%
-      {{hash=CA}{%
-         family={Castaigne},
-         familyi={C\bibinitperiod},
-         given={Alain},
-         giveni={A\bibinitperiod},
-      }}%
-      {{hash=MG}{%
-         family={Mancia},
-         familyi={M\bibinitperiod},
-         given={Giuseppe},
-         giveni={G\bibinitperiod},
-      }}%
-      {{hash=dLPW}{%
-         prefix={de},
-         prefixi={d\bibinitperiod},
-         family={Leeuw},
-         familyi={L\bibinitperiod},
-         given={Peter\bibnamedelima W},
-         giveni={P\bibinitperiod\bibinitdelim W\bibinitperiod},
-      }}%
-      {{hash=RLM}{%
-         family={Ruilope},
-         familyi={R\bibinitperiod},
-         given={Luis\bibnamedelima M},
-         giveni={L\bibinitperiod\bibinitdelim M\bibinitperiod},
-      }}%
-      {{hash=RT}{%
-         family={Rosenthal},
-         familyi={R\bibinitperiod},
-         given={Talma},
-         giveni={T\bibinitperiod},
-      }}%
-      {{hash=CG}{%
-         family={Chatellier},
-         familyi={C\bibinitperiod},
-         given={Gilles},
-         giveni={G\bibinitperiod},
-      }}%
-      {{hash=aaGiHTSGI}{%
-         prefix={as\bibnamedelima a Goal\bibnamedelima in},
-         prefixi={a\bibinitperiod\bibinitdelim a\bibinitperiod\bibinitdelim
-  G\bibinitperiod\bibinitdelim i\bibinitperiod},
-         family={Hypertension Treatment Study\bibnamedelima Group},
-         familyi={H\bibinitperiod\bibinitdelim T\bibinitperiod\bibinitdelim
-  S\bibinitperiod\bibinitdelim G\bibinitperiod},
-         given={Intervention},
-         giveni={I\bibinitperiod},
-      }}%
-    }
-    \keyw{Age Factors; Aged; Aged, 80 and over; Antihypertensive Agents,
-  therapeutic use; Blood Pressure, physiology; Cholesterol, blood; Coronary
-  Disease, epidemiology; Double-Blind Method; Europe, epidemiology; Female;
-  Follow-Up Studies; Humans; Hypertension, drug therapy, epidemiology;
-  Incidence; Israel, epidemiology; Male; Middle Aged; Predictive Value of
-  Tests; Proportional Hazards Models; ROC Curve; Random Allocation; Risk
-  Factors; Sex Factors; Stroke, epidemiology; Systole, physiology}
-    \strng{namehash}{BGS+1}
-    \strng{fullhash}{BGSDAMDCAMGLPWdRLMRTCGHTSGIaaGi1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{abstract}{%
-    Stratification of population groups according to cardiovascular risk level
-  is recommended for primary prevention. To assess whether the Framingham
-  models could accurately predict the absolute risk of coronary heart disease
-  (CHD) and stroke in a large cohort of middle-aged European patients with
-  hypertension, and rank individual patients according to actual risk. A
-  prospective cohort study comparing the actual risk with that predicted by
-  either the Framingham equations or models derived from the INSIGHT study.
-  From the INSIGHT prospective trial, conducted in eight countries of Western
-  Europe and Israel, we selected 4407 European patients younger than 75 years
-  without previous cardiovascular events. None. Major cardiovascular events. In
-  this population (45% men, mean age 64.1 years), 124 (2.8%) patients had CHD
-  and 96 (2.2%) had strokes after a median follow-up of 3.7 years.
-  Overestimation of absolute CHD risk by the Framingham equation was observed
-  in all countries (from 2% in the UK to 7% in France), whereas predicted risk
-  of stroke was close to the actual risk. However, patients in the highest risk
-  quintile within each country had a threefold greater risk of a cardiovascular
-  event than those in the lowest quintile. The Framingham models should not be
-  used to predict absolute CHD risk in the European population as a whole.
-  However, these models may be used within each country, provided that cut-off
-  points defining high-risk patients have been determined within each country.%
-    }
-    \field{issn}{0263-6352}
-    \field{issue}{10}
-    \field{pages}{1973\bibrangedash 1980}
-    \field{title}{The Framingham prediction rule is not valid in a European
-  population of treated hypertensive patients.}
-    \field{volume}{20}
-    \verb{file}
-    \verb :PDFs/bastuji-garin2002.pdf:PDF
-    \endverb
-    \field{journaltitle}{Journal of hypertension}
-    \field{month}{10}
-    \field{year}{2002}
-  \endentry
-
-  \entry{DeFilippis2015}{article}{}
-    \name{author}{10}{}{%
-      {{hash=DAP}{%
-         family={DeFilippis},
-         familyi={D\bibinitperiod},
-         given={Andrew\bibnamedelima P},
-         giveni={A\bibinitperiod\bibinitdelim P\bibinitperiod},
-      }}%
-      {{hash=YR}{%
-         family={Young},
-         familyi={Y\bibinitperiod},
-         given={Rebekah},
-         giveni={R\bibinitperiod},
-      }}%
-      {{hash=CCJ}{%
-         family={Carrubba},
-         familyi={C\bibinitperiod},
-         given={Christopher\bibnamedelima J},
-         giveni={C\bibinitperiod\bibinitdelim J\bibinitperiod},
-      }}%
-      {{hash=MJW}{%
-         family={McEvoy},
-         familyi={M\bibinitperiod},
-         given={John\bibnamedelima W},
-         giveni={J\bibinitperiod\bibinitdelim W\bibinitperiod},
-      }}%
-      {{hash=BMJ}{%
-         family={Budoff},
-         familyi={B\bibinitperiod},
-         given={Matthew\bibnamedelima J},
-         giveni={M\bibinitperiod\bibinitdelim J\bibinitperiod},
-      }}%
-      {{hash=BRS}{%
-         family={Blumenthal},
-         familyi={B\bibinitperiod},
-         given={Roger\bibnamedelima S},
-         giveni={R\bibinitperiod\bibinitdelim S\bibinitperiod},
-      }}%
-      {{hash=KRA}{%
-         family={Kronmal},
-         familyi={K\bibinitperiod},
-         given={Richard\bibnamedelima A},
-         giveni={R\bibinitperiod\bibinitdelim A\bibinitperiod},
-      }}%
-      {{hash=MRL}{%
-         family={McClelland},
-         familyi={M\bibinitperiod},
-         given={Robyn\bibnamedelima L},
-         giveni={R\bibinitperiod\bibinitdelim L\bibinitperiod},
-      }}%
-      {{hash=NK}{%
-         family={Nasir},
-         familyi={N\bibinitperiod},
-         given={Khurram},
-         giveni={K\bibinitperiod},
-      }}%
-      {{hash=BMJ}{%
-         family={Blaha},
-         familyi={B\bibinitperiod},
-         given={Michael\bibnamedelima J},
-         giveni={M\bibinitperiod\bibinitdelim J\bibinitperiod},
-      }}%
-    }
-    \keyw{Aged; Aged, 80 and over; American Heart Association; Antihypertensive
-  Agents, therapeutic use; Aspirin, therapeutic use; Calibration; Coronary
-  Artery Disease, epidemiology, ethnology, prevention & control; Diabetes
-  Complications; Female; Follow-Up Studies; Humans; Hypolipidemic Agents,
-  therapeutic use; Male; Middle Aged; Myocardial Revascularization; Platelet
-  Aggregation Inhibitors, therapeutic use; Practice Guidelines as Topic;
-  Primary Prevention; Prospective Studies; Risk Assessment, methods, standards;
-  United States, epidemiology; Voluntary Health Agencies}
-    \strng{namehash}{DAP+1}
-    \strng{fullhash}{DAPYRCCJMJWBMJBRSKRAMRLNKBMJ1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{abstract}{%
-    Accurate risk assessment of atherosclerotic cardiovascular disease (ASCVD)
-  is essential to effectively balance the risks and benefits of therapy for
-  primary prevention. To compare the calibration and discrimination of the new
-  American Heart Association (AHA) and American College of Cardiology (ACC)
-  ASCVD risk score with alternative risk scores and to explore preventive
-  therapy as a cause of the reported risk overestimation using the
-  AHA-ACC-ASCVD score. Prospective epidemiologic study of ASCVD. MESA
-  (Multi-Ethnic Study of Atherosclerosis), a community-based, sex-balanced,
-  multiethnic cohort. 4227 MESA participants aged 50 to 74 years and without
-  diabetes at baseline. Observed and expected events for the AHA-ACC-ASCVD
-  score were compared with 4 commonly used risk scores-and their respective end
-  points-in MESA after a 10.2-year follow-up. The new AHA-ACC-ASCVD and 3 older
-  Framingham-based risk scores overestimated cardiovascular events by 37% to
-  154% in men and 8% to 67% in women. Overestimation was noted throughout the
-  continuum of risk. In contrast, the Reynolds Risk Score overestimated risk by
-  9% in men but underestimated risk by 21% in women. Aspirin, lipid-lowering or
-  antihypertensive therapy, and interim revascularization did not explain the
-  overestimation. Comparability of MESA with target populations for primary
-  prevention and possibility of missed events in MESA. Of the 5 risk scores, 4,
-  including the new AHA-ACC-ASCVD score, showed overestimation of risk (25% to
-  115%) in a modern, multiethnic cohort without baseline clinical ASCVD. If
-  validated, overestimation of ASCVD risk may have substantial implications for
-  individual patients and the health care system. National Heart, Lung, and
-  Blood Institute.%
-    }
-    \verb{doi}
-    \verb 10.7326/M14-1281
-    \endverb
-    \field{issn}{1539-3704}
-    \field{issue}{4}
-    \field{pages}{266\bibrangedash 275}
-    \field{title}{An analysis of calibration and discrimination among multiple
-  cardiovascular risk scores in a modern multiethnic cohort.}
-    \field{volume}{162}
-    \verb{file}
-    \verb :PDFs/defilippips2015.pdf:PDF
-    \endverb
-    \field{journaltitle}{Annals of internal medicine}
-    \field{month}{02}
-    \field{year}{2015}
-  \endentry
-
-  \entry{Dagan2017}{article}{}
-    \name{author}{4}{}{%
-      {{hash=DN}{%
-         family={Dagan},
-         familyi={D\bibinitperiod},
-         given={Noa},
-         giveni={N\bibinitperiod},
-      }}%
-      {{hash=CSC}{%
-         family={Cohen-Stavi},
-         familyi={C\bibinithyphendelim S\bibinitperiod},
-         given={Chandra},
-         giveni={C\bibinitperiod},
-      }}%
-      {{hash=LRM}{%
-         family={Leventer-Roberts},
-         familyi={L\bibinithyphendelim R\bibinitperiod},
-         given={Maya},
-         giveni={M\bibinitperiod},
-      }}%
-      {{hash=BRD}{%
-         family={Balicer},
-         familyi={B\bibinitperiod},
-         given={Ran\bibnamedelima D},
-         giveni={R\bibinitperiod\bibinitdelim D\bibinitperiod},
-      }}%
-    }
-    \keyw{Age Factors; Aged; Aged, 80 and over; Algorithms; Bone Density;
-  Calibration; Electronic Health Records, statistics & numerical data; Female;
-  Hip Fractures, epidemiology, etiology; Humans; Israel, epidemiology; Male;
-  Middle Aged; Osteoporotic Fractures, epidemiology, etiology; Reproducibility
-  of Results; Retrospective Studies; Risk Assessment, methods; Risk Factors}
-    \strng{namehash}{DN+1}
-    \strng{fullhash}{DNCSCLRMBRD1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{abstract}{%
-     To directly compare the performance and externally validate the three
-  most studied prediction tools for osteoporotic fractures-QFracture, FRAX, and
-  Garvan-using data from electronic health records.  Retrospective cohort
-  study.  Payer provider healthcare organisation in Israel.  1 054 815
-  members aged 50 to 90 years for comparison between tools and cohorts of
-  different age ranges, corresponding to those in each tools' development
-  study, for tool specific external validation.  First diagnosis of a major
-  osteoporotic fracture (for QFracture and FRAX tools) and hip fractures (for
-  all three tools) recorded in electronic health records from 2010 to 2014.
-  Observed fracture rates were compared to probabilities predicted
-  retrospectively as of 2010.  The observed five year hip fracture rate was
-  2.7% and the rate for major osteoporotic fractures was 7.7%. The areas under
-  the receiver operating curve (AUC) for hip fracture prediction were 82.7% for
-  QFracture, 81.5% for FRAX, and 77.8% for Garvan. For major osteoporotic
-  fractures, AUCs were 71.2% for QFracture and 71.4% for FRAX. All the tools
-  underestimated the fracture risk, but the average observed to predicted
-  ratios and the calibration slopes of FRAX were closest to 1. Tool specific
-  validation analyses yielded hip fracture prediction AUCs of 88.0% for
-  QFracture (among those aged 30-100 years), 81.5% for FRAX (50-90 years), and
-  71.2% for Garvan (60-95 years).  Both QFracture and FRAX had high
-  discriminatory power for hip fracture prediction, with QFracture performing
-  slightly better. This performance gap was more pronounced in previous
-  studies, likely because of broader age inclusion criteria for QFracture
-  validations. The simpler FRAX performed almost as well as QFracture for hip
-  fracture prediction, and may have advantages if some of the input data
-  required for QFracture are not available. However, both tools require
-  calibration before implementation.%
-    }
-    \verb{doi}
-    \verb 10.1136/bmj.i6755
-    \endverb
-    \field{issn}{1756-1833}
-    \field{pages}{i6755}
-    \field{title}{External validation and comparison of three prediction tools
-  for risk of osteoporotic fractures using data from population based
-  electronic health records: retrospective cohort study.}
-    \field{volume}{356}
-    \verb{file}
-    \verb :PDFs/Dagan2017.pdf:PDF
-    \endverb
-    \field{journaltitle}{BMJ (Clinical research ed.)}
-    \field{month}{01}
-    \field{year}{2017}
-  \endentry
-
-  \entry{Moons2012}{article}{}
-    \name{author}{7}{}{%
-      {{hash=MKGM}{%
-         family={Moons},
-         familyi={M\bibinitperiod},
-         given={Karel G\bibnamedelima M},
-         giveni={K\bibinitperiod\bibinitdelim G\bibinitperiod\bibinitdelim
-  M\bibinitperiod},
-      }}%
-      {{hash=KAP}{%
-         family={Kengne},
-         familyi={K\bibinitperiod},
-         given={Andre\bibnamedelima Pascal},
-         giveni={A\bibinitperiod\bibinitdelim P\bibinitperiod},
-      }}%
-      {{hash=GDE}{%
-         family={Grobbee},
-         familyi={G\bibinitperiod},
-         given={Diederick\bibnamedelima E},
-         giveni={D\bibinitperiod\bibinitdelim E\bibinitperiod},
-      }}%
-      {{hash=RP}{%
-         family={Royston},
-         familyi={R\bibinitperiod},
-         given={Patrick},
-         giveni={P\bibinitperiod},
-      }}%
-      {{hash=VY}{%
-         family={Vergouwe},
-         familyi={V\bibinitperiod},
-         given={Yvonne},
-         giveni={Y\bibinitperiod},
-      }}%
-      {{hash=ADG}{%
-         family={Altman},
-         familyi={A\bibinitperiod},
-         given={Douglas\bibnamedelima G},
-         giveni={D\bibinitperiod\bibinitdelim G\bibinitperiod},
-      }}%
-      {{hash=WM}{%
-         family={Woodward},
-         familyi={W\bibinitperiod},
-         given={Mark},
-         giveni={M\bibinitperiod},
-      }}%
-    }
-    \keyw{Cardiovascular Diseases, diagnosis, epidemiology, therapy; Decision
-  Making; Delivery of Health Care, organization & administration; Humans;
-  Models, Theoretical; Prognosis; Reproducibility of Results; Risk Assessment,
-  methods}
-    \strng{namehash}{MKGM+1}
-    \strng{fullhash}{MKGMKAPGDERPVYADGWM1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{abstract}{%
-    Clinical prediction models are increasingly used to complement clinical
-  reasoning and decision-making in modern medicine, in general, and in the
-  cardiovascular domain, in particular. To these ends, developed models first
-  and foremost need to provide accurate and (internally and externally)
-  validated estimates of probabilities of specific health conditions or
-  outcomes in the targeted individuals. Subsequently, the adoption of such
-  models by professionals must guide their decision-making, and improve patient
-  outcomes and the cost-effectiveness of care. In the first paper of this
-  series of two companion papers, issues relating to prediction model
-  development, their internal validation, and estimating the added value of a
-  new (bio)marker to existing predictors were discussed. In this second paper,
-  an overview is provided of the consecutive steps for the assessment of the
-  model's predictive performance in new individuals (external validation
-  studies), how to adjust or update existing models to local circumstances or
-  with new predictors, and how to investigate the impact of the uptake of
-  prediction models on clinical decision-making and patient outcomes (impact
-  studies). Each step is illustrated with empirical examples from the
-  cardiovascular field.%
-    }
-    \verb{doi}
-    \verb 10.1136/heartjnl-2011-301247
-    \endverb
-    \field{issn}{1468-201X}
-    \field{issue}{9}
-    \field{pages}{691\bibrangedash 698}
-    \field{title}{Risk prediction models: II. External validation, model
-  updating, and impact assessment.}
-    \field{volume}{98}
-    \verb{file}
-    \verb :PDFs/moons2012.pdf:PDF
-    \endverb
-    \field{journaltitle}{Heart (British Cardiac Society)}
-    \field{month}{05}
-    \field{year}{2012}
-  \endentry
-
   \entry{Takx2015}{article}{}
     \name{author}{16}{}{%
       {{hash=TRAP}{%
@@ -6486,38 +5991,6 @@
     \field{year}{1972}
   \endentry
 
-  \entry{Russell2002}{book}{}
-    \name{author}{2}{}{%
-      {{hash=RS}{%
-         family={Russell},
-         familyi={R\bibinitperiod},
-         given={Stuart},
-         giveni={S\bibinitperiod},
-      }}%
-      {{hash=NP}{%
-         family={Norvig},
-         familyi={N\bibinitperiod},
-         given={Peter},
-         giveni={P\bibinitperiod},
-      }}%
-    }
-    \list{publisher}{1}{%
-      {Prentice Hall}%
-    }
-    \strng{namehash}{RSNP1}
-    \strng{fullhash}{RSNP1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{isbn}{0137903952}
-    \field{title}{Artificial Intelligence: A Modern Approach (2nd Edition)}
-    \verb{url}
-    \verb https://www.amazon.com/Artificial-Intelligence-Modern-Approach-2nd/dp
-    \verb /0137903952?SubscriptionId=0JYN1NVW651KCA56C102&tag=techkie-20&linkCo
-    \verb de=xm2&camp=2025&creative=165953&creativeASIN=0137903952
-    \endverb
-    \field{year}{2002}
-  \endentry
-
   \entry{Obermeyer2016}{article}{}
     \name{author}{2}{}{%
       {{hash=OZ}{%
@@ -6642,175 +6115,6 @@
     \field{journaltitle}{Circulation}
     \field{month}{11}
     \field{year}{2015}
-  \endentry
-
-  \entry{Price2015}{article}{}
-    \name{author}{1}{}{%
-      {{hash=PN}{%
-         family={Price},
-         familyi={P\bibinitperiod},
-         given={Nicholas},
-         giveni={N\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{PN1}
-    \strng{fullhash}{PN1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{number}{2}
-    \field{pages}{420\bibrangedash 454}
-    \field{title}{Black-Box Medicine}
-    \field{volume}{28}
-    \verb{file}
-    \verb :PDFs/Price2015.pdf:PDF
-    \endverb
-    \field{journaltitle}{Harvard Journal of Law \& Technology}
-    \field{year}{2015}
-  \endentry
-
-  \entry{Hebert-Johnson2017}{article}{}
-    \name{author}{4}{}{%
-      {{hash=�HJ}{%
-         prefix={Úrsula},
-         prefixi={�\bibinitperiod},
-         family={Hébert-Johnson},
-         familyi={H\bibinithyphendelim J\bibinitperiod},
-      }}%
-      {{hash=KMP}{%
-         family={Kim},
-         familyi={K\bibinitperiod},
-         given={Michael\bibnamedelima P.},
-         giveni={M\bibinitperiod\bibinitdelim P\bibinitperiod},
-      }}%
-      {{hash=RO}{%
-         family={Reingold},
-         familyi={R\bibinitperiod},
-         given={Omer},
-         giveni={O\bibinitperiod},
-      }}%
-      {{hash=RGN}{%
-         family={Rothblum},
-         familyi={R\bibinitperiod},
-         given={Guy\bibnamedelima N.},
-         giveni={G\bibinitperiod\bibinitdelim N\bibinitperiod},
-      }}%
-    }
-    \keyw{cs.LG, cs.DS, stat.ML}
-    \strng{namehash}{HJ�+1}
-    \strng{fullhash}{HJ�KMPRORGN1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{abstract}{%
-    As algorithms increasingly inform and influence decisions made about
-  individuals, it becomes increasingly important to address concerns that these
-  algorithms might be discriminatory. The output of an algorithm can be
-  discriminatory for many reasons, most notably: (1) the data used to train the
-  algorithm might be biased (in various ways) to favor certain populations over
-  others; (2) the analysis of this training data might inadvertently or
-  maliciously introduce biases that are not borne out in the data. This work
-  focuses on the latter concern. We develop and study multicalbration -- a new
-  measure of algorithmic fairness that aims to mitigate concerns about
-  discrimination that is introduced in the process of learning a predictor from
-  data. Multicalibration guarantees accurate (calibrated) predictions for every
-  subpopulation that can be identified within a specified class of
-  computations. We think of the class as being quite rich; in particular, it
-  can contain many overlapping subgroups of a protected group. We show that in
-  many settings this strong notion of protection from discrimination is both
-  attainable and aligned with the goal of obtaining accurate predictions. Along
-  the way, we present new algorithms for learning a multicalibrated predictor,
-  study the computational complexity of this task, and draw new connections to
-  computational learning models such as agnostic learning.%
-    }
-    \verb{eprint}
-    \verb 1711.08513v2
-    \endverb
-    \field{title}{Calibration for the (Computationally-Identifiable) Masses}
-    \verb{file}
-    \verb online:http\://arxiv.org/pdf/1711.08513v2:PDF
-    \endverb
-    \field{eprinttype}{arXiv}
-    \field{eprintclass}{cs.LG}
-    \field{day}{22}
-    \field{month}{11}
-    \field{year}{2017}
-  \endentry
-
-  \entry{Corbett-Davies2017}{article}{}
-    \name{author}{5}{}{%
-      {{hash=CDS}{%
-         family={Corbett-Davies},
-         familyi={C\bibinithyphendelim D\bibinitperiod},
-         given={Sam},
-         giveni={S\bibinitperiod},
-      }}%
-      {{hash=PE}{%
-         family={Pierson},
-         familyi={P\bibinitperiod},
-         given={Emma},
-         giveni={E\bibinitperiod},
-      }}%
-      {{hash=FA}{%
-         family={Feller},
-         familyi={F\bibinitperiod},
-         given={Avi},
-         giveni={A\bibinitperiod},
-      }}%
-      {{hash=GS}{%
-         family={Goel},
-         familyi={G\bibinitperiod},
-         given={Sharad},
-         giveni={S\bibinitperiod},
-      }}%
-      {{hash=HA}{%
-         family={Huq},
-         familyi={H\bibinitperiod},
-         given={Aziz},
-         giveni={A\bibinitperiod},
-      }}%
-    }
-    \keyw{cs.CY, stat.AP}
-    \strng{namehash}{CDS+1}
-    \strng{fullhash}{CDSPEFAGSHA1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{abstract}{%
-    Algorithms are now regularly used to decide whether defendants awaiting
-  trial are too dangerous to be released back into the community. In some
-  cases, black defendants are substantially more likely than white defendants
-  to be incorrectly classified as high risk. To mitigate such disparities,
-  several techniques recently have been proposed to achieve algorithmic
-  fairness. Here we reformulate algorithmic fairness as constrained
-  optimization: the objective is to maximize public safety while satisfying
-  formal fairness constraints designed to reduce racial disparities. We show
-  that for several past definitions of fairness, the optimal algorithms that
-  result require detaining defendants above race-specific risk thresholds. We
-  further show that the optimal unconstrained algorithm requires applying a
-  single, uniform threshold to all defendants. The unconstrained algorithm thus
-  maximizes public safety while also satisfying one important understanding of
-  equality: that all individuals are held to the same standard, irrespective of
-  race. Because the optimal constrained and unconstrained algorithms generally
-  differ, there is tension between improving public safety and satisfying
-  prevailing notions of algorithmic fairness. By examining data from Broward
-  County, Florida, we show that this trade-off can be large in practice. We
-  focus on algorithms for pretrial release decisions, but the principles we
-  discuss apply to other domains, and also to human decision makers carrying
-  out structured decision rules.%
-    }
-    \verb{doi}
-    \verb 10.1145/3097983.309809
-    \endverb
-    \verb{eprint}
-    \verb 1701.08230v4
-    \endverb
-    \field{title}{Algorithmic decision making and the cost of fairness}
-    \verb{file}
-    \verb online:http\://arxiv.org/pdf/1701.08230v4:PDF
-    \endverb
-    \field{eprinttype}{arXiv}
-    \field{eprintclass}{cs.CY}
-    \field{day}{28}
-    \field{month}{01}
-    \field{year}{2017}
   \endentry
 
   \entry{Goldstein2016}{article}{}
@@ -7197,135 +6501,71 @@
     \field{year}{2013}
   \endentry
 
-  \entry{Bitzur2015}{article}{}
-    \name{author}{14}{}{%
-      {{hash=BR}{%
-         family={Bitzur},
-         familyi={B\bibinitperiod},
-         given={Rafael},
-         giveni={R\bibinitperiod},
-      }}%
-      {{hash=RY}{%
-         family={Rozenman},
-         familyi={R\bibinitperiod},
-         given={Yoseph},
-         giveni={Y\bibinitperiod},
-      }}%
-      {{hash=VS}{%
-         family={Vinker},
-         familyi={V\bibinitperiod},
-         given={Shlomo},
-         giveni={S\bibinitperiod},
-      }}%
-      {{hash=DD}{%
-         family={Dikerl},
-         familyi={D\bibinitperiod},
-         given={Dror},
-         giveni={D\bibinitperiod},
-      }}%
-      {{hash=SJ}{%
-         family={Shemesh},
-         familyi={S\bibinitperiod},
-         given={Joseph},
-         giveni={J\bibinitperiod},
-      }}%
-      {{hash=LA}{%
-         family={Lahad},
-         familyi={L\bibinitperiod},
-         given={Amnon},
-         giveni={A\bibinitperiod},
-      }}%
-      {{hash=GD}{%
-         family={Gavishl},
+  \entry{Greenland2018}{article}{}
+    \name{author}{5}{}{%
+      {{hash=GP}{%
+         family={Greenland},
          familyi={G\bibinitperiod},
-         given={Dov},
-         giveni={D\bibinitperiod},
-      }}%
-      {{hash=HD}{%
-         family={Harats},
-         familyi={H\bibinitperiod},
-         given={Dror},
-         giveni={D\bibinitperiod},
-      }}%
-      {{hash=KH}{%
-         family={KnobLer},
-         familyi={K\bibinitperiod},
-         given={Hilla},
-         giveni={H\bibinitperiod},
-      }}%
-      {{hash=SfRP}{%
-         prefix={Society\bibnamedelima for},
-         prefixi={S\bibinitperiod\bibinitdelim f\bibinitperiod},
-         family={Research},
-         familyi={R\bibinitperiod},
-         given={Prevention},
+         given={Philip},
          giveni={P\bibinitperiod},
       }}%
-      {{hash=ToAI}{%
-         prefix={Treatment\bibnamedelima of},
-         prefixi={T\bibinitperiod\bibinitdelim o\bibinitperiod},
-         family={Atherosclerosis},
-         familyi={A\bibinitperiod},
-         given={Israel},
-         giveni={I\bibinitperiod},
+      {{hash=BMJ}{%
+         family={Blaha},
+         familyi={B\bibinitperiod},
+         given={Michael\bibnamedelima J.},
+         giveni={M\bibinitperiod\bibinitdelim J\bibinitperiod},
       }}%
-      {{hash=SIH}{%
-         family={Society},
-         familyi={S\bibinitperiod},
-         given={Israel\bibnamedelima Heart},
-         giveni={I\bibinitperiod\bibinitdelim H\bibinitperiod},
+      {{hash=BMJ}{%
+         family={Budoff},
+         familyi={B\bibinitperiod},
+         given={Matthew\bibnamedelima J.},
+         giveni={M\bibinitperiod\bibinitdelim J\bibinitperiod},
       }}%
-      {{hash=oFPIA}{%
-         prefix={of},
-         prefixi={o\bibinitperiod},
-         family={Family\bibnamedelima Physicians},
-         familyi={F\bibinitperiod\bibinitdelim P\bibinitperiod},
-         given={Israel\bibnamedelima Association},
-         giveni={I\bibinitperiod\bibinitdelim A\bibinitperiod},
+      {{hash=ER}{%
+         family={Erbel},
+         familyi={E\bibinitperiod},
+         given={Raimund},
+         giveni={R\bibinitperiod},
       }}%
-      {{hash=oIMIS}{%
-         prefix={of},
-         prefixi={o\bibinitperiod},
-         family={Internal\bibnamedelima Medicine},
-         familyi={I\bibinitperiod\bibinitdelim M\bibinitperiod},
-         given={Israel\bibnamedelima Society},
-         giveni={I\bibinitperiod\bibinitdelim S\bibinitperiod},
+      {{hash=WKE}{%
+         family={Watson},
+         familyi={W\bibinitperiod},
+         given={Karol\bibnamedelima E.},
+         giveni={K\bibinitperiod\bibinitdelim E\bibinitperiod},
       }}%
     }
-    \keyw{Cardiovascular Diseases, diagnosis, prevention & control, psychology;
-  Cholesterol, LDL, blood; Health Behavior; Humans; Hydroxymethylglutaryl-CoA
-  Reductase Inhibitors, pharmacology; Hyperlipidemias, blood, drug therapy;
-  Israel; Preventive Health Services, organization & administration, trends;
-  Secondary Prevention, methods, trends}
-    \strng{namehash}{BR+1}
-    \strng{fullhash}{BRRYVSDDSJLAGDHDKHRPSfAIToSIHFPIAoIMISo1}
+    \keyw{aspirin; atherosclerotic cardiovascular disease; coronary artery
+  calcification; coronary heart disease; statins}
+    \strng{namehash}{GP+1}
+    \strng{fullhash}{GPBMJBMJERWKE1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{abstract}{%
-    Atherosclerosis is one of the leading causes of morbidity and mortality in
-  the world, including in Israel. This document updates the clinical
-  recommendations of the Israeli medical societies (The Society for Research,
-  Prevention and Treatment of Atherosclerosis, The Israel Heart Society, The
-  Israel Association of Family Physicians, The Israel Society of Internal
-  Medicine) from 2012. The need for an update stems from new studies and from
-  the 2013 ACC/AHA Guideline on the Treatment of Blood Cholesterol to Reduce
-  Atherosclerotic Cardiovascular Risk in Adults. These recommendations take
-  into account the guidelines of leading medical organizations in the world, as
-  well as the specific circumstances and needs of the medical system in
-  Israel.%
+    Coronary artery calcium (CAC) is a highly specific feature of coronary
+  atherosclerosis. On the basis of single-center and multicenter clinical and
+  population-based studies with short-term and long-term outcomes data (up to
+  15-year follow-up), CAC scoring has emerged as a widely available,
+  consistent, and reproducible means of assessing risk for major cardiovascular
+  outcomes, especially useful in asymptomatic people for planning primary
+  prevention interventions such as statins and aspirin. CAC testing in
+  asymptomatic populations is cost effective across a broad range of baseline
+  risk. This review summarizes evidence concerning CAC, including its
+  pathobiology, modalities for detection, predictive role, use in prediction
+  scoring algorithms, CAC progression, evidence that CAC changes the clinical
+  approach to the patient and patient behavior, novel applications of CAC,
+  future directions in scoring CAC scans, and new CAC guidelines.%
     }
-    \field{issn}{0017-7768}
-    \field{issue}{5}
-    \field{pages}{330\bibrangedash 3, 337\bibrangedash 8}
-    \field{title}{[ISRAELI GUIDELINES FOR THE TREATMENT OF HYPERLIPIDEMIA -
-  2014 UPDATE].}
-    \field{volume}{154}
-    \verb{file}
-    \verb :PDFs/bitzur2015.pdf:PDF
+    \verb{doi}
+    \verb 10.1016/j.jacc.2018.05.027
     \endverb
-    \field{journaltitle}{Harefuah}
-    \field{month}{05}
-    \field{year}{2015}
+    \field{issn}{1558-3597}
+    \field{issue}{4}
+    \field{pages}{434\bibrangedash 447}
+    \field{title}{Coronary Calcium Score and Cardiovascular Risk.}
+    \field{volume}{72}
+    \field{journaltitle}{Journal of the American College of Cardiology}
+    \field{month}{07}
+    \field{year}{2018}
   \endentry
 
   \entry{Ng2017}{online}{}
@@ -7606,6 +6846,115 @@
     \field{year}{2018}
   \endentry
 
+  \entry{GuidoWImbens2015}{book}{}
+    \name{author}{1}{}{%
+      {{hash=GWIDBR}{%
+         family={Guido W.\bibnamedelima Imbens},
+         familyi={G\bibinitperiod\bibinitdelim W\bibinitperiod\bibinitdelim
+  I\bibinitperiod},
+         given={Donald B.\bibnamedelima Rubin},
+         giveni={D\bibinitperiod\bibinitdelim B\bibinitperiod\bibinitdelim
+  R\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Cambridge University Pr.}%
+    }
+    \strng{namehash}{GWIDBR1}
+    \strng{fullhash}{GWIDBR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{isbn}{0521885884}
+    \field{pagetotal}{644}
+    \field{title}{Causal Inference for Statistics, Social, and Biomedical
+  Sciences}
+    \verb{url}
+    \verb https://www.ebook.de/de/product/22646309/guido_w_imbens_donald_b_rubi
+    \verb n_causal_inference_for_statistics_social_and_biomedical_sciences.html
+    \endverb
+    \field{day}{31}
+    \field{month}{05}
+    \field{year}{2015}
+    \warn{\item Can't use 'date' + 'year'}
+  \endentry
+
+  \entry{StephenL.Morgan2015}{book}{}
+    \name{author}{1}{}{%
+      {{hash=SLMCW}{%
+         family={Stephen L.\bibnamedelima Morgan},
+         familyi={S\bibinitperiod\bibinitdelim L\bibinitperiod\bibinitdelim
+  M\bibinitperiod},
+         given={Christopher\bibnamedelima Winship},
+         giveni={C\bibinitperiod\bibinitdelim W\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Cambridge University Pr.}%
+    }
+    \strng{namehash}{SLMCW1}
+    \strng{fullhash}{SLMCW1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{isbn}{1107694167}
+    \field{pagetotal}{328}
+    \field{title}{Counterfactuals and Causal Inference}
+    \verb{url}
+    \verb https://www.ebook.de/de/product/22837200/stephen_l_morgan_christopher
+    \verb _winship_counterfactuals_and_causal_inference.html
+    \endverb
+    \field{day}{11}
+    \field{month}{10}
+    \field{year}{2015}
+    \warn{\item Can't use 'date' + 'year'}
+  \endentry
+
+  \entry{JudeaPearl2018}{book}{}
+    \name{author}{1}{}{%
+      {{hash=JPDM}{%
+         family={Judea\bibnamedelima Pearl},
+         familyi={J\bibinitperiod\bibinitdelim P\bibinitperiod},
+         given={Dana\bibnamedelima Mackenzie},
+         giveni={D\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Hachette Book Group USA}%
+    }
+    \strng{namehash}{JPDM1}
+    \strng{fullhash}{JPDM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{isbn}{046509760X}
+    \field{pagetotal}{432}
+    \field{title}{The Book of Why}
+    \verb{url}
+    \verb https://www.ebook.de/de/product/30501615/judea_pearl_dana_mackenzie_t
+    \verb he_book_of_why.html
+    \endverb
+    \field{day}{15}
+    \field{month}{05}
+    \field{year}{2018}
+    \warn{\item Can't use 'date' + 'year'}
+  \endentry
+
+  \entry{NHS2016}{online}{}
+    \name{author}{1}{}{%
+      {{hash=N}{%
+         family={NHS},
+         familyi={N\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{N2}
+    \strng{fullhash}{N2}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Check Your Heart Age}
+    \verb{url}
+    \verb https://www.nhs.uk/conditions/nhs-health-check/check-your-heart-age-t
+    \verb ool/
+    \endverb
+  \endentry
+
   \entry{Hripcsak2011}{article}{}
     \name{author}{5}{}{%
       {{hash=HG}{%
@@ -7853,6 +7202,88 @@
     \field{year}{2018}
   \endentry
 
+  \entry{Dagan2017}{article}{}
+    \name{author}{4}{}{%
+      {{hash=DN}{%
+         family={Dagan},
+         familyi={D\bibinitperiod},
+         given={Noa},
+         giveni={N\bibinitperiod},
+      }}%
+      {{hash=CSC}{%
+         family={Cohen-Stavi},
+         familyi={C\bibinithyphendelim S\bibinitperiod},
+         given={Chandra},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=LRM}{%
+         family={Leventer-Roberts},
+         familyi={L\bibinithyphendelim R\bibinitperiod},
+         given={Maya},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=BRD}{%
+         family={Balicer},
+         familyi={B\bibinitperiod},
+         given={Ran\bibnamedelima D},
+         giveni={R\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+    }
+    \keyw{Age Factors; Aged; Aged, 80 and over; Algorithms; Bone Density;
+  Calibration; Electronic Health Records, statistics & numerical data; Female;
+  Hip Fractures, epidemiology, etiology; Humans; Israel, epidemiology; Male;
+  Middle Aged; Osteoporotic Fractures, epidemiology, etiology; Reproducibility
+  of Results; Retrospective Studies; Risk Assessment, methods; Risk Factors}
+    \strng{namehash}{DN+1}
+    \strng{fullhash}{DNCSCLRMBRD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+     To directly compare the performance and externally validate the three
+  most studied prediction tools for osteoporotic fractures-QFracture, FRAX, and
+  Garvan-using data from electronic health records.  Retrospective cohort
+  study.  Payer provider healthcare organisation in Israel.  1 054 815
+  members aged 50 to 90 years for comparison between tools and cohorts of
+  different age ranges, corresponding to those in each tools' development
+  study, for tool specific external validation.  First diagnosis of a major
+  osteoporotic fracture (for QFracture and FRAX tools) and hip fractures (for
+  all three tools) recorded in electronic health records from 2010 to 2014.
+  Observed fracture rates were compared to probabilities predicted
+  retrospectively as of 2010.  The observed five year hip fracture rate was
+  2.7% and the rate for major osteoporotic fractures was 7.7%. The areas under
+  the receiver operating curve (AUC) for hip fracture prediction were 82.7% for
+  QFracture, 81.5% for FRAX, and 77.8% for Garvan. For major osteoporotic
+  fractures, AUCs were 71.2% for QFracture and 71.4% for FRAX. All the tools
+  underestimated the fracture risk, but the average observed to predicted
+  ratios and the calibration slopes of FRAX were closest to 1. Tool specific
+  validation analyses yielded hip fracture prediction AUCs of 88.0% for
+  QFracture (among those aged 30-100 years), 81.5% for FRAX (50-90 years), and
+  71.2% for Garvan (60-95 years).  Both QFracture and FRAX had high
+  discriminatory power for hip fracture prediction, with QFracture performing
+  slightly better. This performance gap was more pronounced in previous
+  studies, likely because of broader age inclusion criteria for QFracture
+  validations. The simpler FRAX performed almost as well as QFracture for hip
+  fracture prediction, and may have advantages if some of the input data
+  required for QFracture are not available. However, both tools require
+  calibration before implementation.%
+    }
+    \verb{doi}
+    \verb 10.1136/bmj.i6755
+    \endverb
+    \field{issn}{1756-1833}
+    \field{pages}{i6755}
+    \field{title}{External validation and comparison of three prediction tools
+  for risk of osteoporotic fractures using data from population based
+  electronic health records: retrospective cohort study.}
+    \field{volume}{356}
+    \verb{file}
+    \verb :PDFs/Dagan2017.pdf:PDF
+    \endverb
+    \field{journaltitle}{BMJ (Clinical research ed.)}
+    \field{month}{01}
+    \field{year}{2017}
+  \endentry
+
   \entry{Rennert2001}{article}{}
     \name{author}{2}{}{%
       {{hash=RG}{%
@@ -8004,110 +7435,106 @@
     \warn{\item Invalid format of field 'month'}
   \endentry
 
-  \entry{Freund1997}{article}{}
+  \entry{Wager2015}{article}{}
     \name{author}{2}{}{%
-      {{hash=FY}{%
-         family={Freund},
-         familyi={F\bibinitperiod},
-         given={Yoav},
-         giveni={Y\bibinitperiod},
+      {{hash=WS}{%
+         family={Wager},
+         familyi={W\bibinitperiod},
+         given={Stefan},
+         giveni={S\bibinitperiod},
       }}%
-      {{hash=SRE}{%
-         family={Schapire},
-         familyi={S\bibinitperiod},
-         given={Robert\bibnamedelima E},
-         giveni={R\bibinitperiod\bibinitdelim E\bibinitperiod},
+      {{hash=AS}{%
+         family={Athey},
+         familyi={A\bibinitperiod},
+         given={Susan},
+         giveni={S\bibinitperiod},
       }}%
     }
-    \list{publisher}{1}{%
-      {Elsevier {BV}}%
-    }
-    \strng{namehash}{FYSRE1}
-    \strng{fullhash}{FYSRE1}
+    \keyw{stat.ME, math.ST, stat.ML, stat.TH}
+    \strng{namehash}{WSAS1}
+    \strng{fullhash}{WSAS1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \verb{doi}
-    \verb 10.1006/jcss.1997.1504
+    \field{abstract}{%
+    Many scientific and engineering challenges -- ranging from personalized
+  medicine to customized marketing recommendations -- require an understanding
+  of treatment effect heterogeneity. In this paper, we develop a non-parametric
+  causal forest for estimating heterogeneous treatment effects that extends
+  Breiman's widely used random forest algorithm. In the potential outcomes
+  framework with unconfoundedness, we show that causal forests are pointwise
+  consistent for the true treatment effect, and have an asymptotically Gaussian
+  and centered sampling distribution. We also discuss a practical method for
+  constructing asymptotic confidence intervals for the true treatment effect
+  that are centered at the causal forest estimates. Our theoretical results
+  rely on a generic Gaussian theory for a large family of random forest
+  algorithms. To our knowledge, this is the first set of results that allows
+  any type of random forest, including classification and regression forests,
+  to be used for provably valid statistical inference. In experiments, we find
+  causal forests to be substantially more powerful than classical methods based
+  on nearest-neighbor matching, especially in the presence of irrelevant
+  covariates.%
+    }
+    \verb{eprint}
+    \verb http://arxiv.org/abs/1510.04342v4
     \endverb
-    \field{number}{1}
-    \field{pages}{119\bibrangedash 139}
-    \field{title}{A Decision-Theoretic Generalization of On-Line Learning and
-  an Application to Boosting}
-    \field{volume}{55}
+    \field{title}{Estimation and Inference of Heterogeneous Treatment Effects
+  using Random Forests}
     \verb{file}
-    \verb :PDFs/freund1997.pdf:PDF
+    \verb :http\://arxiv.org/pdf/1510.04342v4:PDF
     \endverb
-    \field{journaltitle}{Journal of Computer and System Sciences}
-    \field{year}{1997}
-    \warn{\item Invalid format of field 'month'}
+    \field{eprinttype}{arXiv}
+    \field{eprintclass}{stat.ME}
+    \field{day}{14}
+    \field{month}{10}
+    \field{year}{2015}
   \endentry
 
-  \entry{Shannon1948}{article}{}
+  \entry{Breiman2001}{article}{}
     \name{author}{1}{}{%
-      {{hash=SCE}{%
-         family={Shannon},
-         familyi={S\bibinitperiod},
-         given={C.\bibnamedelima E.},
-         giveni={C\bibinitperiod\bibinitdelim E\bibinitperiod},
+      {{hash=BL}{%
+         family={Breiman},
+         familyi={B\bibinitperiod},
+         given={Leo},
+         giveni={L\bibinitperiod},
       }}%
     }
-    \list{publisher}{2}{%
-      {Institute of Electrical}%
-      {Electronics Engineers ({IEEE})}%
-    }
-    \strng{namehash}{SCE1}
-    \strng{fullhash}{SCE1}
+    \strng{namehash}{BL1}
+    \strng{fullhash}{BL1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
+    \field{abstract}{%
+    Random forests are a combination of tree predictors such that each tree
+  depends on the values of a random vector sampled independently and with the
+  same distribution for all trees in the forest. The generalization error for
+  forests converges a.s. to a limit as the number of trees in the forest
+  becomes large. The generalization error of a forest of tree classifiers
+  depends on the strength of the individual trees in the forest and the
+  correlation between them. Using a random selection of features to split each
+  node yields error rates that compare favorably to Adaboost (Y. Freund {\&} R.
+  Schapire, Machine Learning: Proceedings of the Thirteenth International
+  conference, ***, 148--156), but are more robust with respect to noise.
+  Internal estimates monitor error, strength, and correlation and these are
+  used to show the response to increasing the number of features used in the
+  splitting. Internal estimates are also used to measure variable importance.
+  These ideas are also applicable to regression.%
+    }
     \verb{doi}
-    \verb 10.1002/j.1538-7305.1948.tb01338.x
+    \verb 10.1023/A:1010933404324
     \endverb
-    \field{number}{3}
-    \field{pages}{379\bibrangedash 423}
-    \field{title}{A Mathematical Theory of Communication}
-    \field{volume}{27}
-    \verb{file}
-    \verb :PDFs/shannon1948.pdf:PDF
-    \endverb
-    \field{journaltitle}{Bell System Technical Journal}
-    \field{year}{1948}
-    \warn{\item Invalid format of field 'month'}
-  \endentry
-
-  \entry{Bergstra2012}{article}{}
-    \name{author}{2}{}{%
-      {{hash=BJ}{%
-         family={Bergstra},
-         familyi={B\bibinitperiod},
-         given={James},
-         giveni={J\bibinitperiod},
-      }}%
-      {{hash=BY}{%
-         family={Bengio},
-         familyi={B\bibinitperiod},
-         given={Yoshua},
-         giveni={Y\bibinitperiod},
-      }}%
-    }
-    \list{publisher}{1}{%
-      {JMLR.org}%
-    }
-    \keyw{deep learning, global optimization, model selection, neural networks,
-  response surface modeling}
-    \strng{namehash}{BJBY1}
-    \strng{fullhash}{BJBY1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{issn}{1532-4435}
-    \field{pages}{281\bibrangedash 305}
-    \field{title}{Random Search for Hyper-parameter Optimization}
+    \field{issn}{1573-0565}
+    \field{number}{1}
+    \field{pages}{5\bibrangedash 32}
+    \field{title}{Random Forests}
     \verb{url}
-    \verb http://dl.acm.org/citation.cfm?id=2188385.2188395
+    \verb https://doi.org/10.1023/A:1010933404324
     \endverb
-    \field{volume}{13}
-    \field{journaltitle}{J. Mach. Learn. Res.}
-    \field{month}{02}
-    \field{year}{2012}
+    \field{volume}{45}
+    \verb{file}
+    \verb :PDFs/randomforest2001.pdf:PDF
+    \endverb
+    \field{journaltitle}{Machine Learning}
+    \field{year}{2001}
+    \warn{\item Invalid format of field 'month'}
   \endentry
 
   \entry{Houwelingen2000}{article}{}
@@ -8439,18 +7866,13 @@
     \field{isbn}{978-0387772431}
     \field{title}{Clinical Prediction Models: A Practical Approach to
   Development, Validation, and Updating (Statistics for Biology and Health)}
-    \verb{url}
-    \verb https://www.amazon.com/Clinical-Prediction-Models-Development-Validat
-    \verb ion/dp/038777243X?SubscriptionId=0JYN1NVW651KCA56C102&tag=techkie-20&
-    \verb linkCode=xm2&camp=2025&creative=165953&creativeASIN=038777243X
-    \endverb
     \verb{file}
     \verb :PDFs/steyerberg2009.pdf:PDF
     \endverb
     \field{year}{2008}
   \endentry
 
-  \entry{FrankE.Harrell2015}{book}{}
+  \entry{FrankEHarrell2015}{book}{}
     \name{author}{1}{}{%
       {{hash=HFE}{%
          family={Harrell},
@@ -8495,11 +7917,6 @@
     \field{isbn}{978-0805802832}
     \field{title}{Statistical Power Analysis for the Behavioral Sciences (2nd
   Edition)}
-    \verb{url}
-    \verb https://www.amazon.com/Statistical-Power-Analysis-Behavioral-Sciences
-    \verb /dp/0805802835?SubscriptionId=0JYN1NVW651KCA56C102&tag=techkie-20&lin
-    \verb kCode=xm2&camp=2025&creative=165953&creativeASIN=0805802835
-    \endverb
     \field{year}{1988}
   \endentry
 \enddatalist

@@ -802,7 +802,6 @@
   year      = {2008},
   publisher = {Springer},
   isbn      = {978-0387772431},
-  url       = {https://www.amazon.com/Clinical-Prediction-Models-Development-Validation/dp/038777243X?SubscriptionId=0JYN1NVW651KCA56C102&tag=techkie-20&linkCode=xm2&camp=2025&creative=165953&creativeASIN=038777243X},
   file      = {:PDFs/steyerberg2009.pdf:PDF},
   groups    = {Books},
 }
@@ -1400,7 +1399,7 @@ Today's health care providers have more research findings and more technology av
   revised         = {2017-02-20},
 }
 
-@Book{FrankE.Harrell2015,
+@Book{FrankEHarrell2015,
   author    = {Frank E. Harrell ,},
   title     = {Regression Modeling Strategies},
   year      = {2015},
@@ -1732,7 +1731,6 @@ Today's health care providers have more research findings and more technology av
   year      = {1988},
   publisher = {Routledge},
   isbn      = {978-0805802832},
-  url       = {https://www.amazon.com/Statistical-Power-Analysis-Behavioral-Sciences/dp/0805802835?SubscriptionId=0JYN1NVW651KCA56C102&tag=techkie-20&linkCode=xm2&camp=2025&creative=165953&creativeASIN=0805802835},
   groups    = {Books},
 }
 
@@ -1972,7 +1970,7 @@ Today's health care providers have more research findings and more technology av
 }
 
 @Article{Greenland2018,
-  author       = {Greenland, Philip and Blaha, Michael J and Budoff, Matthew J and Erbel, Raimund and Watson, Karol E},
+  author       = {Greenland, Philip and Blaha, Michael J. and Budoff, Matthew J. and Erbel, Raimund and Watson, Karol E.},
   title        = {Coronary Calcium Score and Cardiovascular Risk.},
   journal      = {Journal of the American College of Cardiology},
   year         = {2018},
@@ -2321,7 +2319,7 @@ Today's health care providers have more research findings and more technology av
   groups    = {Causal Inference},
 }
 
-@Book{GuidoW.Imbens2015,
+@Book{GuidoWImbens2015,
   author    = {Guido W. Imbens, Donald B. Rubin},
   title     = {Causal Inference for Statistics, Social, and Biomedical Sciences},
   year      = {2015},

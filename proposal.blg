@@ -16,7 +16,7 @@ Reallocated singl_function (elt_size=8) to 100 items from 50.
 Reallocated singl_function (elt_size=8) to 100 items from 50.
 Reallocated singl_function (elt_size=8) to 100 items from 50.
 Reallocated singl_function (elt_size=8) to 100 items from 50.
-Reallocated field_info (elt_size=8) to 16676 items from 5000.
+Reallocated field_info (elt_size=8) to 15981 items from 5000.
 Database file #1: proposal-blx.bib
 Database file #2: bibtex/proposal.bib
 Reallocated str_pool (elt_size=1) to 130000 items from 65000.
@@ -26,137 +26,49 @@ Reallocated wiz_functions (elt_size=8) to 9000 items from 6000.
 Warning--you've exceeded 250, the entry-string-size, for entry Lozano2012
 while executing--line 2658 of file biblatex.bst
 *Please notify the bibstyle designer*
-Name 1 in "Frank E. Harrell ," has a comma at the end for entry FrankE.Harrell2015
-while executing---line 2658 of file biblatex.bst
-Name 1 in "Frank E. Harrell ," has a comma at the end for entry FrankE.Harrell2015
-while executing---line 2658 of file biblatex.bst
-Name 1 in "Frank E. Harrell ," has a comma at the end for entry FrankE.Harrell2015
-while executing---line 2658 of file biblatex.bst
-Name 1 in "Frank E. Harrell ," has a comma at the end for entry FrankE.Harrell2015
-while executing---line 2658 of file biblatex.bst
-Name 1 in "Frank E. Harrell ," has a comma at the end for entry FrankE.Harrell2015
-while executing---line 2658 of file biblatex.bst
-Name 1 in "Frank E. Harrell ," has a comma at the end for entry FrankE.Harrell2015
-while executing---line 2658 of file biblatex.bst
-Name 1 in "Frank E. Harrell ," has a comma at the end for entry FrankE.Harrell2015
-while executing---line 2658 of file biblatex.bst
-Name 1 in "Frank E. Harrell ," has a comma at the end for entry FrankE.Harrell2015
-while executing---line 2658 of file biblatex.bst
-Name 1 in "Frank E. Harrell ," has a comma at the end for entry FrankE.Harrell2015
-while executing---line 2658 of file biblatex.bst
-Name 1 in "Frank E. Harrell ," has a comma at the end for entry FrankE.Harrell2015
-while executing---line 2658 of file biblatex.bst
-Name 1 in "Frank E. Harrell ," has a comma at the end for entry FrankE.Harrell2015
-while executing---line 2658 of file biblatex.bst
-Name 1 in "Frank E. Harrell ," has a comma at the end for entry FrankE.Harrell2015
-while executing---line 2658 of file biblatex.bst
-Name 1 in "Frank E. Harrell ," has a comma at the end for entry FrankE.Harrell2015
-while executing---line 2662 of file biblatex.bst
-Name 1 in "Frank E. Harrell ," has a comma at the end for entry FrankE.Harrell2015
-while executing---line 2662 of file biblatex.bst
-Name 1 in "Frank E. Harrell ," has a comma at the end for entry FrankE.Harrell2015
-while executing---line 2662 of file biblatex.bst
-Name 1 in "Frank E. Harrell ," has a comma at the end for entry FrankE.Harrell2015
-while executing---line 2668 of file biblatex.bst
-Name 1 in "Frank E. Harrell ," has a comma at the end for entry FrankE.Harrell2015
-while executing---line 2668 of file biblatex.bst
-Name 1 in "Frank E. Harrell ," has a comma at the end for entry FrankE.Harrell2015
-while executing---line 2668 of file biblatex.bst
-Name 1 in "Frank E. Harrell ," has a comma at the end for entry FrankE.Harrell2015
-while executing---line 2672 of file biblatex.bst
-Name 1 in "Frank E. Harrell ," has a comma at the end for entry FrankE.Harrell2015
-while executing---line 2672 of file biblatex.bst
-Name 1 in "Frank E. Harrell ," has a comma at the end for entry FrankE.Harrell2015
-while executing---line 2672 of file biblatex.bst
-Name 1 in "Frank E. Harrell ," has a comma at the end for entry FrankE.Harrell2015
-while executing---line 2672 of file biblatex.bst
-Name 1 in "Frank E. Harrell ," has a comma at the end for entry FrankE.Harrell2015
-while executing---line 2672 of file biblatex.bst
-Name 1 in "Frank E. Harrell ," has a comma at the end for entry FrankE.Harrell2015
-while executing---line 2672 of file biblatex.bst
-Name 1 in "Frank E. Harrell ," has a comma at the end for entry FrankE.Harrell2015
-while executing---line 2676 of file biblatex.bst
-Name 1 in "Frank E. Harrell ," has a comma at the end for entry FrankE.Harrell2015
-while executing---line 2676 of file biblatex.bst
-Name 1 in "Frank E. Harrell ," has a comma at the end for entry FrankE.Harrell2015
-while executing---line 2676 of file biblatex.bst
-Name 1 in "Frank E. Harrell ," has a comma at the end for entry FrankE.Harrell2015
-while executing---line 2682 of file biblatex.bst
-Name 1 in "Frank E. Harrell ," has a comma at the end for entry FrankE.Harrell2015
-while executing---line 2682 of file biblatex.bst
-Name 1 in "Frank E. Harrell ," has a comma at the end for entry FrankE.Harrell2015
-while executing---line 2682 of file biblatex.bst
 Warning--you've exceeded 250, the entry-string-size, for entry Lozano2012
 while executing--line 2686 of file biblatex.bst
 *Please notify the bibstyle designer*
-Name 1 in "Frank E. Harrell ," has a comma at the end for entry FrankE.Harrell2015
-while executing---line 2686 of file biblatex.bst
-Name 1 in "Frank E. Harrell ," has a comma at the end for entry FrankE.Harrell2015
-while executing---line 2686 of file biblatex.bst
-Name 1 in "Frank E. Harrell ," has a comma at the end for entry FrankE.Harrell2015
-while executing---line 2686 of file biblatex.bst
-Name 1 in "Frank E. Harrell ," has a comma at the end for entry FrankE.Harrell2015
-while executing---line 2686 of file biblatex.bst
-Name 1 in "Frank E. Harrell ," has a comma at the end for entry FrankE.Harrell2015
-while executing---line 2686 of file biblatex.bst
-Name 1 in "Frank E. Harrell ," has a comma at the end for entry FrankE.Harrell2015
-while executing---line 2686 of file biblatex.bst
 Reallocated singl_function (elt_size=8) to 100 items from 50.
-Name 1 in "Frank E. Harrell ," has a comma at the end for entry FrankE.Harrell2015
-while executing---line 2774 of file biblatex.bst
-Name 1 in "Frank E. Harrell ," has a comma at the end for entry FrankE.Harrell2015
-while executing---line 2774 of file biblatex.bst
-Name 1 in "Frank E. Harrell ," has a comma at the end for entry FrankE.Harrell2015
-while executing---line 2774 of file biblatex.bst
-Name 1 in "Frank E. Harrell ," has a comma at the end for entry FrankE.Harrell2015
-while executing---line 2774 of file biblatex.bst
-Name 1 in "Frank E. Harrell ," has a comma at the end for entry FrankE.Harrell2015
-while executing---line 2774 of file biblatex.bst
-Name 1 in "Frank E. Harrell ," has a comma at the end for entry FrankE.Harrell2015
-while executing---line 2774 of file biblatex.bst
-Name 1 in "Frank E. Harrell ," has a comma at the end for entry FrankE.Harrell2015
-while executing---line 2774 of file biblatex.bst
-Name 1 in "Frank E. Harrell ," has a comma at the end for entry FrankE.Harrell2015
-while executing---line 2774 of file biblatex.bst
-You've used 84 entries,
+You've used 79 entries,
             6304 wiz_defined-function locations,
-            2021 strings with 164360 characters,
-and the built_in function-call counts, 1489070 in all, are:
-= -- 133872
-> -- 15732
-< -- 2133
-+ -- 43731
-- -- 8298
-* -- 120701
-:= -- 194540
+            1962 strings with 152758 characters,
+and the built_in function-call counts, 1397915 in all, are:
+= -- 125122
+> -- 15972
+< -- 2074
++ -- 41900
+- -- 8830
+* -- 112766
+:= -- 182876
 add.period$ -- 0
-call.type$ -- 84
-change.case$ -- 893
-chr.to.int$ -- 648
-cite$ -- 166
-duplicate$ -- 134254
-empty$ -- 127998
-format.name$ -- 11596
-if$ -- 283921
+call.type$ -- 79
+change.case$ -- 844
+chr.to.int$ -- 713
+cite$ -- 156
+duplicate$ -- 125654
+empty$ -- 119852
+format.name$ -- 10849
+if$ -- 265839
 int.to.chr$ -- 0
-int.to.str$ -- 189
+int.to.str$ -- 179
 missing$ -- 0
-newline$ -- 6786
-num.names$ -- 3518
-pop$ -- 38203
+newline$ -- 6326
+num.names$ -- 3316
+pop$ -- 35840
 preamble$ -- 1
-purify$ -- 2565
+purify$ -- 2407
 quote$ -- 0
-skip$ -- 15743
+skip$ -- 14927
 stack$ -- 0
-substring$ -- 285141
-swap$ -- 21902
-text.length$ -- 2504
-text.prefix$ -- 26
+substring$ -- 266702
+swap$ -- 20548
+text.length$ -- 2393
+text.prefix$ -- 24
 top$ -- 1
-type$ -- 2842
+type$ -- 2671
 warning$ -- 0
-while$ -- 24379
+while$ -- 22806
 width$ -- 0
-write$ -- 6703
-(There were 44 error messages)
+write$ -- 6248
+(There were 2 warnings)
