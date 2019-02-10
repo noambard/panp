@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018/Arch Linux) (preloaded format=xelatex 2018.12.19)  3 JAN 2019 16:34
+This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018/Arch Linux) (preloaded format=xelatex 2019.1.3)  10 FEB 2019 15:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1143,14 +1143,22 @@ File: prelim-results/AHA/AHA_ROC.png Graphic file (type bmp)
 File: prelim-results/Panpredictor/pop_flow_chart.png Graphic file (type bmp)
 <prelim-results/Panpredictor/pop_flow_chart.png>
  [32] [33] (./proposal.aux)
+
+LaTeX Warning: There were undefined references.
+
+
+Package biblatex Warning: Please (re)run BibTeX on the file(s):
+(biblatex)                proposal
+(biblatex)                and rerun LaTeX afterwards.
+
 Package logreq Info: Writing requests to 'proposal.run.xml'.
 \openout1 = `proposal.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
  24863 strings out of 492956
- 515056 string characters out of 6139023
- 1018592 words of memory out of 5000000
+ 515056 string characters out of 6139025
+ 1017592 words of memory out of 5000000
  28567 multiletter control sequences out of 15000+600000
  536053 words of font info for 67 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191

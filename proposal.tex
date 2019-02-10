@@ -89,7 +89,7 @@
 	
 		\subsection{Background}
 		
-		Cardiovascular disease (CVD), including myocardial infarction (MI) and cerebrovascular accident (CVA), remains a significant cause of morbidity and mortality\cite{ODonnell2016} worldwide, despite reduced incidence in the developed world in recent years\cite{Koton2014,Vangen-Loenne2017}.
+		Cardiovascular disease (CVD), including myocardial infarction (MI) and cerebrovascular accident (CVA), remains a significant cause of morbidity and mortality worldwide\cite{ODonnell2016}, despite reduced incidence in the developed world in recent years\cite{Koton2014,Vangen-Loenne2017}.
 		
 		Since the early 1990s, and more so in the last few years,  multivariable risk prediction models have been created to estimate patients' risk for cardiovascular disease (e.g. \cite{Wilson1998,Conroy2003,DAgostino2008}). These models are used to identify patients at risk and are capable of exact risk quantification over time\cite{Goff2014}. Through their many variations, these risk models are included in different guidelines and occupy an important place in prevention of CVD\cite{Goff2014}.
 	
@@ -101,7 +101,7 @@
 		
 		The baseline model used will be the 2013 American Heart Association/American College of Cardiology (AHA/ACC) pooled cohort equations\cite{Goff2014}. This model is of great importance, and is used in the AHA/ACC guidelines and the United States Preventive Services Task Force (USPSTF) guidelines for CVD prevention\cite{Bibbins-Domingo2016}. The population of all studies is the general population of Clalit Health Services (CHS), the largest sick fund in Israel.
 		
-		We will first employ automated coronary calcium scores in an attempt to improve the prediction. These scores will be generated automatically from existing chest CT scans via a computer vision machine learning algorithm. Next, We will construct an automatic generic algorithm to generate prediction models using little-to-none human intervention. This algorithm will extract variables from the database, choose the most relevant ones and construct a model while performing hyperparameter tuning. Lastly, We will use causal inference techniques for estimating the Average Treatment Effect (ATE) and Individual Treatment Effect (ITE) to estimate the effect of intervening on different patient characteristics.
+		We will first employ automated coronary calcium scores in an attempt to improve the prediction. These scores will be generated automatically from existing chest CT scans via a computer vision machine learning algorithm. Next, We will construct an automatic generic algorithm to generate prediction models using little-to-none human intervention. This algorithm will extract variables from the database, choose the most relevant ones and construct a model while performing hyperparameter tuning. Lastly, We will combine prediction with causal inference techniques for estimating the change in predicted risk when changing different patient characteristics.
 		
 		\subsection{Importance}
 		
@@ -116,25 +116,25 @@
 	
 		\subsection{\texthebrew{רקע}}
 		
-		מחלה קרדיווסקולרית, הכוללת אוטם לבבי ושבץ מוחי, עודה סיבה מובילה לחולי ותמותה\cite{ODonnell2016} ברחבי העולם, וזאת חרף ירידה בהיארעותה בעולם המערבי בשנים האחרונות\cite{Koton2014,Vangen-Loenne2017}.
+		מחלה קרדיווסקולרית, הכוללת אוטם לבבי ושבץ מוחי, עודה סיבה מובילה לחולי ולתמותה\cite{ODonnell2016} ברחבי העולם, וזאת חרף ירידה בהיארעותה בעולם המערבי בשנים האחרונות\cite{Koton2014,Vangen-Loenne2017}.
 
-				מתחילת שנות ה-90 החלה, ובשנים האחרונות גברה, יצירתם של מודלים רב-משתניים לחישוב סיכון למחלות שונות(לדוגמה \cite{Wilson1998,Conroy2003,DAgostino2008}). מודלים אלו משמשים לזיהוי חולים בסיכון, ומאפשרים כימות מדויק של הסיכון לאורך שנים רבות\cite{Goff2014}. כיום, בצורותיהן השונות, מודלים אלו כלולים בקווים המנחים של ארגונים מקצועיים רבים, ולהם מקום חשוב הן במניעה הראשונית והן באבחנה של מחלות \cite{Graham2007,Goff2014}.
+				מתחילת שנות ה-90 החלה, ובשנים האחרונות גברה, יצירתם של מודלים רב-משתניים לחישוב סיכון למחלות שונות(לדוגמה \cite{Wilson1998,Conroy2003,DAgostino2008}). מודלים אלו משמשים לזיהוי חולים בסיכון, ומאפשרים כימות מדויק של הסיכון לאורך שנים רבות\cite{Goff2014}. כיום, בצורותיהן השונות, מודלים אלו כלולים בקווים המנחים של ארגונים מקצועיים רבים, ולהם מקום חשוב הן במניעה הראשונית והן באבחנה של מחלות \cite{Goff2014}.
 				
 		\subsection{\texthebrew{מטרות}}
-		
-				The goal of this thesis is to examine different methods by which to improve CVD prediction. We will examine ways to utilize novel biomarkers, to generate better and more generic prediction models and to combine prediction with causal inference.
-				
+
 				מטרתה של תזה זו היא לבחון דרכים שונות לשפר חיזוי מחלה קרדיווסקולרית. אנו נבחן אמצעים לשלב ביומרקרים חדשניים, לייצר מודלי חיזוי טובים וגנריים יותר ולשלב חיזוי עם הסקה סיבתית.
 		
 		\subsection{\texthebrew{שיטות}}
 		
-		המודל הבסיסי בו נעשה שימוש בעבודה זו הוא מודל האגודה האמריקאית למחלה לב משנת 2013\cite{Goff2014}. למודל זה חשיבות רבה, והוא משמש בקווים המנחים למניעת מחלה קרדיווסקולרית של האגודה האמריקאית למחלות לב ושל הצוות האמריקאי לשירותים מניעתיים\cite{Bibbins-Domingo2016}. האוכלוסיה בכל המחקרים תהיה אוכלוסיית המבוטחים של קופת החולים כללית, הקופה הגדולה בישראל.
+		המודל הבסיסי בו נעשה שימוש בעבודה זו הוא מודל האגודה האמריקאית למחלת לב משנת 2013\cite{Goff2014}. למודל זה חשיבות רבה, והוא משמש בקווים המנחים למניעת מחלה קרדיווסקולרית של האגודה האמריקאית למחלות לב ושל הצוות האמריקאי לשירותים מניעתיים\cite{Bibbins-Domingo2016}. האוכלוסיה בכל המחקרים תהיה אוכלוסיית המבוטחים של קופת החולים כללית, הקופה הגדולה בישראל.
 		
-		בתחילה נשתמש בניקוד לכמות הסידן בעורקי הלב על מנת לשפר החיזוי. ניקוד זה יופק באופן אוטומטי ב-CT חזה קיימים באמצעות אלגוריתמי למידת מכונה לראיה ממוחשבת. לאחר מכן אנו נבנה אלגוריתם אוטומטי אשר תפקידו לייצר מודלי חיזוי עם מינימום התערבות אנושית. אלגוריתם זה ישלוף המשתנים מבסיס הנתונים, יבחר הרלוונטיים מהם ביותר ויבנה מודל תוך ביצוע טיוב לפרמטרים. לבסוף, אנו ניעזר בטכניקות של הסקה סיבתית על מנת להעריך האפקט הממוצע והאישי של התערבויות שונות בפרט להפחתת סיכון קרדיווסקולרי.
+		 Lastly, We will combine prediction with causal inference techniques for estimating the change in predicted risk when changing different patient characteristics.
+		
+		בתחילה נשתמש בניקוד לכמות הסידן בעורקי הלב על מנת לשפר החיזוי. ניקוד זה יופק באופן אוטומטי מ-CT חזה קיימים באמצעות אלגוריתמי למידת מכונה לראיה ממוחשבת. לאחר מכן אנו נבנה אלגוריתם אוטומטי אשר תפקידו לייצר מודלי חיזוי עם מינימום התערבות אנושית. אלגוריתם זה ישלוף המשתנים מבסיס הנתונים, יבחר הרלוונטיים מהם ביותר ויבנה מודל תוך ביצוע טיוב לפרמטרים. לבסוף, אנו נשלב חיזוי עם הסקה סיבתית על מנת להעריך השינוי בסיכון הנחזה בעקבות שינוי מאפייני המטופל.
 
 		\subsection{\texthebrew{חשיבות}}
 		
-		חיזוי מחלה קרדיווסקולרית חיונית למניעתה. לכל השיטות המתוארות בעבודה זו היכולת לשפר חיזוי מחלה קרדיווסקולרית ולאפשר החלטות מושכלות יותר בנוגע למניעה. 
+		חיזוי מחלה קרדיווסקולרית חיוני למניעתה. לכל השיטות המתוארות בעבודה זו היכולת לשפר חיזוי מחלה קרדיווסקולרית ולאפשר החלטות מושכלות יותר בנוגע למניעה. 
 			
 			\subsection{\texthebrew{מילות מפתח}}
 			
@@ -153,7 +153,7 @@
 		
 		\item[Generic Risk Prediction] A modern and novel approach to develop risk models based on Electronic Health Record (EHR) data will be developed. The full details of this approach will be detailed below, under "Research Methodology", but briefly, it will require no preliminary domain expertise, instead utilizing modern methods to simultaneously choose variables and create the model based on them.
 		
-		\item[Determining Intervention Effects] CVD Prediction models are often used to decide on interventions designed for disease prevention. But by themselves, these models give no information regarding the relative efficacy of such interventions. We will utilize methods designed for causal inference to estimate the expected effect of such interventions at the patient level.
+		\item[Determining Intervention Effects] CVD Prediction models are often used to decide on interventions designed for disease prevention. But by themselves, these models give no information regarding the relative efficacy of such interventions. We will utilize methods designed for causal inference to estimate the expected change such interventions are expected to make at the individual level.
 		
 	\end{description}
 	
@@ -193,13 +193,13 @@
 			
 			Among diseases with such a significant public health impact, cardiovascular disease stands out in two ways. First, its risk factors are well understood, with 90\% of its population-attributable-risk caused by nine risk factors. It's also a very preventable disease, as these risk factors are mostly preventable\cite{Yusuf2004,ODonnell2016}: Smoking, dyslipidemia, hypertension, diabetes, etc.
 			
-			\subsubsection{History of multivariable Risk Models}
+			\subsubsection{History of Multivariable Risk Models}
 			
-			These unique characteristics have made CVD the main outcome in risk models, when such models began to enter clinical practice in the 1990s\cite{Wilson1998,NationalCholesterolEducationProgramNCEPExpertPanelonDetection2002,Conroy2003,Hippisley-Cox2007,DAgostino2008,Hippisley-Cox2008,Goff2014}. Still the most notable of said risk models is the Framingham risk model family, developed on a US population in Massachusetts, Boston\cite{Wilson1998}, and the SCORE risk model, developed in 2003 on a European population\cite{Conroy2003}.
+			These unique characteristics have made CVD the main outcome in risk models, when such models began to enter clinical practice in the 1990s\cite{Wilson1998,NationalCholesterolEducationProgramNCEPExpertPanelonDetection2002,Conroy2003,Hippisley-Cox2007,DAgostino2008,Hippisley-Cox2008,Goff2014}. Still the most notable of said risk models is the Framingham risk model family, developed on a US population in Massachusetts, Boston\cite{Wilson1998}.
 			
-			Perhaps more important that their mere existence, is that these models have made their way into widely-accepted international guidelines, with their use mandated in routine clinical care. Two examples we'll cite are the use of these risk models in deciding on Statin therapy\cite{Goff2014} and their use in deciding on anti-platelet therapy\cite{Bibbins-Domingo2016}, both for primary prevention of CVD.
+			Perhaps more important that their mere existence, is that these models have made their way into widely-accepted international guidelines, with their use mandated in routine clinical care. For example, these risk models are used in deciding on Statin therapy\cite{Goff2014} and in deciding on anti-platelet therapy\cite{Bibbins-Domingo2016}, both for primary prevention of CVD.
 			
-			While CVD prediction was the bedrock for clinical risk models, they have since spread to encompass a large variety of diseases categories\cite{Kanis2008,Kansagara2011}, and have found use not only in prediction, but also in diagnosis\cite{Usher-Smith2016}. This increasingly important place taken by risk models has brought about the publication of guidelines designed to regulate and improve their creation\cite{Collins2015}. As estimating the probability for existing and future disease is a significant portion of the clinical process\cite{Moons2009}, and as this task can in large parts be automated, it seems likely that risk models will gain an increasingly important place in the medical practice.
+			While CVD prediction was the bedrock for clinical risk models, they have since spread to encompass a large variety of diseases categories\cite{Kanis2008,Kansagara2011}, and have found use not only in prediction, but also in diagnosis\cite{Usher-Smith2016}. This increasingly important place taken by risk models has brought about the publication of guidelines designed to regulate and improve their creation\cite{Collins2015}. As estimating the probability for existing and future disease is a significant portion of the clinical process\cite{Moons2009}, it seems likely that risk models will gain an increasingly important place in the medical practice.
 			
 		\subsection{Part I}
 		
@@ -221,7 +221,7 @@
 			It has recently been shown that reliable CAC scoring can be obtained algorithmically from low dose chest CT data\cite{Isgum2012,Shadmi2018} and that such measurements were correlated with cardiovascular events in a cohort of individuals undergoing CT screening for lung cancer\cite{Takx2015a}. It has not been demonstrated if such automated scores are capable of improving on existing multivariable risk prediction models\cite{Force2018}.
 			
 			\subsubsection{The Scientific Gap}
-			CAC scores have proven utility for CVD prediction, but obtaining them involves harms that are often unacceptable. Such harms are non-existent when the CAC score is obtain automatically from existing CT scans. We will evaluate the improvement to existing prediction algorithms when such automatically obtained CAC scores are integrated into the model.
+			CAC scores have proven utility for CVD prediction, but obtaining them involves harms that are often unacceptable. Such harms are non-existent when the CAC score is obtained automatically from existing CT scans. We will evaluate the improvement to existing prediction algorithms when such automatically obtained CAC scores are integrated into the model.
 			
 		\subsection{Part II}
 		
@@ -334,7 +334,7 @@
 			
 			\subsubsection{The Scientific Gap}
 			
-			We suggest that a predictive model coupled with conditional average treatment effects is a far more powerful tool than just predictions. Such a tool would allow both better decisions by the physician and would motivate the patient to reduce his risks, with full knowledge of the expected benefit. We are not aware of any such tools in existence.
+			We suggest that a predictive model coupled with conditional average treatment effects is a far more powerful tool than just predictions. Such a tool would allow both better decisions by the physician and would motivate the patient to reduce his risks, with full knowledge of the expected benefit. We are not aware of any such currently tools in existence.
 			
 	\section{The Novelty of the Thesis}
 	
@@ -376,7 +376,7 @@
 		\subsubsection{Source of Data for Study}
 		The general population for all different parts of the study is the population of patients insured by Clalit Health Services (CHS). CHS is the largest sick fund in Israel, with an insured population of 4.5 active members. Clalit is both an insurer and a provider, directly providing primary care, specialist care, lab, imaging and pharamacy services. Additionally, clalit directly operates several large hospitals. The “attrition rate” (the percentage of patients leaving the sick fund each year) stands on less than 2\%, allowing long term follow-up of patients.
 		
-		The data will be collected using the CHS's electronic health record (EHR). CHS has maintained a comprehensive electronic health record since the year 2000, and has continued to improve it with time. This EHR contains, among others, demographic data, medical data (including clinical covariates, lab results, imaging studies, etc.) and claims data for both services rendered as part of the mandatory health insurance and for services rendered as part of the additive insurance (“Mashlim”). On top of the internal Clalit data, the database also contains external information such as the ministry of interior's causes of death listings and the ministry of health's cancer registry. This comprehensive database, combining both medical and claims data, covers large facets of a person's health.
+		The data will be collected using the CHS's electronic health record (EHR). CHS has maintained a comprehensive electronic health record since the year 2000, and has continued to improve it over time. This EHR contains, among others, demographic data, medical data (including clinical covariates, lab results, imaging studies, etc.) and claims data for both services rendered as part of the mandatory health insurance and for services rendered as part of the additive insurance (“Mashlim”). On top of the internal Clalit data, the database also contains external information such as the ministry of interior's causes of death listings and the ministry of health's cancer registry. This comprehensive database, combining both medical and claims data, covers large facets of a person's health.
 		
 		\subsubsection{Issues with EHR Data}
 		The difficulties that arise in conducting observational studies on EHR data are many and well documented: Data inaccuracy, missing data, cohort effects, selection biases, myriad ontologies, etc\cite{Hripcsak2011,Jensen2012,Goldstein2017}. Some of these issues, such as missing data, can be partially dealt with using statistical methods (see ahead), while some require in-depth expertise and know-how regarding the data's structure and collection methods, knowledge that can only be acquired through rigorous analysis of it. The Clalit's research institute's (CRI) is the research body for Clalit Health Services, and is thus the main consumer of the clalit's EHR data. This grants the CRI intimate knowledge of the data, as is evidenced by the many studies published in major journals based on the Clalit's database and on the CRI's methods in extracting its information (e.g. \cite{Reges2018,Dagan2017}).
@@ -439,7 +439,7 @@
 		Combining multiple imputation and the bootstrap is an open problem in biostatistics. Multiple ways have been suggested and compared empirically on simulated data\cite{Schomaker2016}.
 		
 		\subsubsection{Net Reclassification Improvement}
-		Net Reclassification improvement (NRI) aims to measure the improvement in decisions made by using a different prediction model\cite{Pencina2008}. Continuous sums the total number of patients who have been reclassified in the correct direction (i.e. were given a higher score if they did eventually experience an event, and a lower score otherwise). Categorical NRI does the same thing, but only considers movement around a decision threshold.
+		Net Reclassification improvement (NRI) aims to measure the improvement in decisions made by using a different prediction model\cite{Pencina2008}. Continuous NRI sums the total number of patients who have been reclassified in the correct direction (i.e. were given a higher score if they did eventually experience an event, and a lower score otherwise). Categorical NRI does the same thing, but only considers movement around a decision threshold.
 		
 		\subsubsection{Decision Curves}
 		Decision curves, who have recently gained popularity in the medical literature\cite{Vickers2016}, aim to compare different models in relation to the decision made using them on different thresholds. The basic measure used is "Net Benefit", measured as
@@ -448,7 +448,7 @@
 		\text{Net Benefit} = \frac{\text{True Positives}}{N} - \frac{\text{False Positives}}{N} \cdot \frac{p_t}{1-p_t}
 		\end{equation*}
 		
-		Where $ p_t $ is the threshold used for decision making. Conceptually, net benefit measures a weighted average of true positives and false positives, weighted by the relative importance the clinician and patient give each result. For example, is the decision threshold is 25\%, this implies that a true positive is 3 times more important that a false positive. Decision curves are then a plot of net benefit for different thresholds.
+		Where $ p_t $ is the threshold used for decision making. Conceptually, net benefit measures a weighted average of true positives and false positives, weighted by the relative importance the clinician and patient give each result. For example, if the decision threshold is 25\%, this implies that a true positive is 3 times more important that a false positive. Decision curves are then a plot of net benefit for different thresholds.
 		
 	\subsection{Analysis Plan}
 	We detail each part in turn.
@@ -474,7 +474,7 @@
 		\end{itemize}
 		
 		\subsubsection*{Study Timeline}
-		For a sufficiently large sample size,, the model will predict disease for 5 years after the index date. The index date will be set at 1/6/2012, and follow up will persist until 1/6/2017.
+		For a sufficiently large sample size, the model will predict disease for 5 years after the index date. The index date will be set at 1/6/2012, and follow up will persist until 1/6/2017.
 		
 		\subsubsection*{Variables}
 		The variables for this study are the variables used for the AHA/ACC model, as detailed in appendix A, together with the novel biomarker.
@@ -508,7 +508,7 @@
 		\subsubsection*{Study Population}
 		Inclusion Criteria:
 		\begin{itemize}
-			\item Ages 30-90.
+			\item Ages 40-79.
 			\item At least 1 year of continuous membership in the Clalit prior to the index date.
 			\item Continuous membership until the study end date or until death.
 		\end{itemize}
